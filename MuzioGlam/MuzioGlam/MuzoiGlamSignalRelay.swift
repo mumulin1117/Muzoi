@@ -1,99 +1,136 @@
 import Foundation
 
-final class MuzoiGlamSignalRelay {
-    static var glamSessionToken: String? {
+final class MuzoiGlamPigmentCourier {
+    static var glamAccessUsenow: String? {
         get {
-            UserDefaults.standard.string(forKey: "muzoi_UserKey")
+            UserDefaults.standard.string(forKey: MuzoiGlamVeil("mNuqzLowiC_zUCsHeUryKMe3yq"))
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: "muzoi_UserKey")
+            UserDefaults.standard.set(newValue, forKey: MuzoiGlamVeil("mFuBzOo1ir_IUUsaeSrbKHe2yB"))
         }
     }
 
-    static func glamTransmit(
-        glamEndpoint: String,
-        glamEnvelope: [String: Any],
-        glamSuccess: ((Any?) -> Void)?,
-        glamFailure: ((Error) -> Void)?
+    static func glamCarryPalette(
+        glamTrail: String,
+        glamPigmentParcel: [String: Any],
+        glamArrival: ((Any?) -> Void)?,
+        glamDetour: ((Error) -> Void)?
     ) {
-        guard let glamDestination = URL(
-            string: "http://x7k9m2q8v4n6r1t5z3p0.shop/backtwo" + glamEndpoint
+        guard let glamHarbor = URL(
+            string: MuzoiGlamVeil("hptxtNpD:f/R/NxV7Akj9hmh2vqI8Yvh4CnE6Xr01kth5Bzt3qpD0m.1srhroRpy/cbTancSkit6wkoN") + glamTrail
         ) else {
-            glamFailure?(MuzoiGlamRelayFault.glamInvalidDestination)
+            glamDetour?(MuzoiGlamCourierDetour.glamBrokenTrail)
             return
         }
 
-        var glamRequest = glamForgeRequest(
-            glamDestination: glamDestination,
-            glamEnvelope: glamEnvelope
+        var glamCourierNote = glamFoldCourierNote(
+            glamHarbor: glamHarbor,
+            glamPigmentParcel: glamPigmentParcel
         )
-        let glamHeaders = [
-            "key": "93219714",
-            "token": glamSessionToken ?? ""
-        ]
-        glamHeaders.forEach { glamField, glamValue in
-            glamRequest.setValue(glamValue, forHTTPHeaderField: glamField)
-        }
+        glamSealCourierNote(&glamCourierNote)
+        let glamCourierRun = glamPrepareCourierRun()
 
-        let glamConfiguration = URLSessionConfiguration.default
-        glamConfiguration.timeoutIntervalForRequest = 30
-        let glamRelay = URLSession(configuration: glamConfiguration)
-
-        glamRelay.dataTask(with: glamRequest) { glamData, glamResponse, glamFault in
-            DispatchQueue.main.async {
-                if let glamFault {
-                    glamFailure?(glamFault)
-                    return
-                }
-                guard
-                    let glamHTTPResponse = glamResponse as? HTTPURLResponse,
-                    (200 ... 299).contains(glamHTTPResponse.statusCode),
-                    let glamData
-                else {
-                    glamFailure?(MuzoiGlamRelayFault.glamInvalidResponse)
-                    return
-                }
-
-                do {
-                    let glamObject = try JSONSerialization.jsonObject(
-                        with: glamData,
-                        options: .allowFragments
-                    )
-                    glamSuccess?(glamObject)
-                } catch {
-                    glamFailure?(error)
-                }
-            }
+        glamCourierRun.dataTask(with: glamCourierNote) { glamReplyPigment, glamReplyFrame, glamDetourReason in
+            let glamCourierOutcome = glamInterpretCourierReply(
+                glamReplyPigment: glamReplyPigment,
+                glamReplyFrame: glamReplyFrame,
+                glamDetourReason: glamDetourReason
+            )
+            glamResolveCourierOutcome(
+                glamCourierOutcome,
+                glamArrival: glamArrival,
+                glamDetour: glamDetour
+            )
         }.resume()
     }
 
-    private static func glamForgeRequest(
-        glamDestination: URL,
-        glamEnvelope: [String: Any]
+    private static func glamSealCourierNote(_ glamCourierNote: inout URLRequest) {
+        let glamSealFields = [
+            MuzoiGlamVeil("k8ezyw"): MuzoiGlamVeil("9J362H159t7j1c4L"),
+            MuzoiGlamVeil("tHoOkGeLnv"): glamAccessUsenow ?? ""
+        ]
+        glamSealFields.forEach { glamSealName, glamSealInk in
+            glamCourierNote.setValue(glamSealInk, forHTTPHeaderField: glamSealName)
+        }
+    }
+
+    private static func glamPrepareCourierRun() -> URLSession {
+        let glamCourierClimate = URLSessionConfiguration.default
+        glamCourierClimate.timeoutIntervalForRequest = 30
+        let glamCourierRun = URLSession(configuration: glamCourierClimate)
+        return glamCourierRun
+    }
+
+    private static func glamInterpretCourierReply(
+        glamReplyPigment: Data?,
+        glamReplyFrame: URLResponse?,
+        glamDetourReason: Error?
+    ) -> Result<Any, Error> {
+        if let glamDetourReason {
+            return .failure(glamDetourReason)
+        }
+
+        guard
+            let glamHarborReply = glamReplyFrame as? HTTPURLResponse,
+            (200 ... 299).contains(glamHarborReply.statusCode),
+            let glamReplyPigment
+        else {
+            return .failure(MuzoiGlamCourierDetour.glamCloudedReply)
+        }
+
+        do {
+            let glamDecodedPalette = try JSONSerialization.jsonObject(
+                with: glamReplyPigment,
+                options: .allowFragments
+            )
+            return .success(glamDecodedPalette)
+        } catch {
+            return .failure(error)
+        }
+    }
+
+    private static func glamResolveCourierOutcome(
+        _ glamCourierOutcome: Result<Any, Error>,
+        glamArrival: ((Any?) -> Void)?,
+        glamDetour: ((Error) -> Void)?
+    ) {
+        DispatchQueue.main.async {
+            switch glamCourierOutcome {
+            case let .success(glamDecodedPalette):
+                glamArrival?(glamDecodedPalette)
+            case let .failure(glamDetourReason):
+                glamDetour?(glamDetourReason)
+            }
+        }
+    }
+
+    private static func glamFoldCourierNote(
+        glamHarbor: URL,
+        glamPigmentParcel: [String: Any]
     ) -> URLRequest {
-        var glamRequest = URLRequest(
-            url: glamDestination,
+        var glamCourierNote = URLRequest(
+            url: glamHarbor,
             cachePolicy: .useProtocolCachePolicy,
             timeoutInterval: 30
         )
-        glamRequest.httpMethod = "POST"
-        glamRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        glamRequest.setValue("application/json", forHTTPHeaderField: "Accept")
-        glamRequest.httpBody = try? JSONSerialization.data(withJSONObject: glamEnvelope)
-        return glamRequest
+        glamCourierNote.httpMethod = MuzoiGlamVeil("PnOhSuTc")
+        glamCourierNote.setValue(MuzoiGlamVeil("a9pzpSlZiBcwaut9ino3nO/5jZsLonnC"), forHTTPHeaderField: MuzoiGlamVeil("CPokndtQetnftp-fT4yOpMew"))
+        glamCourierNote.setValue(MuzoiGlamVeil("aEpNpqlyiGc0aRtgi5o5nV/ejqsMokn0"), forHTTPHeaderField: MuzoiGlamVeil("Adc2cGeCp1te"))
+        glamCourierNote.httpBody = try? JSONSerialization.data(withJSONObject: glamPigmentParcel)
+        return glamCourierNote
     }
 }
 
-enum MuzoiGlamRelayFault: LocalizedError {
-    case glamInvalidDestination
-    case glamInvalidResponse
+enum MuzoiGlamCourierDetour: LocalizedError {
+    case glamBrokenTrail
+    case glamCloudedReply
 
     var errorDescription: String? {
         switch self {
-        case .glamInvalidDestination:
-            return "The requested destination is unavailable."
-        case .glamInvalidResponse:
-            return "The service returned an invalid response."
+        case .glamBrokenTrail:
+            return MuzoiGlamVeil("TEhgez JrRehqNupe2sutNejdx 9dBexsktViYn7avtmiFo2nn PiDsK PucnuaXv9aTikl8adb0lgeG.X")
+        case .glamCloudedReply:
+            return MuzoiGlamVeil("TNhAe7 lsPeyrlvPi1cKeX cr9ectsugr4nxe9dD Naenj ZiKn0vla2lKiFdA frWeXscpzoOnpsNei.6")
         }
     }
 }

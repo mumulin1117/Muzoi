@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions glamLaunchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         let muzoiWindow = UIWindow(frame: UIScreen.main.bounds)
-        if MuzoiGlamSessionStore.glamShared.glamIsSignedIn {
+        if MuzoiGlamIdentityLoom.glamShared.glamHasEntry {
             muzoiWindow.rootViewController = MuzoiGlamMainTabController()
         } else {
             muzoiWindow.rootViewController = MuzoiGlamAuthEntryController()
@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func glamShowAuthCanvas() {
         guard let window else { return }
-        MuzoiGlamSessionStore.glamShared.glamSignOut()
+        MuzoiGlamIdentityLoom.glamShared.glamSealEntry()
         UIView.transition(
             with: window,
             duration: 0.3,

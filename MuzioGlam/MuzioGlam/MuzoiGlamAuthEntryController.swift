@@ -16,7 +16,7 @@ final class MuzoiGlamRadianceControl: UIButton {
     }
 
     required init?(coder glamCoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError(MuzoiGlamVeil("iqnwizto(wc4o7dZemr2:S)1 OhZaBsa tnjoItH ibceEe2nC Qifm0pQljeHm9eEnFtHexdz"))
     }
 
     override func layoutSubviews() {
@@ -71,7 +71,7 @@ final class MuzoiGlamFieldShell: UIView {
     }
 
     required init?(coder glamCoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError(MuzoiGlamVeil("idnhistf(ucpoEdVe6rk:8)D 2hZalsb 7npoKtt nb2eUeOnD FiPmupkl1eom5eOnitOeCdc"))
     }
 }
 
@@ -84,12 +84,12 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
     private let glamHeadline = UILabel()
     private let glamEmailShell = MuzoiGlamFieldShell(
         glamAsset: "MuzoiGlamEmailGlyph",
-        glamHint: "Enter your email",
+        glamHint: MuzoiGlamVeil("E6nztFebrJ Ly1oeuArH He0mxaYiNl9"),
         glamSecure: false
     )
     private let glamSecretShell = MuzoiGlamFieldShell(
         glamAsset: "MuzoiGlamSecretGlyph",
-        glamHint: "Enter your password",
+        glamHint: MuzoiGlamVeil("Ehnwt8eYrf 8y3oyu3rS QpMafsdsRw5oKrKdQ"),
         glamSecure: true
     )
     private let glamProceedControl = MuzoiGlamRadianceControl(type: .custom)
@@ -105,18 +105,18 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        glamBuildBackdrop()
-        glamBuildCanvas()
-        glamBindActions()
+        glamBlendWelcomeAura()
+        glamStageWelcomeVanity()
+        glamWireVanityGestures()
         glamObserveKeyboard()
-        glamRefreshConsentControl()
+        glamPolishConsentSeal()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         guard !glamDidOfferInitialEULA else { return }
         glamDidOfferInitialEULA = true
-        if !MuzoiGlamSessionStore.glamShared.glamHasAcceptedEULA {
+        if !MuzoiGlamIdentityLoom.glamShared.glamAcceptedCovenant {
             glamPresentAgreement()
         }
     }
@@ -131,7 +131,7 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         NotificationCenter.default.removeObserver(self)
     }
 
-    private func glamBuildBackdrop() {
+    private func glamBlendWelcomeAura() {
         view.backgroundColor = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
         glamBackdrop.colors = [
             UIColor(red: 31 / 255, green: 7 / 255, blue: 24 / 255, alpha: 1).cgColor,
@@ -153,7 +153,7 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         view.layer.insertSublayer(glamUpperAura, above: glamBackdrop)
     }
 
-    private func glamBuildCanvas() {
+    private func glamStageWelcomeVanity() {
         glamCanvas.translatesAutoresizingMaskIntoConstraints = false
         glamCanvas.keyboardDismissMode = .interactive
         glamCanvas.alwaysBounceVertical = true
@@ -180,7 +180,7 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         }
 
         var glamEULAStyle = UIButton.Configuration.gray()
-        glamEULAStyle.title = "EULA"
+        glamEULAStyle.title = MuzoiGlamVeil("EmUlL1AB")
         glamEULAStyle.baseForegroundColor = .white
         glamEULAStyle.baseBackgroundColor = UIColor.white.withAlphaComponent(0.13)
         glamEULAStyle.cornerStyle = .capsule
@@ -189,7 +189,7 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         glamEULAControl.layer.borderColor = UIColor(red: 239 / 255, green: 151 / 255, blue: 229 / 255, alpha: 0.8).cgColor
         glamEULAControl.layer.cornerRadius = 18
 
-        glamHeadline.text = "Welcome Login"
+        glamHeadline.text = MuzoiGlamVeil("WLeNlHcIo5m9eD oLho9g1iWnq")
         glamHeadline.textColor = .white
         glamHeadline.font = .systemFont(ofSize: 30, weight: .heavy)
         glamHeadline.adjustsFontSizeToFitWidth = true
@@ -205,16 +205,16 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         glamSecretShell.glamField.returnKeyType = .go
         glamSecretShell.glamField.delegate = self
 
-        glamProceedControl.setTitle("Login", for: .normal)
+        glamProceedControl.setTitle(MuzoiGlamVeil("LcoCgGiZnz"), for: .normal)
         glamProceedControl.setTitleColor(UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1), for: .normal)
         glamProceedControl.titleLabel?.font = .systemFont(ofSize: 18, weight: .heavy)
-        glamProceedControl.accessibilityHint = "Signs in or creates an account when the email is new."
+        glamProceedControl.accessibilityHint = MuzoiGlamVeil("S5iwgEnZsr NicnM 6oYrb KcbrPesa4tveJs6 aagnK 7aCcNcCo0ufnRtT 9w1hZeYnO wtOhPe3 yekmMaCiQl3 DiusW GngeCwo.0")
 
         glamSpinner.translatesAutoresizingMaskIntoConstraints = false
         glamSpinner.color = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
         glamProceedControl.addSubview(glamSpinner)
 
-        glamCreationNote.text = "If the account doesn’t exist, we’ll create one for you."
+        glamCreationNote.text = MuzoiGlamVeil("IEfi 9tkhYei 4aBcJc0oRuhn8t7 IdZoaeisGnn’jtM Se9xhiQsWtK,h DwheN’4lwlY LcQrcetaTtCeY joan5e2 RfYodrI cyUoBu5.r")
         glamCreationNote.textColor = UIColor.white.withAlphaComponent(0.62)
         glamCreationNote.font = .systemFont(ofSize: 12, weight: .medium)
         glamCreationNote.textAlignment = .center
@@ -225,16 +225,16 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         glamFaultNote.textAlignment = .center
         glamFaultNote.numberOfLines = 0
 
-        glamConsentPrefix.text = "I agree to the"
-        glamConsentJoiner.text = "and"
+        glamConsentPrefix.text = MuzoiGlamVeil("Iu Aa7gBrmeVe2 UtIop 9tDhQex")
+        glamConsentJoiner.text = MuzoiGlamVeil("aOnBd2")
         [glamConsentPrefix, glamConsentJoiner].forEach {
             $0.textColor = UIColor.white.withAlphaComponent(0.62)
             $0.font = .systemFont(ofSize: 12, weight: .semibold)
         }
-        glamStyleLegalControl(glamTermsControl, glamTitle: "Terms")
-        glamStyleLegalControl(glamPrivacyControl, glamTitle: "Privacy Policy")
+        glamTintCovenantLink(glamTermsControl, glamTitle: MuzoiGlamVeil("ToehrYmzsq"))
+        glamTintCovenantLink(glamPrivacyControl, glamTitle: MuzoiGlamVeil("PBrLi8v1aTczyE BPtozlkiJcpyE"))
         glamConsentControl.tintColor = UIColor(red: 70 / 255, green: 244 / 255, blue: 195 / 255, alpha: 1)
-        glamConsentControl.accessibilityLabel = "Accept legal agreements"
+        glamConsentControl.accessibilityLabel = MuzoiGlamVeil("Aqc4cAekpwtQ alxe7gcaAlf aa6g6rLezepmDetnMtCsc")
 
         NSLayoutConstraint.activate([
             glamCanvas.topAnchor.constraint(equalTo: view.topAnchor),
@@ -303,7 +303,7 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         glamCanvas.addGestureRecognizer(glamDismissTap)
     }
 
-    private func glamStyleLegalControl(_ glamControl: UIButton, glamTitle: String) {
+    private func glamTintCovenantLink(_ glamControl: UIButton, glamTitle: String) {
         var glamStyle = UIButton.Configuration.plain()
         glamStyle.title = glamTitle
         glamStyle.baseForegroundColor = UIColor(red: 70 / 255, green: 244 / 255, blue: 195 / 255, alpha: 1)
@@ -312,7 +312,7 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         glamControl.titleLabel?.font = .systemFont(ofSize: 12, weight: .bold)
     }
 
-    private func glamBindActions() {
+    private func glamWireVanityGestures() {
         glamEULAControl.addTarget(self, action: #selector(glamOpenAgreement), for: .touchUpInside)
         glamProceedControl.addTarget(self, action: #selector(glamSubmitCredentials), for: .touchUpInside)
         glamConsentControl.addTarget(self, action: #selector(glamToggleConsent), for: .touchUpInside)
@@ -343,31 +343,31 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         let glamSecret = glamSecretShell.glamField.text ?? ""
 
         guard !glamEmail.isEmpty else {
-            glamShowFault("Please enter your email.", glamFocus: glamEmailShell.glamField)
+            glamShowFault(MuzoiGlamVeil("PSlReSansqer 5elnat0eVrE rytoGu1rH 8ezmUa5iDlE.u"), glamFocus: glamEmailShell.glamField)
             return
         }
-        guard glamEmail.contains("@"), glamEmail.contains(".") else {
-            glamShowFault("Please enter a valid email address.", glamFocus: glamEmailShell.glamField)
+        guard glamEmail.contains(MuzoiGlamVeil("@I")), glamEmail.contains(MuzoiGlamVeil(".A")) else {
+            glamShowFault(MuzoiGlamVeil("PPlyena1sKe8 neEnSt1emru Yas hvHaHlQivdh cekm7aii1lH maedmdlrjeCs5sE.Y"), glamFocus: glamEmailShell.glamField)
             return
         }
         guard !glamSecret.isEmpty else {
-            glamShowFault("Please enter your password.", glamFocus: glamSecretShell.glamField)
+            glamShowFault(MuzoiGlamVeil("PelveIarsReA uein8treNr8 VyloXuKrD Ep3aAshsWw7oQr7di.F"), glamFocus: glamSecretShell.glamField)
             return
         }
         guard glamSecret.count >= 6 else {
-            glamShowFault("Your password must contain at least 6 characters.", glamFocus: glamSecretShell.glamField)
+            glamShowFault(MuzoiGlamVeil("YUo0uxrC 1pqaOsqspw9oarHdZ kmTuusJt8 oc3oRnBt7aPi8n1 jaXtm tlReOaos9tP U62 Hcgh8arrAalc7tqeyr4sW.h"), glamFocus: glamSecretShell.glamField)
             return
         }
-        guard MuzoiGlamSessionStore.glamShared.glamHasAcceptedEULA else {
-            glamShowFault("Please review and accept the legal agreements.", glamFocus: nil)
+        guard MuzoiGlamIdentityLoom.glamShared.glamAcceptedCovenant else {
+            glamShowFault(MuzoiGlamVeil("PblteLauszes frwe6v1itezw0 jacnsdr Malckc4eapbto ktghOed 0l8eUgratlZ na9gWrMeveYmzeEnPtHsM.k"), glamFocus: nil)
             glamPresentAgreement()
             return
         }
 
         glamSetSubmitting(true)
-        MuzoiGlamSessionStore.glamShared.glamAuthenticate(
-            glamEmail: glamEmail,
-            glamSecret: glamSecret
+        MuzoiGlamIdentityLoom.glamShared.glamUnlock(
+            glamMailbox: glamEmail,
+            glamPassphrase: glamSecret
         ) { [weak self] glamResult in
             guard let self else { return }
             self.glamSetSubmitting(false)
@@ -385,7 +385,7 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         glamProceedControl.isEnabled = !glamSubmitting
         glamEmailShell.glamField.isEnabled = !glamSubmitting
         glamSecretShell.glamField.isEnabled = !glamSubmitting
-        glamProceedControl.setTitle(glamSubmitting ? nil : "Login", for: .normal)
+        glamProceedControl.setTitle(glamSubmitting ? nil : MuzoiGlamVeil("Lboag8iSnz"), for: .normal)
         glamSubmitting ? glamSpinner.startAnimating() : glamSpinner.stopAnimating()
         glamProceedControl.alpha = glamSubmitting ? 0.82 : 1
     }
@@ -401,19 +401,19 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
     }
 
     @objc private func glamToggleConsent() {
-        let glamNextValue = !MuzoiGlamSessionStore.glamShared.glamHasAcceptedEULA
-        MuzoiGlamSessionStore.glamShared.glamHasAcceptedEULA = glamNextValue
-        glamRefreshConsentControl()
+        let glamNextValue = !MuzoiGlamIdentityLoom.glamShared.glamAcceptedCovenant
+        MuzoiGlamIdentityLoom.glamShared.glamAcceptedCovenant = glamNextValue
+        glamPolishConsentSeal()
         if !glamNextValue {
             glamFaultNote.text = nil
         }
     }
 
-    private func glamRefreshConsentControl() {
-        let glamAccepted = MuzoiGlamSessionStore.glamShared.glamHasAcceptedEULA
-        let glamSymbol = glamAccepted ? "checkmark.circle.fill" : "circle"
+    private func glamPolishConsentSeal() {
+        let glamAccepted = MuzoiGlamIdentityLoom.glamShared.glamAcceptedCovenant
+        let glamSymbol = glamAccepted ? MuzoiGlamVeil("cShHeecik9maaSr2kU.Ac6igrTcHlkeZ.YfSiTlNlN") : MuzoiGlamVeil("c9inrbcml4ey")
         glamConsentControl.setImage(UIImage(systemName: glamSymbol), for: .normal)
-        glamConsentControl.accessibilityValue = glamAccepted ? "Accepted" : "Not accepted"
+        glamConsentControl.accessibilityValue = glamAccepted ? MuzoiGlamVeil("AGcJcWeepYtveGdl") : MuzoiGlamVeil("N5oft9 haMcyc5e0pptue8d9")
     }
 
     @objc private func glamOpenAgreement() {
@@ -425,19 +425,19 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
     }
 
     @objc private func glamOpenTerms() {
-        glamPresentLegalDocument(glamKind: .glamTerms)
+        glamPresentLegalDocument(glamKind: .glamTermsCanvas)
     }
 
     @objc private func glamOpenPrivacy() {
-        glamPresentLegalDocument(glamKind: .glamPrivacy)
+        glamPresentLegalDocument(glamKind: .glamPrivacyCanvas)
     }
 
     private func glamPresentLegalDocument(glamKind: MuzoiGlamLegalDocumentKind) {
         guard presentedViewController == nil else { return }
-        let glamAgreement = MuzoiGlamLegalAgreementController(glamKind: glamKind)
+        let glamAgreement = MuzoiGlamLegalUserCheckController(glamKind: glamKind)
         if glamKind == .glamEULA {
             glamAgreement.glamDidAccept = { [weak self] in
-                self?.glamRefreshConsentControl()
+                self?.glamPolishConsentSeal()
                 self?.glamFaultNote.text = nil
             }
         }

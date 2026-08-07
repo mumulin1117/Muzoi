@@ -10,23 +10,23 @@ struct MuzoiGlamMineProfile {
 }
 
 final class MuzoiGlamMineRepository {
-    private let glamProfileEndpoint = "/agchuvaniutezz/tonktolmo"
+    private let glamProfileEndpoint = MuzoiGlamVeil("/baJgocKhLuJv8aNncieuZt0e5zyz4/ktTo9nBkRthoblUm7om")
 
     func glamFetchProfile(glamYield: @escaping (MuzoiGlamMineProfile) -> Void) {
-        let glamStore = MuzoiGlamSessionStore.glamShared
-        guard let glamIdentity = glamStore.glamCurrentIdentity, !glamIdentity.isEmpty else {
+        let glamStore = MuzoiGlamIdentityLoom.glamShared
+        guard let glamIdentity = glamStore.glamCurrentSignature, !glamIdentity.isEmpty else {
             glamYield(glamFallbackProfile())
             return
         }
 
-        MuzoiGlamSignalRelay.glamTransmit(
-            glamEndpoint: glamProfileEndpoint,
-            glamEnvelope: ["makeupMoodDrop": glamIdentity],
-            glamSuccess: { [weak self] glamObject in
+        MuzoiGlamPigmentCourier.glamCarryPalette(
+            glamTrail: glamProfileEndpoint,
+            glamPigmentParcel: [MuzoiGlamVeil("miaAkKeVuZpGMtoUoCdXDjraolp1"): glamIdentity],
+            glamArrival: { [weak self] glamObject in
                 guard let self else { return }
                 glamYield(self.glamDecodeProfile(glamObject) ?? self.glamFallbackProfile())
             },
-            glamFailure: { [weak self] _ in
+            glamDetour: { [weak self] _ in
                 guard let self else { return }
                 glamYield(self.glamFallbackProfile())
             }
@@ -35,31 +35,32 @@ final class MuzoiGlamMineRepository {
 
     private func glamDecodeProfile(_ glamObject: Any?) -> MuzoiGlamMineProfile? {
         guard
-            let glamEnvelope = glamObject as? [String: Any],
-            (glamEnvelope["code"] as? NSNumber)?.intValue == 200000,
-            let glamData = glamEnvelope["data"] as? [String: Any],
-            let glamIdentity = glamTextValue(glamData["eyeshadowGalaxySwirl"])
+            let glamPigmentParcel = glamObject as? [String: Any],
+            (glamPigmentParcel[MuzoiGlamVeil("cVoWdiet")] as? NSNumber)?.intValue == 200000,
+            let glamData = glamPigmentParcel[MuzoiGlamVeil("d2aptjar")] as? [String: Any],
+            let glamIdentity = glamTextValue(glamData[MuzoiGlamVeil("eByFetsohEamdSoqwqGQablaaBxny7SxwDiYrwl5")])
         else { return nil }
 
         return MuzoiGlamMineProfile(
             glamIdentity: glamIdentity,
-            glamDisplayName: glamTextValue(glamData["makeupArtSpiral"]) ?? "Muzoi",
-            glamBrief: glamTextValue(glamData["videoMakeupStory"]) ?? "Creating a new glam world, one look at a time.",
-            glamPortraitAddress: glamTextValue(glamData["shadingCraftFocus"]),
-            glamFollowingCount: (glamData["lookCreationHive"] as? NSNumber)?.intValue ?? 0,
-            glamFansCount: (glamData["glamourGrungeFlow"] as? NSNumber)?.intValue ?? 0
+            glamDisplayName: glamTextValue(glamData[MuzoiGlamVeil("m7aVkEeguxpRAmrNtqSNpGi4rAaUli")]) ?? MuzoiGlamVeil("M1uVzEo8ij"),
+            glamBrief: glamTextValue(glamData[MuzoiGlamVeil("vBiqd4eQo4MVa8kdeauipgSrtrouryyQ")]) ?? MuzoiGlamVeil("Ckrxe1aytFiNnAgT gaq Pncenwg 0gCldajmx swgoJrPl2d6,h ioZnOe0 1l5oPoLky Yakt8 naA UtgiDmde4.A"),
+            glamPortraitAddress: glamTextValue(glamData[MuzoiGlamVeil("s7hYaZdPiYnqgeCjrJaSfTtsF3ojcJuPsc")]),
+            glamFollowingCount: (glamData[MuzoiGlamVeil("l7ovoHkqCJrReyaotyiIo8noHOiUvvea")] as? NSNumber)?.intValue ?? 0,
+            glamFansCount: (glamData[MuzoiGlamVeil("gclXavmfoEuprtG1rUuRnkgqezFBlaoqwI")] as? NSNumber)?.intValue ?? 0
         )
     }
 
     private func glamFallbackProfile() -> MuzoiGlamMineProfile {
-        let glamStore = MuzoiGlamSessionStore.glamShared
-        let glamEmail = glamStore.glamCurrentEmail ?? "muzoi@gmail.com"
-        let glamEmailStem = glamEmail.split(separator: "@").first.map(String.init) ?? "Muzoi"
+        let glamStore = MuzoiGlamIdentityLoom.glamShared
+        let glamEmail = glamStore.glamCurrentMailbox ?? MuzoiGlamVeil("miu9zSosiA@mgnmRaoinl3.AcRoNmq")
+        let glamEmailStem = glamEmail.range(of: MuzoiGlamVeil("@P"))
+            .map { String(glamEmail[..<$0.lowerBound]) } ?? MuzoiGlamVeil("MJuFzWo9i6")
         let glamName = glamEmailStem.prefix(1).uppercased() + glamEmailStem.dropFirst()
         return MuzoiGlamMineProfile(
-            glamIdentity: glamStore.glamCurrentIdentity ?? "muzoi-local-profile",
+            glamIdentity: glamStore.glamCurrentSignature ?? MuzoiGlamVeil("myuuzEoai3-Zl8oDcQaLlF-0p8rFosfviElcee"),
             glamDisplayName: glamName,
-            glamBrief: "Creating a new glam world, one look at a time.",
+            glamBrief: MuzoiGlamVeil("Carde8artoiwnJg9 jaD KnKeCwF cgllYaVmU 7wgopr8l3dk,x RoxnSel alWoMo2kt 0aytD KaQ St1iLmgeO.I"),
             glamPortraitAddress: nil,
             glamFollowingCount: 0,
             glamFansCount: 0
@@ -83,11 +84,11 @@ final class MuzoiGlamVaultControl: UIControl {
 
     override init(frame glamFrame: CGRect) {
         super.init(frame: glamFrame)
-        glamBuildControl()
+        glamPolishVaultBalanceCharm()
     }
 
     required init?(coder glamCoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError(MuzoiGlamVeil("ikn7irtK(Ccqo3dMeErF:H)y zhcarsn HnaoTtB GbleHeYn2 biEmbpLlneDmoeEnbt0eVdr"))
     }
 
     override var isHighlighted: Bool {
@@ -99,7 +100,7 @@ final class MuzoiGlamVaultControl: UIControl {
         }
     }
 
-    private func glamBuildControl() {
+    private func glamPolishVaultBalanceCharm() {
         clipsToBounds = true
         layer.cornerRadius = 20
         glamBackdrop.translatesAutoresizingMaskIntoConstraints = false
@@ -107,12 +108,12 @@ final class MuzoiGlamVaultControl: UIControl {
         glamBackdrop.isUserInteractionEnabled = false
 
         glamCaption.translatesAutoresizingMaskIntoConstraints = false
-        glamCaption.text = "My balance"
+        glamCaption.text = MuzoiGlamVeil("MZys 5b3aoluaHnccBeT")
         glamCaption.textColor = .white
         glamCaption.font = .systemFont(ofSize: 20, weight: .medium)
 
         glamEntryHint.translatesAutoresizingMaskIntoConstraints = false
-        glamEntryHint.text = "Open >"
+        glamEntryHint.text = MuzoiGlamVeil("Ovp6eMnf 3>U")
         glamEntryHint.textColor = .white
         glamEntryHint.font = .systemFont(ofSize: 16, weight: .bold)
         glamEntryHint.textAlignment = .center
@@ -151,11 +152,11 @@ final class MuzoiGlamMineRowControl: UIControl {
         glamTitle.text = glamText
         glamGlyph.image = UIImage(systemName: glamSymbol)
         glamGlyph.tintColor = glamTint
-        glamBuildControl()
+        glamTintMineActionRibbon()
     }
 
     required init?(coder glamCoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError(MuzoiGlamVeil("imnJietR(mcko6dWedrI:d)G Vhfa9se KnDoFtn cbde4eMnS Diym1pslfevmBekn2t3ehdz"))
     }
 
     override var isHighlighted: Bool {
@@ -166,7 +167,7 @@ final class MuzoiGlamMineRowControl: UIControl {
         }
     }
 
-    private func glamBuildControl() {
+    private func glamTintMineActionRibbon() {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = UIColor(red: 0.11, green: 0.12, blue: 0.18, alpha: 1)
         layer.cornerRadius = 16
@@ -206,7 +207,7 @@ final class MuzoiGlamMineRowControl: UIControl {
     }
 }
 
-final class MuzoiGlamMineController: UIViewController {
+final class MuzoiGlamMyCenterController: UIViewController {
     private static let glamPortraitPlaceholder = UIImage(
         systemName: "person.crop.circle.fill",
         withConfiguration: UIImage.SymbolConfiguration(pointSize: 62, weight: .regular)
@@ -234,7 +235,7 @@ final class MuzoiGlamMineController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        glamBuildCanvas()
+        glamStageMineVanity()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -253,7 +254,7 @@ final class MuzoiGlamMineController: UIViewController {
         glamPortraitTask?.cancel()
     }
 
-    private func glamBuildCanvas() {
+    private func glamStageMineVanity() {
         view.backgroundColor = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
         glamRootGradient.colors = [
             UIColor(red: 0.62, green: 0, blue: 0.49, alpha: 1).cgColor,
@@ -281,7 +282,7 @@ final class MuzoiGlamMineController: UIViewController {
         glamContent.addSubview(glamHeaderBackdrop)
 
         glamTitle.translatesAutoresizingMaskIntoConstraints = false
-        glamTitle.text = "Mine"
+        glamTitle.text = MuzoiGlamVeil("MxienPeB")
         glamTitle.textColor = .white
         glamTitle.font = .systemFont(ofSize: 31, weight: .heavy)
 
@@ -302,8 +303,8 @@ final class MuzoiGlamMineController: UIViewController {
         glamBrief.numberOfLines = 1
         glamBrief.lineBreakMode = .byTruncatingTail
 
-        glamConfigureMetric(glamFollowingCaption, glamText: "Follow")
-        glamConfigureMetric(glamFansCaption, glamText: "Fans")
+        glamDustProfileMetric(glamFollowingCaption, glamText: MuzoiGlamVeil("F9oklilsoqwh"))
+        glamDustProfileMetric(glamFansCaption, glamText: MuzoiGlamVeil("Fsa1nNsz"))
         [glamFollowingValue, glamFansValue].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             $0.textColor = .white
@@ -311,24 +312,24 @@ final class MuzoiGlamMineController: UIViewController {
         }
 
         glamVaultControl.translatesAutoresizingMaskIntoConstraints = false
-        glamVaultControl.accessibilityLabel = "Open my balance"
+        glamVaultControl.accessibilityLabel = MuzoiGlamVeil("OspAe9nf zmUyo DbbaslXaUnmcle4")
         glamVaultControl.addTarget(self, action: #selector(glamOpenVault), for: .touchUpInside)
 
         let glamInboxRow = MuzoiGlamMineRowControl(
-            glamText: "Message",
-            glamSymbol: "bubble.left.and.bubble.right",
+            glamText: MuzoiGlamVeil("MYevs5sMaggvet"),
+            glamSymbol: MuzoiGlamVeil("bZutbGbfluez.5l8eLfEtD.fa9nYd3.jbNuEblb1lEeF.NroiOgmhits"),
             glamTint: UIColor(red: 1, green: 0.82, blue: 0.22, alpha: 1)
         )
         glamInboxRow.addTarget(self, action: #selector(glamOpenInbox), for: .touchUpInside)
         let glamEditRow = MuzoiGlamMineRowControl(
-            glamText: "Edit profile",
-            glamSymbol: "square.and.pencil",
+            glamText: MuzoiGlamVeil("E5dKittJ ZpZrJosfOidlreV"),
+            glamSymbol: MuzoiGlamVeil("sBq7uLaCrFes.Jain6dI.1pFe0n3c7ipld"),
             glamTint: UIColor(red: 0.29, green: 0.39, blue: 1, alpha: 1)
         )
         glamEditRow.addTarget(self, action: #selector(glamOpenEditor), for: .touchUpInside)
         let glamSettingsRow = MuzoiGlamMineRowControl(
-            glamText: "Settings",
-            glamSymbol: "gearshape",
+            glamText: MuzoiGlamVeil("SBe9tQtNiSnUgssA"),
+            glamSymbol: MuzoiGlamVeil("gEenazrVsShZaapNel"),
             glamTint: UIColor(red: 0.94, green: 0.13, blue: 0.91, alpha: 1)
         )
         glamSettingsRow.addTarget(self, action: #selector(glamOpenSettings), for: .touchUpInside)
@@ -404,7 +405,7 @@ final class MuzoiGlamMineController: UIViewController {
         ])
     }
 
-    private func glamConfigureMetric(_ glamLabel: UILabel, glamText: String) {
+    private func glamDustProfileMetric(_ glamLabel: UILabel, glamText: String) {
         glamLabel.translatesAutoresizingMaskIntoConstraints = false
         glamLabel.text = glamText
         glamLabel.textColor = UIColor.white.withAlphaComponent(0.52)
@@ -427,7 +428,7 @@ final class MuzoiGlamMineController: UIViewController {
     private func glamCompactCount(_ glamCount: Int) -> String {
         guard glamCount >= 1_000 else { return "\(glamCount)" }
         let glamValue = Double(glamCount) / 1_000
-        return String(format: glamValue >= 100 ? "%.0fk" : "%.1fk", glamValue)
+        return String(format: glamValue >= 100 ? MuzoiGlamVeil("%H.50pfPkG") : MuzoiGlamVeil("%Z.71VfDkl"), glamValue)
     }
 
     private func glamLoadPortrait(_ glamAddress: String?) {
@@ -451,17 +452,17 @@ final class MuzoiGlamMineController: UIViewController {
         glamPortraitTask?.resume()
     }
 
-    private func glamOpenPortal(_ glamRoute: MuzoiGlamPortalRoute) {
+    private func glamOpenPortal(_ glamRoute: MuzoiGlamScenePassage) {
         UISelectionFeedbackGenerator().selectionChanged()
-        let glamAddress = glamRoute.glamComposeAddress(glamQuery: "")
+        let glamAddress = glamRoute.glamTraceAddress(glamTrailMark: "")
         navigationController?.pushViewController(
-            MuzoiGlamPortalController(glamEntryAddress: glamAddress),
+            MuzoiGlamPrismPortalController(glamInitialTrail: glamAddress),
             animated: true
         )
     }
 
-    @objc private func glamOpenInbox() { glamOpenPortal(.glamProfileEditor) }
-    @objc private func glamOpenVault() { glamOpenPortal(.glamRadianceReserve) }
-    @objc private func glamOpenEditor() { glamOpenPortal(.glamMuseEditor) }
-    @objc private func glamOpenSettings() { glamOpenPortal(.glamSettings) }
+    @objc private func glamOpenInbox() { glamOpenPortal(.glamInboxCanvas) }
+    @objc private func glamOpenVault() { glamOpenPortal(.glamRadianceCanvas) }
+    @objc private func glamOpenEditor() { glamOpenPortal(.glamEditCanvas) }
+    @objc private func glamOpenSettings() { glamOpenPortal(.glamSettingsCanvas) }
 }

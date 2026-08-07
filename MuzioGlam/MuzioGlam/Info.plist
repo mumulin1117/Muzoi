@@ -7,5 +7,11 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Capture your glam looks and creative makeup moments.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Add voice to your makeup stories and beauty chats.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Choose photos to share your makeup artistry.</string>
 </dict>
 </plist>

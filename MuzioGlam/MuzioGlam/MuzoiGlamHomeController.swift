@@ -19,8 +19,8 @@ struct MuzoiGlamMuseProfile {
 }
 
 final class MuzoiGlamHomeRepository {
-    private let glamDynamicEndpoint = "/qpsvdfrsz/vswqsa"
-    private let glamMuseEndpoint = "/wmhuptqcjaofeapz/tgcsx"
+    private let glamDynamicEndpoint = MuzoiGlamVeil("/fqipCs9vZdLffrlsPz0/hvpsIw4qAsSaG")
+    private let glamMuseEndpoint = MuzoiGlamVeil("/cw1mqh8udpatWqgcFjhaKokfSe1app9zY/3tigOcqsTxt")
 
     func glamFetchHome(
         glamYield: @escaping ([MuzoiGlamEssenceFeature], [MuzoiGlamMuseProfile]) -> Void
@@ -29,39 +29,39 @@ final class MuzoiGlamHomeRepository {
         var glamFeatureResults = glamFallbackFeatures()
         var glamMuseResults = glamFallbackProfiles()
         let glamAromaEnvelope: [String: Any] = [
-            "editorialGlow": "93219714",
-            "blendingSymphony": 10,
-            "pigmentBliss": 2,
-            "makeupStorytelling": 1,
-            "neonEyeshadow": 4
+            MuzoiGlamVeil("eAd9ictMosrNivaOlTGwlsoWwG"): MuzoiGlamVeil("9V3W2M1P9Q7c1R4P"),
+            MuzoiGlamVeil("b3lKeyngdMilnvgFSKymmRpphvoknXye"): 10,
+            MuzoiGlamVeil("pHi0g9mkeHnjt3BGl6i0sFsd"): 2,
+            MuzoiGlamVeil("mSaBkJeeuLpPS8tiomrSyDtJealDlZi3nBgK"): 1,
+            MuzoiGlamVeil("ndeAoyngE6yyeqsph4aBdCoGwK"): 5
         ]
 
         glamArrivalGroup.enter()
-        MuzoiGlamSignalRelay.glamTransmit(
-            glamEndpoint: glamDynamicEndpoint,
-            glamEnvelope: glamAromaEnvelope,
-            glamSuccess: { [weak self] glamObject in
+        MuzoiGlamPigmentCourier.glamCarryPalette(
+            glamTrail: glamDynamicEndpoint,
+            glamPigmentParcel: glamAromaEnvelope,
+            glamArrival: { [weak self] glamObject in
                 defer { glamArrivalGroup.leave() }
                 guard let self else { return }
                 let glamFeatures = self.glamDecodeAromaFeatures(glamObject)
                 if !glamFeatures.isEmpty { glamFeatureResults = glamFeatures }
             },
-            glamFailure: { _ in
+            glamDetour: { _ in
                 glamArrivalGroup.leave()
             }
         )
 
         glamArrivalGroup.enter()
-        MuzoiGlamSignalRelay.glamTransmit(
-            glamEndpoint: glamMuseEndpoint,
-            glamEnvelope: ["glamTransformation": "93219714"],
-            glamSuccess: { [weak self] glamObject in
+        MuzoiGlamPigmentCourier.glamCarryPalette(
+            glamTrail: glamMuseEndpoint,
+            glamPigmentParcel: [MuzoiGlamVeil("gDlkaWmHTtrBaSnRsJf9o4rxmhaCteixonnt"): MuzoiGlamVeil("9P3W2Y1Z9M7d1L4X")],
+            glamArrival: { [weak self] glamObject in
                 defer { glamArrivalGroup.leave() }
                 guard let self else { return }
                 let glamProfiles = self.glamDecodeMuseProfiles(glamObject)
                 if !glamProfiles.isEmpty { glamMuseResults = glamProfiles }
             },
-            glamFailure: { _ in
+            glamDetour: { _ in
                 glamArrivalGroup.leave()
             }
         )
@@ -73,23 +73,23 @@ final class MuzoiGlamHomeRepository {
 
     private func glamDecodeAromaFeatures(_ glamObject: Any?) -> [MuzoiGlamEssenceFeature] {
         guard
-            let glamEnvelope = glamObject as? [String: Any],
-            (glamEnvelope["code"] as? NSNumber)?.intValue == 200000,
-            let glamAromaRows = glamEnvelope["data"] as? [[String: Any]]
+            let glamPigmentParcel = glamObject as? [String: Any],
+            (glamPigmentParcel[MuzoiGlamVeil("c6o1drem")] as? NSNumber)?.intValue == 200000,
+            let glamAromaRows = glamPigmentParcel[MuzoiGlamVeil("dJapt4aY")] as? [[String: Any]]
         else { return [] }
 
         return glamAromaRows.compactMap { glamRow in
-            guard let glamIdentity = glamTextValue(glamRow["shimmerDetails"]) else { return nil }
-            let glamImageChoices = (glamRow["styleGlowInsight"] as? [String])
-                ?? (glamRow["paintedPersona"] as? [String])
+            guard let glamIdentity = glamTextValue(glamRow[MuzoiGlamVeil("sohSiWm1moe1rmD8emtEaoipldsk")]) else { return nil }
+            let glamImageChoices = (glamRow[MuzoiGlamVeil("sitiyAlGekGElsoTwWIOn4sIifgYhTtn")] as? [String])
+                ?? (glamRow[MuzoiGlamVeil("pRaXirn0tKeIdxPQeqrpsZolnTaG")] as? [String])
                 ?? []
-            let glamPraiseCount = glamRow["colorTheoryBeauty"] as? Int ?? 0
+            let glamPraiseCount = glamRow[MuzoiGlamVeil("csoTlCoSrDT5hpeBonrry0Bxe6aUuktuyr")] as? Int ?? 0
             return MuzoiGlamEssenceFeature(
                 glamIdentity: glamIdentity,
-                glamTitle: glamTextValue(glamRow["complexionControl"]) ?? "Aroma Inspiration",
-                glamSubtitle: glamAromaSummary(glamTextValue(glamRow["beautyStatement"])),
+                glamTitle: glamTextValue(glamRow[MuzoiGlamVeil("c6o6mrpnl4eXxbiJo1nGCNolnrtrrlo3ld")]) ?? MuzoiGlamVeil("ADr9opmJaM RIPnJsapKiZr7aatIiYoVn2"),
+                glamSubtitle: glamAromaSummary(glamTextValue(glamRow[MuzoiGlamVeil("bseBazuatpyvSNtFaOt9e2mbeonjtE")])),
                 glamAssetName: "MuzoiGlamEssence01",
-                glamPortraitAddress: glamImageChoices.first ?? (glamRow["creativityGlowup"] as? String),
+                glamPortraitAddress: glamImageChoices.first ?? (glamRow[MuzoiGlamVeil("cIrxefaPtmiwvWihtEyuGBldoMwau4pb")] as? String),
                 glamIsTrending: glamPraiseCount >= 30
             )
         }
@@ -103,54 +103,55 @@ final class MuzoiGlamHomeRepository {
 
     private func glamDecodeMuseProfiles(_ glamObject: Any?) -> [MuzoiGlamMuseProfile] {
         guard
-            let glamEnvelope = glamObject as? [String: Any],
-            (glamEnvelope["code"] as? NSNumber)?.intValue == 200000,
-            let glamMuseRows = glamEnvelope["data"] as? [[String: Any]]
+            let glamPigmentParcel = glamObject as? [String: Any],
+            (glamPigmentParcel[MuzoiGlamVeil("c9oLd3eJ")] as? NSNumber)?.intValue == 200000,
+            let glamMuseRows = glamPigmentParcel[MuzoiGlamVeil("dHaetSa1")] as? [[String: Any]]
         else { return [] }
 
         return glamMuseRows.compactMap { glamRow in
-            guard let glamIdentity = glamTextValue(glamRow["makeupAlchemy"]) else { return nil }
-            let glamFollowerCount = (glamRow["sparkleDetails"] as? NSNumber)?.intValue ?? 0
+            guard let glamIdentity = glamTextValue(glamRow[MuzoiGlamVeil("mBaPkfeNu4pdAGlncyhCedmvyH")]) else { return nil }
+            let glamFollowerCount = (glamRow[MuzoiGlamVeil("sOpZaArtkdlNezD5eJtBaHiWlfsF")] as? NSNumber)?.intValue ?? 0
             return MuzoiGlamMuseProfile(
                 glamIdentity: glamIdentity,
-                glamDisplayName: glamTextValue(glamRow["beautyExpressionism"]) ?? "Muzoi Muse",
-                glamAudienceText: "\(glamFollowerCount) followers",
+                glamDisplayName: glamTextValue(glamRow[MuzoiGlamVeil("bzeraWudtIyLE6xkpWrqe6s3sfipo6nZies8mt")]) ?? MuzoiGlamVeil("M9unz3oVi5 2Mau7sNea"),
+                glamAudienceText: "\(glamFollowerCount)" + MuzoiGlamVeil(" MfIoxlklAoUw6e6rCsx"),
                 glamAssetName: "MuzoiGlamMuse01",
-                glamPortraitAddress: glamRow["sfxMakeupMastery"] as? String,
-                glamIsNew: (glamRow["beautyNarrative"] as? NSNumber)?.intValue == 1
+                glamPortraitAddress: glamRow[MuzoiGlamVeil("sffnxJMfa2k3ebu6pNMRaUsDthe7rEyk")] as? String,
+                glamIsNew: (glamRow[MuzoiGlamVeil("bEeiaZu6tbyFN6abrprUavtTi9vueu")] as? NSNumber)?.intValue == 1
             )
         }
     }
 
     private func glamAromaSummary(_ glamText: String?) -> String {
-        guard let glamText, !glamText.isEmpty else { return "Discover this aromatic inspiration" }
-        let glamOpening = glamText.split(separator: ".", maxSplits: 1).first.map(String.init) ?? glamText
-        return glamOpening.replacingOccurrences(of: "Characteristics:", with: "")
+        guard let glamText, !glamText.isEmpty else { return MuzoiGlamVeil("D1iZsQc8ovvReWru Atlhmivsc 3a7rwoLmkaatpi9cJ Piun7sApWiEruaet4i9o8nA") }
+        let glamOpening = glamText.range(of: MuzoiGlamVeil(".l"))
+            .map { String(glamText[..<$0.lowerBound]) } ?? glamText
+        return glamOpening.replacingOccurrences(of: MuzoiGlamVeil("C3hGajreaccWtCeXr5i9sWtiiFcNsv:D"), with: "")
             .trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
     private func glamFallbackFeatures() -> [MuzoiGlamEssenceFeature] {
         [
             MuzoiGlamEssenceFeature(
-                glamIdentity: "703403108913221",
-                glamTitle: "Statement Eye Makeup",
-                glamSubtitle: "Bold color and precise detail",
+                glamIdentity: MuzoiGlamVeil("7K0y3y4J0c37160f8p9m1K3k2W2s1P"),
+                glamTitle: MuzoiGlamVeil("Sdt1aVt9e2mLePnntO sEUy1eY KMmaQkTeDuepp"),
+                glamSubtitle: MuzoiGlamVeil("BEo9lFdE tcmoPlro9rA sannUdG KpXrJekcKiSsfex EdreUtYagiElA"),
                 glamAssetName: "MuzoiGlamEssence01",
                 glamPortraitAddress: nil,
                 glamIsTrending: true
             ),
             MuzoiGlamEssenceFeature(
-                glamIdentity: "703403108921413",
-                glamTitle: "Natural Glow Highlighting",
-                glamSubtitle: "Soft, radiant definition",
+                glamIdentity: MuzoiGlamVeil("7i0c3F480T3s1Q088V9s2b134p1f3f"),
+                glamTitle: MuzoiGlamVeil("N1aetxuQrwaKlD LG1lDo8wp GHIi7glhUl5idgwhUt5iSnNg1"),
+                glamSubtitle: MuzoiGlamVeil("SgoTfEtC,z Nr2aydXiXaNnxtf 9dxeKfji9nAiRtji1oen4"),
                 glamAssetName: "MuzoiGlamEssence02",
                 glamPortraitAddress: nil,
                 glamIsTrending: true
             ),
             MuzoiGlamEssenceFeature(
-                glamIdentity: "703403108909125",
-                glamTitle: "Flawless Base Application",
-                glamSubtitle: "Smooth and polished complexion",
+                glamIdentity: MuzoiGlamVeil("7Y0q3g4z06391P0G849I0D9y142T5Z"),
+                glamTitle: MuzoiGlamVeil("FFlKa2whlGeMspsS 9BvaLsOed HAapVp8lliPcxaIt5iqoenH"),
+                glamSubtitle: MuzoiGlamVeil("SimHowoytOho wa1nSdq RpRoRlGiqsjhvecd6 RcNoDmLppleeUxGi0ownO"),
                 glamAssetName: "MuzoiGlamEssence03",
                 glamPortraitAddress: nil,
                 glamIsTrending: false
@@ -161,25 +162,25 @@ final class MuzoiGlamHomeRepository {
     private func glamFallbackProfiles() -> [MuzoiGlamMuseProfile] {
         [
             MuzoiGlamMuseProfile(
-                glamIdentity: "muse-dora",
-                glamDisplayName: "Dora",
-                glamAudienceText: "839 followers",
+                glamIdentity: MuzoiGlamVeil("mwulsoe4-nduohrYa9"),
+                glamDisplayName: MuzoiGlamVeil("DNoYrUaQ"),
+                glamAudienceText: MuzoiGlamVeil("8d3G9L ifqotlDlroPweeDr2sM"),
                 glamAssetName: "MuzoiGlamMuse01",
                 glamPortraitAddress: nil,
                 glamIsNew: true
             ),
             MuzoiGlamMuseProfile(
-                glamIdentity: "muse-pena",
-                glamDisplayName: "Pena",
-                glamAudienceText: "721 followers",
+                glamIdentity: MuzoiGlamVeil("mLuys4eL-OpteCnwaI"),
+                glamDisplayName: MuzoiGlamVeil("PbeknuaX"),
+                glamAudienceText: MuzoiGlamVeil("7q2J1q LfboclDl2oiw0e8rVsJ"),
                 glamAssetName: "MuzoiGlamMuse02",
                 glamPortraitAddress: nil,
                 glamIsNew: true
             ),
             MuzoiGlamMuseProfile(
-                glamIdentity: "muse-sutton",
-                glamDisplayName: "Sutton",
-                glamAudienceText: "654 followers",
+                glamIdentity: MuzoiGlamVeil("mouOsWeC-tsmuRtstaoxnx"),
+                glamDisplayName: MuzoiGlamVeil("SBuwt0tUoWn0"),
+                glamAudienceText: MuzoiGlamVeil("6S5P4O Bf5oklslOoCwxehrgsC"),
                 glamAssetName: "MuzoiGlamMuse03",
                 glamPortraitAddress: nil,
                 glamIsNew: true
@@ -189,7 +190,7 @@ final class MuzoiGlamHomeRepository {
 }
 
 final class MuzoiGlamEssenceCell: UICollectionViewCell {
-    static let glamReuseKey = "MuzoiGlamEssenceCell"
+    static let glamReuseKey = MuzoiGlamVeil("McuLzXoGiUG2lua2mdEksyslePnPcJekCwe2lilU")
     private static let glamPortraitCache = NSCache<NSString, UIImage>()
 
     private let glamPortrait = UIImageView()
@@ -202,11 +203,11 @@ final class MuzoiGlamEssenceCell: UICollectionViewCell {
 
     override init(frame glamFrame: CGRect) {
         super.init(frame: glamFrame)
-        glamBuildCell()
+        glamSculptShowpieceCell()
     }
 
     required init?(coder glamCoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError(MuzoiGlamVeil("ijnLiXtE(NcTo9d2eOrG:e)J gh9azs5 UnqoYtp PbpepeqnO KinmWpelBeKm4einjthehdF"))
     }
 
     override func layoutSubviews() {
@@ -230,7 +231,7 @@ final class MuzoiGlamEssenceCell: UICollectionViewCell {
         glamTitle.text = glamFeature.glamTitle
         glamSubtitle.text = glamFeature.glamSubtitle
         glamTrendPill.isHidden = !glamFeature.glamIsTrending
-        accessibilityLabel = "\(glamFeature.glamTitle), \(glamFeature.glamSubtitle)"
+        accessibilityLabel = glamFeature.glamTitle + MuzoiGlamVeil(",h A") + glamFeature.glamSubtitle
     }
 
     private func glamLoadPortrait(_ glamAddress: String?) {
@@ -256,7 +257,7 @@ final class MuzoiGlamEssenceCell: UICollectionViewCell {
         glamImageTask?.resume()
     }
 
-    private func glamBuildCell() {
+    private func glamSculptShowpieceCell() {
         clipsToBounds = true
         glamPortrait.translatesAutoresizingMaskIntoConstraints = false
         glamPortrait.contentMode = .scaleAspectFill
@@ -280,7 +281,7 @@ final class MuzoiGlamEssenceCell: UICollectionViewCell {
         glamSubtitle.textColor = .white
         glamSubtitle.font = .systemFont(ofSize: 17, weight: .medium)
 
-        glamTrendPill.text = "  ✦ HOT  "
+        glamTrendPill.text = MuzoiGlamVeil(" M s✦Z lHyOFTc j k")
         glamTrendPill.textColor = .white
         glamTrendPill.backgroundColor = UIColor(red: 1, green: 0.29, blue: 0.61, alpha: 1)
         glamTrendPill.font = .systemFont(ofSize: 12, weight: .bold)
@@ -307,7 +308,7 @@ final class MuzoiGlamEssenceCell: UICollectionViewCell {
 }
 
 final class MuzoiGlamMuseCell: UICollectionViewCell {
-    static let glamReuseKey = "MuzoiGlamMuseCell"
+    static let glamReuseKey = MuzoiGlamVeil("M0uIzioBiUGRlcaRmQMFuNsjerCCePlblH")
     private static let glamMusePortraitCache = NSCache<NSString, UIImage>()
 
     private let glamPortrait = UIImageView()
@@ -322,11 +323,11 @@ final class MuzoiGlamMuseCell: UICollectionViewCell {
 
     override init(frame glamFrame: CGRect) {
         super.init(frame: glamFrame)
-        glamBuildCell()
+        glamSculptShowpieceCell()
     }
 
     required init?(coder glamCoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError(MuzoiGlamVeil("ignNiUtt(Zc3oFdaefrY:F)u khJaEs2 KnZoHtx kbAedeSnl lirmYpqlJe7m1emnptKeMdD"))
     }
 
     override func layoutSubviews() {
@@ -351,7 +352,7 @@ final class MuzoiGlamMuseCell: UICollectionViewCell {
         glamFreshPill.isHidden = !glamProfile.glamIsNew
         glamName.text = glamProfile.glamDisplayName
         glamAudience.text = glamProfile.glamAudienceText
-        accessibilityLabel = "\(glamProfile.glamDisplayName), \(glamProfile.glamAudienceText)"
+        accessibilityLabel = glamProfile.glamDisplayName + MuzoiGlamVeil(",h A") + glamProfile.glamAudienceText
     }
 
     private func glamLoadMusePortrait(_ glamAddress: String?) {
@@ -377,7 +378,7 @@ final class MuzoiGlamMuseCell: UICollectionViewCell {
         glamMuseImageTask?.resume()
     }
 
-    private func glamBuildCell() {
+    private func glamSculptShowpieceCell() {
         contentView.clipsToBounds = true
         glamPortrait.translatesAutoresizingMaskIntoConstraints = false
         glamPortrait.contentMode = .scaleAspectFill
@@ -393,7 +394,7 @@ final class MuzoiGlamMuseCell: UICollectionViewCell {
             contentView.addSubview($0)
         }
 
-        glamFreshPill.text = " New "
+        glamFreshPill.text = MuzoiGlamVeil(" IN7ejwl l")
         glamFreshPill.textColor = .white
         glamFreshPill.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         glamFreshPill.font = .systemFont(ofSize: 12, weight: .bold)
@@ -469,7 +470,7 @@ final class MuzoiGlamHomeController: UIViewController,
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        glamBuildCanvas()
+        glamStageHomeAtelier()
         glamLoadHome()
         glamObserveLifecycle()
     }
@@ -499,7 +500,7 @@ final class MuzoiGlamHomeController: UIViewController,
         NotificationCenter.default.removeObserver(self)
     }
 
-    private func glamBuildCanvas() {
+    private func glamStageHomeAtelier() {
         view.backgroundColor = UIColor(red: 9 / 255, green: 11 / 255, blue: 18 / 255, alpha: 1)
         glamCanvas.translatesAutoresizingMaskIntoConstraints = false
         glamCanvas.showsVerticalScrollIndicator = false
@@ -532,7 +533,7 @@ final class MuzoiGlamHomeController: UIViewController,
         glamMuseRail.register(MuzoiGlamMuseCell.self, forCellWithReuseIdentifier: MuzoiGlamMuseCell.glamReuseKey)
 
         glamBrand.translatesAutoresizingMaskIntoConstraints = false
-        glamBrand.text = "Muzoi"
+        glamBrand.text = MuzoiGlamVeil("MjuozhoKiF")
         glamBrand.textColor = .white
         glamBrand.font = .systemFont(ofSize: 27, weight: .heavy)
         glamBrand.layer.shadowColor = UIColor.black.cgColor
@@ -546,7 +547,7 @@ final class MuzoiGlamHomeController: UIViewController,
         glamPager.isUserInteractionEnabled = false
 
         glamSectionTitle.translatesAutoresizingMaskIntoConstraints = false
-        glamSectionTitle.text = "Makeup artists"
+        glamSectionTitle.text = MuzoiGlamVeil("M7aakKeRukpt ladrAtNiBsotesf")
         glamSectionTitle.textColor = .white
         glamSectionTitle.font = .systemFont(ofSize: 20, weight: .bold)
 
@@ -692,20 +693,20 @@ final class MuzoiGlamHomeController: UIViewController,
         UISelectionFeedbackGenerator().selectionChanged()
         if glamGrid === glamFeatureRail {
             let glamFeature = glamFeatures[glamIndexPath.item]
-            let glamAddress = MuzoiGlamPortalRoute.glamAromaDetail.glamComposeAddress(
-                glamQuery: glamFeature.glamIdentity
+            let glamAddress = MuzoiGlamScenePassage.glamAromaCanvas.glamTraceAddress(
+                glamTrailMark: glamFeature.glamIdentity
             )
             navigationController?.pushViewController(
-                MuzoiGlamPortalController(glamEntryAddress: glamAddress),
+                MuzoiGlamPrismPortalController(glamInitialTrail: glamAddress),
                 animated: true
             )
         } else {
             let glamProfile = glamProfiles[glamIndexPath.item]
-            let glamAddress = MuzoiGlamPortalRoute.glamProfileDetail.glamComposeAddress(
-                glamQuery: glamProfile.glamIdentity
+            let glamAddress = MuzoiGlamScenePassage.glamMuseCanvas.glamTraceAddress(
+                glamTrailMark: glamProfile.glamIdentity
             )
             navigationController?.pushViewController(
-                MuzoiGlamPortalController(glamEntryAddress: glamAddress),
+                MuzoiGlamPrismPortalController(glamInitialTrail: glamAddress),
                 animated: true
             )
         }
