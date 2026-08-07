@@ -1,0 +1,335 @@
+[
+  {
+    "customPath": "/wmhuptqcjaofeapz/tgcsx",
+    "resReplace": {
+      "makeupAlchemy": "userId",
+      "highlightGlowup": "userGender",
+      "beautyNarrative": "userStatus",
+      "liquidLinerPrecision": "userType",
+      "artisticSmudge": "userLocation",
+      "sfxMakeupMastery": "userImgUrl",
+      "smokyGlamour": "userVipStatus",
+      "illusionMakeup": "userAttention",
+      "lipArtistry": "userBrief",
+      "foundationFusion": "userPassword",
+      "blushGradient": "userFriends",
+      "contourCrafting": "userEmail",
+      "cosmeticSculpting": "equipmentNo",
+      "faceCanvasDesign": "bundleId",
+      "beautyExpressionism": "userName",
+      "matteFinishPlay": "createUserId",
+      "eyelinerElevation": "userBirthday",
+      "sparkleDetails": "userFans",
+      "avantGardeLooks": "vipExpireTime",
+      "creativeContour": "userBalance"
+    },
+    "reqReplace": {
+      "glamTransformation": "bundleId"
+    },
+    "systemPath": "/sj/user/selectUserIndexList"
+  },
+  {
+    "customPath": "/qpsvdfrsz/vswqsa",
+    "resReplace": {
+      "eyeshadowCascade": "fileTimes",
+      "lashesVolumeArt": "createDate",
+      "makeupPalettePlay": "commentNum",
+      "glamInkPortrait": "dynamicClassify",
+      "creativityGlowup": "videoImgUrl",
+      "beautyStatement": "dynamicContent",
+      "expressionHighlight": "userName",
+      "beautyJourneyNote": "storeNum",
+      "mascaraDrama": "forwardNum",
+      "airbrushBeautywave": "storeFlag",
+      "lookRemixStudio": "dynamicType",
+      "cosmeticDramaShot": "bundleId",
+      "highlightDreamscape": "commentVoList",
+      "shimmerDetails": "dynamicId",
+      "skinToneStyling": "userImgUrl",
+      "colorTheoryBeauty": "praiseNum",
+      "complexionControl": "dynamicTitle",
+      "commentVoList": {
+        "sculptedCheekbone": "dynamicId",
+        "makeupExperimentBox": "bundleId",
+        "makeupImaginationLab": "replyUserImgUrl",
+        "styleFantasyCraft": "replyContent",
+        "linerSculpture": "praiseNum",
+        "hyperRealGlow": "replyUserId",
+        "beautyIdentityForm": "replyUserName",
+        "illusionFaceArt": "beReplyUserId",
+        "dramaticBrowShape": "beReplyUserName",
+        "beautyEssencePlay": "beReplyContent",
+        "faceSymmetryScene": "beReplyCommentId",
+        "glamSurrealism": "commentId"
+      },
+      "paintedPersona": "dynamicImgList",
+      "liquidPigmentFlow": "attentionFlag",
+      "sfxPigmentology": "userId",
+      "styleGlowInsight": "dynamicImgList"
+    },
+    "reqReplace": {
+      "faceMorphing": "selectType",
+      "editorialGlow": "bundleId",
+      "blendingSymphony": "size",
+      "pigmentBliss": "selectVersion",
+      "mirrorMakeupMoments": "userId",
+      "makeupStorytelling": "current",
+      "freckleFantasy": "dynamicClassify",
+      "neonEyeshadow": "dynamicType"
+    },
+    "systemPath": "/sj/dynamic/selectDynamicList"
+  },
+  {
+    "customPath": "/nlbzvz/doidpqku",
+    "reqReplace": {
+      "glitterStormLooks": "dynamicId"
+    },
+    "systemPath": "/sj/dynamic/updateDynamicStore"
+  },
+  {
+    "customPath": "/nomelvigz/fpvnvn",
+    "reqReplace": {
+      "blendingInHarmony": "dynamicId",
+      "spectrumContourDesign": "beHandleUserName",
+      "eyebrowDramaWave": "hanldeType",
+      "softFocusCanvas": "beHandleUserImg",
+      "neonPigmentBurst": "beHandleUserId"
+    },
+    "systemPath": "/sj/user/updateUserRelation"
+  },
+  {
+    "customPath": "/nklxocevighez/jowcvxlkq",
+    "resReplace": {
+      "messageUserVoList": {
+        "visualTextureSwipe": "createDate",
+        "sheenMakeoverMix": "sendUserName",
+        "cosmeticDreamMap": "messageId",
+        "trendPaintingTouch": "content",
+        "glamourExpressionPath": "sendUserId",
+        "makeupAestheticShow": "sendUserImgUrl",
+        "sfxSkinTransform": "receiveUserId",
+        "styleSignatureLook": "receiveUserImg",
+        "glamSculptLab": "receiveUserName",
+        "faceFashionWave": "title"
+      },
+      "innerGlowReflection": "messageUserVoList"
+    },
+    "reqReplace": {
+      "visualLuxeFusion": "receiveUserId",
+      "faceDetailTheory": "bundleId"
+    },
+    "systemPath": "/sj/message/selectMessageInfo"
+  },
+  {
+    "customPath": "/agchuvaniutezz/tonktolmo",
+    "resReplace": {
+      "aiStylingStudio": "userLocation",
+      "glamourGrungeFlow": "userFans",
+      "makeupArtSpiral": "userName",
+      "featureAccentDesign": "userFriends",
+      "lookCreationHive": "userAttention",
+      "beautyShareVibe": "userBirthday",
+      "linerPoetryArt": "userDynamicVoList",
+      "shadingCraftFocus": "userImgUrl",
+      "userDynamicVoList": {
+        "eyeshadowCascade": "fileTimes",
+        "lashesVolumeArt": "createDate",
+        "makeupPalettePlay": "commentNum",
+        "glamInkPortrait": "dynamicClassify",
+        "creativityGlowup": "videoImgUrl",
+        "beautyStatement": "dynamicContent",
+        "expressionHighlight": "userName",
+        "beautyJourneyNote": "storeNum",
+        "mascaraDrama": "forwardNum",
+        "airbrushBeautywave": "storeFlag",
+        "lookRemixStudio": "dynamicType",
+        "cosmeticDramaShot": "bundleId",
+        "highlightDreamscape": "commentVoList",
+        "shimmerDetails": "dynamicId",
+        "skinToneStyling": "userImgUrl",
+        "colorTheoryBeauty": "praiseNum",
+        "complexionControl": "dynamicTitle",
+        "commentVoList": {
+          "sculptedCheekbone": "dynamicId",
+          "makeupExperimentBox": "bundleId",
+          "makeupImaginationLab": "replyUserImgUrl",
+          "styleFantasyCraft": "replyContent",
+          "linerSculpture": "praiseNum",
+          "hyperRealGlow": "replyUserId",
+          "beautyIdentityForm": "replyUserName",
+          "illusionFaceArt": "beReplyUserId",
+          "dramaticBrowShape": "beReplyUserName",
+          "beautyEssencePlay": "beReplyContent",
+          "faceSymmetryScene": "beReplyCommentId",
+          "glamSurrealism": "commentId"
+        },
+        "paintedPersona": "dynamicImgList",
+        "liquidPigmentFlow": "attentionFlag",
+        "sfxPigmentology": "userId",
+        "styleGlowInsight": "dynamicImgList"
+      },
+      "eyeshadowGalaxySwirl": "userId",
+      "faceGlowVerse": "attentionFlag",
+      "makeupExpressionNest": "historyNum",
+      "makeupSparkLab": "likeNum",
+      "videoMakeupStory": "userBrief",
+      "makeupTalkStudio": "userGender",
+      "flawlessLayering": "userEmail"
+    },
+    "reqReplace": {
+      "makeupMoodDrop": "userId"
+    },
+    "systemPath": "/sj/user/selectUserInfo"
+  },
+  {
+    "customPath": "/patulidikz/wyqbmpf",
+    "resReplace": {
+      "cosmeticCanvasFlow": "userName",
+      "editorialMakeupZone": "userImgUrl",
+      "cosmeticLanguageLab": "userGender",
+      "virtualMakeupBlend": "userStatus",
+      "faceExpressionCore": "userBirthday",
+      "signatureBlushVibe": "equipmentNo",
+      "freestyleLookPath": "vipExpireTime",
+      "sfxColorFusion": "userBrief",
+      "eyelashMuseRoom": "bundleId",
+      "faceShapeFocus": "userType",
+      "beautyRadianceNet": "token",
+      "styleCraftWorld": "userEmail",
+      "eyelidDesignForm": "userLocation",
+      "avantInkStyle": "userId"
+    },
+    "reqReplace": {},
+    "systemPath": "/sj/user/getUseInfo"
+  },
+  {
+    "customPath": "/snvwpraiejz/bquzsujjr",
+    "reqReplace": {},
+    "systemPath": "/sj/user/selectUserBalance"
+  },
+  {
+    "customPath": "/cfqtlcbcz/rxrjhnrq",
+    "resReplace": {
+      "cosmeticCanvasFlow": "userName",
+      "editorialMakeupZone": "userImgUrl",
+      "cosmeticLanguageLab": "userGender",
+      "virtualMakeupBlend": "userStatus",
+      "faceExpressionCore": "userBirthday",
+      "signatureBlushVibe": "equipmentNo",
+      "freestyleLookPath": "vipExpireTime",
+      "sfxColorFusion": "userBrief",
+      "eyelashMuseRoom": "bundleId",
+      "faceShapeFocus": "userType",
+      "beautyRadianceNet": "token",
+      "styleCraftWorld": "userEmail",
+      "eyelidDesignForm": "userLocation",
+      "avantInkStyle": "userId"
+    },
+    "reqReplace": {
+      "artfulFaceMorph": "userEmail",
+      "visualMakeupPulse": "bundleId",
+      "hyperglamExpression": "type",
+      "blendingGlowpath": "password"
+    },
+    "systemPath": "/sj/user/emailLogin"
+  },
+  {
+    "customPath": "/cbofxtjtziz/ifovmblnbbuop",
+    "resReplace": {
+      "makeupStyleNest": "createDate",
+      "makeupGlamScape": "liveUserNum",
+      "eyelinerMuseMap": "userImgUrl",
+      "makeupDreamFocus": "videoUrl",
+      "mirrorMakeupNet": "liveTitle",
+      "makeupInspireWall": "liveStatus",
+      "liquidLookStory": "videoTimes",
+      "makeupEchoStudio": "liveTime",
+      "glamourImpactNote": "userId",
+      "creativeLashesPlay": "bundleId",
+      "virtualBlushField": "userList",
+      "sfxBeautyRealm": "liveCoverImg",
+      "spectrumMakeupSync": "liveId",
+      "artFusionLooks": "liveIncome",
+      "userList": {
+        "pigmentImprintLab": "userImgUrl",
+        "cosmeticVisionary": "liveUserId",
+        "creativeLookOrbit": "bundleId",
+        "sfxFaceWorkshop": "liveId",
+        "makeupMusePulse": "userName",
+        "styleMakeupWave": "userId"
+      },
+      "makeupShareNest": "userName",
+      "lookFusionVision": "liveLocation"
+    },
+    "reqReplace": {
+      "pigmentDesignVerse": "liveStatus",
+      "virtualBeautySphere": "bundleId",
+      "makeupPoetryForm": "current",
+      "glowDreamDesign": "selectType",
+      "eyelinerTaleCraft": "size"
+    },
+    "systemPath": "/sj/live/selectLivePage"
+  },
+  {
+    "customPath": "/cuehuomgqnmez/jckdpbjsw",
+    "resReplace": {
+      "styleEmotionPaint": "userImgUrl",
+      "artisticMakeupRunway": "userBrief",
+      "beautyCraftStory": "userId",
+      "blendBrushRhythm": "attentionFlag",
+      "faceCraftFlow": "userName"
+    },
+    "reqReplace": {
+      "makeupFusionRoom": "selectType"
+    },
+    "systemPath": "/sj/user/selectUserRelation"
+  },
+  {
+    "customPath": "/ydkmrhogpbz/asesc",
+    "resReplace": {
+      "sheenLookTrail": "activityUserNum",
+      "faceCanvasPath": "activityLocation",
+      "makeupTraceFlow": "userImgUrl",
+      "styleIconBlend": "activityUserVoList",
+      "cosmeticMuseNest": "activityId",
+      "blendMasteryHub": "activityDate",
+      "activityUserVoList": {
+        "linerMosaicZone": "attentionFlag",
+        "faceExpressionLine": "userImgUrl",
+        "expressionMakeupNest": "userName",
+        "virtualGlowMastery": "userId"
+      },
+      "styleDreamField": "activityDetailsTime",
+      "editorialLinerScript": "activityCoverImg",
+      "beautyAuraPrint": "userName",
+      "lipGlamVerse": "activityIntroduce",
+      "eyeshadowMythGlow": "activityTitle",
+      "glamChromaPlay": "activityPhoneNum",
+      "makeupColorTheory": "userId",
+      "lipStyleGalaxy": "addFlag",
+      "linerWaveStyle": "activityLable"
+    },
+    "reqReplace": {
+      "beautyStoryWave": "activityLable",
+      "contourJourneyPath": "activityId",
+      "faceArtMap": "bundleId",
+      "lookMythStudio": "selectType",
+      "sfxGlowDetails": "beSelectUserId"
+    },
+    "systemPath": "/sj/activity/selectActivityPage"
+  },
+  {
+    "customPath": "/cyiagz/uekwcyypq",
+    "reqReplace": {
+      "faceGlowJournal": "activityId"
+    },
+    "systemPath": "/sj/activity/joinQuitActivity"
+  },
+  {
+    "customPath": "/nbyqxscz/xtogtgfllccgf",
+    "reqReplace": {
+      "makeupDrapeFocus": "bundleId"
+    },
+    "systemPath": "/sj/activity/selectAcLabel"
+  }
+]
