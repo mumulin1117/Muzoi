@@ -244,6 +244,17 @@ final class MuzoiGlamLookDeckCell: UICollectionViewCell {
     }
 
     private func glamSculptCard() {
+        glamPrepareLookSurface()
+        glamPrepareLookReveal()
+        glamPrepareLookSpark()
+        glamPrepareLookArtist()
+        glamPrepareLookText()
+        glamPrepareLookFlag()
+        glamAddLookCardPieces()
+        glamPinLookCard()
+    }
+
+    private func glamPrepareLookSurface() {
         contentView.backgroundColor = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
         glamLookSurface.translatesAutoresizingMaskIntoConstraints = false
         glamLookSurface.contentMode = .scaleAspectFill
@@ -254,7 +265,9 @@ final class MuzoiGlamLookDeckCell: UICollectionViewCell {
         glamShadowVeil.startPoint = CGPoint(x: 0.5, y: 0.45)
         glamShadowVeil.endPoint = CGPoint(x: 0.5, y: 1)
         contentView.layer.addSublayer(glamShadowVeil)
+    }
 
+    private func glamPrepareLookReveal() {
         glamRevealControl.translatesAutoresizingMaskIntoConstraints = false
         glamRevealControl.backgroundColor = UIColor.white.withAlphaComponent(0.18)
         glamRevealControl.layer.borderColor = UIColor.white.cgColor
@@ -265,7 +278,9 @@ final class MuzoiGlamLookDeckCell: UICollectionViewCell {
         glamRevealControl.imageView?.contentMode = .scaleAspectFit
         glamRevealControl.accessibilityLabel = MuzoiGlamVeil("O6pmecnl qlSoLoakK CdQe0tfaJijl6so")
         glamRevealControl.addTarget(self, action: #selector(glamOpenCanvas), for: .touchUpInside)
+    }
 
+    private func glamPrepareLookSpark() {
         glamSparkControl.translatesAutoresizingMaskIntoConstraints = false
         glamSparkControl.backgroundColor = UIColor.black.withAlphaComponent(0.88)
         glamSparkControl.layer.cornerRadius = 32
@@ -273,7 +288,9 @@ final class MuzoiGlamLookDeckCell: UICollectionViewCell {
         let glamHeartConfig = UIImage.SymbolConfiguration(pointSize: 30, weight: .bold)
         glamSparkControl.setImage(UIImage(systemName: "heart", withConfiguration: glamHeartConfig), for: .normal)
         glamSparkControl.addTarget(self, action: #selector(glamOpenCanvas), for: .touchUpInside)
+    }
 
+    private func glamPrepareLookArtist() {
         glamArtistPortrait.translatesAutoresizingMaskIntoConstraints = false
         glamArtistPortrait.contentMode = .scaleAspectFill
         glamArtistPortrait.clipsToBounds = true
@@ -288,13 +305,17 @@ final class MuzoiGlamLookDeckCell: UICollectionViewCell {
         glamArtistName.font = .systemFont(ofSize: 21, weight: .bold)
         glamArtistName.adjustsFontSizeToFitWidth = true
         glamArtistName.minimumScaleFactor = 0.72
+    }
 
+    private func glamPrepareLookText() {
         glamLookCaption.translatesAutoresizingMaskIntoConstraints = false
         glamLookCaption.textColor = .white
         glamLookCaption.font = .systemFont(ofSize: 17, weight: .regular)
         glamLookCaption.numberOfLines = 2
         glamLookCaption.lineBreakMode = .byTruncatingTail
+    }
 
+    private func glamPrepareLookFlag() {
         glamFlagControl.translatesAutoresizingMaskIntoConstraints = false
         glamFlagControl.setTitle(MuzoiGlamVeil("!q"), for: .normal)
         glamFlagControl.setTitleColor(UIColor.black.withAlphaComponent(0.72), for: .normal)
@@ -303,32 +324,48 @@ final class MuzoiGlamLookDeckCell: UICollectionViewCell {
         glamFlagControl.layer.cornerRadius = 16
         glamFlagControl.accessibilityLabel = MuzoiGlamVeil("RreNp5odrQtx")
         glamFlagControl.addTarget(self, action: #selector(glamOpenFlag), for: .touchUpInside)
+    }
 
+    private func glamAddLookCardPieces() {
         [glamRevealControl, glamSparkControl, glamArtistPortrait, glamArtistName, glamLookCaption, glamFlagControl].forEach {
             contentView.addSubview($0)
         }
+    }
 
-        NSLayoutConstraint.activate([
+    private func glamPinLookCard() {
+        NSLayoutConstraint.activate(glamLookSurfaceConstraints())
+        NSLayoutConstraint.activate(glamLookCenterActionConstraints())
+        NSLayoutConstraint.activate(glamLookArtistConstraints())
+    }
+
+    private func glamLookSurfaceConstraints() -> [NSLayoutConstraint] {
+        [
             glamLookSurface.topAnchor.constraint(equalTo: contentView.topAnchor),
             glamLookSurface.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             glamLookSurface.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            glamLookSurface.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            glamLookSurface.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+        ]
+    }
 
+    private func glamLookCenterActionConstraints() -> [NSLayoutConstraint] {
+        [
             glamRevealControl.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             glamRevealControl.centerYAnchor.constraint(equalTo: contentView.centerYAnchor, constant: -18),
             glamRevealControl.widthAnchor.constraint(equalToConstant: 76),
             glamRevealControl.heightAnchor.constraint(equalTo: glamRevealControl.widthAnchor),
-
             glamSparkControl.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -28),
             glamSparkControl.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -52),
             glamSparkControl.widthAnchor.constraint(equalToConstant: 64),
-            glamSparkControl.heightAnchor.constraint(equalTo: glamSparkControl.widthAnchor),
+            glamSparkControl.heightAnchor.constraint(equalTo: glamSparkControl.widthAnchor)
+        ]
+    }
 
+    private func glamLookArtistConstraints() -> [NSLayoutConstraint] {
+        [
             glamArtistPortrait.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24),
             glamArtistPortrait.bottomAnchor.constraint(equalTo: glamLookCaption.topAnchor, constant: -11),
             glamArtistPortrait.widthAnchor.constraint(equalToConstant: 50),
             glamArtistPortrait.heightAnchor.constraint(equalTo: glamArtistPortrait.widthAnchor),
-
             glamArtistName.leadingAnchor.constraint(equalTo: glamArtistPortrait.trailingAnchor, constant: 12),
             glamArtistName.centerYAnchor.constraint(equalTo: glamArtistPortrait.centerYAnchor),
             glamFlagControl.leadingAnchor.constraint(equalTo: glamArtistName.trailingAnchor, constant: 10),
@@ -336,11 +373,10 @@ final class MuzoiGlamLookDeckCell: UICollectionViewCell {
             glamFlagControl.widthAnchor.constraint(equalToConstant: 32),
             glamFlagControl.heightAnchor.constraint(equalTo: glamFlagControl.widthAnchor),
             glamFlagControl.trailingAnchor.constraint(lessThanOrEqualTo: contentView.trailingAnchor, constant: -92),
-
             glamLookCaption.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24),
             glamLookCaption.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -24),
             glamLookCaption.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)
-        ])
+        ]
     }
 
     private func glamFetchArtwork(
@@ -427,6 +463,16 @@ final class MuzoiGlamLookDeckController: UIViewController,
     }
 
     private func glamComposeGallery() {
+        glamPaintGalleryBackdrop()
+        glamPolishGalleryBanner()
+        glamBuildGalleryShortcuts()
+        glamPrepareGalleryRail()
+        glamPrepareGalleryComposer()
+        glamPrepareGallerySpinner()
+        glamPinGalleryRunway()
+    }
+
+    private func glamPaintGalleryBackdrop() {
         view.backgroundColor = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
         glamHeaderAura.translatesAutoresizingMaskIntoConstraints = false
         glamHeaderAuraLayer.colors = [
@@ -437,7 +483,9 @@ final class MuzoiGlamLookDeckController: UIViewController,
         glamHeaderAuraLayer.endPoint = CGPoint(x: 1, y: 1)
         glamHeaderAura.layer.addSublayer(glamHeaderAuraLayer)
         view.addSubview(glamHeaderAura)
+    }
 
+    private func glamPolishGalleryBanner() {
         glamBanner.translatesAutoresizingMaskIntoConstraints = false
         glamBanner.text = MuzoiGlamVeil("DNi2sbcSo1vVeTra")
         glamBanner.textColor = .white
@@ -446,7 +494,9 @@ final class MuzoiGlamLookDeckController: UIViewController,
         glamBanner.layer.shadowOpacity = 0.26
         glamBanner.layer.shadowRadius = 5
         view.addSubview(glamBanner)
+    }
 
+    private func glamBuildGalleryShortcuts() {
         let glamTechniqueControl = MuzoiGlamShortcutControl(
             glamBannerCopy: MuzoiGlamVeil("T3RaIdCyK2 d&Y\nSBjLaEDNcDu"),
             glamMotifName: "paintbrush.pointed.fill",
@@ -470,7 +520,9 @@ final class MuzoiGlamLookDeckController: UIViewController,
         glamShortcutRibbon.addArrangedSubview(glamTechniqueControl)
         glamShortcutRibbon.addArrangedSubview(glamSparkControl)
         view.addSubview(glamShortcutRibbon)
+    }
 
+    private func glamPrepareGalleryRail() {
         glamLookFlow.scrollDirection = .horizontal
         glamLookFlow.minimumLineSpacing = 0
         glamLookRail.translatesAutoresizingMaskIntoConstraints = false
@@ -482,7 +534,9 @@ final class MuzoiGlamLookDeckController: UIViewController,
         glamLookRail.delegate = self
         glamLookRail.register(MuzoiGlamLookDeckCell.self, forCellWithReuseIdentifier: MuzoiGlamLookDeckCell.glamReuseKey)
         view.addSubview(glamLookRail)
+    }
 
+    private func glamPrepareGalleryComposer() {
         glamComposeControl.translatesAutoresizingMaskIntoConstraints = false
         glamComposeControl.backgroundColor = UIColor(red: 0.94, green: 0.45, blue: 0.86, alpha: 1)
         glamComposeControl.tintColor = UIColor(red: 20 / 255, green: 17 / 255, blue: 28 / 255, alpha: 1)
@@ -496,11 +550,15 @@ final class MuzoiGlamLookDeckController: UIViewController,
         glamComposeControl.accessibilityLabel = MuzoiGlamVeil("POusbZlGiWsDhb Ta6 7nAeywE nschZo2wycVaZsJej")
         glamComposeControl.addTarget(self, action: #selector(glamOpenComposer), for: .touchUpInside)
         view.addSubview(glamComposeControl)
+    }
 
+    private func glamPrepareGallerySpinner() {
         glamOrbitSpinner.translatesAutoresizingMaskIntoConstraints = false
         glamOrbitSpinner.color = .white
         view.addSubview(glamOrbitSpinner)
+    }
 
+    private func glamPinGalleryRunway() {
         NSLayoutConstraint.activate([
             glamHeaderAura.topAnchor.constraint(equalTo: view.topAnchor),
             glamHeaderAura.leadingAnchor.constraint(equalTo: view.leadingAnchor),

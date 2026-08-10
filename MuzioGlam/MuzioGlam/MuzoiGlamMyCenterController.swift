@@ -103,15 +103,26 @@ final class MuzoiGlamVaultControl: UIControl {
     private func glamPolishVaultBalanceCharm() {
         clipsToBounds = true
         layer.cornerRadius = 20
+        glamTintVaultBackdrop()
+        glamTintVaultCaption()
+        glamTintVaultEntryHint()
+        glamPinVaultBalanceCharm()
+    }
+
+    private func glamTintVaultBackdrop() {
         glamBackdrop.translatesAutoresizingMaskIntoConstraints = false
         glamBackdrop.contentMode = .scaleToFill
         glamBackdrop.isUserInteractionEnabled = false
+    }
 
+    private func glamTintVaultCaption() {
         glamCaption.translatesAutoresizingMaskIntoConstraints = false
         glamCaption.text = MuzoiGlamVeil("MZys 5b3aoluaHnccBeT")
         glamCaption.textColor = .white
         glamCaption.font = .systemFont(ofSize: 20, weight: .medium)
+    }
 
+    private func glamTintVaultEntryHint() {
         glamEntryHint.translatesAutoresizingMaskIntoConstraints = false
         glamEntryHint.text = MuzoiGlamVeil("Ovp6eMnf 3>U")
         glamEntryHint.textColor = .white
@@ -121,7 +132,9 @@ final class MuzoiGlamVaultControl: UIControl {
         glamEntryHint.layer.borderColor = UIColor.white.cgColor
         glamEntryHint.layer.cornerRadius = 16
         glamEntryHint.clipsToBounds = true
+    }
 
+    private func glamPinVaultBalanceCharm() {
         addSubview(glamBackdrop)
         addSubview(glamCaption)
         addSubview(glamEntryHint)
@@ -171,22 +184,34 @@ final class MuzoiGlamMineRowControl: UIControl {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = UIColor(red: 0.11, green: 0.12, blue: 0.18, alpha: 1)
         layer.cornerRadius = 16
+        glamTintMineActionGlyph()
+        glamTintMineActionTitle()
+        glamTintMineActionChevron()
+        glamPinMineActionRibbon()
+    }
 
+    private func glamTintMineActionGlyph() {
         glamGlyph.translatesAutoresizingMaskIntoConstraints = false
         glamGlyph.contentMode = .scaleAspectFit
         glamGlyph.layer.shadowColor = glamGlyph.tintColor.cgColor
         glamGlyph.layer.shadowOpacity = 0.65
         glamGlyph.layer.shadowRadius = 7
+    }
 
+    private func glamTintMineActionTitle() {
         glamTitle.translatesAutoresizingMaskIntoConstraints = false
         glamTitle.textColor = .white
         glamTitle.font = .systemFont(ofSize: 19, weight: .regular)
+    }
 
+    private func glamTintMineActionChevron() {
         glamChevron.translatesAutoresizingMaskIntoConstraints = false
         glamChevron.image = UIImage(systemName: "chevron.right")
         glamChevron.tintColor = UIColor(red: 0.31, green: 1, blue: 0.79, alpha: 1)
         glamChevron.contentMode = .scaleAspectFit
+    }
 
+    private func glamPinMineActionRibbon() {
         addSubview(glamGlyph)
         addSubview(glamTitle)
         addSubview(glamChevron)
@@ -255,6 +280,19 @@ final class MuzoiGlamMyCenterController: UIViewController {
     }
 
     private func glamStageMineVanity() {
+        glamPaintMineBackdrop()
+        glamPinMineScrollCanvas()
+        glamPolishMineHeaderGlow()
+        glamPolishMineIdentity()
+        glamPolishMineMetrics()
+        glamPolishMineVault()
+        glamPolishMineRows()
+        glamPolishMineSpinner()
+        glamAddMineVanityPieces()
+        glamPinMineVanityConstraints()
+    }
+
+    private func glamPaintMineBackdrop() {
         view.backgroundColor = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
         glamRootGradient.colors = [
             UIColor(red: 0.62, green: 0, blue: 0.49, alpha: 1).cgColor,
@@ -264,12 +302,17 @@ final class MuzoiGlamMyCenterController: UIViewController {
         glamRootGradient.startPoint = CGPoint(x: 0, y: 0)
         glamRootGradient.endPoint = CGPoint(x: 1, y: 1)
         view.layer.insertSublayer(glamRootGradient, at: 0)
+    }
+
+    private func glamPinMineScrollCanvas() {
         glamCanvas.translatesAutoresizingMaskIntoConstraints = false
         glamCanvas.showsVerticalScrollIndicator = false
         glamContent.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(glamCanvas)
         glamCanvas.addSubview(glamContent)
+    }
 
+    private func glamPolishMineHeaderGlow() {
         glamHeaderBackdrop.translatesAutoresizingMaskIntoConstraints = false
         glamHeaderGradient.colors = [
             UIColor(red: 0.62, green: 0, blue: 0.49, alpha: 1).cgColor,
@@ -280,7 +323,9 @@ final class MuzoiGlamMyCenterController: UIViewController {
         glamHeaderGradient.endPoint = CGPoint(x: 1, y: 1)
         glamHeaderBackdrop.layer.addSublayer(glamHeaderGradient)
         glamContent.addSubview(glamHeaderBackdrop)
+    }
 
+    private func glamPolishMineIdentity() {
         glamTitle.translatesAutoresizingMaskIntoConstraints = false
         glamTitle.text = MuzoiGlamVeil("MxienPeB")
         glamTitle.textColor = .white
@@ -302,7 +347,9 @@ final class MuzoiGlamMyCenterController: UIViewController {
         glamBrief.font = .systemFont(ofSize: 16, weight: .regular)
         glamBrief.numberOfLines = 1
         glamBrief.lineBreakMode = .byTruncatingTail
+    }
 
+    private func glamPolishMineMetrics() {
         glamDustProfileMetric(glamFollowingCaption, glamText: MuzoiGlamVeil("F9oklilsoqwh"))
         glamDustProfileMetric(glamFansCaption, glamText: MuzoiGlamVeil("Fsa1nNsz"))
         [glamFollowingValue, glamFansValue].forEach {
@@ -310,11 +357,15 @@ final class MuzoiGlamMyCenterController: UIViewController {
             $0.textColor = .white
             $0.font = .systemFont(ofSize: 18, weight: .bold)
         }
+    }
 
+    private func glamPolishMineVault() {
         glamVaultControl.translatesAutoresizingMaskIntoConstraints = false
         glamVaultControl.accessibilityLabel = MuzoiGlamVeil("OspAe9nf zmUyo DbbaslXaUnmcle4")
         glamVaultControl.addTarget(self, action: #selector(glamOpenVault), for: .touchUpInside)
+    }
 
+    private func glamPolishMineRows() {
         let glamInboxRow = MuzoiGlamMineRowControl(
             glamText: MuzoiGlamVeil("MYevs5sMaggvet"),
             glamSymbol: MuzoiGlamVeil("bZutbGbfluez.5l8eLfEtD.fa9nYd3.jbNuEblb1lEeF.NroiOgmhits"),
@@ -339,17 +390,29 @@ final class MuzoiGlamMyCenterController: UIViewController {
         glamRows.spacing = 12
         glamRows.distribution = .fillEqually
         [glamInboxRow, glamEditRow, glamSettingsRow].forEach { glamRows.addArrangedSubview($0) }
+    }
 
+    private func glamPolishMineSpinner() {
         glamSpinner.translatesAutoresizingMaskIntoConstraints = false
         glamSpinner.color = .white
+    }
 
+    private func glamAddMineVanityPieces() {
         [
             glamTitle, glamPortrait, glamName, glamBrief,
             glamFollowingCaption, glamFollowingValue, glamFansCaption, glamFansValue,
             glamVaultControl, glamRows, glamSpinner
         ].forEach { glamContent.addSubview($0) }
+    }
 
-        NSLayoutConstraint.activate([
+    private func glamPinMineVanityConstraints() {
+        NSLayoutConstraint.activate(glamMineScrollConstraints())
+        NSLayoutConstraint.activate(glamMineIdentityConstraints())
+        NSLayoutConstraint.activate(glamMineActionConstraints())
+    }
+
+    private func glamMineScrollConstraints() -> [NSLayoutConstraint] {
+        [
             glamCanvas.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             glamCanvas.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             glamCanvas.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -359,15 +422,17 @@ final class MuzoiGlamMyCenterController: UIViewController {
             glamContent.trailingAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.trailingAnchor),
             glamContent.bottomAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.bottomAnchor),
             glamContent.widthAnchor.constraint(equalTo: glamCanvas.frameLayoutGuide.widthAnchor),
-
             glamHeaderBackdrop.topAnchor.constraint(equalTo: glamContent.topAnchor),
             glamHeaderBackdrop.leadingAnchor.constraint(equalTo: glamContent.leadingAnchor),
             glamHeaderBackdrop.trailingAnchor.constraint(equalTo: glamContent.trailingAnchor),
-            glamHeaderBackdrop.bottomAnchor.constraint(equalTo: glamVaultControl.bottomAnchor),
+            glamHeaderBackdrop.bottomAnchor.constraint(equalTo: glamVaultControl.bottomAnchor)
+        ]
+    }
 
+    private func glamMineIdentityConstraints() -> [NSLayoutConstraint] {
+        [
             glamTitle.topAnchor.constraint(equalTo: glamContent.topAnchor, constant: 10),
             glamTitle.leadingAnchor.constraint(equalTo: glamContent.leadingAnchor, constant: 16),
-
             glamPortrait.topAnchor.constraint(equalTo: glamTitle.bottomAnchor, constant: 34),
             glamPortrait.leadingAnchor.constraint(equalTo: glamContent.leadingAnchor, constant: 16),
             glamPortrait.widthAnchor.constraint(equalToConstant: 80),
@@ -378,7 +443,6 @@ final class MuzoiGlamMyCenterController: UIViewController {
             glamBrief.leadingAnchor.constraint(equalTo: glamName.leadingAnchor),
             glamBrief.topAnchor.constraint(equalTo: glamName.bottomAnchor, constant: 3),
             glamBrief.trailingAnchor.constraint(equalTo: glamName.trailingAnchor),
-
             glamFollowingCaption.leadingAnchor.constraint(equalTo: glamName.leadingAnchor),
             glamFollowingCaption.topAnchor.constraint(equalTo: glamBrief.bottomAnchor, constant: 12),
             glamFollowingValue.leadingAnchor.constraint(equalTo: glamFollowingCaption.trailingAnchor, constant: 8),
@@ -387,22 +451,24 @@ final class MuzoiGlamMyCenterController: UIViewController {
             glamFansCaption.centerYAnchor.constraint(equalTo: glamFollowingCaption.centerYAnchor),
             glamFansValue.leadingAnchor.constraint(equalTo: glamFansCaption.trailingAnchor, constant: 8),
             glamFansValue.centerYAnchor.constraint(equalTo: glamFansCaption.centerYAnchor),
-            glamFansValue.trailingAnchor.constraint(lessThanOrEqualTo: glamContent.trailingAnchor, constant: -16),
+            glamFansValue.trailingAnchor.constraint(lessThanOrEqualTo: glamContent.trailingAnchor, constant: -16)
+        ]
+    }
 
+    private func glamMineActionConstraints() -> [NSLayoutConstraint] {
+        [
             glamVaultControl.topAnchor.constraint(equalTo: glamPortrait.bottomAnchor, constant: 44),
             glamVaultControl.leadingAnchor.constraint(equalTo: glamContent.leadingAnchor, constant: 15),
             glamVaultControl.trailingAnchor.constraint(equalTo: glamContent.trailingAnchor, constant: -15),
             glamVaultControl.heightAnchor.constraint(equalToConstant: 90),
-
             glamRows.topAnchor.constraint(equalTo: glamVaultControl.bottomAnchor, constant: 25),
             glamRows.leadingAnchor.constraint(equalTo: glamVaultControl.leadingAnchor),
             glamRows.trailingAnchor.constraint(equalTo: glamVaultControl.trailingAnchor),
             glamRows.heightAnchor.constraint(equalToConstant: 198),
             glamRows.bottomAnchor.constraint(equalTo: glamContent.bottomAnchor, constant: -25),
-
             glamSpinner.centerXAnchor.constraint(equalTo: glamPortrait.centerXAnchor),
             glamSpinner.centerYAnchor.constraint(equalTo: glamPortrait.centerYAnchor)
-        ])
+        ]
     }
 
     private func glamDustProfileMetric(_ glamLabel: UILabel, glamText: String) {

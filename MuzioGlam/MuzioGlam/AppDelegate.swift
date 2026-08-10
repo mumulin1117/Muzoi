@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MuzioGlam
+//  MuzoiGlam
 //
-//  Created by MuzioGlam on 2026/8/6.
+//  Created by MuzoiGlam on 2026/8/6.
 //
 
 import UIKit

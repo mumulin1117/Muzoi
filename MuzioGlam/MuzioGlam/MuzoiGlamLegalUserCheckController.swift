@@ -49,27 +49,40 @@ final class MuzoiGlamLegalUserCheckController: UIViewController {
     }
 
     private func glamInkCovenantScroll() {
+        glamPolishDocumentChrome()
+        glamPinDocumentCanvas()
+        glamPolishDocumentText()
+        glamPolishDocumentAction()
+        glamPinDocumentConstraints()
+    }
+
+    private func glamPolishDocumentChrome() {
         title = glamKind.glamTitle
         view.backgroundColor = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
-
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .close,
             target: self,
             action: #selector(glamCloseDocument)
         )
+    }
 
+    private func glamPinDocumentCanvas() {
         glamCanvas.translatesAutoresizingMaskIntoConstraints = false
         glamDocument.translatesAutoresizingMaskIntoConstraints = false
         glamAcceptControl.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(glamCanvas)
         view.addSubview(glamAcceptControl)
         glamCanvas.addSubview(glamDocument)
+    }
 
+    private func glamPolishDocumentText() {
         glamDocument.numberOfLines = 0
         glamDocument.font = .systemFont(ofSize: 15, weight: .regular)
         glamDocument.textColor = UIColor.white.withAlphaComponent(0.82)
         glamDocument.text = glamKind.glamBody
+    }
 
+    private func glamPolishDocumentAction() {
         var glamControlStyle = UIButton.Configuration.filled()
         glamControlStyle.title = glamKind.glamActionTitle
         glamControlStyle.baseForegroundColor = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
@@ -78,7 +91,9 @@ final class MuzoiGlamLegalUserCheckController: UIViewController {
         glamAcceptControl.configuration = glamControlStyle
         glamAcceptControl.titleLabel?.font = .systemFont(ofSize: 17, weight: .bold)
         glamAcceptControl.addTarget(self, action: #selector(glamAcceptDocument), for: .touchUpInside)
+    }
 
+    private func glamPinDocumentConstraints() {
         NSLayoutConstraint.activate([
             glamCanvas.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             glamCanvas.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -119,7 +134,7 @@ final class MuzoiGlamLegalUserCheckController: UIViewController {
     Muzoi is licensed, not sold. Subject to this EULA and the Apple Media Services Usage Rules, we grant you a personal, limited, non-exclusive, non-transferable, non-sublicensable, revocable license to use Muzoi on Apple-branded devices you own or control. You may not copy, distribute, rent, lease, sell, sublicense, reverse engineer, decompile, bypass security, extract source code, or create unauthorized derivative works, except where applicable law expressly permits it.
     
     2. Eligibility and account integrity
-    You must be at least 18 years old, have legal capacity to enter this agreement, and be legally permitted to use Muzoi in the country or region where you reside. You must provide truthful, current account information and may not create an account for another person without authorization. You may not impersonate a person or organization, conceal an unlawful identity, evade a prior suspension, automate account creation, transfer an account, or allow another person to use your credentials. You are responsible for safeguarding your password and for activity performed through your account. Notify us promptly at muzio@gmail.com if you believe your account has been accessed without permission.
+    You must be at least 18 years old, have legal capacity to enter this agreement, and be legally permitted to use Muzoi in the country or region where you reside. You must provide truthful, current account information and may not create an account for another person without authorization. You may not impersonate a person or organization, conceal an unlawful identity, evade a prior suspension, automate account creation, transfer an account, or allow another person to use your credentials. You are responsible for safeguarding your password and for activity performed through your account. Notify us promptly at Muzoi@gmail.com if you believe your account has been accessed without permission.
     
     3. User conduct and content standards
     You retain ownership of original makeup photographs, captions, profile material, and other content you submit. You grant Muzoi a worldwide, non-exclusive, royalty-free license to host, reproduce, format, display, and distribute that content only as reasonably necessary to operate, moderate, secure, and improve the service. You represent that you own your content or have all required permissions, including consent from identifiable people shown in it.
@@ -140,7 +155,7 @@ final class MuzoiGlamLegalUserCheckController: UIViewController {
     You may stop using Muzoi at any time and may initiate account deletion through the in-app settings. A deletion request removes the account and associated data that we are not legally required to retain. Some content may remain temporarily in backups, safety records, or records needed to resolve disputes, prevent fraud, enforce rights, or comply with law. We may terminate this license if you violate these terms. Upon termination, you must stop using Muzoi.
     
     7. Apple terms and contact
-    Apple is not responsible for maintaining or supporting Muzoi. To the extent required by applicable law, Apple has no warranty obligation concerning the app. Apple and its subsidiaries are third-party beneficiaries of this EULA and may enforce it after your acceptance. Nothing in this EULA limits rights that cannot lawfully be excluded. Questions, safety reports, or account concerns may be sent to muzio@gmail.com.
+    Apple is not responsible for maintaining or supporting Muzoi. To the extent required by applicable law, Apple has no warranty obligation concerning the app. Apple and its subsidiaries are third-party beneficiaries of this EULA and may enforce it after your acceptance. Nothing in this EULA limits rights that cannot lawfully be excluded. Questions, safety reports, or account concerns may be sent to Muzoi@gmail.com.
     """
 
     fileprivate static let glamTermsText = """
@@ -151,7 +166,7 @@ final class MuzoiGlamLegalUserCheckController: UIViewController {
     These Terms of Service govern your access to Muzoi: Glam and its related features. Muzoi is a creative makeup platform where adults can discover artistic and special-effects looks, publish makeup stories, interact with other beauty enthusiasts, and obtain creative suggestions from an AI makeup artist. By creating an account, selecting the legal-consent control, or continuing to use Muzoi, you agree to these Terms, the End User License Agreement, and the Privacy Policy. If you disagree, you must not access the service.
     
     2. Account eligibility and registration
-    You must be at least 18 years old and legally capable of entering a binding agreement where you reside. You must provide accurate, current registration information and use Muzoi only for lawful purposes. The sign-in flow may create an account automatically when no account exists for the submitted email address. You are responsible for checking that the address is yours, choosing a secure password, keeping credentials confidential, and promptly reporting suspected unauthorized access to muzio@gmail.com.
+    You must be at least 18 years old and legally capable of entering a binding agreement where you reside. You must provide accurate, current registration information and use Muzoi only for lawful purposes. The sign-in flow may create an account automatically when no account exists for the submitted email address. You are responsible for checking that the address is yours, choosing a secure password, keeping credentials confidential, and promptly reporting suspected unauthorized access to Muzoi@gmail.com.
     
     You may not impersonate another person, register through deceptive identity information, create accounts through automated means, sell or transfer an account, share credentials to avoid restrictions, or create a replacement account after suspension without written permission. We may request reasonable information to investigate account ownership, safety complaints, or suspected fraud. We will not ask you to disclose your password by email.
     
@@ -174,7 +189,7 @@ final class MuzoiGlamLegalUserCheckController: UIViewController {
     Enforcement may include a warning, content removal, loss of publishing or interaction features, temporary suspension, permanent account termination, prevention of repeat registration, preservation of relevant records, or referral to authorities. Severe conduct may result in immediate action. Repeated violations or attempts to evade enforcement may lead to permanent removal. We may notify a reporting user that a review is complete but may not disclose confidential disciplinary or legal information.
     
     7. Account deletion and ending use
-    You may initiate deletion from the in-app settings. Deletion is intended to remove your account and associated personal data unless retention is required for security, fraud prevention, dispute resolution, enforcement, or law. Merely deleting the app or signing out does not delete the account. If the in-app process cannot be completed, contact muzio@gmail.com from the registered address. We may suspend or terminate access when you violate these Terms, create risk, or expose Muzoi or others to legal liability.
+    You may initiate deletion from the in-app settings. Deletion is intended to remove your account and associated personal data unless retention is required for security, fraud prevention, dispute resolution, enforcement, or law. Merely deleting the app or signing out does not delete the account. If the in-app process cannot be completed, contact Muzoi@gmail.com from the registered address. We may suspend or terminate access when you violate these Terms, create risk, or expose Muzoi or others to legal liability.
     
     8. Service availability and intellectual property
     Muzoi’s interface, branding, software, and original materials are protected by applicable intellectual-property laws. Except for the limited license granted in the EULA, no rights are transferred to you. Features may change, become unavailable, or be discontinued. We do not guarantee uninterrupted operation or that every submitted item will remain available.
@@ -183,7 +198,7 @@ final class MuzoiGlamLegalUserCheckController: UIViewController {
     Muzoi is provided on an "as is" and "as available" basis to the extent permitted by law. We do not guarantee the accuracy of user submissions, AI output, or external material. Nothing in these Terms excludes consumer rights or liability that cannot legally be limited. You are responsible for lawful use of the service and for harm caused by your violation of these Terms or another person’s rights.
     
     10. Updates and contact
-    We may revise these Terms to reflect legal, safety, or functional changes. Material revisions will be presented through an appropriate in-app notice or updated effective date. Continued use after the revised Terms become effective constitutes acceptance where permitted by law. Questions, complaints, copyright concerns, safety reports, and account requests may be sent to muzio@gmail.com.
+    We may revise these Terms to reflect legal, safety, or functional changes. Material revisions will be presented through an appropriate in-app notice or updated effective date. Continued use after the revised Terms become effective constitutes acceptance where permitted by law. Questions, complaints, copyright concerns, safety reports, and account requests may be sent to Muzoi@gmail.com.
     """
 
     fileprivate static let glamPrivacyText = """
@@ -191,7 +206,7 @@ final class MuzoiGlamLegalUserCheckController: UIViewController {
     Effective date: August 7, 2026
     
     1. Scope and contact
-    This Privacy Policy explains how Muzoi: Glam ("Muzoi," "we," or "us") handles information when you create an account or use the app. Muzoi supports discovery and sharing of creative makeup looks, profile interaction, safety reporting, and AI-assisted makeup inspiration. This Policy applies to information processed through the iOS app and the service pages opened inside it. Questions, privacy requests, safety concerns, and account-deletion requests may be sent to muzio@gmail.com.
+    This Privacy Policy explains how Muzoi: Glam ("Muzoi," "we," or "us") handles information when you create an account or use the app. Muzoi supports discovery and sharing of creative makeup looks, profile interaction, safety reporting, and AI-assisted makeup inspiration. This Policy applies to information processed through the iOS app and the service pages opened inside it. Questions, privacy requests, safety concerns, and account-deletion requests may be sent to Muzoi@gmail.com.
     
     2. Information you provide
     Account information may include your email address, account identifier, authentication token, consent status, password or equivalent credential, and information needed to keep you signed in. Muzoi stores only the account information required for authentication and operation. You should never send your password to us by email.
@@ -220,15 +235,15 @@ final class MuzoiGlamLegalUserCheckController: UIViewController {
     6. Retention, deletion, and consent choices
     Information is retained only for as long as reasonably necessary to provide Muzoi, maintain security, resolve disputes, enforce policies, and meet legal requirements. Account and profile information generally remains while the account is active. Deleted content and account records may persist for a limited period in backups. Safety, fraud, transaction, or legal records may be retained longer where reasonably required.
     
-    If you created an account, you may initiate account deletion through the in-app settings. Deleting the app or signing out does not delete the account. A valid deletion request removes the account and associated information that we are not legally required to retain. If the in-app process is unavailable, contact muzio@gmail.com from the registered email address. We may take reasonable steps to verify account ownership before completing the request.
+    If you created an account, you may initiate account deletion through the in-app settings. Deleting the app or signing out does not delete the account. A valid deletion request removes the account and associated information that we are not legally required to retain. If the in-app process is unavailable, contact Muzoi@gmail.com from the registered email address. We may take reasonable steps to verify account ownership before completing the request.
     
     You may withdraw optional consent by changing the relevant in-app selection or iOS permission. Withdrawing consent does not affect processing already lawfully completed. Some information is required to maintain an account; if you do not want that information processed, you may request account deletion.
     
     7. Security and account responsibility
-    We use reasonable administrative and technical measures designed to protect information from unauthorized access, alteration, disclosure, or destruction. No storage or transmission system is completely secure. Use a unique password, keep your device protected, and notify muzio@gmail.com if you suspect unauthorized account activity. We will not ask for your password by email.
+    We use reasonable administrative and technical measures designed to protect information from unauthorized access, alteration, disclosure, or destruction. No storage or transmission system is completely secure. Use a unique password, keep your device protected, and notify Muzoi@gmail.com if you suspect unauthorized account activity. We will not ask for your password by email.
     
     8. Adults only and international use
-    Muzoi is intended only for people aged 18 or older and is not directed to children. We do not knowingly collect personal information from anyone under 18. If you believe a minor has provided information, contact muzio@gmail.com so that we can investigate and remove it where appropriate.
+    Muzoi is intended only for people aged 18 or older and is not directed to children. We do not knowingly collect personal information from anyone under 18. If you believe a minor has provided information, contact Muzoi@gmail.com so that we can investigate and remove it where appropriate.
     
     Information may be processed in countries other than the one where you live. Where required, we use appropriate safeguards and honor rights available under applicable privacy law. Depending on your jurisdiction, you may have rights to request access, correction, deletion, restriction, portability, or objection. Contact us to exercise an applicable right.
     

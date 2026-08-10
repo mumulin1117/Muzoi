@@ -10,6 +10,31 @@ private enum MuzoiGlamPrismChannel {
     static let glamAll = [glamCatalogRelay, glamRouteRelay, glamCloseRelay, glamSessionRelay]
 }
 
+private enum MuzoiGlamPrismGlowKit {
+    static let glamBackdrop = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
+    static let glamIllumination = UIColor(red: 239 / 255, green: 151 / 255, blue: 229 / 255, alpha: 1)
+    static let glamUnlockScript = MuzoiGlamVeil("p5oAlgy2m0oGrDpPhBincQSYp2e9cXieaxlAELfNfbeScCthsiKTimt8(w)O")
+    static let glamUnableTitle = MuzoiGlamVeil("U5nJakbgl9eS 2t6oS iCDoPnOt9idnVuPeL")
+    static let glamActionOK = MuzoiGlamVeil("OzKV")
+    static let glamInvalidRadiance = MuzoiGlamVeil("Tvh4ek As1e5lheYcJtNeIdz 8i0tSekmX 5ilsM duLncayvHabidlKaQbzlBe2.M")
+    static let glamPaymentsRestricted = MuzoiGlamVeil("TsrQafnAsYaAc6tXiEovnhsx haMrjey trAeLsItZrhiacOtceldO todnI StwhviSsO hd3ervVizcleN.5")
+    static let glamProductMissing = MuzoiGlamVeil("TQhreW Us2eglveTcqt0eMdV CirtieZmv mcQoGualNdi NnEoptR Qboe9 xfaocuanHdx.E")
+    static let glamTransactionIncomplete = MuzoiGlamVeil("TOh1ey PtMrSaJnxsPaOcEtmiKovnk rcKoQuElzdt 8nWoFtk NbSeg pcNoomqpUlCe0tme5dc.r")
+    static let glamUnknownTransaction = MuzoiGlamVeil("T2hVed dtTrnaDnOsZaCcutLiIo2n4 1r7eAthumrAnGeCd5 6aBne guNnQkHnioZwKnT 4sbtbaIt0e7.t")
+    static let glamAllowedSchemes = [MuzoiGlamVeil("hJt4tSpR"), MuzoiGlamVeil("hatwtqp5st")]
+    static let glamAllowedHost = MuzoiGlamVeil("xn7OkN9kmJ2sqg8jvS4UnK6ErC1htF51zW32pR02.YsdhLo0pb")
+}
+
+private struct MuzoiGlamRadianceTicket {
+    let glamKey: String
+
+    init?(glamParcel: Any) {
+        guard let glamKey = glamParcel as? String else { return nil }
+        guard !glamKey.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else { return nil }
+        self.glamKey = glamKey
+    }
+}
+
 private final class MuzoiGlamPrismListener: NSObject, WKScriptMessageHandler {
     weak var glamCanvasKeeper: MuzoiGlamPrismPortalController?
     private lazy var glamSignalPipeline: (WKScriptMessage) -> Void = { [weak self] glamSignal in
@@ -90,31 +115,37 @@ final class MuzoiGlamPrismPortalController: UIViewController,
         glamIlluminationLink?.invalidate()
         glamRadianceRequest?.cancel()
         glamDetachStoreObserver()
-        MuzoiGlamPrismChannel.glamAll.forEach {
-            glamPrismSurface.configuration.userContentController.removeScriptMessageHandler(forName: $0)
-        }
+        glamUnhookPrismChannels()
     }
 
     private func glamMixPrismRecipe() -> WKWebViewConfiguration {
         let glamPrismRecipe = WKWebViewConfiguration()
-        MuzoiGlamPrismChannel.glamAll.forEach {
-            glamPrismRecipe.userContentController.add(glamPrismListener, name: $0)
-        }
+        glamPrismRecipe.userContentController.glamAttachMuzoiChannels(glamPrismListener)
         return glamPrismRecipe
     }
 
     private func glamStagePrismTheater() {
-        view.backgroundColor = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
+        view.backgroundColor = MuzoiGlamPrismGlowKit.glamBackdrop
+        glamTintPrismChrome()
+        glamNestPrismChrome()
+    }
+
+    private func glamTintPrismChrome() {
         glamIlluminationBar.translatesAutoresizingMaskIntoConstraints = false
-        glamIlluminationBar.progressTintColor = UIColor(red: 239 / 255, green: 151 / 255, blue: 229 / 255, alpha: 1)
+        glamIlluminationBar.progressTintColor = MuzoiGlamPrismGlowKit.glamIllumination
         glamIlluminationBar.trackTintColor = .clear
         glamOrbitSpinner.translatesAutoresizingMaskIntoConstraints = false
         glamOrbitSpinner.color = .white
+    }
 
+    private func glamNestPrismChrome() {
         view.addSubview(glamPrismSurface)
         view.addSubview(glamIlluminationBar)
         view.addSubview(glamOrbitSpinner)
+        glamPinPrismChrome()
+    }
 
+    private func glamPinPrismChrome() {
         NSLayoutConstraint.activate([
             glamPrismSurface.topAnchor.constraint(equalTo: view.topAnchor),
             glamPrismSurface.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -138,19 +169,14 @@ final class MuzoiGlamPrismPortalController: UIViewController,
                 guard let self else { return }
                 let glamGlowFraction = Float(glamPrismSurface.estimatedProgress)
                 self.glamIlluminationBar.setProgress(glamGlowFraction, animated: true)
-                self.glamIlluminationBar.isHidden = glamGlowFraction >= 1
-                if glamGlowFraction >= 1 {
-                    self.glamOrbitSpinner.stopAnimating()
-                }
+                self.glamDimPrismOrbit(when: glamGlowFraction >= 1)
             }
         }
     }
 
     private func glamUnveilFirstPrismTrail() {
         guard let glamTrail = URL(string: glamInitialTrail) else { return }
-        glamOrbitSpinner.startAnimating()
-        glamIlluminationBar.isHidden = false
-        print(MuzoiGlamVeil("MZuXzCoViB NGMlAaSmD FWGeHbJ KRLoQuWtEeR TLYoUaIdO:P Z") + glamInitialTrail)
+        glamSetPrismLoading(true)
         glamPrismSurface.load(URLRequest(url: glamTrail))
     }
 
@@ -174,13 +200,10 @@ final class MuzoiGlamPrismPortalController: UIViewController,
 
     private func glamBeginRadianceUnlock(_ glamParcel: Any) {
         guard glamRadianceKey == nil else { return }
-        guard
-            let glamChosenRadianceKey = glamParcel as? String,
-            !glamChosenRadianceKey.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-        else {
+        guard let glamTicket = MuzoiGlamRadianceTicket(glamParcel: glamParcel) else {
             glamFinishRadianceUnlock(
                 glamDidUnlock: false,
-                glamDetourCaption: MuzoiGlamVeil("Tvh4ek As1e5lheYcJtNeIdz 8i0tSekmX 5ilsM duLncayvHabidlKaQbzlBe2.M")
+                glamDetourCaption: MuzoiGlamPrismGlowKit.glamInvalidRadiance
             )
             return
         }
@@ -188,11 +211,15 @@ final class MuzoiGlamPrismPortalController: UIViewController,
         guard SKPaymentQueue.canMakePayments() else {
             glamFinishRadianceUnlock(
                 glamDidUnlock: false,
-                glamDetourCaption: MuzoiGlamVeil("TsrQafnAsYaAc6tXiEovnhsx haMrjey trAeLsItZrhiacOtceldO todnI StwhviSsO hd3ervVizcleN.5")
+                glamDetourCaption: MuzoiGlamPrismGlowKit.glamPaymentsRestricted
             )
             return
         }
 
+        glamSearchRadianceShelf(glamTicket.glamKey)
+    }
+
+    private func glamSearchRadianceShelf(_ glamChosenRadianceKey: String) {
         glamRadianceRequest?.cancel()
         glamRadianceKey = glamChosenRadianceKey
         view.isUserInteractionEnabled = false
@@ -228,29 +255,29 @@ final class MuzoiGlamPrismPortalController: UIViewController,
         glamOrbitSpinner.stopAnimating()
 
         if glamDidUnlock {
-            glamPrismSurface.evaluateJavaScript(MuzoiGlamVeil("p5oAlgy2m0oGrDpPhBincQSYp2e9cXieaxlAELfNfbeScCthsiKTimt8(w)O"), completionHandler: nil)
+            glamPrismSurface.evaluateJavaScript(MuzoiGlamPrismGlowKit.glamUnlockScript, completionHandler: nil)
             return
         }
 
         guard let glamDetourCaption else { return }
 
         let glamAlert = UIAlertController(
-            title: MuzoiGlamVeil("U5nJakbgl9eS 2t6oS iCDoPnOt9idnVuPeL"),
+            title: MuzoiGlamPrismGlowKit.glamUnableTitle,
             message: glamDetourCaption,
             preferredStyle: .alert
         )
-        glamAlert.addAction(UIAlertAction(title: MuzoiGlamVeil("OzKV"), style: .default))
+        glamAlert.addAction(UIAlertAction(title: MuzoiGlamPrismGlowKit.glamActionOK, style: .default))
         present(glamAlert, animated: true)
     }
 
     func productsRequest(_ glamStoreInquiry: SKProductsRequest, didReceive glamStoreReply: SKProductsResponse) {
         guard
             let glamChosenRadianceKey = glamRadianceKey,
-            let glamRadianceItem = glamStoreReply.products.first(where: { $0.productIdentifier == glamChosenRadianceKey })
+            let glamRadianceItem = glamStoreReply.glamMuzoiRadianceItem(matching: glamChosenRadianceKey)
         else {
             glamFinishRadianceUnlock(
                 glamDidUnlock: false,
-                glamDetourCaption: MuzoiGlamVeil("TQhreW Us2eglveTcqt0eMdV CirtieZmv mcQoGualNdi NnEoptR Qboe9 xfaocuanHdx.E")
+                glamDetourCaption: MuzoiGlamPrismGlowKit.glamProductMissing
             )
             return
         }
@@ -271,51 +298,55 @@ final class MuzoiGlamPrismPortalController: UIViewController,
         updatedTransactions glamStoreEntries: [SKPaymentTransaction]
     ) {
         for glamStoreEntry in glamStoreEntries {
-            guard
-                let glamChosenRadianceKey = glamRadianceKey,
-                glamStoreEntry.payment.productIdentifier == glamChosenRadianceKey
-            else { continue }
-
-            switch glamStoreEntry.transactionState {
-            case .purchased:
-                glamStoreQueue.finishTransaction(glamStoreEntry)
-                glamFinishRadianceUnlock(glamDidUnlock: true)
-            case .failed:
-                glamStoreQueue.finishTransaction(glamStoreEntry)
-                if let glamDetour = glamStoreEntry.error as? SKError, glamDetour.code == .paymentCancelled {
-                    glamFinishRadianceUnlock(glamDidUnlock: false)
-                } else {
-                    glamFinishRadianceUnlock(
-                        glamDidUnlock: false,
-                        glamDetourCaption: glamStoreEntry.error?.localizedDescription ?? MuzoiGlamVeil("TOh1ey PtMrSaJnxsPaOcEtmiKovnk rcKoQuElzdt 8nWoFtk NbSeg pcNoomqpUlCe0tme5dc.r")
-                    )
-                }
-            case .restored:
-                glamStoreQueue.finishTransaction(glamStoreEntry)
-                glamFinishRadianceUnlock(glamDidUnlock: true)
-            case .deferred:
-                view.isUserInteractionEnabled = true
-                glamOrbitSpinner.stopAnimating()
-            case .purchasing:
-                break
-            @unknown default:
-                glamFinishRadianceUnlock(
-                    glamDidUnlock: false,
-                    glamDetourCaption: MuzoiGlamVeil("T2hVed dtTrnaDnOsZaCcutLiIo2n4 1r7eAthumrAnGeCd5 6aBne guNnQkHnioZwKnT 4sbtbaIt0e7.t")
-                )
-            }
+            glamReadRadianceLedger(glamStoreEntry, from: glamStoreQueue)
         }
+    }
+
+    private func glamReadRadianceLedger(
+        _ glamStoreEntry: SKPaymentTransaction,
+        from glamStoreQueue: SKPaymentQueue
+    ) {
+        guard glamStoreEntry.glamMatchesMuzoiRadiance(glamRadianceKey) else { return }
+
+        switch glamStoreEntry.transactionState {
+        case .purchased, .restored:
+            glamStoreQueue.finishTransaction(glamStoreEntry)
+            glamFinishRadianceUnlock(glamDidUnlock: true)
+        case .failed:
+            glamStoreQueue.finishTransaction(glamStoreEntry)
+            glamResolveFailedRadiance(glamStoreEntry)
+        case .deferred:
+            view.isUserInteractionEnabled = true
+            glamOrbitSpinner.stopAnimating()
+        case .purchasing:
+            break
+        @unknown default:
+            glamFinishRadianceUnlock(
+                glamDidUnlock: false,
+                glamDetourCaption: MuzoiGlamPrismGlowKit.glamUnknownTransaction
+            )
+        }
+    }
+
+    private func glamResolveFailedRadiance(_ glamStoreEntry: SKPaymentTransaction) {
+        if let glamDetour = glamStoreEntry.error as? SKError, glamDetour.code == .paymentCancelled {
+            glamFinishRadianceUnlock(glamDidUnlock: false)
+            return
+        }
+
+        glamFinishRadianceUnlock(
+            glamDidUnlock: false,
+            glamDetourCaption: glamStoreEntry.error?.localizedDescription ?? MuzoiGlamPrismGlowKit.glamTransactionIncomplete
+        )
     }
 
     private func glamOpenNestedCanvas(_ glamParcel: Any) {
         guard
             let glamTrail = glamParcel as? String,
             let glamCanvasHarbor = URL(string: glamTrail),
-            [MuzoiGlamVeil("hJt4tSpR"), MuzoiGlamVeil("hatwtqp5st")].contains(glamCanvasHarbor.scheme?.lowercased() ?? ""),
-            glamCanvasHarbor.host == MuzoiGlamVeil("xn7OkN9kmJ2sqg8jvS4UnK6ErC1htF51zW32pR02.YsdhLo0pb")
+            glamCanvasHarbor.glamBelongsToMuzoiPrism
         else { return }
 
-        print(MuzoiGlamVeil("MZuXzCoViB NGMlAaSmD FNGeHsJtKeLdQ WWEeRbT YRUoIuOtPeZ:X C") + glamTrail)
         navigationController?.pushViewController(
             MuzoiGlamPrismPortalController(glamInitialTrail: glamTrail),
             animated: true
@@ -331,8 +362,7 @@ final class MuzoiGlamPrismPortalController: UIViewController,
     }
 
     func webView(_ glamPrismSurface: WKWebView, didFinish glamPassage: WKNavigation?) {
-        glamOrbitSpinner.stopAnimating()
-        glamIlluminationBar.isHidden = true
+        glamSetPrismLoading(false)
     }
 
     func webView(
@@ -340,8 +370,7 @@ final class MuzoiGlamPrismPortalController: UIViewController,
         didFail glamPassage: WKNavigation?,
         withError glamDetour: Error
     ) {
-        glamOrbitSpinner.stopAnimating()
-        glamIlluminationBar.isHidden = true
+        glamSetPrismLoading(false)
     }
 
     func webView(
@@ -349,8 +378,7 @@ final class MuzoiGlamPrismPortalController: UIViewController,
         didFailProvisionalNavigation glamPassage: WKNavigation?,
         withError glamDetour: Error
     ) {
-        glamOrbitSpinner.stopAnimating()
-        glamIlluminationBar.isHidden = true
+        glamSetPrismLoading(false)
     }
 
     func webView(
@@ -363,5 +391,56 @@ final class MuzoiGlamPrismPortalController: UIViewController,
             glamPrismSurface.load(glamPassageAction.request)
         }
         return nil
+    }
+
+    private func glamSetPrismLoading(_ glamIsLoading: Bool) {
+        glamIlluminationBar.isHidden = !glamIsLoading
+        if glamIsLoading {
+            glamOrbitSpinner.startAnimating()
+        } else {
+            glamOrbitSpinner.stopAnimating()
+        }
+    }
+
+    private func glamDimPrismOrbit(when glamShouldDim: Bool) {
+        glamIlluminationBar.isHidden = glamShouldDim
+        if glamShouldDim {
+            glamOrbitSpinner.stopAnimating()
+        }
+    }
+
+    private func glamUnhookPrismChannels() {
+        MuzoiGlamPrismChannel.glamAll.forEach {
+            glamPrismSurface.configuration.userContentController.removeScriptMessageHandler(forName: $0)
+        }
+    }
+}
+
+private extension WKUserContentController {
+    func glamAttachMuzoiChannels(_ glamListener: WKScriptMessageHandler) {
+        MuzoiGlamPrismChannel.glamAll.forEach {
+            add(glamListener, name: $0)
+        }
+    }
+}
+
+private extension SKProductsResponse {
+    func glamMuzoiRadianceItem(matching glamChosenRadianceKey: String) -> SKProduct? {
+        products.first { $0.productIdentifier == glamChosenRadianceKey }
+    }
+}
+
+private extension SKPaymentTransaction {
+    func glamMatchesMuzoiRadiance(_ glamRadianceKey: String?) -> Bool {
+        guard let glamRadianceKey else { return false }
+        return payment.productIdentifier == glamRadianceKey
+    }
+}
+
+private extension URL {
+    var glamBelongsToMuzoiPrism: Bool {
+        let glamScheme = scheme?.lowercased() ?? ""
+        return MuzoiGlamPrismGlowKit.glamAllowedSchemes.contains(glamScheme)
+            && host == MuzoiGlamPrismGlowKit.glamAllowedHost
     }
 }

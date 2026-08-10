@@ -259,20 +259,35 @@ final class MuzoiGlamEssenceCell: UICollectionViewCell {
 
     private func glamSculptShowpieceCell() {
         clipsToBounds = true
+        glamPinEssencePortrait()
+        glamPaintEssenceShade()
+        glamAddEssenceLabels()
+        glamTintEssenceText()
+        glamTintEssencePill()
+        glamPinEssenceRunway()
+    }
+
+    private func glamPinEssencePortrait() {
         glamPortrait.translatesAutoresizingMaskIntoConstraints = false
         glamPortrait.contentMode = .scaleAspectFill
         contentView.addSubview(glamPortrait)
+    }
 
+    private func glamPaintEssenceShade() {
         glamShade.colors = [UIColor.clear.cgColor, UIColor.black.withAlphaComponent(0.72).cgColor]
         glamShade.startPoint = CGPoint(x: 0.5, y: 0.52)
         glamShade.endPoint = CGPoint(x: 0.5, y: 1)
         contentView.layer.addSublayer(glamShade)
+    }
 
+    private func glamAddEssenceLabels() {
         [glamTitle, glamSubtitle, glamTrendPill].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             contentView.addSubview($0)
         }
+    }
 
+    private func glamTintEssenceText() {
         glamTitle.textColor = .white
         glamTitle.font = .systemFont(ofSize: 25, weight: .heavy)
         glamTitle.adjustsFontSizeToFitWidth = true
@@ -280,7 +295,9 @@ final class MuzoiGlamEssenceCell: UICollectionViewCell {
 
         glamSubtitle.textColor = .white
         glamSubtitle.font = .systemFont(ofSize: 17, weight: .medium)
+    }
 
+    private func glamTintEssencePill() {
         glamTrendPill.text = MuzoiGlamVeil(" M s✦Z lHyOFTc j k")
         glamTrendPill.textColor = .white
         glamTrendPill.backgroundColor = UIColor(red: 1, green: 0.29, blue: 0.61, alpha: 1)
@@ -288,7 +305,9 @@ final class MuzoiGlamEssenceCell: UICollectionViewCell {
         glamTrendPill.textAlignment = .center
         glamTrendPill.layer.cornerRadius = 12
         glamTrendPill.clipsToBounds = true
+    }
 
+    private func glamPinEssenceRunway() {
         NSLayoutConstraint.activate([
             glamPortrait.topAnchor.constraint(equalTo: contentView.topAnchor),
             glamPortrait.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
@@ -380,20 +399,36 @@ final class MuzoiGlamMuseCell: UICollectionViewCell {
 
     private func glamSculptShowpieceCell() {
         contentView.clipsToBounds = true
+        glamPinMusePortrait()
+        glamPaintMuseShade()
+        glamAddMuseOrnaments()
+        glamTintMuseFreshPill()
+        glamTintMuseText()
+        glamTintMusePresence()
+        glamTintMuseSpark()
+    }
+
+    private func glamPinMusePortrait() {
         glamPortrait.translatesAutoresizingMaskIntoConstraints = false
         glamPortrait.contentMode = .scaleAspectFill
         contentView.addSubview(glamPortrait)
+    }
 
+    private func glamPaintMuseShade() {
         glamShade.colors = [UIColor.clear.cgColor, UIColor.black.withAlphaComponent(0.88).cgColor]
         glamShade.startPoint = CGPoint(x: 0.5, y: 0.46)
         glamShade.endPoint = CGPoint(x: 0.5, y: 1)
         contentView.layer.addSublayer(glamShade)
+    }
 
+    private func glamAddMuseOrnaments() {
         [glamFreshPill, glamName, glamAudience, glamPresenceDot, glamSparkControl].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             contentView.addSubview($0)
         }
+    }
 
+    private func glamTintMuseFreshPill() {
         glamFreshPill.text = MuzoiGlamVeil(" IN7ejwl l")
         glamFreshPill.textColor = .white
         glamFreshPill.backgroundColor = UIColor.black.withAlphaComponent(0.5)
@@ -401,24 +436,33 @@ final class MuzoiGlamMuseCell: UICollectionViewCell {
         glamFreshPill.textAlignment = .center
         glamFreshPill.layer.cornerRadius = 12
         glamFreshPill.clipsToBounds = true
+    }
 
+    private func glamTintMuseText() {
         glamName.textColor = .white
         glamName.font = .systemFont(ofSize: 16, weight: .medium)
         glamAudience.textColor = UIColor.white.withAlphaComponent(0.6)
         glamAudience.font = .systemFont(ofSize: 12, weight: .regular)
+    }
 
+    private func glamTintMusePresence() {
         glamPresenceDot.backgroundColor = UIColor(red: 0, green: 0.88, blue: 0.19, alpha: 1)
         glamPresenceDot.layer.cornerRadius = 5
         glamPresenceDot.layer.borderWidth = 1
         glamPresenceDot.layer.borderColor = UIColor.white.cgColor
+    }
 
+    private func glamTintMuseSpark() {
         glamSparkControl.backgroundColor = UIColor(red: 0.91, green: 0.43, blue: 0.87, alpha: 1)
         glamSparkControl.layer.cornerRadius = 15
         let glamSparkGlyph = UIImageView(image: UIImage(systemName: "wand.and.stars"))
         glamSparkGlyph.translatesAutoresizingMaskIntoConstraints = false
         glamSparkGlyph.tintColor = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
         glamSparkControl.addSubview(glamSparkGlyph)
+        glamPinMuseRunway(glamSparkGlyph)
+    }
 
+    private func glamPinMuseRunway(_ glamSparkGlyph: UIImageView) {
         NSLayoutConstraint.activate([
             glamPortrait.topAnchor.constraint(equalTo: contentView.topAnchor),
             glamPortrait.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
@@ -501,6 +545,15 @@ final class MuzoiGlamHomeController: UIViewController,
     }
 
     private func glamStageHomeAtelier() {
+        glamPrepareHomeCanvas()
+        glamPrepareFeatureRail()
+        glamPrepareMuseRail()
+        glamPolishHomeBranding()
+        glamAddHomeAtelierPieces()
+        glamPinHomeAtelier()
+    }
+
+    private func glamPrepareHomeCanvas() {
         view.backgroundColor = UIColor(red: 9 / 255, green: 11 / 255, blue: 18 / 255, alpha: 1)
         glamCanvas.translatesAutoresizingMaskIntoConstraints = false
         glamCanvas.showsVerticalScrollIndicator = false
@@ -508,7 +561,9 @@ final class MuzoiGlamHomeController: UIViewController,
         glamContent.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(glamCanvas)
         glamCanvas.addSubview(glamContent)
+    }
 
+    private func glamPrepareFeatureRail() {
         glamFeatureLayout.scrollDirection = .horizontal
         glamFeatureLayout.minimumLineSpacing = 0
         glamFeatureRail.translatesAutoresizingMaskIntoConstraints = false
@@ -519,7 +574,9 @@ final class MuzoiGlamHomeController: UIViewController,
         glamFeatureRail.dataSource = self
         glamFeatureRail.delegate = self
         glamFeatureRail.register(MuzoiGlamEssenceCell.self, forCellWithReuseIdentifier: MuzoiGlamEssenceCell.glamReuseKey)
+    }
 
+    private func glamPrepareMuseRail() {
         glamMuseLayout.scrollDirection = .horizontal
         glamMuseLayout.minimumLineSpacing = 10
         glamMuseLayout.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
@@ -531,7 +588,9 @@ final class MuzoiGlamHomeController: UIViewController,
         glamMuseRail.dataSource = self
         glamMuseRail.delegate = self
         glamMuseRail.register(MuzoiGlamMuseCell.self, forCellWithReuseIdentifier: MuzoiGlamMuseCell.glamReuseKey)
+    }
 
+    private func glamPolishHomeBranding() {
         glamBrand.translatesAutoresizingMaskIntoConstraints = false
         glamBrand.text = MuzoiGlamVeil("MjuozhoKiF")
         glamBrand.textColor = .white
@@ -553,15 +612,25 @@ final class MuzoiGlamHomeController: UIViewController,
 
         glamSpinner.translatesAutoresizingMaskIntoConstraints = false
         glamSpinner.color = .white
+    }
 
+    private func glamAddHomeAtelierPieces() {
         glamContent.addSubview(glamFeatureRail)
         glamContent.addSubview(glamBrand)
         glamContent.addSubview(glamPager)
         glamContent.addSubview(glamSectionTitle)
         glamContent.addSubview(glamMuseRail)
         glamContent.addSubview(glamSpinner)
+    }
 
-        NSLayoutConstraint.activate([
+    private func glamPinHomeAtelier() {
+        NSLayoutConstraint.activate(glamHomeCanvasRunway())
+        NSLayoutConstraint.activate(glamHomeFeatureRunway())
+        NSLayoutConstraint.activate(glamHomeMuseRunway())
+    }
+
+    private func glamHomeCanvasRunway() -> [NSLayoutConstraint] {
+        [
             glamCanvas.topAnchor.constraint(equalTo: view.topAnchor),
             glamCanvas.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             glamCanvas.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -570,18 +639,27 @@ final class MuzoiGlamHomeController: UIViewController,
             glamContent.leadingAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.leadingAnchor),
             glamContent.trailingAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.trailingAnchor),
             glamContent.bottomAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.bottomAnchor),
-            glamContent.widthAnchor.constraint(equalTo: glamCanvas.frameLayoutGuide.widthAnchor),
+            glamContent.widthAnchor.constraint(equalTo: glamCanvas.frameLayoutGuide.widthAnchor)
+        ]
+    }
 
+    private func glamHomeFeatureRunway() -> [NSLayoutConstraint] {
+        [
             glamFeatureRail.topAnchor.constraint(equalTo: glamContent.topAnchor),
             glamFeatureRail.leadingAnchor.constraint(equalTo: glamContent.leadingAnchor),
             glamFeatureRail.trailingAnchor.constraint(equalTo: glamContent.trailingAnchor),
             glamFeatureRail.heightAnchor.constraint(equalTo: glamFeatureRail.widthAnchor, multiplier: 1.28),
-
             glamBrand.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
             glamBrand.leadingAnchor.constraint(equalTo: glamContent.leadingAnchor, constant: 16),
             glamPager.trailingAnchor.constraint(equalTo: glamContent.trailingAnchor, constant: -12),
             glamPager.bottomAnchor.constraint(equalTo: glamFeatureRail.bottomAnchor, constant: -13),
+            glamSpinner.centerXAnchor.constraint(equalTo: glamFeatureRail.centerXAnchor),
+            glamSpinner.centerYAnchor.constraint(equalTo: glamFeatureRail.centerYAnchor)
+        ]
+    }
 
+    private func glamHomeMuseRunway() -> [NSLayoutConstraint] {
+        [
             glamSectionTitle.topAnchor.constraint(equalTo: glamFeatureRail.bottomAnchor, constant: 28),
             glamSectionTitle.leadingAnchor.constraint(equalTo: glamContent.leadingAnchor, constant: 15),
             glamSectionTitle.trailingAnchor.constraint(equalTo: glamContent.trailingAnchor, constant: -15),
@@ -589,11 +667,8 @@ final class MuzoiGlamHomeController: UIViewController,
             glamMuseRail.leadingAnchor.constraint(equalTo: glamContent.leadingAnchor),
             glamMuseRail.trailingAnchor.constraint(equalTo: glamContent.trailingAnchor),
             glamMuseRail.heightAnchor.constraint(equalToConstant: 170),
-            glamMuseRail.bottomAnchor.constraint(equalTo: glamContent.bottomAnchor, constant: -18),
-
-            glamSpinner.centerXAnchor.constraint(equalTo: glamFeatureRail.centerXAnchor),
-            glamSpinner.centerYAnchor.constraint(equalTo: glamFeatureRail.centerYAnchor)
-        ])
+            glamMuseRail.bottomAnchor.constraint(equalTo: glamContent.bottomAnchor, constant: -18)
+        ]
     }
 
     private func glamLoadHome() {
