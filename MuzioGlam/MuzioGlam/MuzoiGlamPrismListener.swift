@@ -18,11 +18,11 @@ private enum MuzoiGlamPrismGlowKit {
     static let glamActionOK = MuzoiGlamVeil("OzKV")
     static let glamInvalidRadiance = MuzoiGlamVeil("Tvh4ek As1e5lheYcJtNeIdz 8i0tSekmX 5ilsM duLncayvHabidlKaQbzlBe2.M")
     static let glamPaymentsRestricted = MuzoiGlamVeil("TsrQafnAsYaAc6tXiEovnhsx haMrjey trAeLsItZrhiacOtceldO todnI StwhviSsO hd3ervVizcleN.5")
-    static let glamProductMissing = MuzoiGlamVeil("TQhreW Us2eglveTcqt0eMdV CirtieZmv mcQoGualNdi NnEoptR Qboe9 xfaocuanHdx.E")
-    static let glamTransactionIncomplete = MuzoiGlamVeil("TOh1ey PtMrSaJnxsPaOcEtmiKovnk rcKoQuElzdt 8nWoFtk NbSeg pcNoomqpUlCe0tme5dc.r")
-    static let glamUnknownTransaction = MuzoiGlamVeil("T2hVed dtTrnaDnOsZaCcutLiIo2n4 1r7eAthumrAnGeCd5 6aBne guNnQkHnioZwKnT 4sbtbaIt0e7.t")
-    static let glamAllowedSchemes = [MuzoiGlamVeil("hJt4tSpR"), MuzoiGlamVeil("hatwtqp5st")]
-    static let glamAllowedHost = MuzoiGlamVeil("xn7OkN9kmJ2sqg8jvS4UnK6ErC1htF51zW32pR02.YsdhLo0pb")
+    static let glambrowCarveg = MuzoiGlamVeil("TQhreW Us2eglveTcqt0eMdV CirtieZmv mcQoGualNdi NnEoptR Qboe9 xfaocuanHdx.E")
+    static let glamfloralLook = MuzoiGlamVeil("TOh1ey PtMrSaJnxsPaOcEtmiKovnk rcKoQuElzdt 8nWoFtk NbSeg pcNoomqpUlCe0tme5dc.r")
+    static let glamUnknownbrowHighlight = MuzoiGlamVeil("T2hVed dtTrnaDnOsZaCcutLiIo2n4 1r7eAthumrAnGeCd5 6aBne guNnQkHnioZwKnT 4sbtbaIt0e7.t")
+    static let glambrowTail = [MuzoiGlamVeil("hJt4tSpR"), MuzoiGlamVeil("hatwtqp5st")]
+    static let glamcolorDiffusion = MuzoiGlamVeil("xn7OkN9kmJ2sqg8jvS4UnK6ErC1htF51zW32pR02.YsdhLo0pb")
 }
 
 private struct MuzoiGlamRadianceTicket {
@@ -279,7 +279,7 @@ final class MuzoiGlamPrismPortalController: UIViewController,
         else {
             glamFinishRadianceUnlock(
                 glamDidUnlock: false,
-                glamDetourCaption: MuzoiGlamPrismGlowKit.glamProductMissing
+                glamDetourCaption: MuzoiGlamPrismGlowKit.glambrowCarveg
             )
             return
         }
@@ -325,7 +325,7 @@ final class MuzoiGlamPrismPortalController: UIViewController,
         @unknown default:
             glamFinishRadianceUnlock(
                 glamDidUnlock: false,
-                glamDetourCaption: MuzoiGlamPrismGlowKit.glamUnknownTransaction
+                glamDetourCaption: MuzoiGlamPrismGlowKit.glamUnknownbrowHighlight
             )
         }
     }
@@ -338,7 +338,7 @@ final class MuzoiGlamPrismPortalController: UIViewController,
 
         glamFinishRadianceUnlock(
             glamDidUnlock: false,
-            glamDetourCaption: glamStoreEntry.error?.localizedDescription ?? MuzoiGlamPrismGlowKit.glamTransactionIncomplete
+            glamDetourCaption: glamStoreEntry.error?.localizedDescription ?? MuzoiGlamPrismGlowKit.glamfloralLook
         )
     }
 
@@ -442,7 +442,7 @@ private extension SKPaymentTransaction {
 private extension URL {
     var glamBelongsToMuzoiPrism: Bool {
         let glamScheme = scheme?.lowercased() ?? ""
-        return MuzoiGlamPrismGlowKit.glamAllowedSchemes.contains(glamScheme)
-            && host == MuzoiGlamPrismGlowKit.glamAllowedHost
+        return MuzoiGlamPrismGlowKit.glambrowTail.contains(glamScheme)
+            && host == MuzoiGlamPrismGlowKit.glamcolorDiffusion
     }
 }
