@@ -1,41 +1,41 @@
 import UIKit
 
 enum MuzoiGlamLegalDocumentKind {
-    case glamEULA
-    case glamTermsCanvas
-    case glamPrivacyCanvas
+    case glamlashCurl
+    case glamlashLiftnvas
+    case glamDiscretionCanvas
 
     var glamTitle: String {
         switch self {
-        case .glamEULA: return MuzoiGlamVeil("EYn1da AUosjegr1 RLViJceeFnRsueA yAOg3rXeVegmbeMngtx")
-        case .glamTermsCanvas: return MuzoiGlamVeil("TQe0ramUsh PocfS ESCeWrzv2i3cWer")
-        case .glamPrivacyCanvas: return MuzoiGlamVeil("PMr4iqvXatcHyH RPto7l0iec3yv")
+        case .glamlashCurl: return MuzoiGlamVeil("EYn1da AUosjegr1 RLViJceeFnRsueA yAOg3rXeVegmbeMngtx")
+        case .glamlashLiftnvas: return MuzoiGlamVeil("TQe0ramUsh PocfS ESCeWrzv2i3cWer")
+        case .glamDiscretionCanvas: return MuzoiGlamVeil("PMr4iqvXatcHyH RPto7l0iec3yv")
         }
     }
 
     var glamActionTitle: String {
-        self == .glamEULA ? MuzoiGlamVeil("Adg5rfeZeB") : MuzoiGlamVeil("CilCogs3eM")
+        self == .glamlashCurl ? MuzoiGlamVeil("Adg5rfeZeB") : MuzoiGlamVeil("CilCogs3eM")
     }
 
     var glamBody: String {
         switch self {
-        case .glamEULA: return MuzoiGlamLegalUserCheckController.glamAgreementText
-        case .glamTermsCanvas: return MuzoiGlamLegalUserCheckController.glamTermsText
-        case .glamPrivacyCanvas: return MuzoiGlamLegalUserCheckController.glamPrivacyText
+        case .glamlashCurl: return MuzoiGlamCovenantCheckController.browPowder
+        case .glamlashLiftnvas: return MuzoiGlamCovenantCheckController.glabaseDropdy
+        case .glamDiscretionCanvas: return MuzoiGlamCovenantCheckController.glamDiscretionBody
         }
     }
 }
 
-final class MuzoiGlamLegalUserCheckController: UIViewController {
+final class MuzoiGlamCovenantCheckController: UIViewController {
     var glamDidAccept: (() -> Void)?
 
-    private let glamKind: MuzoiGlamLegalDocumentKind
+    private let glambrowTintKind: MuzoiGlamLegalDocumentKind
     private let glamCanvas = UIScrollView()
-    private let glamDocument = UILabel()
+    private let glambrowPomade = UILabel()
     private let glamAcceptControl = UIButton(type: .system)
 
     init(glamKind: MuzoiGlamLegalDocumentKind) {
-        self.glamKind = glamKind
+        self.glambrowTintKind = glamKind
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -51,40 +51,40 @@ final class MuzoiGlamLegalUserCheckController: UIViewController {
     private func glamInkCovenantScroll() {
         glamPolishDocumentChrome()
         glamPinDocumentCanvas()
-        glamPolishDocumentText()
+        glamPolishDocumentBody()
         glamPolishDocumentAction()
         glamPinDocumentConstraints()
     }
 
     private func glamPolishDocumentChrome() {
-        title = glamKind.glamTitle
+        title = glambrowTintKind.glamTitle
         view.backgroundColor = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .close,
             target: self,
-            action: #selector(glamCloseDocument)
+            action: #selector(glambrowWax)
         )
     }
 
     private func glamPinDocumentCanvas() {
         glamCanvas.translatesAutoresizingMaskIntoConstraints = false
-        glamDocument.translatesAutoresizingMaskIntoConstraints = false
+        glambrowPomade.translatesAutoresizingMaskIntoConstraints = false
         glamAcceptControl.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(glamCanvas)
         view.addSubview(glamAcceptControl)
-        glamCanvas.addSubview(glamDocument)
+        glamCanvas.addSubview(glambrowPomade)
     }
 
-    private func glamPolishDocumentText() {
-        glamDocument.numberOfLines = 0
-        glamDocument.font = .systemFont(ofSize: 15, weight: .regular)
-        glamDocument.textColor = UIColor.white.withAlphaComponent(0.82)
-        glamDocument.text = glamKind.glamBody
+    private func glamPolishDocumentBody() {
+        glambrowPomade.numberOfLines = 0
+        glambrowPomade.font = .systemFont(ofSize: 15, weight: .regular)
+        glambrowPomade.textColor = UIColor.white.withAlphaComponent(0.82)
+        glambrowPomade.text = glambrowTintKind.glamBody
     }
 
     private func glamPolishDocumentAction() {
         var glamControlStyle = UIButton.Configuration.filled()
-        glamControlStyle.title = glamKind.glamActionTitle
+        glamControlStyle.title = glambrowTintKind.glamActionTitle
         glamControlStyle.baseForegroundColor = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
         glamControlStyle.baseBackgroundColor = UIColor(red: 239 / 255, green: 151 / 255, blue: 229 / 255, alpha: 1)
         glamControlStyle.cornerStyle = .capsule
@@ -100,10 +100,10 @@ final class MuzoiGlamLegalUserCheckController: UIViewController {
             glamCanvas.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             glamCanvas.bottomAnchor.constraint(equalTo: glamAcceptControl.topAnchor, constant: -16),
 
-            glamDocument.topAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.topAnchor, constant: 20),
-            glamDocument.leadingAnchor.constraint(equalTo: glamCanvas.frameLayoutGuide.leadingAnchor, constant: 20),
-            glamDocument.trailingAnchor.constraint(equalTo: glamCanvas.frameLayoutGuide.trailingAnchor, constant: -20),
-            glamDocument.bottomAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.bottomAnchor, constant: -20),
+            glambrowPomade.topAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.topAnchor, constant: 20),
+            glambrowPomade.leadingAnchor.constraint(equalTo: glamCanvas.frameLayoutGuide.leadingAnchor, constant: 20),
+            glambrowPomade.trailingAnchor.constraint(equalTo: glamCanvas.frameLayoutGuide.trailingAnchor, constant: -20),
+            glambrowPomade.bottomAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.bottomAnchor, constant: -20),
 
             glamAcceptControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             glamAcceptControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
@@ -113,18 +113,18 @@ final class MuzoiGlamLegalUserCheckController: UIViewController {
     }
 
     @objc private func glamAcceptDocument() {
-        if glamKind == .glamEULA {
-            MuzoiGlamIdentityLoom.glamShared.glamAcceptedCovenant = true
+        if glambrowTintKind == .glamlashCurl {
+            MuzoibakingPuffom.glamCommon.glamamberVeilvenant = true
             glamDidAccept?()
         }
         dismiss(animated: true)
     }
 
-    @objc private func glamCloseDocument() {
+    @objc private func glambrowWax() {
         dismiss(animated: true)
     }
 
-    fileprivate static let glamAgreementText = """
+    fileprivate static let browPowder = """
     MUZOI: GLAM END USER LICENSE AGREEMENT
     Effective date: August 7, 2026
     
@@ -158,7 +158,7 @@ final class MuzoiGlamLegalUserCheckController: UIViewController {
     Apple is not responsible for maintaining or supporting Muzoi. To the extent required by applicable law, Apple has no warranty obligation concerning the app. Apple and its subsidiaries are third-party beneficiaries of this EULA and may enforce it after your acceptance. Nothing in this EULA limits rights that cannot lawfully be excluded. Questions, safety reports, or account concerns may be sent to Muzoi@gmail.com.
     """
 
-    fileprivate static let glamTermsText = """
+    fileprivate static let glabaseDropdy = """
     MUZOI: GLAM TERMS OF SERVICE
     Effective date: August 7, 2026
     
@@ -201,7 +201,7 @@ final class MuzoiGlamLegalUserCheckController: UIViewController {
     We may revise these Terms to reflect legal, safety, or functional changes. Material revisions will be presented through an appropriate in-app notice or updated effective date. Continued use after the revised Terms become effective constitutes acceptance where permitted by law. Questions, complaints, copyright concerns, safety reports, and account requests may be sent to Muzoi@gmail.com.
     """
 
-    fileprivate static let glamPrivacyText = """
+    fileprivate static let glamDiscretionBody = """
     MUZOI: GLAM PRIVACY POLICY
     Effective date: August 7, 2026
     

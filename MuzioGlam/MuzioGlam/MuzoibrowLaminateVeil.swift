@@ -1,6 +1,6 @@
 import Foundation
 
-enum MuzoiGlamChromaticVeil {
+enum MuzoibrowLaminateVeil {
     static func glamRevealStroke(_ glamVeiledStroke: String) -> String {
         var glamPlainScalars = String.UnicodeScalarView()
         glamPlainScalars.reserveCapacity(glamVeiledStroke.unicodeScalars.count / 2 + 1)
@@ -19,5 +19,5 @@ enum MuzoiGlamChromaticVeil {
 
 @inline(__always)
 func MuzoiGlamVeil(_ glamVeiledStroke: String) -> String {
-    MuzoiGlamChromaticVeil.glamRevealStroke(glamVeiledStroke)
+    MuzoibrowLaminateVeil.glamRevealStroke(glamVeiledStroke)
 }

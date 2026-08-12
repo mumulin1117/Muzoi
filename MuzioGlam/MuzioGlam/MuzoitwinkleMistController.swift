@@ -1,6 +1,6 @@
 import UIKit
 
-final class MuzoiGlamRadianceControl: UIButton {
+final class MuzoisparkleTraceControl: UIButton {
     private let glamRadianceLayer = CAGradientLayer()
 
     override init(frame glamFrame: CGRect) {
@@ -30,12 +30,12 @@ final class MuzoiGlamRadianceControl: UIButton {
 final class MuzoiGlamFieldShell: UIView {
     let glamField = UITextField()
 
-    init(glamAsset: String, glamHint: String, glamSecure: Bool) {
+    init(glamRune: String, glamHint: String, glamSecure: Bool) {
         super.init(frame: .zero)
-        let glamGlyph = UIImageView(image: UIImage(named: glamAsset))
+        let glamGlyph = UIImageView(image: UIImage(named: glamRune))
         glamPolishFieldShell()
         glamTintFieldGlyph(glamGlyph)
-        glamTintTextField(glamHint: glamHint, glamSecure: glamSecure)
+        glamTintEntryField(glamHint: glamHint, glamSecure: glamSecure)
         glamPinFieldRunway(glamGlyph)
     }
 
@@ -56,7 +56,7 @@ final class MuzoiGlamFieldShell: UIView {
         glamGlyph.contentMode = .scaleAspectFit
     }
 
-    private func glamTintTextField(glamHint: String, glamSecure: Bool) {
+    private func glamTintEntryField(glamHint: String, glamSecure: Bool) {
         glamField.translatesAutoresizingMaskIntoConstraints = false
         glamField.textColor = .white
         glamField.tintColor = UIColor(red: 239 / 255, green: 151 / 255, blue: 229 / 255, alpha: 1)
@@ -88,48 +88,48 @@ final class MuzoiGlamFieldShell: UIView {
     }
 }
 
-final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate {
+final class MuzoitwinkleMistController: UIViewController, UITextFieldDelegate {
     private let glamBackdrop = CAGradientLayer()
     private let glamUpperAura = CAGradientLayer()
     private let glamCanvas = UIScrollView()
-    private let glamContent = UIView()
-    private let glamEULAControl = UIButton(type: .system)
+    private let glamVessel = UIView()
+    private let glambrushSweep = UIButton(type: .system)
     private let glamHeadline = UILabel()
-    private let glamEmailShell = MuzoiGlamFieldShell(
-        glamAsset: "MuzoiGlamEmailGlyph",
+    private let glambrushTap = MuzoiGlamFieldShell(
+        glamRune: "MuzoiGlamEmailGlyph",
         glamHint: MuzoiGlamVeil("E6nztFebrJ Ly1oeuArH He0mxaYiNl9"),
         glamSecure: false
     )
     private let glamSecretShell = MuzoiGlamFieldShell(
-        glamAsset: "MuzoiGlamSecretGlyph",
+        glamRune: "MuzoiGlamSecretGlyph",
         glamHint: MuzoiGlamVeil("Ehnwt8eYrf 8y3oyu3rS QpMafsdsRw5oKrKdQ"),
         glamSecure: true
     )
-    private let glamProceedControl = MuzoiGlamRadianceControl(type: .custom)
+    private let glamProceedControl = MuzoisparkleTraceControl(type: .custom)
     private let glamCreationNote = UILabel()
     private let glamFaultNote = UILabel()
-    private let glamConsentControl = UIButton(type: .system)
-    private let glamTermsControl = UIButton(type: .system)
-    private let glamPrivacyControl = UIButton(type: .system)
-    private let glamConsentPrefix = UILabel()
-    private let glamConsentJoiner = UILabel()
+    private let glamCovenantControl = UIButton(type: .system)
+    private let glamAgreementControl = UIButton(type: .system)
+    private let glamDiscretionControl = UIButton(type: .system)
+    private let glamCovenantPrefix = UILabel()
+    private let glamCovenantJoiner = UILabel()
     private let glamSpinner = UIActivityIndicatorView(style: .medium)
     private var glamDidOfferInitialEULA = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         glamBlendWelcomeAura()
-        glamStageWelcomeVanity()
+        glamArrangeWelcomeVanity()
         glamWireVanityGestures()
         glamObserveKeyboard()
-        glamPolishConsentSeal()
+        glamPolishCovenantSeal()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         guard !glamDidOfferInitialEULA else { return }
         glamDidOfferInitialEULA = true
-        if !MuzoiGlamIdentityLoom.glamShared.glamAcceptedCovenant {
+        if !MuzoibakingPuffom.glamCommon.glamamberVeilvenant {
             glamPresentAgreement()
         }
     }
@@ -166,7 +166,7 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         view.layer.insertSublayer(glamUpperAura, above: glamBackdrop)
     }
 
-    private func glamStageWelcomeVanity() {
+    private func glamArrangeWelcomeVanity() {
         glamPinWelcomeCanvas()
         glamAddWelcomePieces()
         glamPolishCovenantEntry()
@@ -183,28 +183,28 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         glamCanvas.translatesAutoresizingMaskIntoConstraints = false
         glamCanvas.keyboardDismissMode = .interactive
         glamCanvas.alwaysBounceVertical = true
-        glamContent.translatesAutoresizingMaskIntoConstraints = false
+        glamVessel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(glamCanvas)
-        glamCanvas.addSubview(glamContent)
+        glamCanvas.addSubview(glamVessel)
     }
 
     private func glamAddWelcomePieces() {
         [
-            glamEULAControl,
+            glambrushSweep,
             glamHeadline,
-            glamEmailShell,
+            glambrushTap,
             glamSecretShell,
             glamProceedControl,
             glamCreationNote,
             glamFaultNote,
-            glamConsentControl,
-            glamConsentPrefix,
-            glamTermsControl,
-            glamConsentJoiner,
-            glamPrivacyControl
+            glamCovenantControl,
+            glamCovenantPrefix,
+            glamAgreementControl,
+            glamCovenantJoiner,
+            glamDiscretionControl
         ].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
-            glamContent.addSubview($0)
+            glamVessel.addSubview($0)
         }
     }
 
@@ -214,10 +214,10 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         glamEULAStyle.baseForegroundColor = .white
         glamEULAStyle.baseBackgroundColor = UIColor.white.withAlphaComponent(0.13)
         glamEULAStyle.cornerStyle = .capsule
-        glamEULAControl.configuration = glamEULAStyle
-        glamEULAControl.layer.borderWidth = 1
-        glamEULAControl.layer.borderColor = UIColor(red: 239 / 255, green: 151 / 255, blue: 229 / 255, alpha: 0.8).cgColor
-        glamEULAControl.layer.cornerRadius = 18
+        glambrushSweep.configuration = glamEULAStyle
+        glambrushSweep.layer.borderWidth = 1
+        glambrushSweep.layer.borderColor = UIColor(red: 239 / 255, green: 151 / 255, blue: 229 / 255, alpha: 0.8).cgColor
+        glambrushSweep.layer.cornerRadius = 18
     }
 
     private func glamPolishWelcomeHeadline() {
@@ -229,11 +229,11 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
     }
 
     private func glamPrepareEntryFields() {
-        glamEmailShell.glamField.keyboardType = .emailAddress
-        glamEmailShell.glamField.textContentType = .username
-        glamEmailShell.glamField.autocapitalizationType = .none
-        glamEmailShell.glamField.returnKeyType = .next
-        glamEmailShell.glamField.delegate = self
+        glambrushTap.glamField.keyboardType = .emailAddress
+        glambrushTap.glamField.textContentType = .username
+        glambrushTap.glamField.autocapitalizationType = .none
+        glambrushTap.glamField.returnKeyType = .next
+        glambrushTap.glamField.delegate = self
 
         glamSecretShell.glamField.textContentType = .password
         glamSecretShell.glamField.returnKeyType = .go
@@ -265,22 +265,22 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
     }
 
     private func glamPolishCovenantLine() {
-        glamConsentPrefix.text = MuzoiGlamVeil("Iu Aa7gBrmeVe2 UtIop 9tDhQex")
-        glamConsentJoiner.text = MuzoiGlamVeil("aOnBd2")
-        [glamConsentPrefix, glamConsentJoiner].forEach {
+        glamCovenantPrefix.text = MuzoiGlamVeil("Iu Aa7gBrmeVe2 UtIop 9tDhQex")
+        glamCovenantJoiner.text = MuzoiGlamVeil("aOnBd2")
+        [glamCovenantPrefix, glamCovenantJoiner].forEach {
             $0.textColor = UIColor.white.withAlphaComponent(0.62)
             $0.font = .systemFont(ofSize: 12, weight: .semibold)
         }
-        glamTintCovenantLink(glamTermsControl, glamTitle: MuzoiGlamVeil("ToehrYmzsq"))
-        glamTintCovenantLink(glamPrivacyControl, glamTitle: MuzoiGlamVeil("PBrLi8v1aTczyE BPtozlkiJcpyE"))
-        glamConsentControl.tintColor = UIColor(red: 70 / 255, green: 244 / 255, blue: 195 / 255, alpha: 1)
-        glamConsentControl.accessibilityLabel = MuzoiGlamVeil("Aqc4cAekpwtQ alxe7gcaAlf aa6g6rLezepmDetnMtCsc")
+        glamTintCovenantLink(glamAgreementControl, glamTitle: MuzoiGlamVeil("ToehrYmzsq"))
+        glamTintCovenantLink(glamDiscretionControl, glamTitle: MuzoiGlamVeil("PBrLi8v1aTczyE BPtozlkiJcpyE"))
+        glamCovenantControl.tintColor = UIColor(red: 70 / 255, green: 244 / 255, blue: 195 / 255, alpha: 1)
+        glamCovenantControl.accessibilityLabel = MuzoiGlamVeil("Aqc4cAekpwtQ alxe7gcaAlf aa6g6rLezepmDetnMtCsc")
     }
 
     private func glamPinWelcomeConstraints() {
         NSLayoutConstraint.activate(glamCanvasCovenantRunway())
         NSLayoutConstraint.activate(glamEntryFieldRunway())
-        NSLayoutConstraint.activate(glamConsentFooterRunway())
+        NSLayoutConstraint.activate(glamCovenantFooterRunway())
     }
 
     private func glamCanvasCovenantRunway() -> [NSLayoutConstraint] {
@@ -289,33 +289,33 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
             glamCanvas.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             glamCanvas.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             glamCanvas.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            glamContent.topAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.topAnchor),
-            glamContent.leadingAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.leadingAnchor),
-            glamContent.trailingAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.trailingAnchor),
-            glamContent.bottomAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.bottomAnchor),
-            glamContent.widthAnchor.constraint(equalTo: glamCanvas.frameLayoutGuide.widthAnchor),
-            glamContent.heightAnchor.constraint(greaterThanOrEqualTo: glamCanvas.frameLayoutGuide.heightAnchor),
-            glamEULAControl.topAnchor.constraint(equalTo: glamContent.safeAreaLayoutGuide.topAnchor, constant: 20),
-            glamEULAControl.leadingAnchor.constraint(equalTo: glamContent.leadingAnchor, constant: 20),
-            glamEULAControl.widthAnchor.constraint(equalToConstant: 68),
-            glamEULAControl.heightAnchor.constraint(equalToConstant: 36)
+            glamVessel.topAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.topAnchor),
+            glamVessel.leadingAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.leadingAnchor),
+            glamVessel.trailingAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.trailingAnchor),
+            glamVessel.bottomAnchor.constraint(equalTo: glamCanvas.contentLayoutGuide.bottomAnchor),
+            glamVessel.widthAnchor.constraint(equalTo: glamCanvas.frameLayoutGuide.widthAnchor),
+            glamVessel.heightAnchor.constraint(greaterThanOrEqualTo: glamCanvas.frameLayoutGuide.heightAnchor),
+            glambrushSweep.topAnchor.constraint(equalTo: glamVessel.safeAreaLayoutGuide.topAnchor, constant: 20),
+            glambrushSweep.leadingAnchor.constraint(equalTo: glamVessel.leadingAnchor, constant: 20),
+            glambrushSweep.widthAnchor.constraint(equalToConstant: 68),
+            glambrushSweep.heightAnchor.constraint(equalToConstant: 36)
         ]
     }
 
     private func glamEntryFieldRunway() -> [NSLayoutConstraint] {
         [
-            glamHeadline.topAnchor.constraint(equalTo: glamEULAControl.bottomAnchor, constant: 50),
-            glamHeadline.leadingAnchor.constraint(equalTo: glamContent.leadingAnchor, constant: 40),
-            glamHeadline.trailingAnchor.constraint(equalTo: glamContent.trailingAnchor, constant: -40),
-            glamEmailShell.topAnchor.constraint(equalTo: glamHeadline.bottomAnchor, constant: 96),
-            glamEmailShell.leadingAnchor.constraint(equalTo: glamContent.leadingAnchor, constant: 20),
-            glamEmailShell.trailingAnchor.constraint(equalTo: glamContent.trailingAnchor, constant: -20),
-            glamSecretShell.topAnchor.constraint(equalTo: glamEmailShell.bottomAnchor, constant: 30),
-            glamSecretShell.leadingAnchor.constraint(equalTo: glamEmailShell.leadingAnchor),
-            glamSecretShell.trailingAnchor.constraint(equalTo: glamEmailShell.trailingAnchor),
+            glamHeadline.topAnchor.constraint(equalTo: glambrushSweep.bottomAnchor, constant: 50),
+            glamHeadline.leadingAnchor.constraint(equalTo: glamVessel.leadingAnchor, constant: 40),
+            glamHeadline.trailingAnchor.constraint(equalTo: glamVessel.trailingAnchor, constant: -40),
+            glambrushTap.topAnchor.constraint(equalTo: glamHeadline.bottomAnchor, constant: 96),
+            glambrushTap.leadingAnchor.constraint(equalTo: glamVessel.leadingAnchor, constant: 20),
+            glambrushTap.trailingAnchor.constraint(equalTo: glamVessel.trailingAnchor, constant: -20),
+            glamSecretShell.topAnchor.constraint(equalTo: glambrushTap.bottomAnchor, constant: 30),
+            glamSecretShell.leadingAnchor.constraint(equalTo: glambrushTap.leadingAnchor),
+            glamSecretShell.trailingAnchor.constraint(equalTo: glambrushTap.trailingAnchor),
             glamProceedControl.topAnchor.constraint(equalTo: glamSecretShell.bottomAnchor, constant: 70),
-            glamProceedControl.leadingAnchor.constraint(equalTo: glamContent.leadingAnchor, constant: 20),
-            glamProceedControl.trailingAnchor.constraint(equalTo: glamContent.trailingAnchor, constant: -20),
+            glamProceedControl.leadingAnchor.constraint(equalTo: glamVessel.leadingAnchor, constant: 20),
+            glamProceedControl.trailingAnchor.constraint(equalTo: glamVessel.trailingAnchor, constant: -20),
             glamProceedControl.heightAnchor.constraint(equalToConstant: 54),
             glamSpinner.centerXAnchor.constraint(equalTo: glamProceedControl.centerXAnchor),
             glamSpinner.centerYAnchor.constraint(equalTo: glamProceedControl.centerYAnchor),
@@ -328,27 +328,27 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         ]
     }
 
-    private func glamConsentFooterRunway() -> [NSLayoutConstraint] {
+    private func glamCovenantFooterRunway() -> [NSLayoutConstraint] {
         [
-            glamConsentControl.leadingAnchor.constraint(equalTo: glamContent.leadingAnchor, constant: 20),
-            glamConsentControl.bottomAnchor.constraint(equalTo: glamContent.safeAreaLayoutGuide.bottomAnchor, constant: -18),
-            glamConsentControl.widthAnchor.constraint(equalToConstant: 30),
-            glamConsentControl.heightAnchor.constraint(equalToConstant: 30),
-            glamConsentPrefix.leadingAnchor.constraint(equalTo: glamConsentControl.trailingAnchor, constant: 6),
-            glamConsentPrefix.centerYAnchor.constraint(equalTo: glamConsentControl.centerYAnchor),
-            glamTermsControl.leadingAnchor.constraint(equalTo: glamConsentPrefix.trailingAnchor, constant: 3),
-            glamTermsControl.centerYAnchor.constraint(equalTo: glamConsentControl.centerYAnchor),
-            glamConsentJoiner.leadingAnchor.constraint(equalTo: glamTermsControl.trailingAnchor, constant: 3),
-            glamConsentJoiner.centerYAnchor.constraint(equalTo: glamConsentControl.centerYAnchor),
-            glamPrivacyControl.leadingAnchor.constraint(equalTo: glamConsentJoiner.trailingAnchor, constant: 3),
-            glamPrivacyControl.centerYAnchor.constraint(equalTo: glamConsentControl.centerYAnchor),
-            glamPrivacyControl.trailingAnchor.constraint(lessThanOrEqualTo: glamContent.trailingAnchor, constant: -12),
-            glamFaultNote.bottomAnchor.constraint(lessThanOrEqualTo: glamConsentControl.topAnchor, constant: -18)
+            glamCovenantControl.leadingAnchor.constraint(equalTo: glamVessel.leadingAnchor, constant: 20),
+            glamCovenantControl.bottomAnchor.constraint(equalTo: glamVessel.safeAreaLayoutGuide.bottomAnchor, constant: -18),
+            glamCovenantControl.widthAnchor.constraint(equalToConstant: 30),
+            glamCovenantControl.heightAnchor.constraint(equalToConstant: 30),
+            glamCovenantPrefix.leadingAnchor.constraint(equalTo: glamCovenantControl.trailingAnchor, constant: 6),
+            glamCovenantPrefix.centerYAnchor.constraint(equalTo: glamCovenantControl.centerYAnchor),
+            glamAgreementControl.leadingAnchor.constraint(equalTo: glamCovenantPrefix.trailingAnchor, constant: 3),
+            glamAgreementControl.centerYAnchor.constraint(equalTo: glamCovenantControl.centerYAnchor),
+            glamCovenantJoiner.leadingAnchor.constraint(equalTo: glamAgreementControl.trailingAnchor, constant: 3),
+            glamCovenantJoiner.centerYAnchor.constraint(equalTo: glamCovenantControl.centerYAnchor),
+            glamDiscretionControl.leadingAnchor.constraint(equalTo: glamCovenantJoiner.trailingAnchor, constant: 3),
+            glamDiscretionControl.centerYAnchor.constraint(equalTo: glamCovenantControl.centerYAnchor),
+            glamDiscretionControl.trailingAnchor.constraint(lessThanOrEqualTo: glamVessel.trailingAnchor, constant: -12),
+            glamFaultNote.bottomAnchor.constraint(lessThanOrEqualTo: glamCovenantControl.topAnchor, constant: -18)
         ]
     }
 
     private func glamAddDismissGesture() {
-        let glamDismissTap = UITapGestureRecognizer(target: self, action: #selector(glamDismissKeyboard))
+        let glamDismissTap = UITapGestureRecognizer(target: self, action: #selector(pigmentDrop))
         glamDismissTap.cancelsTouchesInView = false
         glamCanvas.addGestureRecognizer(glamDismissTap)
     }
@@ -363,46 +363,46 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
     }
 
     private func glamWireVanityGestures() {
-        glamEULAControl.addTarget(self, action: #selector(glamOpenAgreement), for: .touchUpInside)
-        glamProceedControl.addTarget(self, action: #selector(glamSubmitCredentials), for: .touchUpInside)
-        glamConsentControl.addTarget(self, action: #selector(glamToggleConsent), for: .touchUpInside)
-        glamTermsControl.addTarget(self, action: #selector(glamOpenTerms), for: .touchUpInside)
-        glamPrivacyControl.addTarget(self, action: #selector(glamOpenPrivacy), for: .touchUpInside)
-        glamEmailShell.glamField.addTarget(self, action: #selector(glamClearFault), for: .editingChanged)
+        glambrushSweep.addTarget(self, action: #selector(glamOpenAgreement), for: .touchUpInside)
+        glamProceedControl.addTarget(self, action: #selector(glamSendEntry), for: .touchUpInside)
+        glamCovenantControl.addTarget(self, action: #selector(glamToggleCovenant), for: .touchUpInside)
+        glamAgreementControl.addTarget(self, action: #selector(glamOpenAgreementCanvas), for: .touchUpInside)
+        glamDiscretionControl.addTarget(self, action: #selector(glamOpenDiscretion), for: .touchUpInside)
+        glambrushTap.glamField.addTarget(self, action: #selector(glamClearFault), for: .editingChanged)
         glamSecretShell.glamField.addTarget(self, action: #selector(glamClearFault), for: .editingChanged)
     }
 
     private func glamObserveKeyboard() {
         NotificationCenter.default.addObserver(
             self,
-            selector: #selector(glamKeyboardWillShow),
+            selector: #selector(pigmentWaxSterracottaShift),
             name: UIResponder.keyboardWillShowNotification,
             object: nil
         )
         NotificationCenter.default.addObserver(
             self,
-            selector: #selector(glamKeyboardWillHide),
+            selector: #selector(ghueLayerHide),
             name: UIResponder.keyboardWillHideNotification,
             object: nil
         )
     }
 
-    @objc private func glamSubmitCredentials() {
-        glamDismissKeyboard()
-        let glamEmail = glamEmailShell.glamField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
-        let glamSecret = glamSecretShell.glamField.text ?? ""
+    @objc private func glamSendEntry() {
+        pigmentDrop()
+        let glbrushSwirl = glambrushTap.glamField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let glbrushBuff = glamSecretShell.glamField.text ?? ""
 
-        guard glamValidateEntryFields(glamEmail: glamEmail, glamSecret: glamSecret) else { return }
-        glamSendEntryPalette(glamEmail: glamEmail, glamSecret: glamSecret)
+        guard glamValidateEntryFields(glamEmail: glbrushSwirl, glamSecret: glbrushBuff) else { return }
+        glamSendEntryPalette(glamEmail: glbrushSwirl, glamSecret: glbrushBuff)
     }
 
     private func glamValidateEntryFields(glamEmail: String, glamSecret: String) -> Bool {
         guard !glamEmail.isEmpty else {
-            glamShowFault(MuzoiGlamVeil("PSlReSansqer 5elnat0eVrE rytoGu1rH 8ezmUa5iDlE.u"), glamFocus: glamEmailShell.glamField)
+            glamShowFault(MuzoiGlamVeil("PSlReSansqer 5elnat0eVrE rytoGu1rH 8ezmUa5iDlE.u"), glamFocus: glambrushTap.glamField)
             return false
         }
         guard glamEmail.contains(MuzoiGlamVeil("@I")), glamEmail.contains(MuzoiGlamVeil(".A")) else {
-            glamShowFault(MuzoiGlamVeil("PPlyena1sKe8 neEnSt1emru Yas hvHaHlQivdh cekm7aii1lH maedmdlrjeCs5sE.Y"), glamFocus: glamEmailShell.glamField)
+            glamShowFault(MuzoiGlamVeil("PPlyena1sKe8 neEnSt1emru Yas hvHaHlQivdh cekm7aii1lH maedmdlrjeCs5sE.Y"), glamFocus: glambrushTap.glamField)
             return false
         }
         guard !glamSecret.isEmpty else {
@@ -413,7 +413,7 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
             glamShowFault(MuzoiGlamVeil("YUo0uxrC 1pqaOsqspw9oarHdZ kmTuusJt8 oc3oRnBt7aPi8n1 jaXtm tlReOaos9tP U62 Hcgh8arrAalc7tqeyr4sW.h"), glamFocus: glamSecretShell.glamField)
             return false
         }
-        guard MuzoiGlamIdentityLoom.glamShared.glamAcceptedCovenant else {
+        guard MuzoibakingPuffom.glamCommon.glamamberVeilvenant else {
             glamShowFault(MuzoiGlamVeil("PblteLauszes frwe6v1itezw0 jacnsdr Malckc4eapbto ktghOed 0l8eUgratlZ na9gWrMeveYmzeEnPtHsM.k"), glamFocus: nil)
             glamPresentAgreement()
             return false
@@ -422,34 +422,34 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
     }
 
     private func glamSendEntryPalette(glamEmail: String, glamSecret: String) {
-        glamSetSubmitting(true)
-        MuzoiGlamIdentityLoom.glamShared.glamUnlock(
-            glamArtfulFaceMorph: glamEmail,
+        glamSetSending(true)
+        MuzoibakingPuffom.glamCommon.glamespressoShadey(
+            glammahoganyTone: glamEmail,
             glamBlendingGlowpath: glamSecret
         ) { [weak self] glamResult in
             guard let self else { return }
-            self.glamSetSubmitting(false)
+            self.glamSetSending(false)
             switch glamResult {
             case .success:
                 UINotificationFeedbackGenerator().notificationOccurred(.success)
-                (UIApplication.shared.delegate as? AppDelegate)?.glamShowMainCanvas(glamAnimated: true)
+                (UIApplication.shared.delegate as? AppDelegate)?.glamunderEyeSet(brighteningVeil: true)
             case .failure(let glamFault):
                 self.glamShowFault(glamFault.localizedDescription, glamFocus: self.glamSecretShell.glamField)
             }
         }
     }
 
-    private func glamSetSubmitting(_ glamSubmitting: Bool) {
-        glamProceedControl.isEnabled = !glamSubmitting
-        glamEmailShell.glamField.isEnabled = !glamSubmitting
-        glamSecretShell.glamField.isEnabled = !glamSubmitting
-        glamProceedControl.setTitle(glamSubmitting ? nil : MuzoiGlamVeil("Lboag8iSnz"), for: .normal)
-        glamSubmitting ? glamSpinner.startAnimating() : glamSpinner.stopAnimating()
-        glamProceedControl.alpha = glamSubmitting ? 0.82 : 1
+    private func glamSetSending(_ glamSending: Bool) {
+        glamProceedControl.isEnabled = !glamSending
+        glambrushTap.glamField.isEnabled = !glamSending
+        glamSecretShell.glamField.isEnabled = !glamSending
+        glamProceedControl.setTitle(glamSending ? nil : MuzoiGlamVeil("Lboag8iSnz"), for: .normal)
+        glamSending ? glamSpinner.startAnimating() : glamSpinner.stopAnimating()
+        glamProceedControl.alpha = glamSending ? 0.82 : 1
     }
 
-    private func glamShowFault(_ glamText: String, glamFocus: UITextField?) {
-        glamFaultNote.text = glamText
+    private func glamShowFault(_ glamPhrase: String, glamFocus: UITextField?) {
+        glamFaultNote.text = glamPhrase
         UINotificationFeedbackGenerator().notificationOccurred(.error)
         glamFocus?.becomeFirstResponder()
     }
@@ -458,48 +458,48 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         glamFaultNote.text = nil
     }
 
-    @objc private func glamToggleConsent() {
-        let glamNextValue = !MuzoiGlamIdentityLoom.glamShared.glamAcceptedCovenant
-        MuzoiGlamIdentityLoom.glamShared.glamAcceptedCovenant = glamNextValue
-        glamPolishConsentSeal()
+    @objc private func glamToggleCovenant() {
+        let glamNextValue = !MuzoibakingPuffom.glamCommon.glamamberVeilvenant
+        MuzoibakingPuffom.glamCommon.glamamberVeilvenant = glamNextValue
+        glamPolishCovenantSeal()
         if !glamNextValue {
             glamFaultNote.text = nil
         }
     }
 
-    private func glamPolishConsentSeal() {
-        let glamAccepted = MuzoiGlamIdentityLoom.glamShared.glamAcceptedCovenant
-        let glamSymbol = glamAccepted ? MuzoiGlamVeil("cShHeecik9maaSr2kU.Ac6igrTcHlkeZ.YfSiTlNlN") : MuzoiGlamVeil("c9inrbcml4ey")
-        glamConsentControl.setImage(UIImage(systemName: glamSymbol), for: .normal)
-        glamConsentControl.accessibilityValue = glamAccepted ? MuzoiGlamVeil("AGcJcWeepYtveGdl") : MuzoiGlamVeil("N5oft9 haMcyc5e0pptue8d9")
+    private func glamPolishCovenantSeal() {
+        let brushGlide = MuzoibakingPuffom.glamCommon.glamamberVeilvenant
+        let glamSymbol = brushGlide ? MuzoiGlamVeil("cShHeecik9maaSr2kU.Ac6igrTcHlkeZ.YfSiTlNlN") : MuzoiGlamVeil("c9inrbcml4ey")
+        glamCovenantControl.setImage(UIImage(systemName: glamSymbol), for: .normal)
+        glamCovenantControl.accessibilityValue = brushGlide ? MuzoiGlamVeil("AGcJcWeepYtveGdl") : MuzoiGlamVeil("N5oft9 haMcyc5e0pptue8d9")
     }
 
     @objc private func glamOpenAgreement() {
-        glamPresentLegalDocument(glamKind: .glamEULA)
+        glamPresentLegalDocument(glamKind: .glamlashCurl)
     }
 
     private func glamPresentAgreement() {
-        glamPresentLegalDocument(glamKind: .glamEULA)
+        glamPresentLegalDocument(glamKind: .glamlashCurl)
     }
 
-    @objc private func glamOpenTerms() {
-        glamPresentLegalDocument(glamKind: .glamTermsCanvas)
+    @objc private func glamOpenAgreementCanvas() {
+        glamPresentLegalDocument(glamKind: .glamlashLiftnvas)
     }
 
-    @objc private func glamOpenPrivacy() {
-        glamPresentLegalDocument(glamKind: .glamPrivacyCanvas)
+    @objc private func glamOpenDiscretion() {
+        glamPresentLegalDocument(glamKind: .glamDiscretionCanvas)
     }
 
     private func glamPresentLegalDocument(glamKind: MuzoiGlamLegalDocumentKind) {
         guard presentedViewController == nil else { return }
-        let glamAgreement = MuzoiGlamLegalUserCheckController(glamKind: glamKind)
-        if glamKind == .glamEULA {
-            glamAgreement.glamDidAccept = { [weak self] in
-                self?.glamPolishConsentSeal()
+        let glamcoralShift = MuzoiGlamCovenantCheckController(glamKind: glamKind)
+        if glamKind == .glamlashCurl {
+            glamcoralShift.glamDidAccept = { [weak self] in
+                self?.glamPolishCovenantSeal()
                 self?.glamFaultNote.text = nil
             }
         }
-        let glamNavigation = UINavigationController(rootViewController: glamAgreement)
+        let glamNavigation = UINavigationController(rootViewController: glamcoralShift)
         glamNavigation.modalPresentationStyle = .pageSheet
         if let glamSheet = glamNavigation.sheetPresentationController {
             glamSheet.detents = [.large()]
@@ -508,37 +508,37 @@ final class MuzoiGlamAuthEntryController: UIViewController, UITextFieldDelegate 
         present(glamNavigation, animated: true)
     }
 
-    @objc private func glamDismissKeyboard() {
+    @objc private func pigmentDrop() {
         view.endEditing(true)
     }
 
-    @objc private func glamKeyboardWillShow(_ glamNotice: Notification) {
+    @objc private func pigmentWaxSterracottaShift(_ pigmentFade: Notification) {
         guard
-            let glamFrame = glamNotice.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect,
-            let glamDuration = glamNotice.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval
+            let glamchromaMist = pigmentFade.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect,
+            let glamchromaDepth = pigmentFade.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval
         else { return }
 
-        let glamCoveredHeight = max(0, view.bounds.maxY - view.convert(glamFrame, from: nil).minY)
-        let glamInsets = UIEdgeInsets(top: 0, left: 0, bottom: glamCoveredHeight + 12, right: 0)
-        UIView.animate(withDuration: glamDuration) {
-            self.glamCanvas.contentInset = glamInsets
-            self.glamCanvas.scrollIndicatorInsets = glamInsets
+        let glamchromaLiftt = max(0, view.bounds.maxY - view.convert(glamchromaMist, from: nil).minY)
+        let glamhueShift = UIEdgeInsets(top: 0, left: 0, bottom: glamchromaLiftt + 12, right: 0)
+        UIView.animate(withDuration: glamchromaDepth) {
+            self.glamCanvas.contentInset = glamhueShift
+            self.glamCanvas.scrollIndicatorInsets = glamhueShift
         }
     }
 
-    @objc private func glamKeyboardWillHide(_ glamNotice: Notification) {
-        let glamDuration = glamNotice.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval ?? 0.25
-        UIView.animate(withDuration: glamDuration) {
+    @objc private func ghueLayerHide(_ glamNotice: Notification) {
+        let hueTrace = glamNotice.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval ?? 0.25
+        UIView.animate(withDuration: hueTrace) {
             self.glamCanvas.contentInset = .zero
             self.glamCanvas.scrollIndicatorInsets = .zero
         }
     }
 
     func textFieldShouldReturn(_ glamActiveField: UITextField) -> Bool {
-        if glamActiveField === glamEmailShell.glamField {
+        if glamActiveField === glambrushTap.glamField {
             glamSecretShell.glamField.becomeFirstResponder()
         } else {
-            glamSubmitCredentials()
+            glamSendEntry()
         }
         return true
     }

@@ -5,9 +5,9 @@ import StoreKit
 private enum MuzoiGlamPrismChannel {
     static let glamCatalogRelay = MuzoiGlamVeil("bJisokmfeZc3hEa8nkimc8aglCMSa3kDebuPpFRZe5nfdie5rdeBrl")
     static let glamRouteRelay = MuzoiGlamVeil("kiibnte1tEidcpMZakkVeJuHp5AQnWiZm4aMt3iVoJnb")
-    static let glamCloseRelay = MuzoiGlamVeil("hXoalBoSgDrDaEprhJimcTSutqyXloekAzrhcNhWiTvhej")
+    static let glambrowHighlightelay = MuzoiGlamVeil("hXoalBoSgDrDaEprhJimcTSutqyXloekAzrhcNhWiTvhej")
     static let glamSessionRelay = MuzoiGlamVeil("rdekf5rEa3cMtRiMvqeCBceUasumt4y5JZoSuWrenyaKlX")
-    static let glamAll = [glamCatalogRelay, glamRouteRelay, glamCloseRelay, glamSessionRelay]
+    static let glamAll = [glamCatalogRelay, glamRouteRelay, glambrowHighlightelay, glamSessionRelay]
 }
 
 private enum MuzoiGlamPrismGlowKit {
@@ -188,10 +188,12 @@ final class MuzoiGlamPrismPortalController: UIViewController,
                 self.glamBeginRadianceUnlock(glamParcel)
             case MuzoiGlamPrismChannel.glamRouteRelay:
                 self.glamOpenNestedCanvas(glamParcel)
-            case MuzoiGlamPrismChannel.glamCloseRelay:
+            case MuzoiGlamPrismChannel.glambrowHighlightelay:
                 self.glamDismissCanvas()
             case MuzoiGlamPrismChannel.glamSessionRelay:
-                (UIApplication.shared.delegate as? AppDelegate)?.glamShowAuthCanvas()
+
+                (UIApplication.shared.delegate as? AppDelegate)?.glamShowGatewayCanvas()
+
             default:
                 break
             }

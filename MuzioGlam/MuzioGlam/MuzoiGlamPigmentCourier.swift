@@ -20,7 +20,7 @@ final class MuzoiGlamPigmentCourier {
             glamTrail: glamTrail,
             glamPigmentParcel: glamPigmentParcel
         )
-        let glamPaletteStage = MuzoiGlamCourierStage(
+        let glamPaletteTray = MuzoiGlamCourierTray(
             glamArrival: glamArrival,
             glamDetour: glamDetour
         )
@@ -36,14 +36,14 @@ final class MuzoiGlamPigmentCourier {
         )
         glamBrushCourierSeals(onto: &glamCourierNote)
 
-        let glamCourierRun = glamSpinCourierRun()
-        glamCourierRun.dataTask(with: glamCourierNote) { glamReplyPigment, glamReplyFrame, glamDetourReason in
+        let glamCourierRun = glamOrbitCourierRun()
+        glamCourierRun.dataTask(with: glamCourierNote) { glamReturnPigment, glamReturnFrame, glamDetourReason in
             let glamCourierOutcome = glamSiftCourierPalette(
-                glamReplyPigment: glamReplyPigment,
-                glamReplyFrame: glamReplyFrame,
+                glamReturnPigment: glamReturnPigment,
+                glamReturnFrame: glamReturnFrame,
                 glamDetourReason: glamDetourReason
             )
-            glamPaletteStage.glamFinish(with: glamCourierOutcome)
+            glamPaletteTray.glamFinish(with: glamCourierOutcome)
         }.resume()
     }
 
@@ -56,23 +56,23 @@ final class MuzoiGlamPigmentCourier {
             cachePolicy: .useProtocolCachePolicy,
             timeoutInterval: MuzoiGlamCourierTint.glowTimeout
         )
-        glamCourierNote.httpMethod = MuzoiGlamCourierTint.glowMethod
+        glamCourierNote.httpMethod = MuzoiGlamCourierTint.glowpeachUndertone
         glamCourierNote.httpBody = try? JSONSerialization.data(withJSONObject: glamPigmentParcel)
         glamCourierNote.setValue(
-            MuzoiGlamCourierTint.glowJSON,
-            forHTTPHeaderField: MuzoiGlamCourierTint.glowContentType
+            MuzoiGlamCourierTint.glowneutralUndertone,
+            forHTTPHeaderField: MuzoiGlamCourierTint.glowgoldenUndertone
         )
         glamCourierNote.setValue(
-            MuzoiGlamCourierTint.glowJSON,
-            forHTTPHeaderField: MuzoiGlamCourierTint.glowAccept
+            MuzoiGlamCourierTint.glowneutralUndertone,
+            forHTTPHeaderField: MuzoiGlamCourierTint.glowwarmUndertone
         )
         return glamCourierNote
     }
 
     private static func glamBrushCourierSeals(onto glamCourierNote: inout URLRequest) {
         let glamSealStrokes: [(name: String, ink: String)] = [
-            (MuzoiGlamCourierTint.glowAppKeyName, MuzoiGlamCourierTint.glowAppKeyInk),
-            (MuzoiGlamCourierTint.glowTokenName, glamAccessUsenow ?? "")
+            (MuzoiGlamCourierTint.glowredUndertone, MuzoiGlamCourierTint.glowyellowUndertoneInk),
+            (MuzoiGlamCourierTint.glowblueUndertoneme, glamAccessUsenow ?? "")
         ]
 
         for glamSealStroke in glamSealStrokes {
@@ -80,28 +80,28 @@ final class MuzoiGlamPigmentCourier {
         }
     }
 
-    private static func glamSpinCourierRun() -> URLSession {
+    private static func glamOrbitCourierRun() -> URLSession {
         let glamCourierClimate = URLSessionConfiguration.default
         glamCourierClimate.timeoutIntervalForRequest = MuzoiGlamCourierTint.glowTimeout
         return URLSession(configuration: glamCourierClimate)
     }
 
     private static func glamSiftCourierPalette(
-        glamReplyPigment: Data?,
-        glamReplyFrame: URLResponse?,
+        glamReturnPigment: Data?,
+        glamReturnFrame: URLResponse?,
         glamDetourReason: Error?
     ) -> Result<Any, Error> {
         if let glamDetourReason {
             return .failure(glamDetourReason)
         }
 
-        guard glamReplyFrame.glamIsMuzoiGlowAccepted, let glamReplyPigment else {
-            return .failure(MuzoiGlamCourierDetour.glamCloudedReply)
+        guard glamReturnFrame.glamIsMuzoiGlowAccepted, let glamReturnPigment else {
+            return .failure(MuzoiGlamCourierDetour.glamCloudedReturn)
         }
 
         do {
             let glamDecodedPalette = try JSONSerialization.jsonObject(
-                with: glamReplyPigment,
+                with: glamReturnPigment,
                 options: .allowFragments
             )
             return .success(glamDecodedPalette)
@@ -120,7 +120,7 @@ private struct MuzoiGlamCourierEnvelope {
     }
 }
 
-private struct MuzoiGlamCourierStage {
+private struct MuzoiGlamCourierTray {
     let glamArrival: ((Any?) -> Void)?
     let glamDetour: ((Error) -> Void)?
 
@@ -140,33 +140,33 @@ private enum MuzoiGlamCourierTint {
     static let glowTimeout: TimeInterval = 30
     static let glowAccessKey = MuzoiGlamVeil("mNuqzLowiC_zUCsHeUryKMe3yq")
     static let glowHarborRoot = MuzoiGlamVeil("hptxtNpD:f/R/NxV7Akj9hmh2vqI8Yvh4CnE6Xr01kth5Bzt3qpD0m.1srhroRpy/cbTancSkit6wkoN")
-    static let glowMethod = MuzoiGlamVeil("PnOhSuTc")
-    static let glowJSON = MuzoiGlamVeil("a9pzpSlZiBcwaut9ino3nO/5jZsLonnC")
-    static let glowContentType = MuzoiGlamVeil("CPokndtQetnftp-fT4yOpMew")
-    static let glowAccept = MuzoiGlamVeil("Adc2cGeCp1te")
-    static let glowAppKeyName = MuzoiGlamVeil("k8ezyw")
-    static let glowAppKeyInk = MuzoiGlamVeil("9J362H159t7j1c4L")
-    static let glowTokenName = MuzoiGlamVeil("tHoOkGeLnv")
+    static let glowpeachUndertone = MuzoiGlamVeil("PnOhSuTc")
+    static let glowneutralUndertone = MuzoiGlamVeil("a9pzpSlZiBcwaut9ino3nO/5jZsLonnC")
+    static let glowgoldenUndertone = MuzoiGlamVeil("CPokndtQetnftp-fT4yOpMew")
+    static let glowwarmUndertone = MuzoiGlamVeil("Adc2cGeCp1te")
+    static let glowredUndertone = MuzoiGlamVeil("k8ezyw")
+    static let glowyellowUndertoneInk = MuzoiGlamVeil("9J362H159t7j1c4L")
+    static let glowblueUndertoneme = MuzoiGlamVeil("tHoOkGeLnv")
 }
 
 private extension Optional where Wrapped == URLResponse {
     var glamIsMuzoiGlowAccepted: Bool {
-        guard let glamHarborReply = self as? HTTPURLResponse else {
+        guard let glamHarborReturn = self as? HTTPURLResponse else {
             return false
         }
-        return (200 ... 299).contains(glamHarborReply.statusCode)
+        return (200 ... 299).contains(glamHarborReturn.statusCode)
     }
 }
 
 enum MuzoiGlamCourierDetour: LocalizedError {
     case glamBrokenTrail
-    case glamCloudedReply
+    case glamCloudedReturn
 
     var errorDescription: String? {
         switch self {
         case .glamBrokenTrail:
             return MuzoiGlamVeil("TEhgez JrRehqNupe2sutNejdx 9dBexsktViYn7avtmiFo2nn PiDsK PucnuaXv9aTikl8adb0lgeG.X")
-        case .glamCloudedReply:
+        case .glamCloudedReturn:
             return MuzoiGlamVeil("TNhAe7 lsPeyrlvPi1cKeX cr9ectsugr4nxe9dD Naenj ZiKn0vla2lKiFdA frWeXscpzoOnpsNei.6")
         }
     }

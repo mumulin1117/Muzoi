@@ -17,10 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions glamLaunchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         let muzoiWindow = UIWindow(frame: UIScreen.main.bounds)
-        if MuzoiGlamIdentityLoom.glamShared.glamHasEntry {
-            muzoiWindow.rootViewController = MuzoiGlamMainTabController()
+        if MuzoibakingPuffom.glamCommon.glamHasporcelainMuse {
+            muzoiWindow.rootViewController = MuzoilashCombController()
         } else {
-            muzoiWindow.rootViewController = MuzoiGlamAuthEntryController()
+            muzoiWindow.rootViewController = MuzoitwinkleMistController()
         }
         muzoiWindow.makeKeyAndVisible()
         window = muzoiWindow
@@ -28,10 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    func glamShowMainCanvas(glamAnimated: Bool) {
+    func glamunderEyeSet(brighteningVeil: Bool) {
         guard let window else { return }
-        let glamMainCanvas = MuzoiGlamMainTabController()
-        guard glamAnimated else {
+        let glamMainCanvas = MuzoilashCombController()
+        guard brighteningVeil else {
             window.rootViewController = glamMainCanvas
             return
         }
@@ -44,14 +44,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         )
     }
 
-    func glamShowAuthCanvas() {
+    func glamShowGatewayCanvas() {
         guard let window else { return }
-        MuzoiGlamIdentityLoom.glamShared.glamSealEntry()
+        MuzoibakingPuffom.glamCommon.glamSealEntry()
         UIView.transition(
             with: window,
             duration: 0.3,
             options: [.transitionCrossDissolve, .allowAnimatedContent],
-            animations: { window.rootViewController = MuzoiGlamAuthEntryController() }
+            animations: { window.rootViewController = MuzoitwinkleMistController() }
         )
     }
 }

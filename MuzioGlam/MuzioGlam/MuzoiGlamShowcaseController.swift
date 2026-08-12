@@ -1,20 +1,20 @@
 import UIKit
 
-struct MuzoiGlamLookImpression {
-    let glamIdentity: String
-    let glamMuseIdentity: String
+struct MuzoiGlamLookGlimmer {
+    let glamSignature: String
+    let glamMuseSignature: String
     let glamArtistName: String
-    let glamLookCaption: String
-    let glamCoverAddress: String?
-    let glamMusePortraitAddress: String?
-    let glamFallbackAsset: String
+    let glamLookLine: String
+    let glamCoverTrail: String?
+    let glamMusePortraitTrail: String?
+    let glamFallbackRune: String
     let glamPraiseCount: Int
 }
 
 final class MuzoiGlamLookArchive {
     private let glamLookTrail = MuzoiGlamVeil("/sqYpxslvqdkfKrXsRzB/mvLsjw1qvsPad")
 
-    func glamGatherImpressions(glamReveal: @escaping ([MuzoiGlamLookImpression]) -> Void) {
+    func glamGatherGlimmers(glamReveal: @escaping ([MuzoiGlamLookGlimmer]) -> Void) {
         let glamGalleryParcel: [String: Any] = [
             MuzoiGlamVeil("ebdLi9tOoYrFiHaxlaG3lmoSwU"): MuzoiGlamVeil("963L2P1S9V7Z1W4C"),
             MuzoiGlamVeil("b3lYePnTdIiFnLgsSgy1mxpmhMoOn9yy"): 10,
@@ -26,21 +26,21 @@ final class MuzoiGlamLookArchive {
         MuzoiGlamPigmentCourier.glamCarryPalette(
             glamTrail: glamLookTrail,
             glamPigmentParcel: glamGalleryParcel,
-            glamArrival: { [weak self] glamReplyCanvas in
+            glamArrival: { [weak self] glamReturnCanvas in
                 guard let self else { return }
-                let glamImpressions = self.glamShapeImpressions(glamReplyCanvas)
-                glamReveal(glamImpressions.isEmpty ? self.glamCuratedImpressions() : glamImpressions)
+                let glamGlimmers = self.glamShapeGlimmers(glamReturnCanvas)
+                glamReveal(glamGlimmers.isEmpty ? self.glamCuratedGlimmers() : glamGlimmers)
             },
             glamDetour: { [weak self] _ in
                 guard let self else { return }
-                glamReveal(self.glamCuratedImpressions())
+                glamReveal(self.glamCuratedGlimmers())
             }
         )
     }
 
-    private func glamShapeImpressions(_ glamReplyCanvas: Any?) -> [MuzoiGlamLookImpression] {
+    private func glamShapeGlimmers(_ glamReturnCanvas: Any?) -> [MuzoiGlamLookGlimmer] {
         guard
-            let glamPigmentParcel = glamReplyCanvas as? [String: Any],
+            let glamPigmentParcel = glamReturnCanvas as? [String: Any],
             (glamPigmentParcel[MuzoiGlamVeil("cfoodDeR")] as? NSNumber)?.intValue == 200000,
             let glamLookRows = glamPigmentParcel[MuzoiGlamVeil("dEaRtzav")] as? [[String: Any]]
         else { return [] }
@@ -48,52 +48,52 @@ final class MuzoiGlamLookArchive {
         let glamCuratedAssets = [MuzoiGlamVeil("MxuNzCoKiDG1lUaLmKEHs2s7e1nwcbeX0g16"), MuzoiGlamVeil("MZuEzqo7ipGDlcaWmCErsysHeGnmcmei0T2T"), MuzoiGlamVeil("MLuOznofiSGGl3anmjEpsesjeXnLcjeu0K3F")]
         return glamLookRows.enumerated().compactMap { glamLookIndex, glamLookRow in
             guard
-                let glamCoverAddress = glamTextValue(glamLookRow[MuzoiGlamVeil("cYrhe7ahtXiVv0iStTyLG3lWoZwLuIpj")]),
-                let glamIdentity = glamTextValue(glamLookRow[MuzoiGlamVeil("s5hci9mXmgeZrfD8e2tzauiulTsl")])
+                let glamCoverTrail = glamPhraseValue(glamLookRow[MuzoiGlamVeil("cYrhe7ahtXiVv0iStTyLG3lWoZwLuIpj")]),
+                let glamSignature = glamPhraseValue(glamLookRow[MuzoiGlamVeil("s5hci9mXmgeZrfD8e2tzauiulTsl")])
             else { return nil }
 
-            return MuzoiGlamLookImpression(
-                glamIdentity: glamIdentity,
-                glamMuseIdentity: glamTextValue(glamLookRow[MuzoiGlamVeil("sqfXxJPRingsm2eInDtuoalFoegAyW")]) ?? "",
-                glamArtistName: glamTextValue(glamLookRow[MuzoiGlamVeil("eCx9pNrgeAsnsyiLoDnAHJi1g7hzlAiKg5hUtA")]) ?? MuzoiGlamVeil("MluVzwo9iO YMquDsMea"),
-                glamLookCaption: glamTextValue(glamLookRow[MuzoiGlamVeil("bBeIa8uot3ydSytNa5t8ekmfe8nPtp")]) ?? MuzoiGlamVeil("At Cngerwp rcDrxeeaTtjirv2e6 0lYoloskQ 7jqucs3tW SlhaxnOdEeJdD.r"),
-                glamCoverAddress: glamCoverAddress,
-                glamMusePortraitAddress: glamLookRow[MuzoiGlamVeil("sukni7nTTRocnGeCSBtRyGl1idnZgK")] as? String,
-                glamFallbackAsset: glamCuratedAssets[glamLookIndex % glamCuratedAssets.count],
+            return MuzoiGlamLookGlimmer(
+                glamSignature: glamSignature,
+                glamMuseSignature: glamPhraseValue(glamLookRow[MuzoiGlamVeil("sqfXxJPRingsm2eInDtuoalFoegAyW")]) ?? "",
+                glamArtistName: glamPhraseValue(glamLookRow[MuzoiGlamVeil("eCx9pNrgeAsnsyiLoDnAHJi1g7hzlAiKg5hUtA")]) ?? MuzoiGlamVeil("MluVzwo9iO YMquDsMea"),
+                glamLookLine: glamPhraseValue(glamLookRow[MuzoiGlamVeil("bBeIa8uot3ydSytNa5t8ekmfe8nPtp")]) ?? MuzoiGlamVeil("At Cngerwp rcDrxeeaTtjirv2e6 0lYoloskQ 7jqucs3tW SlhaxnOdEeJdD.r"),
+                glamCoverTrail: glamCoverTrail,
+                glamMusePortraitTrail: glamLookRow[MuzoiGlamVeil("sukni7nTTRocnGeCSBtRyGl1idnZgK")] as? String,
+                glamFallbackRune: glamCuratedAssets[glamLookIndex % glamCuratedAssets.count],
                 glamPraiseCount: (glamLookRow[MuzoiGlamVeil("ckoUlyoPreT8hBeooVrJyIBae5aCumtUyU")] as? NSNumber)?.intValue ?? 0
             )
         }
     }
 
-    private func glamTextValue(_ glamValue: Any?) -> String? {
+    private func glamPhraseValue(_ glamValue: Any?) -> String? {
         if let glamBannerCopy = glamValue as? String {
-            let glamTrimmedText = glamBannerCopy.trimmingCharacters(in: .whitespacesAndNewlines)
-            if !glamTrimmedText.isEmpty { return glamTrimmedText }
+            let glamTrimmedPhrase = glamBannerCopy.trimmingCharacters(in: .whitespacesAndNewlines)
+            if !glamTrimmedPhrase.isEmpty { return glamTrimmedPhrase }
         }
         if let glamNumber = glamValue as? NSNumber { return glamNumber.stringValue }
         return nil
     }
 
-    private func glamCuratedImpressions() -> [MuzoiGlamLookImpression] {
+    private func glamCuratedGlimmers() -> [MuzoiGlamLookGlimmer] {
         [
-            MuzoiGlamLookImpression(
-                glamIdentity: MuzoiGlamVeil("7t0Y3r48061z2I0W7N696S4v7n0f9i"),
-                glamMuseIdentity: MuzoiGlamVeil("7d0z383u9B5K9r434K6Y3G6E4F846H"),
+            MuzoiGlamLookGlimmer(
+                glamSignature: MuzoiGlamVeil("7t0Y3r48061z2I0W7N696S4v7n0f9i"),
+                glamMuseSignature: MuzoiGlamVeil("7d0z383u9B5K9r434K6Y3G6E4F846H"),
                 glamArtistName: MuzoiGlamVeil("Vpi6kmag QHDolsHhf"),
-                glamLookCaption: MuzoiGlamVeil("SMoWm7eftmi5mTeJsX mtUheeV clao5o5kk 8fnihn5dXsu XyQowuE xb4eefyoerKeO Ly0omu3 ZfWiqned1 ginto.B"),
-                glamCoverAddress: nil,
-                glamMusePortraitAddress: nil,
-                glamFallbackAsset: "MuzoiGlamEssence02",
+                glamLookLine: MuzoiGlamVeil("SMoWm7eftmi5mTeJsX mtUheeV clao5o5kk 8fnihn5dXsu XyQowuE xb4eefyoerKeO Ly0omu3 ZfWiqned1 ginto.B"),
+                glamCoverTrail: nil,
+                glamMusePortraitTrail: nil,
+                glamFallbackRune: "MuzoiGlamEssence02",
                 glamPraiseCount: 13
             ),
-            MuzoiGlamLookImpression(
-                glamIdentity: MuzoiGlamVeil("780f3b4X0214280I7C6J4E8B3H235L"),
-                glamMuseIdentity: MuzoiGlamVeil("7e0v333m9g559n4V4l6J3B6y4Q825t"),
+            MuzoiGlamLookGlimmer(
+                glamSignature: MuzoiGlamVeil("780f3b4X0214280I7C6J4E8B3H235L"),
+                glamMuseSignature: MuzoiGlamVeil("7e0v333m9g559n4V4l6J3B6y4Q825t"),
                 glamArtistName: MuzoiGlamVeil("NEaTrjij 5RruyeO"),
-                glamLookCaption: MuzoiGlamVeil("JmuZsot1 6fWiXnkitsJhMekd6 9mwyr CbXojlZdheHsAtC olvo8oOkD 9y4eTtc.n"),
-                glamCoverAddress: nil,
-                glamMusePortraitAddress: nil,
-                glamFallbackAsset: "MuzoiGlamEssence01",
+                glamLookLine: MuzoiGlamVeil("JmuZsot1 6fWiXnkitsJhMekd6 9mwyr CbXojlZdheHsAtC olvo8oOkD 9y4eTtc.n"),
+                glamCoverTrail: nil,
+                glamMusePortraitTrail: nil,
+                glamFallbackRune: "MuzoiGlamEssence01",
                 glamPraiseCount: 21
             )
         ]
@@ -181,7 +181,7 @@ final class MuzoiGlamLookDeckCell: UICollectionViewCell {
 
     var glamCanvasAction: (() -> Void)?
     var glamArtistAction: (() -> Void)?
-    var glamFlagAction: (() -> Void)?
+    var glamConcernAction: (() -> Void)?
 
     private let glamLookSurface = UIImageView()
     private let glamShadowVeil = CAGradientLayer()
@@ -189,8 +189,8 @@ final class MuzoiGlamLookDeckCell: UICollectionViewCell {
     private let glamSparkControl = UIButton(type: .custom)
     private let glamArtistPortrait = UIImageView()
     private let glamArtistName = UILabel()
-    private let glamLookCaption = UILabel()
-    private let glamFlagControl = UIButton(type: .custom)
+    private let glamLookLine = UILabel()
+    private let glamConcernControl = UIButton(type: .custom)
     private var glamLookTask: URLSessionDataTask?
     private var glamArtistTask: URLSessionDataTask?
     private var glamExpectedLookTrail: String?
@@ -198,7 +198,7 @@ final class MuzoiGlamLookDeckCell: UICollectionViewCell {
 
     override init(frame glamFrame: CGRect) {
         super.init(frame: glamFrame)
-        glamSculptCard()
+        glamSculptTile()
     }
 
     required init?(coder glamCoder: NSCoder) {
@@ -218,40 +218,40 @@ final class MuzoiGlamLookDeckCell: UICollectionViewCell {
         glamExpectedArtistTrail = nil
         glamCanvasAction = nil
         glamArtistAction = nil
-        glamFlagAction = nil
+        glamConcernAction = nil
     }
 
-    func glamRenderImpression(_ glamImpression: MuzoiGlamLookImpression) {
+    func glamRenderGlimmer(_ glamGlimmer: MuzoiGlamLookGlimmer) {
         glamLookTask?.cancel()
         glamArtistTask?.cancel()
-        glamLookSurface.image = UIImage(named: glamImpression.glamFallbackAsset)
+        glamLookSurface.image = UIImage(named: glamGlimmer.glamFallbackRune)
         glamArtistPortrait.image = UIImage(named: "MuzoiGlamMuse01")
-        glamArtistName.text = MuzoiGlamVeil("@E") + glamImpression.glamArtistName
-        glamLookCaption.text = glamImpression.glamLookCaption
-        glamSparkControl.accessibilityLabel = MuzoiGlamVeil("Ospne6nl plkoboRkt FdqejtcaXiNlDsH,a q") + "\(glamImpression.glamPraiseCount)" + MuzoiGlamVeil(" Zl3iUkHeasm")
-        glamExpectedLookTrail = glamImpression.glamCoverAddress
-        glamExpectedArtistTrail = glamImpression.glamMusePortraitAddress
+        glamArtistName.text = MuzoiGlamVeil("@E") + glamGlimmer.glamArtistName
+        glamLookLine.text = glamGlimmer.glamLookLine
+        glamSparkControl.accessibilityLabel = MuzoiGlamVeil("Ospne6nl plkoboRkt FdqejtcaXiNlDsH,a q") + "\(glamGlimmer.glamPraiseCount)" + MuzoiGlamVeil(" Zl3iUkHeasm")
+        glamExpectedLookTrail = glamGlimmer.glamCoverTrail
+        glamExpectedArtistTrail = glamGlimmer.glamMusePortraitTrail
         glamFetchArtwork(
-            glamImpression.glamCoverAddress,
+            glamGlimmer.glamCoverTrail,
             glamGalleryCache: Self.glamLookCache,
             glamIsArtist: false
         )
         glamFetchArtwork(
-            glamImpression.glamMusePortraitAddress,
+            glamGlimmer.glamMusePortraitTrail,
             glamGalleryCache: Self.glamArtistCache,
             glamIsArtist: true
         )
     }
 
-    private func glamSculptCard() {
+    private func glamSculptTile() {
         glamPrepareLookSurface()
         glamPrepareLookReveal()
         glamPrepareLookSpark()
         glamPrepareLookArtist()
-        glamPrepareLookText()
-        glamPrepareLookFlag()
-        glamAddLookCardPieces()
-        glamPinLookCard()
+        glamPrepareLookPhrase()
+        glamPrepareLookConcern()
+        glamAddLookTilePieces()
+        glamPinLookTile()
     }
 
     private func glamPrepareLookSurface() {
@@ -307,32 +307,32 @@ final class MuzoiGlamLookDeckCell: UICollectionViewCell {
         glamArtistName.minimumScaleFactor = 0.72
     }
 
-    private func glamPrepareLookText() {
-        glamLookCaption.translatesAutoresizingMaskIntoConstraints = false
-        glamLookCaption.textColor = .white
-        glamLookCaption.font = .systemFont(ofSize: 17, weight: .regular)
-        glamLookCaption.numberOfLines = 2
-        glamLookCaption.lineBreakMode = .byTruncatingTail
+    private func glamPrepareLookPhrase() {
+        glamLookLine.translatesAutoresizingMaskIntoConstraints = false
+        glamLookLine.textColor = .white
+        glamLookLine.font = .systemFont(ofSize: 17, weight: .regular)
+        glamLookLine.numberOfLines = 2
+        glamLookLine.lineBreakMode = .byTruncatingTail
     }
 
-    private func glamPrepareLookFlag() {
-        glamFlagControl.translatesAutoresizingMaskIntoConstraints = false
-        glamFlagControl.setTitle(MuzoiGlamVeil("!q"), for: .normal)
-        glamFlagControl.setTitleColor(UIColor.black.withAlphaComponent(0.72), for: .normal)
-        glamFlagControl.titleLabel?.font = .systemFont(ofSize: 17, weight: .black)
-        glamFlagControl.backgroundColor = UIColor.white.withAlphaComponent(0.68)
-        glamFlagControl.layer.cornerRadius = 16
-        glamFlagControl.accessibilityLabel = MuzoiGlamVeil("RreNp5odrQtx")
-        glamFlagControl.addTarget(self, action: #selector(glamOpenFlag), for: .touchUpInside)
+    private func glamPrepareLookConcern() {
+        glamConcernControl.translatesAutoresizingMaskIntoConstraints = false
+        glamConcernControl.setTitle(MuzoiGlamVeil("!q"), for: .normal)
+        glamConcernControl.setTitleColor(UIColor.black.withAlphaComponent(0.72), for: .normal)
+        glamConcernControl.titleLabel?.font = .systemFont(ofSize: 17, weight: .black)
+        glamConcernControl.backgroundColor = UIColor.white.withAlphaComponent(0.68)
+        glamConcernControl.layer.cornerRadius = 16
+        glamConcernControl.accessibilityLabel = MuzoiGlamVeil("RreNp5odrQtx")
+        glamConcernControl.addTarget(self, action: #selector(glamOpenConcern), for: .touchUpInside)
     }
 
-    private func glamAddLookCardPieces() {
-        [glamRevealControl, glamSparkControl, glamArtistPortrait, glamArtistName, glamLookCaption, glamFlagControl].forEach {
+    private func glamAddLookTilePieces() {
+        [glamRevealControl, glamSparkControl, glamArtistPortrait, glamArtistName, glamLookLine, glamConcernControl].forEach {
             contentView.addSubview($0)
         }
     }
 
-    private func glamPinLookCard() {
+    private func glamPinLookTile() {
         NSLayoutConstraint.activate(glamLookSurfaceConstraints())
         NSLayoutConstraint.activate(glamLookCenterActionConstraints())
         NSLayoutConstraint.activate(glamLookArtistConstraints())
@@ -363,19 +363,19 @@ final class MuzoiGlamLookDeckCell: UICollectionViewCell {
     private func glamLookArtistConstraints() -> [NSLayoutConstraint] {
         [
             glamArtistPortrait.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24),
-            glamArtistPortrait.bottomAnchor.constraint(equalTo: glamLookCaption.topAnchor, constant: -11),
+            glamArtistPortrait.bottomAnchor.constraint(equalTo: glamLookLine.topAnchor, constant: -11),
             glamArtistPortrait.widthAnchor.constraint(equalToConstant: 50),
             glamArtistPortrait.heightAnchor.constraint(equalTo: glamArtistPortrait.widthAnchor),
             glamArtistName.leadingAnchor.constraint(equalTo: glamArtistPortrait.trailingAnchor, constant: 12),
             glamArtistName.centerYAnchor.constraint(equalTo: glamArtistPortrait.centerYAnchor),
-            glamFlagControl.leadingAnchor.constraint(equalTo: glamArtistName.trailingAnchor, constant: 10),
-            glamFlagControl.centerYAnchor.constraint(equalTo: glamArtistName.centerYAnchor),
-            glamFlagControl.widthAnchor.constraint(equalToConstant: 32),
-            glamFlagControl.heightAnchor.constraint(equalTo: glamFlagControl.widthAnchor),
-            glamFlagControl.trailingAnchor.constraint(lessThanOrEqualTo: contentView.trailingAnchor, constant: -92),
-            glamLookCaption.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24),
-            glamLookCaption.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -24),
-            glamLookCaption.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)
+            glamConcernControl.leadingAnchor.constraint(equalTo: glamArtistName.trailingAnchor, constant: 10),
+            glamConcernControl.centerYAnchor.constraint(equalTo: glamArtistName.centerYAnchor),
+            glamConcernControl.widthAnchor.constraint(equalToConstant: 32),
+            glamConcernControl.heightAnchor.constraint(equalTo: glamConcernControl.widthAnchor),
+            glamConcernControl.trailingAnchor.constraint(lessThanOrEqualTo: contentView.trailingAnchor, constant: -92),
+            glamLookLine.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24),
+            glamLookLine.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -24),
+            glamLookLine.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)
         ]
     }
 
@@ -421,8 +421,8 @@ final class MuzoiGlamLookDeckCell: UICollectionViewCell {
         glamArtistAction?()
     }
 
-    @objc private func glamOpenFlag() {
-        glamFlagAction?()
+    @objc private func glamOpenConcern() {
+        glamConcernAction?()
     }
 }
 
@@ -438,13 +438,13 @@ final class MuzoiGlamLookDeckController: UIViewController,
     private let glamLookFlow = UICollectionViewFlowLayout()
     private lazy var glamLookRail = UICollectionView(frame: .zero, collectionViewLayout: glamLookFlow)
     private let glamComposeControl = UIButton(type: .custom)
-    private let glamOrbitSpinner = UIActivityIndicatorView(style: .large)
-    private var glamImpressions: [MuzoiGlamLookImpression] = []
+    private let glamOrbitWheel = UIActivityIndicatorView(style: .large)
+    private var glamGlimmers: [MuzoiGlamLookGlimmer] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         glamComposeGallery()
-        glamGatherImpressions()
+        glamGatherGlimmers()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -455,9 +455,9 @@ final class MuzoiGlamLookDeckController: UIViewController,
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         glamHeaderAuraLayer.frame = glamHeaderAura.bounds
-        let glamCardExtent = glamLookRail.bounds.size
-        if glamLookFlow.itemSize != glamCardExtent {
-            glamLookFlow.itemSize = glamCardExtent
+        let glamTileExtent = glamLookRail.bounds.size
+        if glamLookFlow.itemSize != glamTileExtent {
+            glamLookFlow.itemSize = glamTileExtent
             glamLookFlow.invalidateLayout()
         }
     }
@@ -553,9 +553,9 @@ final class MuzoiGlamLookDeckController: UIViewController,
     }
 
     private func glamPrepareGallerySpinner() {
-        glamOrbitSpinner.translatesAutoresizingMaskIntoConstraints = false
-        glamOrbitSpinner.color = .white
-        view.addSubview(glamOrbitSpinner)
+        glamOrbitWheel.translatesAutoresizingMaskIntoConstraints = false
+        glamOrbitWheel.color = .white
+        view.addSubview(glamOrbitWheel)
     }
 
     private func glamPinGalleryRunway() {
@@ -583,45 +583,45 @@ final class MuzoiGlamLookDeckController: UIViewController,
             glamComposeControl.widthAnchor.constraint(equalToConstant: 60),
             glamComposeControl.heightAnchor.constraint(equalTo: glamComposeControl.widthAnchor),
 
-            glamOrbitSpinner.centerXAnchor.constraint(equalTo: glamLookRail.centerXAnchor),
-            glamOrbitSpinner.centerYAnchor.constraint(equalTo: glamLookRail.centerYAnchor)
+            glamOrbitWheel.centerXAnchor.constraint(equalTo: glamLookRail.centerXAnchor),
+            glamOrbitWheel.centerYAnchor.constraint(equalTo: glamLookRail.centerYAnchor)
         ])
     }
 
-    private func glamGatherImpressions() {
-        glamOrbitSpinner.startAnimating()
-        glamLookArchive.glamGatherImpressions { [weak self] glamImpressions in
+    private func glamGatherGlimmers() {
+        glamOrbitWheel.startAnimating()
+        glamLookArchive.glamGatherGlimmers { [weak self] glamGlimmers in
             guard let self else { return }
-            self.glamImpressions = glamImpressions
+            self.glamGlimmers = glamGlimmers
             self.glamLookRail.reloadData()
-            self.glamOrbitSpinner.stopAnimating()
+            self.glamOrbitWheel.stopAnimating()
         }
     }
 
     func collectionView(_ glamGrid: UICollectionView, numberOfItemsInSection glamSection: Int) -> Int {
-        glamImpressions.count
+        glamGlimmers.count
     }
 
     func collectionView(
         _ glamGrid: UICollectionView,
-        cellForItemAt glamCardPath: IndexPath
+        cellForItemAt glamTilePath: IndexPath
     ) -> UICollectionViewCell {
-        let glamLookCard = glamGrid.dequeueReusableCell(
+        let glamLookTile = glamGrid.dequeueReusableCell(
             withReuseIdentifier: MuzoiGlamLookDeckCell.glamReuseKey,
-            for: glamCardPath
+            for: glamTilePath
         ) as! MuzoiGlamLookDeckCell
-        let glamImpression = glamImpressions[glamCardPath.item]
-        glamLookCard.glamRenderImpression(glamImpression)
-        glamLookCard.glamCanvasAction = { [weak self] in
-            self?.glamOpenCanvasPassage(.glamMotionCanvas, glamTrailMark: glamImpression.glamIdentity)
+        let glamGlimmer = glamGlimmers[glamTilePath.item]
+        glamLookTile.glamRenderGlimmer(glamGlimmer)
+        glamLookTile.glamCanvasAction = { [weak self] in
+            self?.glamOpenCanvasPassage(.glamMotionCanvas, glamTrailMark: glamGlimmer.glamSignature)
         }
-        glamLookCard.glamArtistAction = { [weak self] in
-            self?.glamOpenCanvasPassage(.glamMuseCanvas, glamTrailMark: glamImpression.glamMuseIdentity)
+        glamLookTile.glamArtistAction = { [weak self] in
+            self?.glamOpenCanvasPassage(.glamMuseCanvas, glamTrailMark: glamGlimmer.glamMuseSignature)
         }
-        glamLookCard.glamFlagAction = { [weak self] in
+        glamLookTile.glamConcernAction = { [weak self] in
             self?.glamOpenCanvasPassage(.glamFlagCanvas, glamTrailMark: "")
         }
-        return glamLookCard
+        return glamLookTile
     }
 
     private func glamOpenCanvasPassage(_ glamPassage: MuzoiGlamScenePassage, glamTrailMark: String) {

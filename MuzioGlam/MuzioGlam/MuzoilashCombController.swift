@@ -1,25 +1,8 @@
 import UIKit
 
-//final class MuzoiGlamCapsuleBar: UITabBar {
-//    override func sizeThatFits(_ glamCanvasSize: CGSize) -> CGSize {
-//        var glamFittedSize = super.sizeThatFits(glamCanvasSize)
-//        glamFittedSize.height = max(glamFittedSize.height, 64 + safeAreaInsets.bottom)
-//        return glamFittedSize
-//    }
-//}
-
-final class MuzoiGlamMainTabController: UITabBarController {
+final class MuzoilashCombController: UITabBarController {
     private let glamCapsule = UIView()
 
-//    init() {
-//        super.init(nibName: nil, bundle: nil)
-//        setValue(MuzoiGlamCapsuleBar(), forKey: "tabBar")
-//    }
-//
-//    required init?(coder glamCoder: NSCoder) {
-//        super.init(coder: glamCoder)
-//        setValue(MuzoiGlamCapsuleBar(), forKey: "tabBar")
-//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,78 +42,78 @@ final class MuzoiGlamMainTabController: UITabBarController {
 
         viewControllers = [
             glamCastHomeAtelier(),
-            glamCastDiscoverLookbook(),
-            glamCastCommunityRunway(),
-            glamCastMineVanity()
+            glamCastInspireLookbook(),
+            glamCastGalleryRunway(),
+            glamCastPersonalVanity()
         ]
         selectedIndex = 0
     }
 
     private func glamCastHomeAtelier() -> UIViewController {
-        let glamController = MuzoiGlamHomeController()
+        let glamController = MuzoibrowSculptController()
         glamController.tabBarItem = glamForgeTabCharm(
             glamLabel: MuzoiGlamVeil("HUoZmre2"),
-            glamIdleAsset: "MuzoiGlamTabHomeIdle",
-            glamActiveAsset: "MuzoiGlamTabHomeActive"
+            glamIdleRune: "MuzoiGlamTabHomeIdle",
+            glamActiveRune: "MuzoiGlamTabHomeActive"
         )
         return UINavigationController(rootViewController: glamController)
     }
 
-    private func glamCastDiscoverLookbook() -> UIViewController {
+    private func glamCastInspireLookbook() -> UIViewController {
         let glamController = MuzoiGlamLookDeckController()
         glamController.tabBarItem = glamForgeTabCharm(
             glamLabel: MuzoiGlamVeil("DLi3sDcao5vRe8rs"),
-            glamIdleAsset: "MuzoiGlamTabShowcaseIdle",
-            glamActiveAsset: "MuzoiGlamTabShowcaseActive"
+            glamIdleRune: "MuzoiGlamTabShowcaseIdle",
+            glamActiveRune: "MuzoiGlamTabShowcaseActive"
         )
         return UINavigationController(rootViewController: glamController)
     }
 
-    private func glamCastCommunityRunway() -> UIViewController {
-        let glamController = MuzoiGlamCanvasStreamController()
+    private func glamCastGalleryRunway() -> UIViewController {
+        let glamController = MuzoiGleamDustController()
         glamController.tabBarItem = glamForgeTabCharm(
             glamLabel: MuzoiGlamVeil("CeommGmYuxnoi7txy9"),
-            glamIdleAsset: "MuzoiGlamTabOrbitIdle",
-            glamActiveAsset: "MuzoiGlamTabOrbitActive"
+            glamIdleRune: "MuzoiGlamTabOrbitIdle",
+            glamActiveRune: "MuzoiGlamTabOrbitActive"
         )
         return UINavigationController(rootViewController: glamController)
     }
 
-    private func glamCastMineVanity() -> UIViewController {
-        let glamController = MuzoiGlamMyCenterController()
+    private func glamCastPersonalVanity() -> UIViewController {
+        let glamController = MuzoLashClusterController()
         glamController.tabBarItem = glamForgeTabCharm(
             glamLabel: MuzoiGlamVeil("MdiAnge3"),
-            glamIdleAsset: "MuzoiGlamTabMuseIdle",
-            glamActiveAsset: "MuzoiGlamTabMuseActive"
+            glamIdleRune: "MuzoiGlamTabMuseIdle",
+            glamActiveRune: "MuzoiGlamTabMuseActive"
         )
         return UINavigationController(rootViewController: glamController)
     }
 
     private func glamCastPlaceholderAtelier(
         glamTitle: String,
-        glamIdleAsset: String,
-        glamActiveAsset: String
+        glamIdleRune: String,
+        glamActiveRune: String
     ) -> UIViewController {
         let glamController = UIViewController()
         glamController.view.backgroundColor = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
         glamController.title = glamTitle
         glamController.tabBarItem = glamForgeTabCharm(
             glamLabel: glamTitle,
-            glamIdleAsset: glamIdleAsset,
-            glamActiveAsset: glamActiveAsset
+            glamIdleRune: glamIdleRune,
+            glamActiveRune: glamActiveRune
         )
         return UINavigationController(rootViewController: glamController)
     }
 
     private func glamForgeTabCharm(
         glamLabel: String,
-        glamIdleAsset: String,
-        glamActiveAsset: String
+        glamIdleRune: String,
+        glamActiveRune: String
     ) -> UITabBarItem {
         let glamItem = UITabBarItem(
             title: nil,
-            image: UIImage(named: glamIdleAsset)?.withRenderingMode(.alwaysOriginal),
-            selectedImage: UIImage(named: glamActiveAsset)?.withRenderingMode(.alwaysOriginal)
+            image: UIImage(named: glamIdleRune)?.withRenderingMode(.alwaysOriginal),
+            selectedImage: UIImage(named: glamActiveRune)?.withRenderingMode(.alwaysOriginal)
         )
         glamItem.accessibilityLabel = glamLabel
         glamItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
