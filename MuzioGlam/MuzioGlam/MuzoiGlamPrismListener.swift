@@ -92,6 +92,7 @@ final class MuzoiGlamPrismPortalController: UIViewController,
         self.glamInitialTrail = glamInitialTrail
         super.init(nibName: nil, bundle: nil)
         hidesBottomBarWhenPushed = true
+        glamAttachStoreObserver()
     }
 
     required init?(coder glamCoder: NSCoder) {
@@ -250,9 +251,9 @@ final class MuzoiGlamPrismPortalController: UIViewController,
         glamDidUnlock: Bool,
         glamDetourCaption: String? = nil
     ) {
+        dispatchPrecondition(condition: .onQueue(.main))
         glamRadianceRequest = nil
         glamRadianceKey = nil
-        glamDetachStoreObserver()
         view.isUserInteractionEnabled = true
         glamOrbitSpinner.stopAnimating()
 
@@ -273,6 +274,13 @@ final class MuzoiGlamPrismPortalController: UIViewController,
     }
 
     func productsRequest(_ glamStoreInquiry: SKProductsRequest, didReceive glamStoreReply: SKProductsResponse) {
+        DispatchQueue.main.async { [weak self] in
+            self?.glamReceiveRadianceShelf(glamStoreReply)
+        }
+    }
+
+    private func glamReceiveRadianceShelf(_ glamStoreReply: SKProductsResponse) {
+        dispatchPrecondition(condition: .onQueue(.main))
         guard
             let glamChosenRadianceKey = glamRadianceKey,
             let glamRadianceItem = glamStoreReply.glamMuzoiRadianceItem(matching: glamChosenRadianceKey)
@@ -289,16 +297,32 @@ final class MuzoiGlamPrismPortalController: UIViewController,
     }
 
     func request(_ glamStoreInquiry: SKRequest, didFailWithError glamDetour: Error) {
-        glamFinishRadianceUnlock(
-            glamDidUnlock: false,
-            glamDetourCaption: glamDetour.localizedDescription
-        )
+        let glamDetourCaption = glamDetour.localizedDescription
+        DispatchQueue.main.async { [weak self] in
+            self?.glamFinishRadianceUnlock(
+                glamDidUnlock: false,
+                glamDetourCaption: glamDetourCaption
+            )
+        }
     }
 
     func paymentQueue(
         _ glamStoreQueue: SKPaymentQueue,
         updatedTransactions glamStoreEntries: [SKPaymentTransaction]
     ) {
+        DispatchQueue.main.async { [weak self] in
+            self?.glamReceiveRadianceLedger(
+                glamStoreEntries,
+                from: glamStoreQueue
+            )
+        }
+    }
+
+    private func glamReceiveRadianceLedger(
+        _ glamStoreEntries: [SKPaymentTransaction],
+        from glamStoreQueue: SKPaymentQueue
+    ) {
+        dispatchPrecondition(condition: .onQueue(.main))
         for glamStoreEntry in glamStoreEntries {
             glamReadRadianceLedger(glamStoreEntry, from: glamStoreQueue)
         }
