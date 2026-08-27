@@ -42,11 +42,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60F595150DF5E9601B4C604C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5824F7A30245F8C00B6BCFD = {
 			isa = PBXGroup;
 			children = (
 				F5824F8530245F8C00B6BCFD /* MuzioGlam */,
 				F5824F8430245F8C00B6BCFD /* Products */,
+				60F595150DF5E9601B4C604C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +85,6 @@
 				F5824F8530245F8C00B6BCFD /* MuzioGlam */,
 			);
 			name = MuzioGlam;
-			packageProductDependencies = (
-			);
 			productName = MuzioGlam;
 			productReference = F5824F8330245F8C00B6BCFD /* MuzioGlam.app */;
 			productType = "com.apple.product-type.application";
@@ -145,8 +151,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MuzioGlam/MuzioGlam.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MuzioGlam/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Muzoi;
@@ -187,8 +194,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MuzioGlam/MuzioGlam.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MuzioGlam/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Muzoi;
