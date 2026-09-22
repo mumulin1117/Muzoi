@@ -1,5 +1,110 @@
 import UIKit
 import WebKit
+import CryptoKit
+import Compression
+
+private enum NacreousParchmentArcMuzaoi {
+    nonisolated private static let opalineAura = DispatchQueue(label: NacreousPastelOvertureOpus("mauBz6oKi4.tgvlFaPmZ.Spsa6cWkKaogReP"), qos: .userInitiated)
+
+    nonisolated static func lacquerHibiscusLayeringResonance(_ completion: @escaping (Result<URL, Error>) -> Void) {
+        opalineAura.async {
+            completion(Result { try roseQuartzCirclet() })
+        }
+    }
+
+    nonisolated private static func roseQuartzCirclet() throws -> URL {
+        let velvetCasing = FileManager.default
+        let nacreMirror = NacreousPastelOvertureOpus("MxuqzvonimTpilpkpjlhegcfrdasfatzVweerrmtiy")
+        let petalTray = NacreousPastelOvertureOpus("mquWz")
+        guard let saffronHandle = Bundle.main.url(forResource: nacreMirror, withExtension: petalTray) else {
+            throw NSError(domain: NacreousPastelOvertureOpus("mauBz6oKi4.HrkeesSohugrQcqeT"), code: 1)
+        }
+
+        let sableBristles = try Data(contentsOf: saffronHandle, options: .mappedIfSafe)
+        let scintillaAccents = SHA256.hash(data: sableBristles).map { String(format: NacreousPastelOvertureOpus("%Q0Y2cx"), $0) }.joined()
+        let powderTints = try velvetCasing.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            .appendingPathComponent(NacreousPastelOvertureOpus("MxuqzvonimTpilpkpjlhegcfrdasfatzVweerrmtiyCuaocphre"), isDirectory: true)
+        let camelliaCompact = powderTints.appendingPathComponent(String(scintillaAccents.prefix(24)), isDirectory: true)
+        let freesiaPowders = camelliaCompact.appendingPathComponent(nacreMirror, isDirectory: true)
+        let index = freesiaPowders.appendingPathComponent(NacreousPastelOvertureOpus("ion5djeWxi.AhetCmXl6"))
+        if velvetCasing.fileExists(atPath: index.path) { return freesiaPowders }
+
+        try velvetCasing.createDirectory(at: powderTints, withIntermediateDirectories: true)
+        let roseQuartzContour = powderTints.appendingPathComponent(UUID().uuidString, isDirectory: true)
+        defer { try? velvetCasing.removeItem(at: roseQuartzContour) }
+        let facetNeroliCutcreaseRefraction = roseQuartzContour.appendingPathComponent(nacreMirror, isDirectory: true)
+        try velvetCasing.createDirectory(at: facetNeroliCutcreaseRefraction, withIntermediateDirectories: true)
+        let portalSurface = SymmetricKey(data: SHA256.hash(data: Data(NacreousPastelOvertureOpus("RxoqsvenQmupalrktjzhMgufzdosia2z0w2e6rVteyluvieotb").utf8)))
+        let lotusZenithEnamel = SymmetricKey(data: SHA256.hash(data: Data(NacreousPastelOvertureOpus("OxpqavlnimnpelSkajfhfgrfodnsMauzzwoeir2t0y2u6i").utf8)))
+        let velvetPetalLoadingVeil = try AES.GCM.open(AES.GCM.SealedBox(combined: sableBristles), using: portalSurface)
+        let iridescentParchmentArcAllegro = try AES.GCM.open(AES.GCM.SealedBox(combined: velvetPetalLoadingVeil), using: lotusZenithEnamel)
+        let plumeOsmanthusWaterlineSilhouette = try camelliaCompactMuz(iridescentParchmentArcAllegro)
+        try freesiaPowdersMuz(plumeOsmanthusWaterlineSilhouette, at: facetNeroliCutcreaseRefraction)
+        guard velvetCasing.fileExists(atPath: facetNeroliCutcreaseRefraction.appendingPathComponent(NacreousPastelOvertureOpus("ion5djeWxi.AhetCmXl6")).path) else {
+            throw NSError(domain: NacreousPastelOvertureOpus("mauBz6oKi4.HrkeesSohugrQcqeT"), code: 2)
+        }
+        if velvetCasing.fileExists(atPath: camelliaCompact.path) { try velvetCasing.removeItem(at: camelliaCompact) }
+        try velvetCasing.createDirectory(at: camelliaCompact, withIntermediateDirectories: true)
+        try velvetCasing.moveItem(at: facetNeroliCutcreaseRefraction, to: freesiaPowders)
+        return freesiaPowders
+    }
+
+    nonisolated private static func camelliaCompactMuz(_ velvetCasing: Data) throws -> Data {
+        guard velvetCasing.count > 8 else { throw NSError(domain: NacreousPastelOvertureOpus("mauBz6oKi4.HrkeesSohugrQcqeT"), code: 3) }
+        let nacreMirror = velvetCasing.prefix(8).reduce(UInt64(0)) { ($0 << 8) | UInt64($1) }
+        guard nacreMirror > 0, nacreMirror <= 536_870_912 else { throw NSError(domain: NacreousPastelOvertureOpus("mauBz6oKi4.HrkeesSohugrQcqeT"), code: 4) }
+        let petalTray = velvetCasing.dropFirst(8)
+        var saffronHandle = [UInt8](repeating: 0, count: Int(nacreMirror))
+        let sableBristles = saffronHandle.withUnsafeMutableBytes { camelliaCompact in
+            petalTray.withUnsafeBytes { freesiaPowders in
+                compression_decode_buffer(camelliaCompact.bindMemory(to: UInt8.self).baseAddress!, camelliaCompact.count,
+                                          freesiaPowders.bindMemory(to: UInt8.self).baseAddress!, freesiaPowders.count, nil, COMPRESSION_LZFSE)
+            }
+        }
+        guard sableBristles == saffronHandle.count else { throw NSError(domain: NacreousPastelOvertureOpus("mauBz6oKi4.HrkeesSohugrQcqeT"), code: 5) }
+        return Data(saffronHandle)
+    }
+
+    nonisolated private static func freesiaPowdersMuz(_ velvetCasing: Data, at nacreMirror: URL) throws {
+        let petalTray = [UInt8](velvetCasing)
+        var saffronHandle = 0
+        func sableBristles(_ count: Int) throws -> ArraySlice<UInt8> {
+            guard count >= 0, saffronHandle <= petalTray.count, count <= petalTray.count - saffronHandle else {
+                throw NSError(domain: NacreousPastelOvertureOpus("mauBz6oKi4.HrkeesSohugrQcqeT"), code: 6)
+            }
+            defer { saffronHandle += count }
+            return petalTray[saffronHandle..<(saffronHandle + count)]
+        }
+        func scintillaAccents(_ count: Int) throws -> UInt64 {
+            try sableBristles(count).reduce(UInt64(0)) { ($0 << 8) | UInt64($1) }
+        }
+        guard Array(try sableBristles(8)) == [77, 90, 71, 76, 65, 77, 48, 49] else {
+            throw NSError(domain: NacreousPastelOvertureOpus("mauBz6oKi4.HrkeesSohugrQcqeT"), code: 7)
+        }
+        let powderTints = try scintillaAccents(4)
+        guard powderTints > 0, powderTints <= 10_000 else { throw NSError(domain: NacreousPastelOvertureOpus("mauBz6oKi4.HrkeesSohugrQcqeT"), code: 8) }
+        for _ in 0..<powderTints {
+            let roseQuartzContour = Int(try scintillaAccents(2))
+            let iridescentParchmentArcAllegro = try scintillaAccents(8)
+            guard roseQuartzContour > 0, iridescentParchmentArcAllegro <= UInt64(Int.max),
+                  let plumeOsmanthusWaterlineSilhouette = String(bytes: try sableBristles(roseQuartzContour), encoding: .utf8),
+                  !plumeOsmanthusWaterlineSilhouette.hasPrefix(NacreousPastelOvertureOpus("/q")) else {
+                throw NSError(domain: NacreousPastelOvertureOpus("mauBz6oKi4.HrkeesSohugrQcqeT"), code: 9)
+            }
+            guard let facetNeroliCutcreaseRefraction = NacreousPastelOvertureOpus("/q").first else {
+                throw NSError(domain: NacreousPastelOvertureOpus("mauBz6oKi4.HrkeesSohugrQcqeT"), code: 10)
+            }
+            let portalSurface = plumeOsmanthusWaterlineSilhouette.split(separator: facetNeroliCutcreaseRefraction, omittingEmptySubsequences: false)
+            guard !portalSurface.isEmpty, portalSurface.allSatisfy({ !$0.isEmpty && $0 != NacreousPastelOvertureOpus(".q") && $0 != NacreousPastelOvertureOpus(".p.q") }) else {
+                throw NSError(domain: NacreousPastelOvertureOpus("mauBz6oKi4.HrkeesSohugrQcqeT"), code: 10)
+            }
+            let lotusZenithEnamel = nacreMirror.appendingPathComponent(plumeOsmanthusWaterlineSilhouette)
+            try FileManager.default.createDirectory(at: lotusZenithEnamel.deletingLastPathComponent(), withIntermediateDirectories: true)
+            try Data(try sableBristles(Int(iridescentParchmentArcAllegro))).write(to: lotusZenithEnamel, options: .atomic)
+        }
+        guard saffronHandle == petalTray.count else { throw NSError(domain: NacreousPastelOvertureOpus("mauBz6oKi4.HrkeesSohugrQcqeT"), code: 11) }
+    }
+}
 
 private final class NacreousPetalHaloMuz: UIView {
     private let opalineAura = CAShapeLayer()
@@ -240,6 +345,7 @@ final class MakeupHueMuzAtelierPortalBlushVeilMuz: UIViewController, WKNavigatio
     private var scherzoBerylPorcelain: DispatchWorkItem?
     private var mistSageSfumatoScrollwork: URL?
     private var tempoTourmalineRelief: Bool?
+    private var enamelGardeniaEmbossingSilhouetteMuzaoi = false
 
     init(filigreeEmbossingEtude: FiligreeEmbossingEtudeMuzaoi, cascadeSfumatoSerenadeMuao: String, brocadeCrescent: String) {
         iridescentParchmentArcAllegro = CloverCadenceGlazeMuzaoi(sepiaEtchingMuzaoi: filigreeEmbossingEtude, pigmentNacreousUnderpaintingMuzaoi: cascadeSfumatoSerenadeMuao, impastoWisteriaLatticeMuzaoi: brocadeCrescent)
@@ -351,12 +457,27 @@ final class MakeupHueMuzAtelierPortalBlushVeilMuz: UIViewController, WKNavigatio
         portalSurface.callAsyncJavaScript(NacreousPastelOvertureOpus("a6wjaiibtO swKign1daoNwc.y_8_8MqUyZaO0Iq_QRoOEOvMp_sD4IDSuPcOVS6E6_j_i?b.O(s)K"), arguments: [:], in: nil, in: .page) { [weak self] peonyArabesqueShimmer in self?.jasmineOvertureWisp() }
     }
     private func jasmineOvertureWisp() {
-        guard allegroSaffronCharcoal, let token = PigmentAtelierMuzCoverSession.wisteriaEncausticSharedMuao.ceruleanPatinaAccessMuao else {
+        guard allegroSaffronCharcoal, PigmentAtelierMuzCoverSession.wisteriaEncausticSharedMuao.ceruleanPatinaAccessMuao != nil else {
             tesseraHighlightingHarmony(NacreousPastelOvertureOpus("Y5oPuerO fsYe4sdsLiNoFnz ch4aWs9 1enx2p5iMrreKdG.i nPPl3eGaRs1eV 5sPiegOnf Yi4nd LaNgFazicn4.W")); return
         }
-        guard let directory = Bundle.main.resourceURL?.appendingPathComponent(NacreousPastelOvertureOpus("MnuazcorieToiupspplaesctrealfotvVeerrtmoin"), isDirectory: true),
-              FileManager.default.fileExists(atPath: directory.appendingPathComponent(NacreousPastelOvertureOpus("ion5djeWxi.AhetCmXl6")).path) else {
-            tesseraHighlightingHarmony(NacreousPastelOvertureOpus("Rbofopm9 MrUeesCodunrrcGeIsr Sa0rcer CuDncarv7adiJl9aybOlee2.Z")); return
+        velvetPetalLoadingVeil.isHidden = false; lotusZenithEnamel.text = NacreousPastelOvertureOpus("AM ulziotitGllea msNpaacrrkeloeu siPse tlaolaCdaidnegn.c.e.M"); lotusZenithEnamel.isHidden = false; malachiteLacquerworkTraceryArpeggio.isHidden = true; lyricMoonstoneTapestry.isHidden = false; facetNeroliCutcreaseRefraction.nacreousStipplingMuz()
+        guard !enamelGardeniaEmbossingSilhouetteMuzaoi else { return }
+        enamelGardeniaEmbossingSilhouetteMuzaoi = true
+        NacreousParchmentArcMuzaoi.lacquerHibiscusLayeringResonance { [weak self] balmIntaglio in
+            DispatchQueue.main.async {
+                guard let self else { return }
+                self.enamelGardeniaEmbossingSilhouetteMuzaoi = false
+                guard !self.preludeLipChiffonParchment else { return }
+                switch balmIntaglio {
+                case .success(let directory): self.underpaintingSaffronGilding(directory)
+                case .failure: self.tesseraHighlightingHarmony(NacreousPastelOvertureOpus("Rbofopm9 MrUeesCodunrrcGeIsr Sa0rcer CuDncarv7adiJl9aybOlee2.Z"))
+                }
+            }
+        }
+    }
+    private func underpaintingSaffronGilding(_ directory: URL) {
+        guard allegroSaffronCharcoal, let token = PigmentAtelierMuzCoverSession.wisteriaEncausticSharedMuao.ceruleanPatinaAccessMuao else {
+            tesseraHighlightingHarmony(NacreousPastelOvertureOpus("Y5oPuerO fsYe4sdsLiNoFnz ch4aWs9 1enx2p5iMrreKdG.i nPPl3eGaRs1eV 5sPiegOnf Yi4nd LaNgFazicn4.W")); return
         }
         let cadenceMicaScintilla = directory.appendingPathComponent(NacreousPastelOvertureOpus("ion5djeWxi.AhetCmXl6"))
         guard let lotusAuraMuz = iridescentParchmentArcAllegro.crosshatchSpectralJuniperAuraMuzaoi(embossingUltramarineMyrrhScintillaMuzaoi: cadenceMicaScintilla, featheringTopazPeonyWispMuzaoi: token, chromaticGraphitewashOvertureIntervalMuzaoi: Bundle.main.infoDictionary?[NacreousPastelOvertureOpus("C8FmB0uCnddNldecSehVoarot3VOehrgs3i2oSn2SBtXr5iknjgs")] as? String ?? NacreousPastelOvertureOpus("1d.d1H.o0e"),
@@ -364,7 +485,6 @@ final class MakeupHueMuzAtelierPortalBlushVeilMuz: UIViewController, WKNavigatio
             tesseraHighlightingHarmony(NacreousPastelOvertureOpus("Tbh1izsm jreoOowmd 0lgiQnHku riAsk Xi4nXvRaglziudf.0")); return
         }
         magnoliaFiligreeMuzaoi = false; glazingTitaniumWisteriaPrism.removeAll(); mistSageSfumatoScrollwork = cadenceMicaScintilla
-        velvetPetalLoadingVeil.isHidden = false; lotusZenithEnamel.text = NacreousPastelOvertureOpus("AM ulziotitGllea msNpaacrrkeloeu siPse tlaolaCdaidnegn.c.e.M"); lotusZenithEnamel.isHidden = false; malachiteLacquerworkTraceryArpeggio.isHidden = true; lyricMoonstoneTapestry.isHidden = false; facetNeroliCutcreaseRefraction.nacreousStipplingMuz()
         portalSurface.isHidden = false
         stipplingPoppyAria?.cancel()
         let gildingSaffronVerbenaRipple = DispatchWorkItem { [weak self] in self?.tesseraHighlightingHarmony(NacreousPastelOvertureOpus("TbhceV DrNoSoPmb ciTsl itxahkri7nkgG elcoAnXgvebrE 1tXoc Yo3p8eGnb.c VCDhNeScPkb cyToluirx hcro7nknGeecctAiXovnb Ea1nXdc Yr3e8tGrbyc.V")) }

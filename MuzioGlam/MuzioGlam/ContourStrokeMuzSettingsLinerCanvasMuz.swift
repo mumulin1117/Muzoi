@@ -85,7 +85,7 @@ final class ContourStrokeMuzSettingsLinerCanvasMuz: VelvetHaloMuzSettingsCanvasG
         mistStippleMelody(NacreousPastelOvertureOpus("BWlyajcxkhlAiesctS"), violetRhapsodyGlaze: NacreousPastelOvertureOpus("BWlyajcxkhlAiesctS"), mosaicStippleVibrato: NacreousPastelOvertureOpus("BWlyajcxkhlAiesctS")) { [weak self] in
             guard let self else { return }; self.navigationController?.pushViewController(LipPaletteMuzBlacklistConcealerRitualMuz(obsidianWaterlineMuz: self.refrainPowderOrganzaPorcelain), animated: true)
         }
-        mistStippleMelody(NacreousPastelOvertureOpus("DFe0aNcatmiyvzaftNeU sAdcucpoIuCn4tA"), violetRhapsodyGlaze: NacreousPastelOvertureOpus("DdeEaXcPtviNvwaotEeq"), mosaicStippleVibrato: NacreousPastelOvertureOpus("DdeEaXcPtviNvwaotEeq")) { [weak self] in self?.cantataPigmentGlazeAquarelle() }
+        mistStippleMelody(NacreousPastelOvertureOpus("DMeOlkeZtzea baYcic7oiuPn5to"), violetRhapsodyGlaze: NacreousPastelOvertureOpus("DdeEaXcPtviNvwaotEeq"), mosaicStippleVibrato: NacreousPastelOvertureOpus("DdeEaXcPtviNvwaotEeq")) { [weak self] in self?.cantataPigmentGlazeAquarelle() }
         peonyLattice += [smudgingIridescentThymeLattice, crosshatchLabradoriteCedarBloom]
     }
     private func mistStippleMelody(_ highlighterInlayMuz: String, violetRhapsodyGlaze: String, mosaicStippleVibrato: String, spinelDiffusing: @escaping () -> Void) {
