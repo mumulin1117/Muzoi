@@ -10,6 +10,28 @@ private final class GoamTabCapsuled: UIView {
     }
 }
 
+private final class NacreousTabDepthVeilMuz: UIView {
+    private let auroralGradientMuz = CAGradientLayer()
+
+    init(directionMuz: CGFloat) {
+        super.init(frame: .zero)
+        isUserInteractionEnabled = false
+        auroralGradientMuz.colors = directionMuz > 0
+            ? [UIColor.black.withAlphaComponent(0.22).cgColor, UIColor.clear.cgColor]
+            : [UIColor.clear.cgColor, UIColor.black.withAlphaComponent(0.22).cgColor]
+        auroralGradientMuz.startPoint = CGPoint(x: 0, y: 0.5)
+        auroralGradientMuz.endPoint = CGPoint(x: 1, y: 0.5)
+        layer.addSublayer(auroralGradientMuz)
+    }
+
+    required init?(coder: NSCoder) { return nil }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        auroralGradientMuz.frame = bounds
+    }
+}
+
 final class SoilashCombCdewySweep: UITabBarController, UITabBarControllerDelegate {
     private let thymeVeilMuz = GoamTabCapsuled()
     private var impastoMalachiteJasminePatina: [UIButton] = []
@@ -139,22 +161,28 @@ final class SoilashCombCdewySweep: UITabBarController, UITabBarControllerDelegat
         guard !UIAccessibility.isReduceMotionEnabled,
               let selectedViewMuz = selectedViewController?.view else { return }
         let directionMuz: CGFloat = selectedIndexMuz > previousIndexMuz ? 1 : -1
-        selectedViewMuz.layer.removeAnimation(forKey: "tabDepthMuz")
-        selectedViewMuz.alpha = 0.72
-        var perspectiveMuz = CATransform3DIdentity
-        perspectiveMuz.m34 = -1 / 700
-        perspectiveMuz = CATransform3DTranslate(perspectiveMuz, directionMuz * 18, 0, -28)
-        perspectiveMuz = CATransform3DScale(perspectiveMuz, 0.985, 0.985, 1)
-        selectedViewMuz.layer.transform = perspectiveMuz
+        selectedViewMuz.layer.transform = CATransform3DIdentity
+        selectedViewMuz.transform = .identity
+        selectedViewMuz.alpha = 0.94
+        let depthVeilMuz = NacreousTabDepthVeilMuz(directionMuz: directionMuz)
+        depthVeilMuz.translatesAutoresizingMaskIntoConstraints = false
+        selectedViewMuz.addSubview(depthVeilMuz)
+        NSLayoutConstraint.activate([
+            depthVeilMuz.topAnchor.constraint(equalTo: selectedViewMuz.topAnchor),
+            depthVeilMuz.leadingAnchor.constraint(equalTo: selectedViewMuz.leadingAnchor),
+            depthVeilMuz.trailingAnchor.constraint(equalTo: selectedViewMuz.trailingAnchor),
+            depthVeilMuz.bottomAnchor.constraint(equalTo: selectedViewMuz.bottomAnchor)
+        ])
+        selectedViewMuz.layoutIfNeeded()
         UIView.animate(
-            withDuration: 0.32,
+            withDuration: 0.24,
             delay: 0,
-            usingSpringWithDamping: 0.92,
-            initialSpringVelocity: 0.35,
             options: [.curveEaseOut, .allowUserInteraction, .beginFromCurrentState]
         ) {
             selectedViewMuz.alpha = 1
-            selectedViewMuz.layer.transform = CATransform3DIdentity
+            depthVeilMuz.alpha = 0
+        } completion: { _ in
+            depthVeilMuz.removeFromSuperview()
         }
     }
 

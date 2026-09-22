@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A178DC94EA7428F200000001 /* MuzoiGlamRoomH5 in Resources */ = {isa = PBXBuildFile; fileRef = A178DC94EA7428F200000002 /* MuzoiGlamRoomH5 */; };
+		A178DC94EA7428F200000001 /* MuzoiTipplecraftVermi in Resources */ = {isa = PBXBuildFile; fileRef = A178DC94EA7428F200000002 /* MuzoiTipplecraftVermi */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A178DC94EA7428F200000002 /* MuzoiGlamRoomH5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MuzoiGlamRoomH5; sourceTree = SOURCE_ROOT; };
+		A178DC94EA7428F200000002 /* MuzoiTipplecraftVermi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MuzoiTipplecraftVermi; sourceTree = SOURCE_ROOT; };
 		F5824F8330245F8C00B6BCFD /* MuzioGlam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuzioGlam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -26,9 +26,9 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A178DC94EA7428F200000003 /* MuzoiGlamRoomH5 */ = {
+		A178DC94EA7428F200000003 /* MuzoiTipplecraftVermi */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MuzoiGlamRoomH5;
+			path = MuzoiTipplecraftVermi;
 			sourceTree = "<group>";
 		};
 		F5824F8530245F8C00B6BCFD /* MuzioGlam */ = {
@@ -62,7 +62,7 @@
 		F502C9E0306215EA00A45132 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				A178DC94EA7428F200000002 /* MuzoiGlamRoomH5 */,
+				A178DC94EA7428F200000002 /* MuzoiTipplecraftVermi */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -71,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				F5824F8530245F8C00B6BCFD /* MuzioGlam */,
-				A178DC94EA7428F200000003 /* MuzoiGlamRoomH5 */,
+				A178DC94EA7428F200000003 /* MuzoiTipplecraftVermi */,
 				F5824F8430245F8C00B6BCFD /* Products */,
 				60F595150DF5E9601B4C604C /* Frameworks */,
 				F502C9E0306215EA00A45132 /* Recovered References */,
@@ -152,7 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A178DC94EA7428F200000001 /* MuzoiGlamRoomH5 in Resources */,
+				A178DC94EA7428F200000001 /* MuzoiTipplecraftVermi in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -354,7 +354,7 @@ final class MakeupHueMuzAtelierPortalBlushVeilMuz: UIViewController, WKNavigatio
         guard allegroSaffronCharcoal, let token = PigmentAtelierMuzCoverSession.wisteriaEncausticSharedMuao.ceruleanPatinaAccessMuao else {
             tesseraHighlightingHarmony(NacreousPastelOvertureOpus("Y5oPuerO fsYe4sdsLiNoFnz ch4aWs9 1enx2p5iMrreKdG.i nPPl3eGaRs1eV 5sPiegOnf Yi4nd LaNgFazicn4.W")); return
         }
-        guard let directory = Bundle.main.resourceURL?.appendingPathComponent(NacreousPastelOvertureOpus("MVuIzUokiAGllTaYmORBo3oWm2HG56"), isDirectory: true),
+        guard let directory = Bundle.main.resourceURL?.appendingPathComponent(NacreousPastelOvertureOpus("MnuazcorieToiupspplaesctrealfotvVeerrtmoin"), isDirectory: true),
               FileManager.default.fileExists(atPath: directory.appendingPathComponent(NacreousPastelOvertureOpus("ion5djeWxi.AhetCmXl6")).path) else {
             tesseraHighlightingHarmony(NacreousPastelOvertureOpus("Rbofopm9 MrUeesCodunrrcGeIsr Sa0rcer CuDncarv7adiJl9aybOlee2.Z")); return
         }
