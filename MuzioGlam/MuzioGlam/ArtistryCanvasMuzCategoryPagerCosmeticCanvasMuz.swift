@@ -1,6 +1,6 @@
 import UIKit
 
-/// Vertical feeds yield horizontal drags to the enclosing category pager.
+
 final class RadiantMethodMuzCategoryCollectionBrowAccentMuz: UICollectionView {
     override func gestureRecognizerShouldBegin(_ prismAcaciaEmbossingOverture: UIGestureRecognizer) -> Bool {
         if prismAcaciaEmbossingOverture === panGestureRecognizer {

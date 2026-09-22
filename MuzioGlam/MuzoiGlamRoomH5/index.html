@@ -44739,6 +44739,14 @@ The recharge restriction on your account has been lifted, and all payment method
       function publicAsset(_) {
         return resolveBundleUrl([`assets`, _.replace(/^\/+|\.\.+/gu, ``)].join(`/`));
       }
+      function nacreousPastelOvertureMuz(_) {
+        return Array.from(_)
+          .filter((S, C) => C % 2 === 0)
+          .join(``);
+      }
+      var velvetPetalCadenceMuz = nacreousPastelOvertureMuz(
+        `AM ulziotitGllea msNpaacrrkeloeu siPse tlaolaCdaidnegn.c.e.M`,
+      );
       var _hoisted_1$42 = [`data-animated`],
         _hoisted_2$38 = [`src`],
         AppLoadLoadingIcon_vue_vue_type_script_setup_true_lang_default = defineComponent({
@@ -69175,7 +69183,8 @@ The recharge restriction on your account has been lifted, and all payment method
                   Z.value
                     ? (openBlock(),
                       createElementBlock(`section`, _hoisted_2$13, [
-                        createVNode(AppLoadLoadingIcon_default, { animated: ``, size: 60 }),
+                        createVNode(AppLoadLoadingIcon_default, { animated: ``, size: 96 }),
+                        createBaseVNode(`span`, { class: `nacreous-petal-copy` }, velvetPetalCadenceMuz),
                       ]))
                     : (openBlock(),
                       createBlock(
@@ -77531,7 +77540,8 @@ The recharge restriction on your account has been lifted, and all payment method
                               !bn.value && !re.value
                                 ? (openBlock(),
                                   createElementBlock(`div`, _hoisted_26, [
-                                    createVNode(AppLoadLoadingIcon_default, { animated: ``, size: 60 }),
+                                    createVNode(AppLoadLoadingIcon_default, { animated: ``, size: 96 }),
+                                    createBaseVNode(`span`, { class: `nacreous-petal-copy` }, velvetPetalCadenceMuz),
                                   ]))
                                 : unref(rtcRoomEngine).state.value === `waiting-stream`
                                   ? (openBlock(),
@@ -79217,7 +79227,8 @@ The recharge restriction on your account has been lifted, and all payment method
                               : unref(S).openingRoom.value
                                 ? (openBlock(),
                                   createElementBlock(`section`, _hoisted_2$1, [
-                                    createVNode(AppLoadLoadingIcon_default, { animated: ``, size: 60 }),
+                                    createVNode(AppLoadLoadingIcon_default, { animated: ``, size: 96 }),
+                                    createBaseVNode(`span`, { class: `nacreous-petal-copy` }, velvetPetalCadenceMuz),
                                   ]))
                                 : unref(S).endedLivePreview.value
                                   ? (openBlock(),
@@ -79357,7 +79368,11 @@ The recharge restriction on your account has been lifted, and all payment method
                 openBlock(),
                 createElementBlock(`main`, _hoisted_1, [
                   k.value && !O.value
-                    ? (openBlock(), createBlock(AppLoadLoadingIcon_default, { key: 0, animated: ``, size: 60 }))
+                    ? (openBlock(),
+                      createElementBlock(Fragment, { key: 0 }, [
+                        createVNode(AppLoadLoadingIcon_default, { animated: ``, size: 96 }),
+                        createBaseVNode(`span`, { class: `nacreous-petal-copy` }, velvetPetalCadenceMuz),
+                      ], 64))
                     : O.value
                       ? (openBlock(),
                         createElementBlock(`section`, _hoisted_2, [
@@ -87707,6 +87722,10 @@ The recharge restriction on your account has been lifted, and all payment method
         width: 100%;
         height: 100%;
         display: grid;
+        position: relative;
+      }
+      .party-room__entry-loading[data-v-620bdf27] > .load-icon {
+        transform: translate3d(0, -75px, 0);
       }
       .party-room[data-v-620bdf27] {
         --party-room-bottom-inset: var(--safe-bottom);
@@ -91776,6 +91795,9 @@ The recharge restriction on your account has been lifted, and all payment method
         position: absolute;
         inset: 0;
       }
+      .room-loader[data-v-9c63ac25] > .load-icon {
+        transform: translate3d(0, -75px, 0);
+      }
       .room-loader span[data-v-9c63ac25] {
         font-size: min(3.2vw, 19.2px);
       }
@@ -92895,6 +92917,26 @@ The recharge restriction on your account has been lifted, and all payment method
       .room-shell-loading[data-v-88561250] {
         place-items: center;
         display: grid;
+      }
+      .room-shell-loading[data-v-88561250] > .load-icon,
+      .room-route-page[data-v-1556ee5f] > .load-icon {
+        transform: translate3d(0, -75px, 0);
+      }
+      .party-room__entry-loading[data-v-620bdf27] > .nacreous-petal-copy,
+      .room-loader[data-v-9c63ac25] > .nacreous-petal-copy,
+      .room-shell-loading[data-v-88561250] > .nacreous-petal-copy,
+      .room-route-page[data-v-1556ee5f] > .nacreous-petal-copy {
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        width: calc(100% - 48px);
+        margin: 0;
+        font-size: 15px;
+        line-height: 18px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
       }
       .room-route-page[data-v-1556ee5f] {
         color: var(--color-text);

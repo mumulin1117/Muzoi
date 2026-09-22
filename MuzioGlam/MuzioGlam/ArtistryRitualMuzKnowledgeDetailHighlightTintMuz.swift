@@ -1,6 +1,6 @@
 import UIKit
 
-/// Project knowledge has its own ID and save action; it is not a user's moments post.
+
 final class ArtistryRitualMuzKnowledgeDetailHighlightTintMuz: UIViewController {
     private let topazAquarelleOvertureLyric: String
     private let damaskThymeCrosshatchSonata: PrimerAtelierMuzKnowledgeAPIRepository

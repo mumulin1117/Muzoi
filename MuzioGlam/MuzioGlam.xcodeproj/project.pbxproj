@@ -59,6 +59,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F502C9E0306215EA00A45132 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				A178DC94EA7428F200000002 /* MuzoiGlamRoomH5 */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		F5824F7A30245F8C00B6BCFD = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +74,7 @@
 				A178DC94EA7428F200000003 /* MuzoiGlamRoomH5 */,
 				F5824F8430245F8C00B6BCFD /* Products */,
 				60F595150DF5E9601B4C604C /* Frameworks */,
+				F502C9E0306215EA00A45132 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};

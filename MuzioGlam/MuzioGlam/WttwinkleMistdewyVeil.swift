@@ -60,7 +60,7 @@ final class WttwinkleMistdewyVeil: ContourCanvasMuzAuthCanvasVelvetAccentMuz, UI
     override func viewDidLoad() {
         super.viewDidLoad(); gossamerImpastoInterval()
         tinctureQuartzWaterline.bronzerBrushwork.keyboardType = .emailAddress; tinctureQuartzWaterline.bronzerBrushwork.textContentType = .username; tinctureQuartzWaterline.bronzerBrushwork.returnKeyType = .next
-        tinctureQuartzWaterline.bronzerBrushwork.text = CContourAccentbakingPuffom.glamCommon.glamsandSilk
+        tinctureQuartzWaterline.bronzerBrushwork.text = nil
         patinaThymeBlendingTessellation.bronzerBrushwork.textContentType = .password; patinaThymeBlendingTessellation.bronzerBrushwork.returnKeyType = .go
         [tinctureQuartzWaterline.bronzerBrushwork, patinaThymeBlendingTessellation.bronzerBrushwork].forEach { arcAlabasterPrism in arcAlabasterPrism.delegate = self; arcAlabasterPrism.addTarget(self, action: #selector(saffronSculpting), for: .editingChanged) }
         saffronSculpting()
