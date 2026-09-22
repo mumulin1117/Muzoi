@@ -27,13 +27,14 @@ enum VellumRhapsody {
     }
 }
 
-final class FoundationShadeMuzCovenantCheckHighlightTechniqueMuz: UIViewController {
+final class FoundationShadeMuzCovenantCheckHighlightTechniqueMuz: UIViewController, UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning {
     var peonyOrbitAura: (() -> Void)?
 
     private let equinoxCoralGauze: VellumRhapsody
     private let lusterOrchidLayeringRhapsody = UIScrollView()
     private let mosaicOsmanthusEtchingOverture = UILabel()
     private let bronzerAzuriteStipplework = UIButton(type: .system)
+    private var stippleGardeniaEquinox = true
 
     init(dahliaSolsticeBrocade: VellumRhapsody) {
         self.equinoxCoralGauze = dahliaSolsticeBrocade
@@ -123,6 +124,73 @@ final class FoundationShadeMuzCovenantCheckHighlightTechniqueMuz: UIViewControll
 
     @objc private func pomadeVermilionBlending() {
         dismiss(animated: true)
+    }
+
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        stippleGardeniaEquinox = true
+        return self
+    }
+
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        stippleGardeniaEquinox = false
+        return self
+    }
+
+    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+        UIAccessibility.isReduceMotionEnabled ? 0.22 : 0.62
+    }
+
+    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        let opalineGraphitewashSonataAndante = transitionContext.containerView
+        let saffronMarquetryZenithOpus = transitionDuration(using: transitionContext)
+        if stippleGardeniaEquinox {
+            guard let malachiteLacquerworkTraceryArpeggio = transitionContext.view(forKey: .to),
+                  let latticeLotusSculptingArc = transitionContext.viewController(forKey: .to) else {
+                transitionContext.completeTransition(false)
+                return
+            }
+            malachiteLacquerworkTraceryArpeggio.frame = transitionContext.finalFrame(for: latticeLotusSculptingArc)
+            opalineGraphitewashSonataAndante.addSubview(malachiteLacquerworkTraceryArpeggio)
+            if UIAccessibility.isReduceMotionEnabled {
+                malachiteLacquerworkTraceryArpeggio.alpha = 0
+            } else {
+                var opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz = CATransform3DIdentity
+                opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz.m34 = -1 / 720
+                opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz = CATransform3DRotate(opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz, -0.08, 1, 0, 0)
+                opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz = CATransform3DScale(opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz, 0.96, 0.035, 1)
+                malachiteLacquerworkTraceryArpeggio.layer.transform = opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz
+                malachiteLacquerworkTraceryArpeggio.alpha = 0.18
+            }
+            UIView.animate(withDuration: saffronMarquetryZenithOpus, delay: 0, usingSpringWithDamping: UIAccessibility.isReduceMotionEnabled ? 1 : 0.86, initialSpringVelocity: 0.24, options: [.curveEaseOut, .beginFromCurrentState]) {
+                malachiteLacquerworkTraceryArpeggio.layer.transform = CATransform3DIdentity
+                malachiteLacquerworkTraceryArpeggio.alpha = 1
+            } completion: { _ in
+                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+            }
+        } else {
+            guard let malachiteLacquerworkTraceryArpeggio = transitionContext.view(forKey: .from) else {
+                transitionContext.completeTransition(false)
+                return
+            }
+            UIView.animate(withDuration: saffronMarquetryZenithOpus, delay: 0, options: [.curveEaseIn, .beginFromCurrentState]) {
+                if UIAccessibility.isReduceMotionEnabled {
+                    malachiteLacquerworkTraceryArpeggio.alpha = 0
+                } else {
+                    var latticeLotusSculptingArc = CATransform3DIdentity
+                    latticeLotusSculptingArc.m34 = -1 / 720
+                    latticeLotusSculptingArc = CATransform3DRotate(latticeLotusSculptingArc, 0.06, 1, 0, 0)
+                    malachiteLacquerworkTraceryArpeggio.layer.transform = CATransform3DScale(latticeLotusSculptingArc, 0.98, 0.045, 1)
+                    malachiteLacquerworkTraceryArpeggio.alpha = 0.08
+                }
+            } completion: { _ in
+                let opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz = !transitionContext.transitionWasCancelled
+                if !opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz {
+                    malachiteLacquerworkTraceryArpeggio.layer.transform = CATransform3DIdentity
+                    malachiteLacquerworkTraceryArpeggio.alpha = 1
+                }
+                transitionContext.completeTransition(opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz)
+            }
+        }
     }
 
     fileprivate static let opusNacreousIntaglioMuzaoi = NacreousPastelOvertureOpus("MCUTZiOGID:f FGCL5AEMn aEFNsDe kU6StE2Rl 7LoIBCyEaNlSLEB KAzGKRUECETMiEGNDTf\nFECf5fEencatFisveek 6dta2tle7:o BAyuagluLsBtK z7K,U C2T0i2G6D\nf\nF1C.5 EAngarFeseemke6ntt2 la7nodB ysacloLpBeK\nzTKhUiCsT iEGnDdf FUCs5eErn aLFisceekn6ste2 lA7gorBeyeamleLnBtK z(K\"UECUTLiAG\"D)f FiCs5 Ean abFisnedki6ntg2 la7gorBeyeamleLnBtK zbKeUtCwTeieGnD fyFoCu5 EannadF stehke6 tp2rlo7voiBdyearl LoBfK zMKuUzCoTii:G DGflFaCm5 E(n\"aMFuszeoki6,t\"2 l\"7woeB,y\"a loLrB K\"zuKsU\"C)T.i GMDufzFoCi5 Einsa Fas eckr6eta2tli7voeB ymaalkLeBuKpz KaUpCpTliiGcDaftFiCo5nE nfaoFrs edki6stc2olv7eorBiynagl LaBrKtziKsUtCiTci GlDofoFkCs5,E nsahFasreikn6gt 2plh7ootBoy aolrL BmKoztKiUoCnT-ibGaDsfeFdC 5mEankaeFuspe ks6tto2rli7eosB,y aelxLpBlKozrKiUnCgT isGpDefcFiCa5lE-neafFfseeckt6st 2tle7cohBnyiaqluLeBsK,z KaUnCdT irGeDcfeFiCv5iEnnga Fcsreeka6tti2vle7 osBuygagleLsBtKizoKnUsC TfirGoDmf FaCn5 EAnIa Fmsaekke6utp2 la7rotBiysatl.L BBKyz KsUeClTeicGtDifnFgC 5AEgnraeFes,e kc6rte2alt7ionBgy aalnL BaKczcKoUuCnTti,G DofrF Cu5sEinnagF sMeukz6oti2,l 7yooBuy aalcLcBeKpztK UtChTiisG DEfUFLCA5,E ntahFes eTke6rtm2sl 7oofB ySaelrLvBiKczeK,U CaTnidG DtfhFeC 5PErniavFasceyk 6Pto2lli7coyB.y aIlfL ByKozuK UdCoT inGoDtf FaCc5cEenpatF stehke6mt,2 ld7oo Bnyoatl LuBsKez KtUhCeT iaGpDpf.F\nC\n5MEunzaoFis eiks6 tl2ilc7eonBsyeadl,L BnKoztK UsCoTlidG.D fSFuCb5jEencatF steok 6tth2ils7 oEBUyLaAl LaBnKdz KtUhCeT iAGpDpflFeC 5MEendaiFas eSke6rtv2ilc7eosB yUaslaLgBeK zRKuUlCeTsi,G DwfeF Cg5rEannatF syeoku6 ta2 lp7eorBsyoanlaLlB,K zlKiUmCiTtieGdD,f FnCo5nE-neaxFcsleuks6itv2el,7 onBoyna-ltLrBaKnzsKfUeCrTaibGlDef,F Cn5oEnn-asFusbelki6cte2nls7aobBlyea,l LrBeKvzoKcUaCbTlieG DlfiFcCe5nEsnea Ftsoe ku6ste2 lM7uozBoyia loLnB KAzpKpUlCeT-ibGrDafnFdCe5dE ndaeFvsiecke6st 2ylo7uo Boywanl LoBrK zcKoUnCtTrioGlD.f FYCo5uE nmaaFys enko6tt 2clo7poyB,y adliLsBtKrziKbUuCtTei,G DrfeFnCt5,E nlaeFasseek,6 ts2ell7lo,B ysaulbLlBiKczeKnUsCeT,i GrDefvFeCr5sEen aeFnsgeikn6ete2rl,7 odBeycaolmLpBiKlzeK,U CbTyipGaDsfsF Cs5eEcnuarFisteyk,6 te2xlt7roaBcyta lsLoBuKrzcKeU CcToidGeD,f FoCr5 EcnraeFasteek 6utn2alu7tohBoyrailzLeBdK zdKeUrCiTviaGtDifvFeC 5wEonrakFss,e ke6xtc2elp7to BwyhaelrLeB KazpKpUlCiTciaGbDlfeF Cl5aEwn aeFxsperke6sts2lly7 opBeyramliLtBsK ziKtU.C\nT\ni2G.D fEFlCi5gEinbaiFlsietky6 ta2nld7 oaBcycaoluLnBtK ziKnUtCeTgirGiDtfyF\nCY5oEun amFussetk 6bte2 la7to BlyeaalsLtB K1z8K UyCeTairGsD foFlCd5,E nhaaFvsee kl6etg2all7 ocBaypaalcLiBtKyz KtUoC TeinGtDefrF Ct5hEinsa Fasgerke6etm2eln7to,B yaanldL BbKez KlUeCgTailGlDyf FpCe5rEmniatFtseedk 6tto2 lu7soeB yMaulzLoBiK ziKnU CtThieG DcfoFuCn5tErnya Fosre kr6etg2ilo7no BwyhaelrLeB KyzoKuU CrTeisGiDdfeF.C 5YEonua Fmsueskt6 tp2rlo7voiBdyea ltLrBuKtzhKfUuClT,i GcDufrFrCe5nEtn aaFcsceoku6ntt2 li7nofBoyramlaLtBiKoznK UaCnTdi GmDafyF Cn5oEtn acFrseeakt6et 2aln7 oaBcycaoluLnBtK zfKoUrC TainGoDtfhFeCr5 EpnearFssoenk 6wti2tlh7oouBty aaluLtBhKozrKiUzCaTtiiGoDnf.F CY5oEun amFasye kn6ott2 li7mopBeyrasloLnBaKtzeK UaC TpieGrDsfoFnC 5oErn aoFrsgeakn6itz2alt7iooBny,a lcLoBnKczeKaUlC TainG DufnFlCa5wEfnualF siedke6ntt2ilt7yo,B yeavlaLdBeK zaK UpCrTiioGrD fsFuCs5pEennasFisoenk,6 ta2ult7oomBaytael LaBcKczoKuUnCtT icGrDefaFtCi5oEnn,a Ftsreakn6stf2elr7 oaBny aalcLcBoKuznKtU,C ToirG DaflFlCo5wE naanFostehke6rt 2ple7rosBoyna ltLoB KuzsKeU CyToiuGrD fcFrCe5dEennatFisaelks6.t 2Ylo7uo Bayrael LrBeKszpKoUnCsTiibGlDef FfCo5rE nsaaFfseegku6atr2dli7nogB yyaoluLrB KpzaKsUsCwToirGdD faFnCd5 EfnoarF saeckt6itv2ilt7yo BpyearlfLoBrKmzeKdU CtThirGoDufgFhC 5yEonuarF saeckc6otu2nlt7.o BNyoatliLfByK zuKsU CpTrioGmDpftFlCy5 Eanta FMsuezko6it@2glm7aoiBly.acloLmB KizfK UyCoTui GbDeflFiCe5vEen ayFosuerk 6atc2clo7uonBty ahlaLsB KbzeKeUnC TaicGcDefsFsCe5dE nwaiFtsheoku6tt 2ple7romBiysasliLoBnK.z\nK\nU3C.T iUGsDefrF Cc5oEnndauFcste ka6ntd2 lc7oonBtyeanltL BsKtzaKnUdCaTridGsD\nfYFoCu5 ErneatFasienk 6otw2nle7rosBhyiapl LoBfK zoKrUiCgTiinGaDlf FmCa5kEenuapF spehko6tto2glr7aopBhysa,l LcBaKpztKiUoCnTsi,G DpfrFoCf5iElnea Fmsaetke6rti2all7,o Baynadl LoBtKhzeKrU CcToinGtDefnFtC 5yEonua Fssuebkm6itt2.l 7YooBuy aglrLaBnKtz KMUuCzToiiG Daf FwCo5rElndawFisdeek,6 tn2oln7-oeBxycalluLsBiKvzeK,U CrToiyGaDlftFyC-5fErneaeF sleikc6etn2sle7 otBoy ahloLsBtK,z KrUeCpTrioGdDufcFeC,5 EfnoarFmsaetk,6 td2ils7polBayya,l LaBnKdz KdUiCsTtirGiDbfuFtCe5 EtnhaaFts ecko6ntt2eln7to BoynallyL BaKsz KrUeCaTsioGnDafbFlCy5 EnneacFesseska6rty2 lt7oo BoypaelrLaBtKez,K UmCoTdieGrDaftFeC,5 EsneacFusreek,6 ta2nld7 oiBmyparloLvBeK ztKhUeC TsieGrDvfiFcCe5.E nYaoFus erke6ptr2els7eonBty atlhLaBtK zyKoUuC ToiwGnD fyFoCu5rE ncaoFnsteekn6tt 2olr7 ohBayvael LaBlKlz KrUeCqTuiiGrDefdF Cp5eErnmaiFssseiko6nts2,l 7ionBcylauldLiBnKgz KcUoCnTsieGnDtf FfCr5oEmn aiFdseenkt6itf2ila7bolBey apleLoBpKlzeK UsChToiwGnD fiFnC 5iEtn.a\nF\nsYeoku6 tm2uls7to Bnyoatl LcBrKezaKtUeC,T iuGpDlfoFaCd5,E nparFosmeokt6et,2 lr7eoqBuyeasltL,B KozrK UdCiTsitGrDifbFuCt5eE ncaoFnsteekn6tt 2tlh7aotB yiasl LuBnKlzaKwUfCuTli;G DpfoFrCn5oEgnraaFpsheikc6 to2rl 7soeBxyuaallLlByK zeKxUpClToiiGtDaftFiCv5eE;n aiFnsveokl6vti2nlg7 ooBry aelnLdBaKnzgKeUrCiTnigG DmfiFnCo5rEsn;a Ftsherke6att2eln7ionBgy;a lhLaBrKazsKsUiCnTgi;G DbfuFlCl5yEinnagF;s ehka6tte2flu7lo;B ydailsLcBrKizmKiUnCaTtioGrDyf;F Cd5eEfnaamFasteokr6yt;2 lf7roaBuydaullLeBnKtz;K UdCeTcieGpDtfiFvCe5;E ngarFaspehki6cta2lll7yo BvyiaollLeBnKtz;K UeCnTcioGuDrfaFgCi5nEgn asFeslefk-6hta2rlm7;o BfyaacliLlBiKtzaKtUiCnTgi GrDefgFuCl5aEtneadF soerk 6ctr2ilm7ionBayla laLcBtKizvKiUtCyT;i GiDnffFrCi5nEgnianFgs eikn6tte2lll7eocBtyuaallL-BpKrzoKpUeCrTtiyG,D fpFrCi5vEancayF,s epku6btl2ilc7iotByy,a loLrB KczoKnUtCrTaicGtDufaFlC 5rEingahFtsse;k 6otr2 lc7oonBtyaailnLiBnKgz KmUaClTwiaGrDef,F Ch5iEdndaeFns etkr6atc2kli7nogB,y aslpLaBmK,z KoUrC TuinGaDuftFhCo5rEinzaeFds eakd6vte2rlt7iosBiynagl.L BDKoz KnUoCtT isGeDxfuFaCl5iEznea Frseeakl6 tp2elo7polBey awliLtBhKozuKtU CcToinGsDefnFtC,5 ErnaanFks epke6otp2lle7 obByy aaltLtBrKazcKtUiCvTeinGeDsfsF,C 5eEnncaoFusreakg6et 2dla7nogBeyraoluLsB KczoKsUmCeTtiiGcD fpFrCa5cEtniacFesse,k 6sto2lli7coiBty aplrLiBvKaztKeU CcTrieGdDefnFtCi5aElnsa,F smeakn6itp2ull7aotBey aelnLgBaKgzeKmUeCnTti,G DsfcFrCa5pEen auFsseerk 6dta2tla7,o Boyra laLtBtKezmKpUtC TuinGaDuftFhCo5rEinzaeFds eakc6cte2sls7.o BAyIa lfLeBaKtzuKrUeCsT imGaDyf FnCo5tE nbaeF sueske6dt 2tlo7 ogBeynaelrLaBtKez KaUbCuTsiiGvDef,F Cd5eEcneapFtsievke6,t 2iln7forBiynagliLnBgK,z KoUrC TuinGsDaffFeC 5mEantaeFrsieakl6.t\n2\nl47.o BRyeaploLrBtKiznKgU,C TbilGoDcfkFiCn5gE,n amFosdeekr6att2ilo7no,B yaanldL BeKnzfKoUrCcTeimGeDnftF\nCM5uEznoaiF sperko6vti2dle7so BcyoanltLrBoKlzsK UfCoTri GrDefpFoCr5tEinnagF soebkj6etc2tli7oonBayballeL BcKoznKtUeCnTti GoDrf FcCo5nEdnuacFts eakn6dt 2flo7ro BbylaolcLkBiKnzgK UaCbTuisGiDvfeF Cu5sEenrasF.s eUks6et 2tlh7eosBey atloLoBlKsz KhUoCnTeisGtDlfyF Ca5nEdn apFrsoevki6dte2 le7nooBuygahl LiBnKfzoKrUmCaTtiiGoDnf FfCo5rE nraeFvsieekw6.t 2Fla7losBey aolrL BmKazlKiUcCiToiuGsD frFeCp5oErntasF saerke6 tp2rlo7hoiBbyiatleLdB.K zWKeU CmTaiyG DufsFeC 5aEuntaoFmsaetke6dt 2slc7roeBeynailnLgB KaznKdU ChTuimGaDnf FrCe5vEineawF,s erke6stt2rli7cotB yvailsLiBbKizlKiUtCyT iwGhDiflFeC 5aE nraeFpsoerkt6 ti2sl 7aosBsyeaslsLeBdK,z KaUnCdT ipGrDefsFeCr5vEen arFesleekv6atn2tl 7roeBcyoarldLsB KwzhKeUrCeT inGeDefdFeCd5 EfnoarF sseakf6ett2yl 7oorB ylaelgLaBlK zcKoUmCpTliiGaDnfcFeC.5 EWnea Fasiemk 6tto2 lr7eovBiyeawl LsBaKfzeKtUyC TcioGnDcfeFrCn5sE nwaiFtsheikn6 ta2 lr7eoaBsyoanlaLbBlKez KpUeCrTiioGdD,f FpCr5iEonraiFtsiezki6ntg2 lc7roeBdyiabllLeB KtzhKrUeCaTtisG,D feFxCp5lEoniatFasteiko6nt,2 la7nodB yrailsLkBsK ziKnUvCoTlivGiDnfgF Cm5iEnnoarFss.e\nk\n6Wte2 lm7aoyB yraeljLeBcKtz,K UfCiTlitGeDrf,F Cr5eEmnoavFes,e ko6rt 2rle7sotBryiacltL BcKoznKtUeCnTti GaDnfdF Cm5aEyn awFasrenk 6uts2elr7so,B ylailmLiBtK zfKeUaCtTuirGeDsf,F Cs5uEsnpaeFnsde ka6ctc2olu7notBsy,a lpLeBrKmzaKnUeCnTtilGyD ftFeCr5mEinnaaFtsee ka6ctc2olu7notBsy,a lpLrBeKvzeKnUtC TrieGpDefaFtC 5rEengaiFssterka6tti2oln7,o BpyraelsLeBrKvzeK UeCvTiidGeDnfcFeC,5 Eonra Fnsoetki6fty2 lc7oomBpyeatleLnBtK zaKuUtChToirGiDtfiFeCs5 EwnhaeFrsee ka6ptp2rlo7porBiyaatleL.B KSzeKrUiCoTuisG DvfiFoCl5aEtniaoFnsse km6aty2 lr7eosBuylatl LiBnK ziKmUmCeTdiiGaDtfeF Ca5cEtniaoFns ewki6tth2olu7to BaydavlaLnBcKez KnUoCtTiicGeD.f FBCl5oEcnkaiFnsge kl6itm2ilt7so BsyuaplpLoBrKtzeKdU CiTnitGeDrfaFcCt5iEonnasF sbeukt6 tc2aln7nooBty agluLaBrKaznKtUeCeT itGhDaftF Ca5 EpnearFssoenk 6wti2lll7 onBeyvaelrL BeKnzcKoUuCnTtieGrD ftFhCe5 EbnlaoFcskeekd6 tu2sle7ro BeylasleLwBhKezrKeU.C\nT\ni5G.D fSFaCf5eEtnya,F sAeIk 6otu2tlp7uotB,y aalnLdB KezxKtUeCrTniaGlD fmFaCt5eErniaaFls\neMka6kte2ulp7 oiBnysatlrLuBcKtziKoUnCsT iaGnDdf FACI5-EgneanFesreakt6etd2 ls7uogBgyeasltLiBoKnzsK UaCrTei GpDrfoFvCi5dEenda Ffsoerk 6ctr2ela7toiBvyea liLnBsKpziKrUaCtTiioGnD,f FnCo5tE nmaeFdsiecka6lt,2 ld7eorBmyaatloLlBoKgziKcUaClT,i GlDefgFaCl5,E noarF sperko6fte2sls7iooBnyaall LaBdKvziKcUeC.T iPGaDtfcFhC-5tEensatF sperko6dtu2clt7so,B yfaollLlBoKwz KmUaCnTuifGaDcftFuCr5eErn aiFnssetkr6utc2tli7oonBsy,a laLnBdK zsKeUeCkT iqGuDaflFiCf5iEenda Fhseelkp6 tf2olr7 oaBlylaelrLgBiKcz KrUeCaTcitGiDofnFsC 5oErn ahFesaelkt6ht 2clo7nocBeyranlsL.B KAzIK UoCuTtipGuDtf FmCa5yE nbaeF sienkc6otm2pll7eotBey,a liLnBaKczcKuUrCaTtieG,D foFrC 5uEnnsauFisteakb6lte2.l 7YooBuy arleLmBaKiznK UrCeTsipGoDnfsFiCb5lEen afFosre kd6etc2ild7ionBgy awlhLeBtKhzeKrU CaTnidG DhfoFwC 5tEon auFssee ki6tt.2\nl\n7TohBiyradl-LpBaKrztKyU CpTaigGeDsf FoCr5 EmnaatFesreika6lt 2mla7yo Bbyea laLvBaKizlKaUbClTei GtDhfrFoCu5gEhn atFhsee ka6ptp2.l 7WoeB ydaol LnBoKtz KcUoCnTtirGoDlf FtCh5iErnda-Fpsaerkt6yt 2sle7rovBiycaelsL BaKnzdK UaCrTei GnDoftF Cr5eEsnpaoFnsseikb6lte2 lf7oorB ytahleLiBrK zaKvUaCiTliaGbDiflFiCt5yE,n aaFcsceukr6atc2yl,7 ooBry aplrLaBcKtziKcUeCsT.i GYDofuFrC 5uEsnea Fosfe kt6hte2ml 7moaByy ableL BgKozvKeUrCnTeidG DbfyF Cs5eEpnaarFasteek 6tte2rlm7so.B\ny\na6l.L BTKezrKmUiCnTaitGiDofnF Ca5nEdn aaFcsceoku6ntt2 ld7eolBeytailoLnB\nKYzoKuU CmTaiyG DsftFoCp5 EunsaiFnsge kM6utz2oli7 oaBty aalnLyB KtziKmUeC TainGdD fmFaCy5 EinnaiFtsieakt6et 2alc7cooBuynatl LdBeKlzeKtUiCoTni GtDhfrFoCu5gEhn atFhsee ki6nt-2alp7po BsyeatltLiBnKgzsK.U CAT idGeDlfeFtCi5oEnn arFesqeuke6stt2 lr7eomBoyvaelsL BtKhzeK UaCcTcioGuDnftF Ca5nEdn aaFssseokc6ita2tle7do BdyaatlaL BtKhzaKtU CwTei GaDrfeF Cn5oEtn alFesgeakl6lty2 lr7eoqBuyiarleLdB KtzoK UrCeTtiaGiDnf.F CS5oEmnea Fcsoenkt6etn2tl 7moaByy arleLmBaKiznK UtCeTmipGoDrfaFrCi5lEyn aiFns ebka6ctk2ulp7so,B ysaalfLeBtKyz KrUeCcToirGdDsf,F Co5rE nraeFcsoerkd6st 2nle7eodBeyda ltLoB KrzeKsUoClTvieG DdfiFsCp5uEtneasF,s epkr6etv2eln7to BfyraaluLdB,K zeKnUfCoTricGeD frFiCg5hEtnsa,F soerk 6cto2mlp7loyB ywailtLhB KlzaKwU.C TWieG DmfaFyC 5tEenramFisneakt6et 2tlh7iosB ylailcLeBnKszeK UiCfT iyGoDuf FvCi5oElnaatFes etkh6ets2el 7toeBrymasl.L BUKpzoKnU CtTeirGmDifnFaCt5iEonna,F syeoku6 tm2uls7to BsytaolpL BuKsziKnUgC TMiuGzDofiF.C\n5\nE7n.a FAspepkl6et 2tle7romBsy aalnLdB KczoKnUtCaTcitG\nDAfpFpCl5eE niasF sneokt6 tr2els7pooBnysailbLlBeK zfKoUrC TmiaGiDnftFaCi5nEinnagF soerk 6stu2plp7oorBtyianlgL BMKuzzKoUiC.T iTGoD ftFhCe5 EenxatFesnetk 6rte2qlu7iorBeyda lbLyB KazpKpUlCiTciaGbDlfeF Cl5aEwn,a FAspepkl6et 2hla7so Bnyoa lwLaBrKrzaKnUtCyT ioGbDlfiFgCa5tEinoanF sceokn6cte2rln7ionBgy atlhLeB KazpKpU.C TAipGpDlfeF Ca5nEdn aiFtsse ks6utb2sli7doiBayraileLsB KazrKeU CtThiiGrDdf-FpCa5rEtnya Fbseenke6fti2cli7aorBiyeasl LoBfK ztKhUiCsT iEGUDLfAF Ca5nEdn amFasye ke6ntf2olr7coeB yiatl LaBfKtzeKrU CyToiuGrD faFcCc5eEpntaaFnsceek.6 tN2olt7hoiBnyga liLnB KtzhKiUsC TEiUGLDAf FlCi5mEintasF sreikg6htt2sl 7tohBayta lcLaBnKnzoKtU ClTaiwGfDuflFlCy5 Ebnea Fesxeckl6utd2eld7.o BQyuaelsLtBiKoznKsU,C TsiaGfDeftFyC 5rEenpaoFrstesk,6 to2rl 7aocBcyoaulnLtB KczoKnUcCeTrinGsD fmFaCy5 Ebnea Fsseenkt6 tt2ol 7MouBzyoail@LgBmKaziKlU.CcToimG.D")

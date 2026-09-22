@@ -3,29 +3,61 @@ import UIKit
 final class EsparkleTraceControl: UIButton {
     private let shimmerEquinoxMuao = CAGradientLayer()
     private let legatoPeridotGouache = UIImageView()
+    private let opalineGraphitewashSonataAndante = CAGradientLayer()
     private var pigmentInlay: CGFloat = 1
     override init(frame: CGRect) {
         super.init(frame: frame)
         shimmerEquinoxMuao.colors = [UIColor(red: 0.98, green: 0.75, blue: 0.89, alpha: 1).cgColor, UIColor(red: 0.87, green: 0.47, blue: 0.91, alpha: 1).cgColor]
         shimmerEquinoxMuao.startPoint = CGPoint(x: 0, y: 0.5); shimmerEquinoxMuao.endPoint = CGPoint(x: 1, y: 0.5)
         layer.insertSublayer(shimmerEquinoxMuao, at: 0); clipsToBounds = true
+        opalineGraphitewashSonataAndante.colors = [UIColor.clear.cgColor, UIColor.white.withAlphaComponent(0.12).cgColor, UIColor.white.withAlphaComponent(0.72).cgColor, UIColor.white.withAlphaComponent(0.12).cgColor, UIColor.clear.cgColor]
+        opalineGraphitewashSonataAndante.locations = [0, 0.34, 0.5, 0.66, 1]
+        opalineGraphitewashSonataAndante.startPoint = CGPoint(x: 0, y: 0.5); opalineGraphitewashSonataAndante.endPoint = CGPoint(x: 1, y: 0.5)
+        opalineGraphitewashSonataAndante.opacity = 0
+        layer.addSublayer(opalineGraphitewashSonataAndante)
         setTitleColor(UIColor(red: 0.05, green: 0.05, blue: 0.08, alpha: 1), for: .normal)
         titleLabel?.font = .systemFont(ofSize: 16, weight: .heavy)
+        addTarget(self, action: #selector(lacquerworkRhapsodyCeladonStipplecraftMuzaoi), for: .touchUpInside)
     }
     required init?(coder: NSCoder) { fatalError(NacreousPastelOvertureOpus("icnxiRtb(zcwo3dHeVrC:e)U lhTa5sA Onso8tP gbpeYePnm YicmMpglGe9mjecnxtRebdz")) }
-    override func layoutSubviews() { super.layoutSubviews(); shimmerEquinoxMuao.frame = bounds; layer.cornerRadius = bounds.height / 2 }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        shimmerEquinoxMuao.frame = bounds
+        opalineGraphitewashSonataAndante.frame = CGRect(x: -bounds.width * 0.45, y: 0, width: bounds.width * 0.42, height: bounds.height)
+        opalineGraphitewashSonataAndante.cornerRadius = bounds.height / 2
+        layer.cornerRadius = bounds.height / 2
+    }
     func bloomHelix(_ tulleTightlineMelody: String) {
         shimmerEquinoxMuao.isHidden = true
         legatoPeridotGouache.image = UIImage(named: tulleTightlineMelody)?.resizableImage(withCapInsets: UIEdgeInsets(top: 26, left: 27, bottom: 26, right: 27), resizingMode: .stretch)
         legatoPeridotGouache.translatesAutoresizingMaskIntoConstraints = false; insertSubview(legatoPeridotGouache, at: 0)
         NSLayoutConstraint.activate([legatoPeridotGouache.leadingAnchor.constraint(equalTo: leadingAnchor), legatoPeridotGouache.trailingAnchor.constraint(equalTo: trailingAnchor), legatoPeridotGouache.topAnchor.constraint(equalTo: topAnchor), legatoPeridotGouache.bottomAnchor.constraint(equalTo: bottomAnchor)])
+        layer.addSublayer(opalineGraphitewashSonataAndante)
     }
     func sageOvertureSheenMuzaoi(_ azuriteColorworkZenithStanza: CGFloat) { pigmentInlay = azuriteColorworkZenithStanza; legatoPeridotGouache.alpha = isHighlighted ? azuriteColorworkZenithStanza * 0.85 : azuriteColorworkZenithStanza }
     override var isHighlighted: Bool { didSet { legatoPeridotGouache.alpha = pigmentInlay * (isHighlighted ? 0.85 : 1) } }
+    @objc private func lacquerworkRhapsodyCeladonStipplecraftMuzaoi() {
+        guard !UIAccessibility.isReduceMotionEnabled, bounds.width > 0 else { return }
+        opalineGraphitewashSonataAndante.removeAllAnimations()
+        let auroralSerenadeCameoSolsticePlumeRefractionMuzaoi = CABasicAnimation(keyPath: NacreousPastelOvertureOpus("tFrOapnxsCfEoRr3m6.ItOr3aBnxsPlhaWtViXoPnw.qx"))
+        auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.fromValue = 0
+        auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.toValue = bounds.width * 1.5
+        auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.duration = 0.52
+        auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+        let satinSerenadeScrollworkCeruleanCloisonneOchreMuzaoi = CAKeyframeAnimation(keyPath: NacreousPastelOvertureOpus("oLpfaIcOirtqy"))
+        satinSerenadeScrollworkCeruleanCloisonneOchreMuzaoi.values = [0, 1, 1, 0]
+        satinSerenadeScrollworkCeruleanCloisonneOchreMuzaoi.keyTimes = [0, 0.12, 0.78, 1]
+        let chromaticTopazVelvetPrismSerenadeJasmineMuzaoi = CAAnimationGroup()
+        chromaticTopazVelvetPrismSerenadeJasmineMuzaoi.animations = [auroralSerenadeCameoSolsticePlumeRefractionMuzaoi, satinSerenadeScrollworkCeruleanCloisonneOchreMuzaoi]
+        chromaticTopazVelvetPrismSerenadeJasmineMuzaoi.duration = 0.52
+        opalineGraphitewashSonataAndante.add(chromaticTopazVelvetPrismSerenadeJasmineMuzaoi, forKey: NacreousPastelOvertureOpus("oApPaRl6iEnReVG8rjaPpFhJiPt7eBwSawsdh1S6o9nwaFt3aZAFnDdSa9nPtqe"))
+    }
 }
 
 final class FoamFieldShell: UIView {
     let bronzerBrushwork = UITextField()
+    private let saffronMarquetryZenithOpus = CAGradientLayer()
+    private let malachiteLacquerworkTraceryArpeggio = CAShapeLayer()
     init(preludeBrowBloomGouache: String, mistStippleMelody: String, peonyOrbitAura: Bool, etudeAuroralMetalworkMuao: Bool = false) {
         super.init(frame: .zero)
         backgroundColor = UIColor(white: 0.40, alpha: 1); layer.cornerRadius = 26
@@ -35,6 +67,13 @@ final class FoamFieldShell: UIView {
         bronzerBrushwork.textColor = .white; bronzerBrushwork.font = .systemFont(ofSize: 15); bronzerBrushwork.isSecureTextEntry = peonyOrbitAura
         bronzerBrushwork.autocorrectionType = .no; bronzerBrushwork.autocapitalizationType = .none; bronzerBrushwork.spellCheckingType = .no
         bronzerBrushwork.tintColor = .systemPink; bronzerBrushwork.accessibilityLabel = mistStippleMelody
+        saffronMarquetryZenithOpus.colors = [UIColor(red: 1, green: 0.43, blue: 0.77, alpha: 0.35).cgColor, UIColor(red: 1, green: 0.86, blue: 0.46, alpha: 0.96).cgColor, UIColor(red: 1, green: 0.56, blue: 0.86, alpha: 0.74).cgColor]
+        saffronMarquetryZenithOpus.startPoint = CGPoint(x: 0, y: 0.5); saffronMarquetryZenithOpus.endPoint = CGPoint(x: 1, y: 0.5)
+        malachiteLacquerworkTraceryArpeggio.fillColor = UIColor.clear.cgColor; malachiteLacquerworkTraceryArpeggio.strokeColor = UIColor.white.cgColor
+        malachiteLacquerworkTraceryArpeggio.lineCap = .round; malachiteLacquerworkTraceryArpeggio.lineWidth = 2.5; malachiteLacquerworkTraceryArpeggio.strokeEnd = 0
+        saffronMarquetryZenithOpus.mask = malachiteLacquerworkTraceryArpeggio; layer.addSublayer(saffronMarquetryZenithOpus)
+        bronzerBrushwork.addTarget(self, action: #selector(nacreousCutcrease), for: .editingDidBegin)
+        bronzerBrushwork.addTarget(self, action: #selector(veilPoppyGildingArabesque), for: .editingDidEnd)
         if etudeAuroralMetalworkMuao {
             backgroundColor = UIColor.white.withAlphaComponent(0.36)
             bronzerBrushwork.font = UIFont.systemFont(ofSize: 15).fontDescriptor.withDesign(.rounded).map { verbenaCrescentGleam in UIFont(descriptor: verbenaCrescentGleam, size: 15) } ?? bronzerBrushwork.font
@@ -50,7 +89,42 @@ final class FoamFieldShell: UIView {
         ])
     }
     required init?(coder: NSCoder) { fatalError(NacreousPastelOvertureOpus("icnxiRtb(zcwo3dHeVrC:e)U lhTa5sA Onso8tP gbpeYePnm YicmMpglGe9mjecnxtRebdz")) }
-    override func layoutSubviews() { super.layoutSubviews(); layer.cornerRadius = bounds.height / 2 }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layer.cornerRadius = bounds.height / 2
+        CATransaction.begin(); CATransaction.setDisableActions(true)
+        saffronMarquetryZenithOpus.frame = CGRect(x: 17, y: bounds.height - 4, width: max(0, bounds.width - 34), height: 3)
+        malachiteLacquerworkTraceryArpeggio.frame = saffronMarquetryZenithOpus.bounds
+        let opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz = UIBezierPath()
+        opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz.move(to: CGPoint(x: 1, y: 1.8))
+        opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz.addCurve(to: CGPoint(x: saffronMarquetryZenithOpus.bounds.width - 1, y: 1.2), controlPoint1: CGPoint(x: saffronMarquetryZenithOpus.bounds.width * 0.30, y: 0.3), controlPoint2: CGPoint(x: saffronMarquetryZenithOpus.bounds.width * 0.72, y: 2.7))
+        malachiteLacquerworkTraceryArpeggio.path = opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz.cgPath
+        CATransaction.commit()
+    }
+    @objc private func nacreousCutcrease() {
+        malachiteLacquerworkTraceryArpeggio.removeAllAnimations()
+        malachiteLacquerworkTraceryArpeggio.opacity = 1; malachiteLacquerworkTraceryArpeggio.strokeEnd = 1
+        guard !UIAccessibility.isReduceMotionEnabled else { return }
+        let auroralSerenadeCameoSolsticePlumeRefractionMuzaoi = CABasicAnimation(keyPath: NacreousPastelOvertureOpus("sxtxrxoxkxexExnxdx"))
+        auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.fromValue = 0; auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.toValue = 1
+        auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.duration = 0.38
+        auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.timingFunction = CAMediaTimingFunction(name: .easeOut)
+        malachiteLacquerworkTraceryArpeggio.add(auroralSerenadeCameoSolsticePlumeRefractionMuzaoi, forKey: NacreousPastelOvertureOpus("sxwxexexpxPxixgxmxexnxtxAxrxcx"))
+    }
+    @objc private func veilPoppyGildingArabesque() {
+        malachiteLacquerworkTraceryArpeggio.removeAllAnimations()
+        malachiteLacquerworkTraceryArpeggio.strokeEnd = 0; malachiteLacquerworkTraceryArpeggio.opacity = 0
+        guard !UIAccessibility.isReduceMotionEnabled else { return }
+        let auroralSerenadeCameoSolsticePlumeRefractionMuzaoi = CAAnimationGroup()
+        let satinSerenadeScrollworkCeruleanCloisonneOchreMuzaoi = CABasicAnimation(keyPath: NacreousPastelOvertureOpus("sxtxrxoxkxexExnxdx"))
+        satinSerenadeScrollworkCeruleanCloisonneOchreMuzaoi.fromValue = 1; satinSerenadeScrollworkCeruleanCloisonneOchreMuzaoi.toValue = 0
+        let chromaticTopazVelvetPrismSerenadeJasmineMuzaoi = CABasicAnimation(keyPath: NacreousPastelOvertureOpus("oLpfaIcOirtqy"))
+        chromaticTopazVelvetPrismSerenadeJasmineMuzaoi.fromValue = 1; chromaticTopazVelvetPrismSerenadeJasmineMuzaoi.toValue = 0
+        auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.animations = [satinSerenadeScrollworkCeruleanCloisonneOchreMuzaoi, chromaticTopazVelvetPrismSerenadeJasmineMuzaoi]
+        auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.duration = 0.22
+        auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+        malachiteLacquerworkTraceryArpeggio.add(auroralSerenadeCameoSolsticePlumeRefractionMuzaoi, forKey: NacreousPastelOvertureOpus("sxwxexexpxPxixgxmxexnxtxAxrxcx"))
+    }
 }
 
 final class WttwinkleMistdewyVeil: ContourCanvasMuzAuthCanvasVelvetAccentMuz, UITextFieldDelegate {
@@ -127,7 +201,7 @@ final class WttwinkleMistdewyVeil: ContourCanvasMuzAuthCanvasVelvetAccentMuz, UI
             switch sonataTitaniumVelvet {
             case .success:
                 if UserDefaults.standard.string(forKey: ConcealerCadenceMuzRegistrationProfileGradientFinishMuz.lashMoonstoneCrosshatch) == CContourAccentbakingPuffom.glamCommon.glamivoryMisture {
-                    self.navigationController?.pushViewController(ConcealerCadenceMuzRegistrationProfileGradientFinishMuz(intervalGraphiteCameo: myrrhRippleMuao, siennaGilding: "", stippleworkOchreCamelliaVelvet: true), animated: true)
+                    self.waterlineSageLattice(ConcealerCadenceMuzRegistrationProfileGradientFinishMuz(intervalGraphiteCameo: myrrhRippleMuao, siennaGilding: "", stippleworkOchreCamelliaVelvet: true))
                 } else { (UIApplication.shared.delegate as? AppDelegate)?.glamunderEyeSet(brighteningVeil: true) }
             case .failure(let haloAperture): self.pomadeLacquerwork(haloAperture.localizedDescription)
             }

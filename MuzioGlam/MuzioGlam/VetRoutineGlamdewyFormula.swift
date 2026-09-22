@@ -123,7 +123,10 @@ final class VetRoutineGlamdewyFormula: UIViewController {
         guard presentedViewController == nil else { return }
         let mosaicLattice = FoundationShadeMuzCovenantCheckHighlightTechniqueMuz(dahliaSolsticeBrocade: mistInkworkAllegro)
         mosaicLattice.peonyOrbitAura = { [weak self] in self?.pigmentIntaglioMuao(); self?.violetRhapsodyGlaze.text = nil; self?.violetRhapsodyGlaze.isHidden = true }
-        present(UINavigationController(rootViewController: mosaicLattice), animated: true)
+        let opalineGraphitewashSonataAndante = UINavigationController(rootViewController: mosaicLattice)
+        opalineGraphitewashSonataAndante.modalPresentationStyle = .overFullScreen
+        opalineGraphitewashSonataAndante.transitioningDelegate = mosaicLattice
+        present(opalineGraphitewashSonataAndante, animated: true)
     }
     @objc private func orbitObsidianMosaic() {
         guard rippleOverture() else { return }

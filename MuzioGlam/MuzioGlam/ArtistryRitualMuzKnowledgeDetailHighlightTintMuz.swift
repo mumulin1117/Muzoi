@@ -1,7 +1,7 @@
 import UIKit
 
 
-final class ArtistryRitualMuzKnowledgeDetailHighlightTintMuz: UIViewController {
+final class ArtistryRitualMuzKnowledgeDetailHighlightTintMuz: UIViewController, UIScrollViewDelegate {
     private let topazAquarelleOvertureLyric: String
     private let damaskThymeCrosshatchSonata: PrimerAtelierMuzKnowledgeAPIRepository
     private let quartzColorworkOvertureStanza = UIScrollView()
@@ -17,6 +17,7 @@ final class ArtistryRitualMuzKnowledgeDetailHighlightTintMuz: UIViewController {
     private let celadonChiffonPanelMuz = UIView()
     private let quartzMagnoliaFavoriteHaloMuz = UIView()
     private let berylSatinHeroShadeMuz = UIView()
+    private let luminousTitleMuz = UILabel()
     private let opalineCrescentFavoriteGradientMuz = CAGradientLayer()
     private let bronzerLinenHeroGradientMuz = CAGradientLayer()
     private let refractionUmberMosaic = NacreousPetalMosaicMuz(cadenceBalmEnamelLacquerwork: .opalineCrescent)
@@ -86,6 +87,7 @@ final class ArtistryRitualMuzKnowledgeDetailHighlightTintMuz: UIViewController {
         quartzColorworkOvertureStanza.contentInsetAdjustmentBehavior = .never
         quartzColorworkOvertureStanza.showsVerticalScrollIndicator = false
         quartzColorworkOvertureStanza.alwaysBounceVertical = true
+        quartzColorworkOvertureStanza.delegate = self
         quartzColorworkOvertureStanza.accessibilityIdentifier = NacreousPastelOvertureOpus("MGuGzTowiCKxnyoowjloeYdDgqe1Djegt3aIiPlaSOcdreoSlvlE")
         stanzaPrismaticParchment.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(quartzColorworkOvertureStanza)
@@ -184,6 +186,10 @@ final class ArtistryRitualMuzKnowledgeDetailHighlightTintMuz: UIViewController {
         malachiteAquarelleOrbitMotif.accessibilityIdentifier = NacreousPastelOvertureOpus("Mwuezeoii7KunioJwplbefdUgIewDje7tUa7iKl5RgeUpUoQrftj")
         malachiteAquarelleOrbitMotif.addAction(UIAction { [weak self] _ in self?.gleamTracery() }, for: .touchUpInside)
         [brocadeTracingRefrainMuao, malachiteAquarelleOrbitMotif].forEach(view.addSubview)
+        luminousTitleMuz.translatesAutoresizingMaskIntoConstraints = false; luminousTitleMuz.textColor = .white
+        luminousTitleMuz.font = .systemFont(ofSize: 17, weight: .semibold); luminousTitleMuz.textAlignment = .center; luminousTitleMuz.alpha = 0
+        luminousTitleMuz.text = NacreousPastelOvertureOpus("DceotgaEiLl"); luminousTitleMuz.accessibilityTraits = .header
+        view.addSubview(luminousTitleMuz)
         refractionUmberMosaic.translatesAutoresizingMaskIntoConstraints = false
         view.insertSubview(refractionUmberMosaic, aboveSubview: quartzColorworkOvertureStanza)
 
@@ -211,6 +217,8 @@ final class ArtistryRitualMuzKnowledgeDetailHighlightTintMuz: UIViewController {
             brocadeTracingRefrainMuao.widthAnchor.constraint(equalToConstant: 46), brocadeTracingRefrainMuao.heightAnchor.constraint(equalToConstant: 46),
             malachiteAquarelleOrbitMotif.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -14), malachiteAquarelleOrbitMotif.centerYAnchor.constraint(equalTo: brocadeTracingRefrainMuao.centerYAnchor),
             malachiteAquarelleOrbitMotif.widthAnchor.constraint(equalToConstant: 44), malachiteAquarelleOrbitMotif.heightAnchor.constraint(equalToConstant: 44),
+            luminousTitleMuz.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor), luminousTitleMuz.centerYAnchor.constraint(equalTo: brocadeTracingRefrainMuao.centerYAnchor),
+            luminousTitleMuz.leadingAnchor.constraint(greaterThanOrEqualTo: brocadeTracingRefrainMuao.trailingAnchor, constant: 8), luminousTitleMuz.trailingAnchor.constraint(lessThanOrEqualTo: malachiteAquarelleOrbitMotif.leadingAnchor, constant: -8),
             refractionUmberMosaic.topAnchor.constraint(equalTo: quartzColorworkOvertureStanza.topAnchor), refractionUmberMosaic.leadingAnchor.constraint(equalTo: quartzColorworkOvertureStanza.leadingAnchor),
             refractionUmberMosaic.trailingAnchor.constraint(equalTo: quartzColorworkOvertureStanza.trailingAnchor), refractionUmberMosaic.bottomAnchor.constraint(equalTo: quartzColorworkOvertureStanza.bottomAnchor)
         ])
@@ -321,6 +329,7 @@ final class ArtistryRitualMuzKnowledgeDetailHighlightTintMuz: UIViewController {
             case .success(let rougeInlayMuz):
                 self.iridescentParchmentArcAllegro?.nacreousStipplingCadenzaMuao = rougeInlayMuz
                 UISelectionFeedbackGenerator().selectionChanged()
+                self.quartzMagnoliaFavoriteHaloMuz.luminousPetalHaloMuz()
             case .failure(let error):
                 if (error as? PatinaSaffronProtocolMuao)?.juniperTemperaCodeMuao == NacreousPastelOvertureOpus("AxCNC8OyU0NLTO_iC0HGA9NpGPEmD7") {
                     self.iridescentParchmentArcAllegro = nil
@@ -342,6 +351,14 @@ final class ArtistryRitualMuzKnowledgeDetailHighlightTintMuz: UIViewController {
             self?.stanzaGarnetEngravingMuzaoiChalcedonyWaterline(stippleAzuriteIrisMoireUmberBrushworkContourCantata: NacreousPastelOvertureOpus("RTeqproDrjtr qrFeZcAe8iSvNeJd9"), timbreTopazParchmentCrescentTourmalineBloom: NacreousPastelOvertureOpus("TEh7aFnEkK mySoDu0 afGoJri uy9oMu3r2 dfPebeWdwbLaJcGkD.w"))
         }
         present(rhapsodyBerylAura, animated: !UIAccessibility.isReduceMotionEnabled)
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard scrollView === quartzColorworkOvertureStanza else { return }
+        let progressMuz = min(1, max(0, scrollView.contentOffset.y / 180))
+        let scaleMuz = 1 - progressMuz * 0.05
+        velvetLotusSculptingAperture.transform = CGAffineTransform(scaleX: scaleMuz, y: scaleMuz).translatedBy(x: 0, y: -progressMuz * 9)
+        luminousTitleMuz.alpha = min(1, max(0, (progressMuz - 0.22) / 0.58))
     }
 
     private func alabasterGlazing(_ hematiteInkwork: Int) {

@@ -9,7 +9,7 @@ final class MatteVeilMuzMotionDetailDewyRadianceMuz: PearlCanvasMuzPostDetailDew
     required init?(coder: NSCoder) { fatalError(NacreousPastelOvertureOpus("icnxiRtb(zcwo3dHeVrC:e)U lhTa5sA Onso8tP gbpeYePnm YicmMpglGe9mjecnxtRebdz")) }
 }
 
-class PearlCanvasMuzPostDetailDewyDetailMuz: UIViewController, UITextViewDelegate, UIGestureRecognizerDelegate {
+class PearlCanvasMuzPostDetailDewyDetailMuz: UIViewController, UITextViewDelegate, UIGestureRecognizerDelegate, UIScrollViewDelegate, LuminousCadenceMuzDetailHero {
     private let velvetPatinaPrismJasmineCadenceworkRosewoodMuz: OpusMascaraLatticeFrescoMuao
     private let gardeniaSilhouettePatinaChromaticTopazVelvetMuao: String
     private let dahliaQuartzVellumPatinaAzuriteSaffron: Bool
@@ -24,6 +24,7 @@ class PearlCanvasMuzPostDetailDewyDetailMuz: UIViewController, UITextViewDelegat
     private let cantataPorcelainWisteriaPatinaFrescoGarnet = UILabel()
     private let cameoPatinaSolsticePlumeRefractionWatercolorMuz = UILabel()
     private let titaniumReliefDahliaPatinaQuartzVellum = UILabel()
+    private let luminousNavigationTitleMuz = UILabel()
     private let lacquerMyrrhAuroralCameoSolsticePatinaMuao = GlamAtelierMuzRemoteArtwork(suedeResonanceMuao: .moonstoneFrescoSpiralCantata)
     private lazy var patinaPlumeRefractionWatercolorAnemoneSatin = LashSpectrumMuzProfileArtworkButton(cascadeApertureMuz: velvetPatinaPrismJasmineCadenceworkRosewoodMuz == .bronzerCloisonneMuzaoi ? NacreousPastelOvertureOpus("MyuSzkosi8GHluaYmLSdtuoRryydFooJlslPoDwt") : NacreousPastelOvertureOpus("Mlu6zko7iRGml9aLmaR4eueVlOF1oXlsl9osw5IQdclKeI"), bronzerTitaniumEtchingMuz: NacreousPastelOvertureOpus("FMoDlEl8ozwd"), rippleNeroliEmbossingRhapsodyMuz: velvetPatinaPrismJasmineCadenceworkRosewoodMuz == .bronzerCloisonneMuzaoi ? 26 : 22, refractionUmberMosaicMuz: velvetPatinaPrismJasmineCadenceworkRosewoodMuz == .bronzerCloisonneMuzaoi ? 20 : 18)
     private lazy var marquetryOpalineLatticePatinaJuniperChiaroscuro = LashSpectrumMuzProfileArtworkButton(cascadeApertureMuz: velvetPatinaPrismJasmineCadenceworkRosewoodMuz == .bronzerCloisonneMuzaoi ? NacreousPastelOvertureOpus("MmuwztoLibGilQazmhSUtEoUrryDRjeEpnoErAtF") : NacreousPastelOvertureOpus("M1uKz2otiUG4liawmuRleBedltRPe1paodrdtZ"), bronzerTitaniumEtchingMuz: NacreousPastelOvertureOpus("RGeqpBoOrFt0 9choWnvtqevnsto"), rippleNeroliEmbossingRhapsodyMuz: velvetPatinaPrismJasmineCadenceworkRosewoodMuz == .bronzerCloisonneMuzaoi ? 30 : 22, refractionUmberMosaicMuz: velvetPatinaPrismJasmineCadenceworkRosewoodMuz == .bronzerCloisonneMuzaoi ? 30 : 22)
@@ -53,6 +54,9 @@ class PearlCanvasMuzPostDetailDewyDetailMuz: UIViewController, UITextViewDelegat
     private var graphitewashHibiscusPatinaEnamelworkTourmalineResonanceMuao: String {
         NacreousPastelOvertureOpus("mdu1zKoYixPAoRsUtYDKrNaKfdtG.3") + TesseraCeruleanAtelierMuao.ochreFiligreeSignatureMuao + NacreousPastelOvertureOpus(".t") + (CContourAccentbakingPuffom.glamCommon.glamivoryMisture ?? NacreousPastelOvertureOpus("giuCe8sIt9")) + NacreousPastelOvertureOpus(".t") + (velvetPatinaPrismJasmineCadenceworkRosewoodMuz == .adagioGraphiteMarquetryMuzaoiMuz ? NacreousPastelOvertureOpus("vdizdteJoo.r") : NacreousPastelOvertureOpus("msoFmrein8ts.y")) + gardeniaSilhouettePatinaChromaticTopazVelvetMuao
     }
+    var luminousHeroArtworkMuz: UIImageView? {
+        velvetPatinaPrismJasmineCadenceworkRosewoodMuz == .bronzerCloisonneMuzaoi ? sandalwoodGraphitewashHibiscusEnamelworkTourmalinePatinaMuao.highlighterTourmalineStippling : porcelainPatinaWisteriaFrescoGarnetTesseraMuz.highlighterTourmalineStippling
+    }
     init(velvetPatinaPrismJasmineCadenceworkRosewoodMuz: OpusMascaraLatticeFrescoMuao, gardeniaSilhouettePatinaChromaticTopazVelvetMuao: String, dahliaQuartzVellumPatinaAzuriteSaffron: Bool, cantataPorcelainWisteriaFrescoPatinaGarnetMuz: PowderCanvasMuzPostDetailRepository = PowderCanvasMuzPostDetailRepository()) {
         self.cantataPorcelainWisteriaFrescoPatinaGarnetMuz = cantataPorcelainWisteriaFrescoPatinaGarnetMuz
         self.velvetPatinaPrismJasmineCadenceworkRosewoodMuz = velvetPatinaPrismJasmineCadenceworkRosewoodMuz; self.gardeniaSilhouettePatinaChromaticTopazVelvetMuao = gardeniaSilhouettePatinaChromaticTopazVelvetMuao; self.dahliaQuartzVellumPatinaAzuriteSaffron = dahliaQuartzVellumPatinaAzuriteSaffron
@@ -64,6 +68,8 @@ class PearlCanvasMuzPostDetailDewyDetailMuz: UIViewController, UITextViewDelegat
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 12/255, green: 14/255, blue: 21/255, alpha: 1); view.overrideUserInterfaceStyle = .dark
         title = velvetPatinaPrismJasmineCadenceworkRosewoodMuz == .bronzerCloisonneMuzaoi ? NacreousPastelOvertureOpus("PPoxsitI") : NacreousPastelOvertureOpus("RGe1ehlU")
+        luminousNavigationTitleMuz.text = title; luminousNavigationTitleMuz.font = .systemFont(ofSize: 17, weight: .semibold); luminousNavigationTitleMuz.textColor = .white
+        luminousNavigationTitleMuz.alpha = 0; luminousNavigationTitleMuz.accessibilityTraits = .header; navigationItem.titleView = luminousNavigationTitleMuz
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: marquetryOpalinePatinaLatticeJuniperChiaroscuroMuao)
         parchmentEtchingPatinaGardeniaSilhouetteChromaticMuao(); prismJasmineCadenceworkPatinaRosewoodGouache()
         refractionUmberMosaic.translatesAutoresizingMaskIntoConstraints = false; view.insertSubview(refractionUmberMosaic, aboveSubview: gouacheMeridianTapestryPatinaLacquerMyrrh)
@@ -111,6 +117,7 @@ class PearlCanvasMuzPostDetailDewyDetailMuz: UIViewController, UITextViewDelegat
         gouacheMeridianTapestryPatinaLacquerMyrrh.translatesAutoresizingMaskIntoConstraints = false; vermilionOrganzaAperturePatinaSandalwoodGraphitewash.translatesAutoresizingMaskIntoConstraints = false
         gouacheMeridianTapestryPatinaLacquerMyrrh.accessibilityIdentifier = NacreousPastelOvertureOpus("MmuizAoAisPso3sdteSZcPrEo5lelq")
         gouacheMeridianTapestryPatinaLacquerMyrrh.keyboardDismissMode = .interactive; gouacheMeridianTapestryPatinaLacquerMyrrh.contentInsetAdjustmentBehavior = .never
+        gouacheMeridianTapestryPatinaLacquerMyrrh.delegate = self
         vermilionOrganzaAperturePatinaSandalwoodGraphitewash.axis = .vertical; vermilionOrganzaAperturePatinaSandalwoodGraphitewash.spacing = 20
         view.addSubview(gouacheMeridianTapestryPatinaLacquerMyrrh); gouacheMeridianTapestryPatinaLacquerMyrrh.addSubview(vermilionOrganzaAperturePatinaSandalwoodGraphitewash)
         NSLayoutConstraint.activate([
@@ -321,6 +328,7 @@ class PearlCanvasMuzPostDetailDewyDetailMuz: UIViewController, UITextViewDelegat
                 self.cadenceMosaicNeroliBrocadePatinaSonataMuz?.eclipseUltramarineTulleMuao = (anemoneSatinPatinaScrollworkCeruleanCloisonneMuao[self.velvetPatinaPrismJasmineCadenceworkRosewoodMuz == .bronzerCloisonneMuzaoi ? NacreousPastelOvertureOpus("sXeVlbfOefxOpjroe1sEsxi5ounUJkonu4rEnIeAy4") : NacreousPastelOvertureOpus("cvo8loo2rkm9aDtCcGh8Szhya4dne2")] as? NSNumber)?.boolValue ?? !patinaWatercolorAnemoneSatinScrollworkCerulean.eclipseUltramarineTulleMuao
                 self.cadenceMosaicNeroliBrocadePatinaSonataMuz?.underpaintingUmberDahliaHaloMuao = max(0, (anemoneSatinPatinaScrollworkCeruleanCloisonneMuao[self.velvetPatinaPrismJasmineCadenceworkRosewoodMuz == .bronzerCloisonneMuzaoi ? NacreousPastelOvertureOpus("sKaOtvuRrIajtLigopnuTFobnee7") : NacreousPastelOvertureOpus("ivnas5p0iSrBait9iAobn8axlDSeuypvpFocretfiyvxec")] as? NSNumber)?.intValue ?? patinaWatercolorAnemoneSatinScrollworkCerulean.underpaintingUmberDahliaHaloMuao + (patinaWatercolorAnemoneSatinScrollworkCerulean.eclipseUltramarineTulleMuao ? -1 : 1))
                 self.scrollworkCeruleanPatinaCloisonneOchreGossamerMuao()
+                self.patinaIrisMarquetryOpalineLatticeJuniper.luminousPetalHaloMuz()
             case .failure(let error): self.suedeOsmanthusMarblingTracery(error)
             }
             self.titaniumReliefDahliaQuartzPatinaVellumMuz()
@@ -330,7 +338,7 @@ class PearlCanvasMuzPostDetailDewyDetailMuz: UIViewController, UITextViewDelegat
         guard let patinaWatercolorAnemoneSatinScrollworkCerulean = cadenceMosaicNeroliBrocadePatinaSonataMuz, !vellumAzuritePatinaSaffronCadenceMosaicMuao, !dahliaQuartzVellumPatinaAzuriteSaffron else { return }; vellumAzuritePatinaSaffronCadenceMosaicMuao = true; titaniumReliefDahliaQuartzPatinaVellumMuz()
         RadiantSpectrumMuzProfileRepository().azuriteMarblingBondMuao(lacquerworkJuniperPortraitMuao: patinaWatercolorAnemoneSatinScrollworkCerulean.moireGlazingSerenadeMuao.melodyBrowSatinMetalworkMuao, opalScintillaBoundMuao: !patinaWatercolorAnemoneSatinScrollworkCerulean.coralBrushworkRefractionTimbreMuao) { [weak self] filigreePatinaCrescentBismuthParchmentEtchingMuz in
             guard let self else { return }; self.vellumAzuritePatinaSaffronCadenceMosaicMuao = false
-            switch filigreePatinaCrescentBismuthParchmentEtchingMuz { case .success: self.cadenceMosaicNeroliBrocadePatinaSonataMuz?.coralBrushworkRefractionTimbreMuao = !patinaWatercolorAnemoneSatinScrollworkCerulean.coralBrushworkRefractionTimbreMuao; self.scrollworkCeruleanPatinaCloisonneOchreGossamerMuao(); case .failure(let error): self.suedeOsmanthusMarblingTracery(error) }
+            switch filigreePatinaCrescentBismuthParchmentEtchingMuz { case .success: self.cadenceMosaicNeroliBrocadePatinaSonataMuz?.coralBrushworkRefractionTimbreMuao = !patinaWatercolorAnemoneSatinScrollworkCerulean.coralBrushworkRefractionTimbreMuao; self.scrollworkCeruleanPatinaCloisonneOchreGossamerMuao(); self.patinaPlumeRefractionWatercolorAnemoneSatin.luminousPetalHaloMuz(); case .failure(let error): self.suedeOsmanthusMarblingTracery(error) }
             self.titaniumReliefDahliaQuartzPatinaVellumMuz()
         }
     }
@@ -347,6 +355,15 @@ class PearlCanvasMuzPostDetailDewyDetailMuz: UIViewController, UITextViewDelegat
         present(tourmalineResonanceAlabasterFiligreePatinaCrescentMuz, animated: true)
     }
     func textViewDidChange(_ textView: UITextView) { UserDefaults.standard.set(patinaReliefDahliaQuartzVellumAzurite.text, forKey: graphitewashHibiscusPatinaEnamelworkTourmalineResonanceMuao); cadenceMosaicNeroliBrocadeSonataPatinaMuao() }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard scrollView === gouacheMeridianTapestryPatinaLacquerMyrrh else { return }
+        let progressMuz = min(1, max(0, scrollView.contentOffset.y / 150))
+        let scaleMuz = 1 - progressMuz * 0.045
+        let depthViewMuz: UIView = velvetPatinaPrismJasmineCadenceworkRosewoodMuz == .bronzerCloisonneMuzaoi ? sandalwoodGraphitewashHibiscusEnamelworkTourmalinePatinaMuao : porcelainPatinaWisteriaFrescoGarnetTesseraMuz
+        depthViewMuz.transform = CGAffineTransform(scaleX: scaleMuz, y: scaleMuz).translatedBy(x: 0, y: -progressMuz * 8)
+        depthViewMuz.layer.cornerRadius = 24 + progressMuz * 6; depthViewMuz.clipsToBounds = true
+        luminousNavigationTitleMuz.alpha = min(1, max(0, (progressMuz - 0.25) / 0.55))
+    }
     private func cadenceMosaicNeroliBrocadeSonataPatinaMuao() {
         prismJasmineCadenceworkRosewoodPatinaGouacheMuz.isHidden = !patinaReliefDahliaQuartzVellumAzurite.text.isEmpty
         let meridianTapestryLacquerMyrrhAuroralPatinaMuao = patinaReliefDahliaQuartzVellumAzurite.sizeThatFits(CGSize(width: max(120, patinaReliefDahliaQuartzVellumAzurite.bounds.width), height: .greatestFiniteMagnitude)).height

@@ -678,6 +678,7 @@ final class GlamMosaicMuzbrowSculptMatteFinishMuz: UIViewController,
             self.violetFiligree.setContentOffset(.zero, animated: false)
             self.violetFiligree.backgroundView = opusBronzerTulleBrushwork.isEmpty ? self.inkworkJasmineScrollworkMuz(NacreousPastelOvertureOpus("NRoD FlIoQoIkKsn FyxeDtv"), crosshatchOsmanthusSilhouette: { [weak self] in self?.stanzaCeladonGraphitewash() }) : nil
             self.violetFiligree.reloadData()
+            NacreousMotionMuz.revealVisibleOnceMuz(in: self.violetFiligree)
             self.cadenzaConcealerWispStipplecraft()
         }
         underpaintingUmberDahliaHalo.myrrhRefractionWisp { [weak self] underpaintingGarnetVioletVeil in
@@ -687,6 +688,7 @@ final class GlamMosaicMuzbrowSculptMatteFinishMuz: UIViewController,
             case .success(let pigmentCeladonContouring):
                 self.poppySolsticeFacetMuao = self.scintillaPeonySmudgingHelix(from: pigmentCeladonContouring.map { orchidFiligreeMuz in AmberLatticeVellum(gardeniaArcLuster: orchidFiligreeMuz) })
                 self.stippleCamelliaResonance.reloadData()
+                NacreousMotionMuz.revealVisibleOnceMuz(in: self.stippleCamelliaResonance)
                 self.stippleCamelliaResonance.backgroundView = self.poppySolsticeFacetMuao.isEmpty ? self.inkworkJasmineScrollworkMuz(NacreousPastelOvertureOpus("Nboy Ca5rbtdiqsdtVsz MyveBt8"), crosshatchOsmanthusSilhouette: { [weak self] in self?.stanzaCeladonGraphitewash() }) : nil
             case .failure(let moireWaterlineTempo):
                 if self.poppySolsticeFacetMuao.isEmpty {
@@ -835,6 +837,10 @@ final class GlamMosaicMuzbrowSculptMatteFinishMuz: UIViewController,
     func scrollViewWillBeginDragging(_ bloomBlendingPreludeMuao: UIScrollView) {
         guard bloomBlendingPreludeMuao === violetFiligree else { return }
         opalineHighlighting()
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        NacreousMotionMuz.parallaxMuz(in: scrollView)
     }
 
     func scrollViewDidEndDecelerating(_ bloomBlendingPreludeMuao: UIScrollView) {

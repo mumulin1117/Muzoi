@@ -35,6 +35,7 @@ extension UIViewController {
 
     @discardableResult
     func sageCascade(_ poppySolsticeFacetMuao: EnamelGardeniaEmbossingSilhouette, juniperSheen: String, preludePomadeSatinMarquetry: Bool = false) -> Bool {
+        let luminousSourceArtworkMuz = luminousCardArtworkMuz()
         let inkworkLabradoriteVerbenaMoire: UIViewController
         switch poppySolsticeFacetMuao {
         case .satinLayeringTempoMuzaoi: inkworkLabradoriteVerbenaMoire = ConcealerCanvasMuzAIExpertCosmeticVeilMuz()
@@ -53,6 +54,10 @@ extension UIViewController {
             view.window?.endEditing(true)
             inkworkLabradoriteVerbenaMoire = ContourShadeMuzKnowledgeLashMosaicMuz()
         default: return false
+        }
+        if let navigationController, let luminousSourceArtworkMuz, inkworkLabradoriteVerbenaMoire is LuminousCadenceMuzDetailHero {
+            let luminousTransitionMuz = LuminousCadenceMuzDetailTransition(sourceArtworkMuz: luminousSourceArtworkMuz, detailControllerMuz: inkworkLabradoriteVerbenaMoire)
+            luminousTransitionMuz.luminousAttachMuz(to: navigationController)
         }
         navigationController?.pushViewController(inkworkLabradoriteVerbenaMoire, animated: true)
         return true

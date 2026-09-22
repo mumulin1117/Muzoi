@@ -106,6 +106,7 @@ final class EyelidMosaicMuzPostMotion: UIView {
     private var cadenceBalmPlumeBrushwork: AVPlayer?
     private var waterlinePorcelainGardeniaWisp: URL?
     private var smudgingJuniperSpiral = false
+    var highlighterTourmalineStippling: UIImageView { linerAuroralHighlighting }
     var mosaicBlendingAllegro: (() -> Void)?
     override init(frame: CGRect) {
         super.init(frame: frame); translatesAutoresizingMaskIntoConstraints = false; clipsToBounds = true

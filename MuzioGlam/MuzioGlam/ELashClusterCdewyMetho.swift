@@ -312,7 +312,7 @@ final class DmVanityRowdewyR: AVanityTrackingdewyDetail {
     }
 }
 
-final class ELashClusterCdewyMetho: UIViewController {
+final class ELashClusterCdewyMetho: UIViewController, UIScrollViewDelegate {
     private static let glamPortraitPlaceholder = LabradoriteMetalworkOvertureMotif.moonstoneFrescoSpiralCantata.chromaticMetalworkArabesqueAndante
 
     private let glamlashFan = OiGlamVanityRepository()
@@ -344,6 +344,7 @@ final class ELashClusterCdewyMetho: UIViewController {
     private var glamHasConfirmedPersona = false
     private var glamRefreshQueued = false
     private var porcelainPreludeMuz = true
+    private var glamDidRevealMuz = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -399,6 +400,7 @@ final class ELashClusterCdewyMetho: UIViewController {
         glamlashBandCanvas.translatesAutoresizingMaskIntoConstraints = false
         glamlashBandCanvas.showsVerticalScrollIndicator = false
         glamlashBandCanvas.alwaysBounceVertical = true
+        glamlashBandCanvas.delegate = self
         glamlashBandCanvas.contentInsetAdjustmentBehavior = .never
         glamRefresh.addTarget(self, action: #selector(glamRefreshPersona), for: .valueChanged)
         glamlashBandCanvas.refreshControl = glamRefresh
@@ -649,6 +651,16 @@ final class ELashClusterCdewyMetho: UIViewController {
         glamFansControl.accessibilityValue = glamAdmirerValue.text
         glamVaultControl.glamSetCadence(persona.glamDiamondCadence, animated: animateCadence)
         glamLoadMuseImage(persona.glamPortraitTrail)
+        if !glamDidRevealMuz {
+            glamDidRevealMuz = true
+            [glamPortrait, glamName, lashSerum, glamVaultControl, glamRows].enumerated().forEach { cadenceIndexMuz, moduleMuz in
+                NacreousMotionMuz.reveal(moduleMuz, cadenceIndexMuz: cadenceIndexMuz)
+            }
+        }
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        NacreousMotionMuz.parallaxMuz(in: scrollView)
     }
 
     private func glamCompactCount(_ glamCount: Int) -> String {

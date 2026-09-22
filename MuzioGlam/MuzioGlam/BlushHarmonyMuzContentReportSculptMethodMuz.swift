@@ -24,7 +24,8 @@ final class BlushHarmonyMuzContentReportSculptMethodMuz: UIViewController, UITex
     init(gossamerFreesiaTracingTracery: any SaffronTightlineMuzaoi, linerAuroralHighlighting: @escaping () -> Void) {
         self.gossamerFreesiaTracingTracery = gossamerFreesiaTracingTracery; self.linerAuroralHighlighting = linerAuroralHighlighting
         super.init(nibName: nil, bundle: nil)
-        modalPresentationStyle = .overFullScreen; modalTransitionStyle = .crossDissolve
+        modalPresentationStyle = .overFullScreen
+        transitioningDelegate = LuminousCadenceMuzCompactTransition.shared
     }
     required init?(coder: NSCoder) { fatalError(NacreousPastelOvertureOpus("icnxiRtb(zcwo3dHeVrC:e)U lhTa5sA Onso8tP gbpeYePnm YicmMpglGe9mjecnxtRebdz")) }
     override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }

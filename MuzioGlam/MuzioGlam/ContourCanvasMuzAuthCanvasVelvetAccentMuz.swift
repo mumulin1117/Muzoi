@@ -9,6 +9,10 @@ class ContourCanvasMuzAuthCanvasVelvetAccentMuz: UIViewController, UIGestureReco
     var tempoEyeshadowMoireBrushwork: Bool { false }
     private let auroralGouacheMeridianStanza = UIActivityIndicatorView(style: .medium)
     private let featheringTopazPeonyWisp = CAGradientLayer()
+    private let opalineGraphitewashSonataAndante = UIView()
+    private let saffronMarquetryZenithOpus = CAGradientLayer()
+    private let malachiteLacquerworkTraceryArpeggio = CAGradientLayer()
+    private let latticeLotusSculptingArc = CAGradientLayer()
     private(set) var crosshatchLabradoriteCedarBloom = false
     private var velvetSweepingArpeggio = ""
     override func viewDidLoad() {
@@ -17,10 +21,27 @@ class ContourCanvasMuzAuthCanvasVelvetAccentMuz: UIViewController, UIGestureReco
         view.backgroundColor = UIColor(red: 12/255, green: 14/255, blue: 21/255, alpha: 1)
         featheringTopazPeonyWisp.colors = [UIColor(red: 0.61, green: 0, blue: 0.65, alpha: 0.8).cgColor, UIColor.clear.cgColor]
         featheringTopazPeonyWisp.startPoint = CGPoint(x: 0, y: 0); featheringTopazPeonyWisp.endPoint = CGPoint(x: 0.65, y: 1); view.layer.insertSublayer(featheringTopazPeonyWisp, at: 0)
+        opalineGraphitewashSonataAndante.translatesAutoresizingMaskIntoConstraints = false
+        opalineGraphitewashSonataAndante.isUserInteractionEnabled = false
+        saffronMarquetryZenithOpus.type = .radial
+        saffronMarquetryZenithOpus.colors = [UIColor(red: 1, green: 0.55, blue: 0.78, alpha: 0.13).cgColor, UIColor(red: 1, green: 0.77, blue: 0.88, alpha: 0.04).cgColor, UIColor.clear.cgColor]
+        saffronMarquetryZenithOpus.locations = [0, 0.42, 1]
+        saffronMarquetryZenithOpus.startPoint = CGPoint(x: 0.28, y: 0.30); saffronMarquetryZenithOpus.endPoint = CGPoint(x: 0.92, y: 0.96)
+        malachiteLacquerworkTraceryArpeggio.type = .radial
+        malachiteLacquerworkTraceryArpeggio.colors = [UIColor(red: 0.96, green: 0.72, blue: 1, alpha: 0.10).cgColor, UIColor(red: 0.76, green: 0.45, blue: 0.95, alpha: 0.025).cgColor, UIColor.clear.cgColor]
+        malachiteLacquerworkTraceryArpeggio.locations = [0, 0.48, 1]
+        malachiteLacquerworkTraceryArpeggio.startPoint = CGPoint(x: 0.70, y: 0.64); malachiteLacquerworkTraceryArpeggio.endPoint = CGPoint(x: 0.06, y: 0.04)
+        latticeLotusSculptingArc.colors = [UIColor.clear.cgColor, UIColor(red: 1, green: 0.88, blue: 0.94, alpha: 0.07).cgColor, UIColor.clear.cgColor]
+        latticeLotusSculptingArc.locations = [0.22, 0.5, 0.78]
+        latticeLotusSculptingArc.startPoint = CGPoint(x: 0, y: 0.1); latticeLotusSculptingArc.endPoint = CGPoint(x: 1, y: 0.9)
+        [saffronMarquetryZenithOpus, malachiteLacquerworkTraceryArpeggio, latticeLotusSculptingArc].forEach { opalineGraphitewashSonataAndante.layer.addSublayer($0) }
+        view.addSubview(opalineGraphitewashSonataAndante)
         cantataPigmentGlazeAquarelle.translatesAutoresizingMaskIntoConstraints = false; refrainPowderOrganzaPorcelain.translatesAutoresizingMaskIntoConstraints = false
         refrainPowderOrganzaPorcelain.axis = .vertical; refrainPowderOrganzaPorcelain.spacing = 16; cantataPigmentGlazeAquarelle.keyboardDismissMode = .interactive
         view.addSubview(cantataPigmentGlazeAquarelle); cantataPigmentGlazeAquarelle.addSubview(refrainPowderOrganzaPorcelain)
         NSLayoutConstraint.activate([
+            opalineGraphitewashSonataAndante.topAnchor.constraint(equalTo: view.topAnchor), opalineGraphitewashSonataAndante.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            opalineGraphitewashSonataAndante.leadingAnchor.constraint(equalTo: view.leadingAnchor), opalineGraphitewashSonataAndante.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             cantataPigmentGlazeAquarelle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor), cantataPigmentGlazeAquarelle.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             cantataPigmentGlazeAquarelle.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor), cantataPigmentGlazeAquarelle.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
         ])
@@ -49,7 +70,23 @@ class ContourCanvasMuzAuthCanvasVelvetAccentMuz: UIViewController, UIGestureReco
         NotificationCenter.default.addObserver(self, selector: #selector(inkworkVioletLatticeMuzaoi), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     override func viewWillAppear(_ animated: Bool) { super.viewWillAppear(animated); navigationController?.setNavigationBarHidden(true, animated: animated) }
-    override func viewDidLayoutSubviews() { super.viewDidLayoutSubviews(); featheringTopazPeonyWisp.frame = CGRect(origin: .zero, size: CGSize(width: view.bounds.width, height: view.bounds.height * 0.36)) }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        view.insertSubview(opalineGraphitewashSonataAndante, belowSubview: cantataPigmentGlazeAquarelle)
+        nacreousCutcrease()
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        [saffronMarquetryZenithOpus, malachiteLacquerworkTraceryArpeggio, latticeLotusSculptingArc].forEach { $0.removeAllAnimations() }
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        featheringTopazPeonyWisp.frame = CGRect(origin: .zero, size: CGSize(width: view.bounds.width, height: view.bounds.height * 0.36))
+        let contouringOsmanthusLattice = opalineGraphitewashSonataAndante.bounds.insetBy(dx: -opalineGraphitewashSonataAndante.bounds.width * 0.24, dy: -opalineGraphitewashSonataAndante.bounds.height * 0.16)
+        saffronMarquetryZenithOpus.frame = contouringOsmanthusLattice
+        malachiteLacquerworkTraceryArpeggio.frame = contouringOsmanthusLattice
+        latticeLotusSculptingArc.frame = contouringOsmanthusLattice
+    }
     deinit { NotificationCenter.default.removeObserver(self) }
     func titaniumGouacheVortexRefrain(_ coralBrushworkRefractionTimbre: UIView, arpeggioTopazGouache: CGFloat = 16) { refrainPowderOrganzaPorcelain.addArrangedSubview(coralBrushworkRefractionTimbre); refrainPowderOrganzaPorcelain.setCustomSpacing(arpeggioTopazGouache, after: coralBrushworkRefractionTimbre) }
     func juniperContourAura(_ refrainAlabasterTapestry: String, arpeggioTopazGouache: CGFloat = 90) {
@@ -123,5 +160,63 @@ class ContourCanvasMuzAuthCanvasVelvetAccentMuz: UIViewController, UIGestureReco
         else if rosewoodCadenceRipple.maxY > satinZenith + cantataPigmentGlazeAquarelle.bounds.height - myrrhFlourishSilkMuao.bottom { satinZenith = rosewoodCadenceRipple.maxY - cantataPigmentGlazeAquarelle.bounds.height + myrrhFlourishSilkMuao.bottom }
         let juniperEnamel = max(-myrrhFlourishSilkMuao.top, cantataPigmentGlazeAquarelle.contentSize.height - cantataPigmentGlazeAquarelle.bounds.height + myrrhFlourishSilkMuao.bottom)
         cantataPigmentGlazeAquarelle.setContentOffset(CGPoint(x: cantataPigmentGlazeAquarelle.contentOffset.x, y: min(juniperEnamel, max(-myrrhFlourishSilkMuao.top, satinZenith))), animated: true)
+    }
+    func waterlineSageLattice(_ facetHibiscusDiffusingSilhouette: UIViewController) {
+        guard let navigationController else { return }
+        guard !UIAccessibility.isReduceMotionEnabled,
+              let opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz = navigationController.view.snapshotView(afterScreenUpdates: false) else {
+            navigationController.pushViewController(facetHibiscusDiffusingSilhouette, animated: !UIAccessibility.isReduceMotionEnabled)
+            return
+        }
+        navigationController.pushViewController(facetHibiscusDiffusingSilhouette, animated: false)
+        navigationController.view.layoutIfNeeded()
+        guard let magnoliaLacquerworkRhapsodyCeladonSerenadeStipplecraftMuzaoi = navigationController.view.snapshotView(afterScreenUpdates: true) else { return }
+        navigationController.view.isUserInteractionEnabled = false
+        navigationController.view.addSubview(opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz)
+        navigationController.view.addSubview(magnoliaLacquerworkRhapsodyCeladonSerenadeStipplecraftMuzaoi)
+        let enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz = CAGradientLayer()
+        enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz.colors = [UIColor.black.cgColor, UIColor.black.cgColor, UIColor.clear.cgColor]
+        enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz.locations = [0, 0.86, 1]
+        enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz.startPoint = CGPoint(x: 0, y: 0.5); enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz.endPoint = CGPoint(x: 1, y: 0.5)
+        enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz.frame = CGRect(x: 0, y: 0, width: navigationController.view.bounds.width * 1.18, height: navigationController.view.bounds.height)
+        magnoliaLacquerworkRhapsodyCeladonSerenadeStipplecraftMuzaoi.layer.mask = enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz
+        let auroralSerenadeCameoSolsticePlumeRefractionMuzaoi = CABasicAnimation(keyPath: NacreousPastelOvertureOpus("txrxaxnxsxfxoxrxmx.xtxrxaxnxsxlxaxtxixoxnx.xxx"))
+        auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.fromValue = -enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz.bounds.width
+        auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.toValue = 0
+        auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.duration = 0.48
+        auroralSerenadeCameoSolsticePlumeRefractionMuzaoi.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+        CATransaction.begin()
+        CATransaction.setCompletionBlock {
+            magnoliaLacquerworkRhapsodyCeladonSerenadeStipplecraftMuzaoi.layer.mask = nil
+            magnoliaLacquerworkRhapsodyCeladonSerenadeStipplecraftMuzaoi.removeFromSuperview()
+            opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz.removeFromSuperview()
+            navigationController.view.isUserInteractionEnabled = true
+        }
+        enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz.add(auroralSerenadeCameoSolsticePlumeRefractionMuzaoi, forKey: NacreousPastelOvertureOpus("oxpxaxlxixnxexGxrxaxpxhxixtxexwxaxsxhxSxoxnxaxtxaxAxnxdxaxnxtxex"))
+        CATransaction.commit()
+        UIView.animate(withDuration: 0.48, delay: 0, options: [.curveEaseInOut, .beginFromCurrentState]) {
+            opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz.transform = CGAffineTransform(translationX: -navigationController.view.bounds.width * 0.06, y: 0)
+            opalineLatticeSerenadeJuniperChiaroscuroCamelliaMuz.alpha = 0.82
+        }
+    }
+    private func nacreousCutcrease() {
+        guard !UIAccessibility.isReduceMotionEnabled, saffronMarquetryZenithOpus.animation(forKey: NacreousPastelOvertureOpus("sxaxfxfxrxoxnxMxaxrxqxuxextxrxyxZxexnxixtxhxOxpxuxsx")) == nil else { return }
+        func veilPoppyGildingArabesque(_ rosewoodGouacheMeridianSerenadeTapestryLacquer: CALayer, _ frescoGarnetTesseraSerenadeMagnoliaLacquerworkMuz: CGFloat, _ tesseraMagnoliaSerenadeLacquerworkRhapsodyCeladonMuz: CGFloat, _ reliefDahliaSerenadeQuartzVellumAzuriteMuz: CFTimeInterval) {
+            let chromaticTopazVelvetPrismSerenadeJasmineMuzaoi = CAAnimationGroup()
+            let marquetryOpalineLatticeJuniperChiaroscuroSerenadeMuz = CABasicAnimation(keyPath: NacreousPastelOvertureOpus("txrxaxnxsxfxoxrxmx.xtxrxaxnxsxlxaxtxixoxnx.xxx"))
+            marquetryOpalineLatticeJuniperChiaroscuroSerenadeMuz.fromValue = frescoGarnetTesseraSerenadeMagnoliaLacquerworkMuz; marquetryOpalineLatticeJuniperChiaroscuroSerenadeMuz.toValue = tesseraMagnoliaSerenadeLacquerworkRhapsodyCeladonMuz
+            let plumeRefractionWatercolorSerenadeAnemoneSatin = CABasicAnimation(keyPath: NacreousPastelOvertureOpus("txrxaxnxsxfxoxrxmx.xtxrxaxnxsxlxaxtxixoxnx.xyx"))
+            plumeRefractionWatercolorSerenadeAnemoneSatin.fromValue = -8; plumeRefractionWatercolorSerenadeAnemoneSatin.toValue = 12
+            let satinSerenadeScrollworkCeruleanCloisonneOchreMuzaoi = CABasicAnimation(keyPath: NacreousPastelOvertureOpus("oxpxaxcxixtxyx"))
+            satinSerenadeScrollworkCeruleanCloisonneOchreMuzaoi.fromValue = 0.72; satinSerenadeScrollworkCeruleanCloisonneOchreMuzaoi.toValue = 1
+            chromaticTopazVelvetPrismSerenadeJasmineMuzaoi.animations = [marquetryOpalineLatticeJuniperChiaroscuroSerenadeMuz, plumeRefractionWatercolorSerenadeAnemoneSatin, satinSerenadeScrollworkCeruleanCloisonneOchreMuzaoi]
+            chromaticTopazVelvetPrismSerenadeJasmineMuzaoi.duration = reliefDahliaSerenadeQuartzVellumAzuriteMuz
+            chromaticTopazVelvetPrismSerenadeJasmineMuzaoi.autoreverses = true; chromaticTopazVelvetPrismSerenadeJasmineMuzaoi.repeatCount = .infinity
+            chromaticTopazVelvetPrismSerenadeJasmineMuzaoi.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+            rosewoodGouacheMeridianSerenadeTapestryLacquer.add(chromaticTopazVelvetPrismSerenadeJasmineMuzaoi, forKey: NacreousPastelOvertureOpus("sxaxfxfxrxoxnxMxaxrxqxuxextxrxyxZxexnxixtxhxOxpxuxsx"))
+        }
+        veilPoppyGildingArabesque(saffronMarquetryZenithOpus, -18, 24, 8.6)
+        veilPoppyGildingArabesque(malachiteLacquerworkTraceryArpeggio, 22, -16, 10.4)
+        veilPoppyGildingArabesque(latticeLotusSculptingArc, -28, 34, 12.2)
     }
 }

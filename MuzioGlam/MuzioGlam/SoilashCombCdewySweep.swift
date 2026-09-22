@@ -15,6 +15,7 @@ final class SoilashCombCdewySweep: UITabBarController, UITabBarControllerDelegat
     private var impastoMalachiteJasminePatina: [UIButton] = []
     private let saffronTightlineMuzaoi = UIStackView()
     private lazy var peonyCrescentLacquer = OmbreTextureMuzIncomingCallCoordinator(stipplingThymeCadenceMuao: self)
+    private var previousCadenceIndexMuz = 0
 
 
 
@@ -93,7 +94,11 @@ final class SoilashCombCdewySweep: UITabBarController, UITabBarControllerDelegat
             cobaltStipple.accessibilityIdentifier = foundationIntaglio.accessibilityIdentifier
             cobaltStipple.addAction(UIAction { [weak self] _ in
                 guard let self else { return }
+                let previousIndexMuz = self.selectedIndex
+                guard previousIndexMuz != glazingSpectralDahliaPatina else { return }
                 self.selectedIndex = glazingSpectralDahliaPatina
+                self.auroralDepthTransitionMuz(from: previousIndexMuz, to: glazingSpectralDahliaPatina)
+                self.previousCadenceIndexMuz = glazingSpectralDahliaPatina
                 self.lashMoonstoneCrosshatch()
             }, for: .touchUpInside)
             // Native navigation remains owned by UITabBarController. The custom buttons
@@ -123,7 +128,34 @@ final class SoilashCombCdewySweep: UITabBarController, UITabBarControllerDelegat
     }
 
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        if previousCadenceIndexMuz != selectedIndex {
+            auroralDepthTransitionMuz(from: previousCadenceIndexMuz, to: selectedIndex)
+            previousCadenceIndexMuz = selectedIndex
+        }
         lashMoonstoneCrosshatch()
+    }
+
+    private func auroralDepthTransitionMuz(from previousIndexMuz: Int, to selectedIndexMuz: Int) {
+        guard !UIAccessibility.isReduceMotionEnabled,
+              let selectedViewMuz = selectedViewController?.view else { return }
+        let directionMuz: CGFloat = selectedIndexMuz > previousIndexMuz ? 1 : -1
+        selectedViewMuz.layer.removeAnimation(forKey: "tabDepthMuz")
+        selectedViewMuz.alpha = 0.72
+        var perspectiveMuz = CATransform3DIdentity
+        perspectiveMuz.m34 = -1 / 700
+        perspectiveMuz = CATransform3DTranslate(perspectiveMuz, directionMuz * 18, 0, -28)
+        perspectiveMuz = CATransform3DScale(perspectiveMuz, 0.985, 0.985, 1)
+        selectedViewMuz.layer.transform = perspectiveMuz
+        UIView.animate(
+            withDuration: 0.32,
+            delay: 0,
+            usingSpringWithDamping: 0.92,
+            initialSpringVelocity: 0.35,
+            options: [.curveEaseOut, .allowUserInteraction, .beginFromCurrentState]
+        ) {
+            selectedViewMuz.alpha = 1
+            selectedViewMuz.layer.transform = CATransform3DIdentity
+        }
     }
 
     private func juniperContourAura() -> UIViewController {

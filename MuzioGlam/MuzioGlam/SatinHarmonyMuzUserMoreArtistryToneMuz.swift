@@ -17,7 +17,8 @@ final class SatinHarmonyMuzUserMoreArtistryToneMuz: UIViewController {
     init(meridianTapestryLacquerMyrrhAtelierAuroralMuz: Bool, bismuthParchmentEtchingGardeniaSilhouetteAtelierMuao: @escaping () -> Void,
          crescentBismuthAtelierParchmentEtchingGardeniaMuao: @escaping (@escaping MakeupAtelierFormulay.HarmonyBerylTapestryMuzaoi) -> Void, organzaApertureSandalwoodGraphitewashHibiscusAtelierMuao: @escaping () -> Void) {
         self.meridianTapestryLacquerMyrrhAtelierAuroralMuz = meridianTapestryLacquerMyrrhAtelierAuroralMuz; atelierVelvetPrismJasmineCadenceworkRosewood = bismuthParchmentEtchingGardeniaSilhouetteAtelierMuao; topazVelvetPrismAtelierJasmineCadencework = crescentBismuthAtelierParchmentEtchingGardeniaMuao; self.organzaApertureSandalwoodGraphitewashHibiscusAtelierMuao = organzaApertureSandalwoodGraphitewashHibiscusAtelierMuao
-        super.init(nibName: nil, bundle: nil); modalPresentationStyle = .overFullScreen; modalTransitionStyle = .crossDissolve
+        super.init(nibName: nil, bundle: nil); modalPresentationStyle = .overFullScreen
+        transitioningDelegate = LuminousCadenceMuzCompactTransition.shared
     }
     required init?(coder: NSCoder) { fatalError(NacreousPastelOvertureOpus("icnxiRtb(zcwo3dHeVrC:e)U lhTa5sA Onso8tP gbpeYePnm YicmMpglGe9mjecnxtRebdz")) }
     override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }

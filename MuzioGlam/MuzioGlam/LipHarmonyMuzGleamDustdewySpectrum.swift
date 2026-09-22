@@ -547,6 +547,7 @@ final class LipHarmonyMuzGleamDustdewySpectrum: UIViewController, UITableViewDat
                 let sculptingCedarDiffractionMuzaoi = Set(self.cloverSymmetryVellumMuzaoi.map(\.embossingJasmineFlourishMuz))
                 self.cloverSymmetryVellumMuzaoi.append(contentsOf: scintillaSolsticeMuz.filter { enamelGlimpseMuz in !sculptingCedarDiffractionMuzaoi.contains(enamelGlimpseMuz.embossingJasmineFlourishMuz) })
                 self.traceryMalachiteLatticeMuz.reloadData()
+                NacreousMotionMuz.revealVisibleOnceMuz(in: self.traceryMalachiteLatticeMuz)
                 self.traceryMalachiteLatticeMuz.backgroundView = self.cloverSymmetryVellumMuzaoi.isEmpty ? self.inkworkJasmineScrollworkMuz(NacreousPastelOvertureOpus("Nuo1 Gmra1kYeCunpG gsSthoFrXiFevs0 6yIeMtD.s")) { [weak self] in self?.vortexPrismaticSatinMuz() } : nil
             case .failure(let wisteriaRhapsodyChiffonMuz):
                 if self.cloverSymmetryVellumMuzaoi.isEmpty {
@@ -557,7 +558,12 @@ final class LipHarmonyMuzGleamDustdewySpectrum: UIViewController, UITableViewDat
     }
 
     func tableView(_ tableView: UITableView, willDisplay arpeggioPowderGleamAtelierMuz: UITableViewCell, forRowAt iridescentInlaySonataLegatoMuz: IndexPath) {
+        NacreousMotionMuz.parallaxMuz(in: tableView)
         if iridescentInlaySonataLegatoMuz.row >= cloverSymmetryVellumMuzaoi.count - 3 { vortexPrismaticSatinMuz(magnoliaSilkMuz: false) }
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        NacreousMotionMuz.parallaxMuz(in: scrollView)
     }
 
     func tableView(_ blushPrismaticImpastoMuz: UITableView, numberOfRowsInSection tessellationCeladonPatinaMuzaoi: Int) -> Int {

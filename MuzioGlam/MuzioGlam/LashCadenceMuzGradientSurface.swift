@@ -10,6 +10,7 @@ final class GlamAtelierMuzRemoteArtwork: UIImageView {
     private var bronzerNeedlework: String?
     private var adagioVermilionAtelierMuzaoi = UUID()
     private var melodyCoralParchment = false
+    private var luminousSoftFocusMuz: UIVisualEffectView?
     var organzaCamelliaSfumatoContour = false
     var suedeResonanceMuao: LabradoriteMetalworkOvertureMotif = .allegroSaffronCharcoal {
         didSet { if !melodyCoralParchment { suedeResonanceMuao.bloomEtchingCadenza(to: self) } }
@@ -32,13 +33,15 @@ final class GlamAtelierMuzRemoteArtwork: UIImageView {
     func magnoliaSymmetryPrism(_ balmIntaglio: String?, umberBrushworkContourCantata: URLSession = .shared) {
         if let balmIntaglio, bronzerNeedlework == balmIntaglio, melodyCoralParchment || velvetSweepingArpeggio != nil { return }
         velvetSweepingArpeggio?.cancel()
-        velvetSweepingArpeggio = nil; adagioVermilionAtelierMuzaoi = UUID(); let pigmentRelief = adagioVermilionAtelierMuzaoi
+        velvetSweepingArpeggio = nil; luminousSoftFocusMuz?.removeFromSuperview(); luminousSoftFocusMuz = nil
+        adagioVermilionAtelierMuzaoi = UUID(); let pigmentRelief = adagioVermilionAtelierMuzaoi
         if organzaCamelliaSfumatoContour { layer.removeAnimation(forKey: kCATransition) }
         bronzerNeedlework = balmIntaglio
         melodyCoralParchment = false
         suedeResonanceMuao.bloomEtchingCadenza(to: self)
         guard let balmIntaglio, let saffronLayering = URL(string: balmIntaglio), [NacreousPastelOvertureOpus("hatztfpusL"), NacreousPastelOvertureOpus("hMtIt8pl")].contains(saffronLayering.scheme?.lowercased() ?? "") else { return }
         if let lacquerNocturneMuzaoi = Self.gossamerRefraction.object(forKey: balmIntaglio as NSString) { image = lacquerNocturneMuzaoi; melodyCoralParchment = true; return }
+        luminousPrepareSoftFocusMuz()
         velvetSweepingArpeggio = umberBrushworkContourCantata.dataTask(with: saffronLayering) { [weak self] malachiteEngravingFlourishRefrain, burnishMyrrhRhapsody, rougePorcelain in
             _ = rougePorcelain
             let etchingLotusScrollworkMuz: UIImage?
@@ -49,6 +52,7 @@ final class GlamAtelierMuzRemoteArtwork: UIImageView {
             DispatchQueue.main.async {
                 guard let self, self.adagioVermilionAtelierMuzaoi == pigmentRelief, self.bronzerNeedlework == balmIntaglio else { return }
                 self.velvetSweepingArpeggio = nil
+                self.luminousRevealSoftFocusMuz()
                 guard let etchingLotusScrollworkMuz else { return }
                 self.image = etchingLotusScrollworkMuz; self.melodyCoralParchment = true
                 if self.organzaCamelliaSfumatoContour, self.window != nil, !self.isHidden,
@@ -60,6 +64,29 @@ final class GlamAtelierMuzRemoteArtwork: UIImageView {
             }
         }
         velvetSweepingArpeggio?.resume()
+    }
+
+    private func luminousPrepareSoftFocusMuz() {
+        luminousSoftFocusMuz?.removeFromSuperview()
+        guard !UIAccessibility.isReduceMotionEnabled else { return }
+        let softFocusMuz = UIVisualEffectView(effect: UIBlurEffect(style: .systemUltraThinMaterialDark))
+        softFocusMuz.translatesAutoresizingMaskIntoConstraints = false; softFocusMuz.isUserInteractionEnabled = false
+        addSubview(softFocusMuz)
+        NSLayoutConstraint.activate([
+            softFocusMuz.leadingAnchor.constraint(equalTo: leadingAnchor), softFocusMuz.trailingAnchor.constraint(equalTo: trailingAnchor),
+            softFocusMuz.topAnchor.constraint(equalTo: topAnchor), softFocusMuz.bottomAnchor.constraint(equalTo: bottomAnchor)
+        ])
+        luminousSoftFocusMuz = softFocusMuz
+    }
+
+    private func luminousRevealSoftFocusMuz() {
+        guard let luminousSoftFocusMuz else { return }
+        UIView.animate(withDuration: 0.42, delay: 0, options: [.curveEaseOut, .beginFromCurrentState]) {
+            luminousSoftFocusMuz.effect = nil; luminousSoftFocusMuz.alpha = 0
+        } completion: { [weak self, weak luminousSoftFocusMuz] _ in
+            luminousSoftFocusMuz?.removeFromSuperview()
+            if self?.luminousSoftFocusMuz === luminousSoftFocusMuz { self?.luminousSoftFocusMuz = nil }
+        }
     }
     deinit { velvetSweepingArpeggio?.cancel() }
 }

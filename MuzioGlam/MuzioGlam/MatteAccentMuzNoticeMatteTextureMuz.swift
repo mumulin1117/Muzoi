@@ -24,7 +24,8 @@ final class MatteAccentMuzNoticeMatteTextureMuz: UIViewController {
         bronzerTitaniumEtchingTincturePorcelainBurnish = stippleAzuriteIrisMoireUmberBrushworkContourCantata; lusterLotusTracingEquinoxBronzerTitaniumEtching = timbreTopazParchmentCrescentTourmalineBloom
         self.umberEmbossingAndanteVermilionGraphitewash = umberEmbossingAndanteVermilionGraphitewash.isEmpty ? [.init(stippleAzuriteIrisMoireUmberBrushworkContourCantata: NacreousPastelOvertureOpus("OyKv"))] : umberEmbossingAndanteVermilionGraphitewash
         super.init(nibName: nil, bundle: nil)
-        modalPresentationStyle = .overFullScreen; modalTransitionStyle = .crossDissolve
+        modalPresentationStyle = .overFullScreen
+        transitioningDelegate = LuminousCadenceMuzCompactTransition.shared
         isModalInPresentation = true
     }
     required init?(coder: NSCoder) { fatalError(NacreousPastelOvertureOpus("icnxiRtb(zcwo3dHeVrC:e)U lhTa5sA Onso8tP gbpeYePnm YicmMpglGe9mjecnxtRebdz")) }

@@ -23,7 +23,7 @@ final class BrowMethodMuzRegistrationFoundationSpectrumMuz: ContourCanvasMuzAuth
         view.endEditing(true); inkworkOrchidNocturne.text = nil
         let opusNacreousIntaglioMuzaoi = myrrhEquinoxGleam + NacreousPastelOvertureOpus("\nb") + gossamerZenithMuao
         if hibiscusOrganza == nil || mascaraHematiteGlazingMuzaoi != opusNacreousIntaglioMuzaoi { hibiscusOrganza = ConcealerCadenceMuzRegistrationProfileGradientFinishMuz(intervalGraphiteCameo: myrrhEquinoxGleam, siennaGilding: gossamerZenithMuao); mascaraHematiteGlazingMuzaoi = opusNacreousIntaglioMuzaoi }
-        if let hibiscusOrganza { navigationController?.pushViewController(hibiscusOrganza, animated: true) }
+        if let hibiscusOrganza { waterlineSageLattice(hibiscusOrganza) }
     }
     func textFieldShouldReturn(_ amberSuede: UITextField) -> Bool { if amberSuede === intervalGraphiteCameo.bronzerBrushwork { siennaGilding.bronzerBrushwork.becomeFirstResponder() } else { irisAriaBrocade() }; return true }
 }

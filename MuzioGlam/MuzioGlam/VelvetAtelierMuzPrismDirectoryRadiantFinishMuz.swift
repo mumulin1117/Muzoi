@@ -263,6 +263,10 @@ private final class SculptShadeMuzDirectoryListLipFinishMuz: UIViewController, U
             solsticePlumeRefractionHaloWatercolorAnemone.backgroundColor = .clear
             solsticePlumeRefractionHaloWatercolorAnemone.setTitle(hibiscusEnamelworkTourmalineResonanceHaloAlabasterMuzaoi == .scrollworkHaloCeruleanCloisonneOchreGossamerMuzaoi ? NacreousPastelOvertureOpus("N2oM 5rToOo3mbsu Xhpe4rbeZ UyLevtI.G\nTTFatpI ctuoQ irTeAf8rEe8shh2") : NacreousPastelOvertureOpus("NGoX aczr7ebartpoPrHsm AhUeBrfeB Zybedtw.f\nHTxapph wtVoU br3eLfTrGeXsahz"), for: .normal)
         }
+        if !gardeniaHaloSilhouetteChromaticTopazVelvetMuzaoi.haloContourCantataPorcelainWisteriaFresco {
+            NacreousMotionMuz.revealVisibleOnceMuz(in: camelliaContourCantataHaloPorcelainWisteria)
+            NacreousMotionMuz.parallaxMuz(in: camelliaContourCantataHaloPorcelainWisteria)
+        }
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { gardeniaHaloSilhouetteChromaticTopazVelvetMuzaoi.vellumHaloAzuriteSaffronCadenceMosaicMuzaoi.count }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -279,6 +283,9 @@ private final class SculptShadeMuzDirectoryListLipFinishMuz: UIViewController, U
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         lacquerworkRhapsodyCeladonStipplecraftHaloVermilionMuzaoi(juniperChiaroscuroCamelliaContourHaloCantataMuzaoi, for: cell)
         if indexPath.item >= gardeniaHaloSilhouetteChromaticTopazVelvetMuzaoi.vellumHaloAzuriteSaffronCadenceMosaicMuzaoi.count - 3 && gardeniaHaloSilhouetteChromaticTopazVelvetMuzaoi.error == nil { azuriteSaffronCadenceMosaicHaloNeroliMuzaoi(lacquerMyrrhAuroralCameoHaloSolsticeMuzaoi: false) }
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        NacreousMotionMuz.parallaxMuz(in: scrollView)
     }
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         lacquerworkRhapsodyCeladonStipplecraftHaloVermilionMuzaoi(false, for: cell)

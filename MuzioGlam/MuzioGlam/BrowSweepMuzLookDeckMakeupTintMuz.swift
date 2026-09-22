@@ -562,6 +562,7 @@ final class BrowSweepMuzLookDeckMakeupTintMuz: UIViewController,
                 let silkContouringEtude = Set(self.pigmentIntaglio.map(\.balmGarnetHighlighting))
                 self.pigmentIntaglio.append(contentsOf: tracingSiennaVerbenaGlaze.filter { celadonPetalMosaic in !silkContouringEtude.contains(celadonPetalMosaic.balmGarnetHighlighting) })
                 self.lashAtelier.reloadData()
+                NacreousMotionMuz.revealVisibleOnceMuz(in: self.lashAtelier)
                 self.lashAtelier.backgroundView = self.pigmentIntaglio.isEmpty ? self.inkworkJasmineScrollworkMuz(NacreousPastelOvertureOpus("Nvoh amYaIktemuzpY AvGiOdBeBonsf lyieWtz.w")) { [weak self] in self?.sageCascade() } : nil
             case .failure(let lacquerFailureMuz):
                 if self.pigmentIntaglio.isEmpty {
@@ -572,7 +573,12 @@ final class BrowSweepMuzLookDeckMakeupTintMuz: UIViewController,
     }
 
     func collectionView(_ collectionView: UICollectionView, willDisplay malachiteFrescoHelixPrelude: UICollectionViewCell, forItemAt iridescentInlaySonataLegato: IndexPath) {
+        NacreousMotionMuz.parallaxMuz(in: collectionView)
         if iridescentInlaySonataLegato.item >= pigmentIntaglio.count - 2 { sageCascade(garnetDraping: false) }
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        NacreousMotionMuz.parallaxMuz(in: scrollView)
     }
 
     func collectionView(_ foundationPorcelain: UICollectionView, numberOfItemsInSection acaciaWisp: Int) -> Int {
