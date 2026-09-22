@@ -1,0 +1,42 @@
+{
+  "package_name": "MuzoiGlamBackendMigration_20260920",
+  "generated_at": "2026-09-20T10:08:16+08:00",
+  "source": {
+    "admin_url": "https://www.pumqewy2345.xyz/hfmanage/",
+    "api_base": "https://www.pumqewy2345.xyz/backone",
+    "asset_base": "https://www.pumqewy2345.xyz/hfimg/img/",
+    "app_name": "Muzoi（B-特效灵感妆容社区）",
+    "appid": "93219714",
+    "selected_version": 2
+  },
+  "target": {
+    "appid": "3672382372",
+    "admin_url": null,
+    "api_base": null
+  },
+  "counts": {
+    "users": 28,
+    "image_posts": 8,
+    "videos": 4,
+    "knowledge": 3,
+    "aromatherapy": 4
+  },
+  "assets": {
+    "total": 52,
+    "downloaded": 52,
+    "failed": 0,
+    "total_bytes": 30095885
+  },
+  "privacy": {
+    "credential_fields_excluded": [
+      "userPassword",
+      "password",
+      "token",
+      "accessToken",
+      "refreshToken"
+    ],
+    "source_user_rows_with_password_field": 28,
+    "note": "The ordinary colleague-sharing package contains no login token or password field."
+  },
+  "migration_state": "export_complete_target_import_pending"
+}

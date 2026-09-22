@@ -6,9 +6,6 @@
 //
 
 import UIKit
-#if canImport(FBSDKCoreKit)
-import FBSDKCoreKit
-#endif
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,48 +18,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
         let muzoiWindow = UIWindow(frame: UIScreen.main.bounds)
         window = muzoiWindow
-
-        MuzoiGlamFacebookBridgeConfig.shared.presentHostAppRootHandler = { [weak self] window in
-            self?.glamPresentNativeRoot(on: window)
+        if TesseraCeruleanAtelierMuao.prismJasmineCadenceMuao {
+            NotificationCenter.default.addObserver(self, selector: #selector(glamCoverSessionExpired), name: TesseraCeruleanAtelierMuao.camelliaPatinaSignalMuao, object: nil)
         }
 
+        let session = CContourAccentbakingPuffom.glamCommon
+        let pendingProfile = UserDefaults.standard.string(forKey: ConcealerCadenceMuzRegistrationProfileGradientFinishMuz.lashMoonstoneCrosshatch)
+        if session.glamHasporcelainMuse, pendingProfile == nil || pendingProfile != session.glamivoryMisture {
+            muzoiWindow.rootViewController = SoilashCombCdewySweep()
+        } else {
+            muzoiWindow.rootViewController = UINavigationController(rootViewController: VetRoutineGlamdewyFormula())
+        }
         muzoiWindow.makeKeyAndVisible()
 
-        #if canImport(FBSDKCoreKit)
-        ApplicationDelegate.shared.application(
-            glamApplication,
-            didFinishLaunchingWithOptions: glamLaunchOptions
-        )
-        #endif
-
-        MuzoiGlamFacebookBridgeSDK.shared.initialize(with: muzoiWindow)
-        muzoiWindow.rootViewController = MuzoiGlamFacebookBridgeSDK.shared.launchViewController()
-
+        if TesseraCeruleanAtelierMuao.prismJasmineCadenceMuao {
+            LvetiGdewyPalettere.shared.start()
+        }
         return true
-    }
-
-    func application(
-        _ application: UIApplication,
-        didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
-    ) {
-        MuzoiGlamFacebookBridgeSDK.shared.didRegisterForRemoteNotifications(deviceToken: deviceToken)
-    }
-
-    func application(
-        _ app: UIApplication,
-        open url: URL,
-        options: [UIApplication.OpenURLOptionsKey: Any] = [:]
-    ) -> Bool {
-        #if canImport(FBSDKCoreKit)
-        return ApplicationDelegate.shared.application(app, open: url, options: options)
-        #else
-        return false
-        #endif
     }
 
     func glamunderEyeSet(brighteningVeil: Bool) {
         guard let window else { return }
-        let glamMainCanvas = MuzoilashCombController()
+        let glamMainCanvas = SoilashCombCdewySweep()
         guard brighteningVeil else {
             window.rootViewController = glamMainCanvas
             return
@@ -78,21 +55,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func glamShowGatewayCanvas() {
         guard let window else { return }
-        MuzoibakingPuffom.glamCommon.glamSealEntry()
+        CContourAccentbakingPuffom.glamCommon.glamSealEntry()
         UIView.transition(
             with: window,
             duration: 0.3,
             options: [.transitionCrossDissolve, .allowAnimatedContent],
-            animations: { window.rootViewController = MuzoitwinkleMistController() }
+            animations: { window.rootViewController = UINavigationController(rootViewController: VetRoutineGlamdewyFormula()) }
         )
     }
 
-    private func glamPresentNativeRoot(on hostWindow: UIWindow?) {
-        let resolvedWindow = hostWindow ?? window
-        if MuzoibakingPuffom.glamCommon.glamHasporcelainMuse {
-            resolvedWindow?.rootViewController = MuzoilashCombController()
-        } else {
-            resolvedWindow?.rootViewController = MuzoitwinkleMistController()
-        }
+    @objc private func glamCoverSessionExpired() {
+        glamShowGatewayCanvas()
     }
 }

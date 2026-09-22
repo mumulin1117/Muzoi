@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A178DC94EA7428F200000001 /* MuzoiGlamRoomH5 in Resources */ = {isa = PBXBuildFile; fileRef = A178DC94EA7428F200000002 /* MuzoiGlamRoomH5 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		A178DC94EA7428F200000002 /* MuzoiGlamRoomH5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MuzoiGlamRoomH5; sourceTree = SOURCE_ROOT; };
 		F5824F8330245F8C00B6BCFD /* MuzioGlam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuzioGlam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -21,6 +26,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		A178DC94EA7428F200000003 /* MuzoiGlamRoomH5 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MuzoiGlamRoomH5;
+			sourceTree = "<group>";
+		};
 		F5824F8530245F8C00B6BCFD /* MuzioGlam */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -53,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				F5824F8530245F8C00B6BCFD /* MuzioGlam */,
+				A178DC94EA7428F200000003 /* MuzoiGlamRoomH5 */,
 				F5824F8430245F8C00B6BCFD /* Products */,
 				60F595150DF5E9601B4C604C /* Frameworks */,
 			);
@@ -85,6 +96,8 @@
 				F5824F8530245F8C00B6BCFD /* MuzioGlam */,
 			);
 			name = MuzioGlam;
+			packageProductDependencies = (
+			);
 			productName = MuzioGlam;
 			productReference = F5824F8330245F8C00B6BCFD /* MuzioGlam.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +126,8 @@
 			);
 			mainGroup = F5824F7A30245F8C00B6BCFD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F5824F8430245F8C00B6BCFD /* Products */;
 			projectDirPath = "";
@@ -128,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A178DC94EA7428F200000001 /* MuzoiGlamRoomH5 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,7 @@
 
 
 ## ⚙️ 1. App 基础信息 (App Identity)
-* **App ID：80962768
+* **App ID：3672382372
 * **App 标题：Muzoi: Glam
 * **App 副标题：
 * **蓝湖设计链接： https://lanhuapp.com/web/#/item/project/stage?pid=62fec8ea-602e-44e6-9dde-1d9672bd8498&tid=8c379c32-0bd6-44ae-ab3b-cfb09ffccdbf
@@ -14,7 +14,38 @@
 
 * **App Store 描述：
 Unleash your makeup imagination.
-Muzoi is a creative community for sharing and discovering bold, artistic makeup ideas. Connect with other beauty lovers through real-time video chat, explore inspiring SFX and glam looks, and post your own makeup stories with photos or videos. Chat with the built-in AI Makeup Artist to spark new ideas or get styling tips. Whether you're learning, sharing, or showcasing, Muzoi is where creative makeup lives. Dive into stunning transformations, exchange ideas, and grow with a community that celebrates unique beauty every day.
+
+Muzoi is a creative beauty community where makeup becomes a form of self-expression. Discover bold SFX transformations, experimental artistry, colorful glam, and inspiring everyday looks shared by beauty lovers and creators.
+
+Share your own makeup journey through photos and videos, explore fresh ideas from the community, and connect through reactions, comments, and follows. Once you follow each other, you can continue the conversation through private messages and real-time video chat.
+
+Need inspiration for your next look? Chat with the built-in AI Makeup Artist for creative concepts, color suggestions, styling tips, and step-by-step makeup ideas—from dramatic special effects to subtle glam.
+
+With Muzoi, you can:
+
+• Discover SFX, artistic, glam, and everyday makeup looks
+
+• Share your makeup stories with photos and videos
+
+• Follow creators and join conversations through reactions and comments
+
+• Message and video chat with mutual followers
+
+• Get personalized inspiration from the AI Makeup Artist
+
+• Report or block content and users when needed
+
+Optional in-app purchases:
+
+• Purchase virtual diamonds through in-app purchase
+
+• Use diamonds to unlock additional responses from the AI Makeup Artist
+
+• Browse community posts, share makeup content, and use standard social features without purchasing diamonds
+
+Whether you are experimenting, learning, sharing, or showcasing your work, Muzoi is a place to explore new ideas and celebrate makeup without limits. Reporting, blocking, and moderation tools help keep the community open, creative, and respectful.
+
+Virtual diamonds are optional digital items, have no real-world monetary value, and cannot be exchanged or redeemed for cash.
 
 ## 🎯 3. App 定位与边界限制 (App Positioning)
 
@@ -102,6 +133,8 @@ elua内容需要结合app描述和apple审核规则生成。协议中必须明�
 
 ### 9.1 开始前的强制前置检查
 
+**模拟器测试限制（用户明确要求）：** 只使用现有的 iPhone 17 Pro（UDID：`D9B138D2-1B08-4646-B8D0-8A2242AECD7D`）进行运行、安装、截图和交互测试。禁止自行创建新的测试模拟器，禁止切换到 SE、Pro Max 或其他机型模拟器。大小屏适配仍需通过约束、布局分析等方式检查；需要其他模拟器时必须先取得用户明确指示。不得批量启动或关闭其他任务使用的模拟器。
+
 Codex 每次接手并开始动手修改代码前，必须先按顺序自检以下 5 项：
 
 1. 是否已通读并完全理解本 `AGENTS.md` 的全部规则？
@@ -142,4 +175,3 @@ Codex 每次接手并开始动手修改代码前，必须先按顺序自检以�
 
 
 ### 4.3 专属命名词汇池：
-
