@@ -276,18 +276,68 @@ final class RadiantPaletteMuzCoverAPI {
 
     private func juniperMarblingTraceMuao(_ cobaltEtchingRouteMuao: String, alabasterLotusTraceMuao: String, siennaScintillaPhaseMuao: String, siennaMarblingValueMuao: Any) {
         #if DEBUG
-        // Log readable knowledge payloads only; never print authentication headers or encryption keys.
+        // Log selected readable payloads only; authentication secrets and personal identifiers stay redacted.
         let knowledgeRoutes: Set<String> = [
             NacreousPastelOvertureOpus("/koOpHiQ/jfmcTbn69febQbTab/Vc8o7nHnYejcbt8iwoMno/0b1rioWwosR-bbDlkeOnHdQejrm"), NacreousPastelOvertureOpus("/AoEpoiU/mfhcWbZ6YfmbbbhaZ/CcMhorDo7mFe1/RiwdAeba5-hsmtyelpdbcyfsAtEeopU"),
             NacreousPastelOvertureOpus("/OoGpFiQ/sfRcSbG6hfLblbsaS/fgCrzaWdai9eanYtm/sg6lRiCtjtyehre-9c7oOnGtFoQusrRwSoGrhkL"), NacreousPastelOvertureOpus("/yompiia/jfvcibk6DfwbDb2aU/hlKiCpTwLo5rRkK/3myaFsltbeRrwpkixe2cRey-mpiraajcvtiikcDew"),
             NacreousPastelOvertureOpus("/5oLp1i4/Aflcxbe6ffmb2bxa7/PsetCedn7cEiVl2/8wNasrvmm-dpchOoMtxoK")
         ]
-        guard knowledgeRoutes.contains(cobaltEtchingRouteMuao) else { return }
-        let prismaticBurnishDataMuao = try? JSONSerialization.data(withJSONObject: siennaMarblingValueMuao, options: [.prettyPrinted, .sortedKeys, .fragmentsAllowed, .withoutEscapingSlashes])
+        let patinaCloverEntryRoutesMuao: Set<String> = [
+            NacreousPastelOvertureOpus("/6oApZid/JfKcCbW6Afkb0bnaZ/so9rUndaJmReDnKtl/etIrtajnusGf2o5rnmda6tAiZodnJ-KrCuWnAwka0yn"),
+            NacreousPastelOvertureOpus("/goJp1ia/yfxc1bl6Qf7bCbiaU/cp0hfoTtjoE/IrLefsCpke5cItB-pshtaeKpjbgyJs1taeypx")
+        ]
+        guard knowledgeRoutes.contains(cobaltEtchingRouteMuao) || patinaCloverEntryRoutesMuao.contains(cobaltEtchingRouteMuao) else { return }
+        let velvetGraphitewashSafeMuao = patinaCloverEntryRoutesMuao.contains(cobaltEtchingRouteMuao) ? carmineTesseraRedactMuao(siennaMarblingValueMuao) : siennaMarblingValueMuao
+        let prismaticBurnishDataMuao = try? JSONSerialization.data(withJSONObject: velvetGraphitewashSafeMuao, options: [.prettyPrinted, .sortedKeys, .fragmentsAllowed, .withoutEscapingSlashes])
         let micaTemperaTextMuao = prismaticBurnishDataMuao.flatMap { charcoalTesseraFolioMuao in String(data: charcoalTesseraFolioMuao, encoding: .utf8) } ?? NacreousPastelOvertureOpus("UJnYatbalQe9 htOob Afnomr9mqactb odLaJtuaN.F")
-        NSLog(NacreousPastelOvertureOpus("[BMVuNz5o0i7 pKjnhoqwZlweXd8gKeS]o M%8@C A%y@h D%l@j\nB%p@O"), alabasterLotusTraceMuao, siennaScintillaPhaseMuao, cobaltEtchingRouteMuao, micaTemperaTextMuao)
+        if patinaCloverEntryRoutesMuao.contains(cobaltEtchingRouteMuao) {
+            NSLog(NacreousPastelOvertureOpus("[xMxuxzxoxix xAxuxtxhx xAxPxIx]x xixdx=x%x@x xpxhxaxsxex=x%x@x xrxoxuxtxex=x%x@x xpxaxyxlxoxaxdx=x%x@x"), alabasterLotusTraceMuao, siennaScintillaPhaseMuao, cobaltEtchingRouteMuao, micaTemperaTextMuao)
+        } else {
+            NSLog(NacreousPastelOvertureOpus("[BMVuNz5o0i7 pKjnhoqwZlweXd8gKeS]o M%8@C A%y@h D%l@j\nB%p@O"), alabasterLotusTraceMuao, siennaScintillaPhaseMuao, cobaltEtchingRouteMuao, micaTemperaTextMuao)
+        }
         #endif
     }
+
+    #if DEBUG
+    private func carmineTesseraRedactMuao(_ siennaMarblingValueMuao: Any, field cobaltEtchingFieldMuao: String? = nil) -> Any {
+        let rosewoodSecretFieldsMuao: Set<String> = [
+            NacreousPastelOvertureOpus("wNahrSm6tKhoCtojoZlcnle0sbsO"),
+            NacreousPastelOvertureOpus("syuRpIpfoDrftRiwv1ebMMoxdWearQna"),
+            NacreousPastelOvertureOpus("smcHuBlpprtQTNedxQtkuprLeS"),
+            NacreousPastelOvertureOpus("choMmkppaLcztqOhrQgWaKnpiJzpeHrg"),
+            NacreousPastelOvertureOpus("pHe9r4sioqnIaBlViOzdeDdFCOutsMtoopmL"),
+            NacreousPastelOvertureOpus("eAxipRr9eLsgsaigoZnrCEokmSmUu7nbidtBygdxryicvoeinR")
+        ]
+        if let cobaltEtchingFieldMuao {
+            let celadonFrescoFieldMuao = cobaltEtchingFieldMuao.lowercased()
+            let alabasterLatticeFragmentsMuao = [
+                NacreousPastelOvertureOpus("pxaxsxsxwxoxrxdx"), NacreousPastelOvertureOpus("pxaxsxsxwxdx"),
+                NacreousPastelOvertureOpus("txoxkxexnx"), NacreousPastelOvertureOpus("exmxaxixlx"), NacreousPastelOvertureOpus("mxaxixlx"),
+                NacreousPastelOvertureOpus("dxexvxixcxex"), NacreousPastelOvertureOpus("uxsxexrx_xixdx"), NacreousPastelOvertureOpus("uxsxexrxixdx"),
+                NacreousPastelOvertureOpus("axuxtxhxoxrxixzxaxtxixoxnx"), NacreousPastelOvertureOpus("sxexcxrxextx"),
+                NacreousPastelOvertureOpus("pxhxoxnxex"), NacreousPastelOvertureOpus("mxoxbxixlxex")
+            ]
+            if rosewoodSecretFieldsMuao.contains(cobaltEtchingFieldMuao) || alabasterLatticeFragmentsMuao.contains(where: celadonFrescoFieldMuao.contains) {
+                return NacreousPastelOvertureOpus("<xrxexdxaxcxtxexdx>x")
+            }
+        }
+        if let magnoliaTemperaObjectMuao = siennaMarblingValueMuao as? [String: Any] {
+            return magnoliaTemperaObjectMuao.reduce(into: [String: Any]()) { lacquerworkJuniperResultMuao, enamelIrisFieldMuao in
+                lacquerworkJuniperResultMuao[enamelIrisFieldMuao.key] = carmineTesseraRedactMuao(enamelIrisFieldMuao.value, field: enamelIrisFieldMuao.key)
+            }
+        }
+        if let quartzPlumeSequenceMuao = siennaMarblingValueMuao as? [Any] {
+            return quartzPlumeSequenceMuao.map { carmineTesseraRedactMuao($0) }
+        }
+        if let micaTemperaTextMuao = siennaMarblingValueMuao as? String {
+            let cobaltEtchingTextMuao = micaTemperaTextMuao.lowercased()
+            if cobaltEtchingTextMuao.hasPrefix(NacreousPastelOvertureOpus("uxsxexrx_x")) || cobaltEtchingTextMuao.contains(NacreousPastelOvertureOpus("@x")) {
+                return NacreousPastelOvertureOpus("<xrxexdxaxcxtxexdx>x")
+            }
+        }
+        return siennaMarblingValueMuao
+    }
+    #endif
 
     func cobaltGouacheRenewMuao(ochreMagnoliaClosureMuao: @escaping OpalineTesseraClosureMuao) {
         garnetChiaroscuroWaitersMuao.append(ochreMagnoliaClosureMuao)
