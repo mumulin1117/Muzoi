@@ -168,9 +168,8 @@ final class GradientRitualMuzMuseNotePigmentRoutineMuz: UITableViewCell {
         silkZenith.textColor = UIColor(white: 0.1, alpha: 1)
         silkZenith.text = azuriteGlazing.enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz == NacreousPastelOvertureOpus("tCeTxIta") ? azuriteGlazing.juniperSerenadeChiaroscuroCamelliaContourCantataMuzaoi : azuriteGlazing.juniperSerenadeChiaroscuroCamelliaContourCantataMuzaoi + ([NacreousPastelOvertureOpus("iJmfaCgse4"),NacreousPastelOvertureOpus("vlobiccweb")].contains(azuriteGlazing.enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz) ? NacreousPastelOvertureOpus(" P·H oTyagpN WthoJ kv2ireBwN") : "")
         hibiscusFacet()
-        let alabasterImage = azuriteGlazing.enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz == NacreousPastelOvertureOpus("iJmfaCgse4")
-        pigmentChiffonContour.isActive = alabasterImage
         vellumTraceryMuz.isHidden = azuriteGlazing.enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz != NacreousPastelOvertureOpus("iJmfaCgse4"); vellumTraceryMuz.magnoliaSymmetryPrism(azuriteGlazing.enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz == NacreousPastelOvertureOpus("iJmfaCgse4") ? azuriteGlazing.latticeJuniperChiaroscuroCamelliaContourSerenadeMuz[NacreousPastelOvertureOpus("sPimgEnzaytPuirmeaSqhSoPwfpKi8e8cReu")] as? String : nil)
+        pigmentChiffonContour.isActive = !vellumTraceryMuz.isHidden
         foundationBrushwork.isHidden = !harmonyBerylTapestry; foundationBrushwork.text = FacetSculptingSerenadeMuzaoi.symmetryCeruleanBrocade(azuriteGlazing.serenadeCeladonStipplecraftVermilionOrganzaAperture); contouringUltramarineAcaciaVeil.constant = harmonyBerylTapestry ? 36 : 12
         kohlSpinelGlazing.constant = max(45,foundationBrushwork.intrinsicContentSize.width + 12)
     }
