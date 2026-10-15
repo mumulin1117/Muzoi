@@ -112,7 +112,7 @@ final class ConcealerCanvasMuzAIExpertCosmeticVeilMuz: ShimmerRitualMuzAIExpertC
             refractionUmberMosaic.topAnchor.constraint(equalTo: enamelGardeniaEmbossingSilhouette.topAnchor), refractionUmberMosaic.leadingAnchor.constraint(equalTo: enamelGardeniaEmbossingSilhouette.leadingAnchor),
             refractionUmberMosaic.trailingAnchor.constraint(equalTo: enamelGardeniaEmbossingSilhouette.trailingAnchor), refractionUmberMosaic.bottomAnchor.constraint(equalTo: enamelGardeniaEmbossingSilhouette.bottomAnchor)
         ])
-        ochreEngravingRhapsodyCadence(); NotificationCenter.default.addObserver(self, selector: #selector(scintillaSilhouette), name: .muzoiWalletStateChanged, object: nil)
+        ochreEngravingRhapsodyCadence(); NotificationCenter.default.addObserver(self, selector: #selector(scintillaSilhouette), name: .chromaticPaletteStateMuzoi, object: nil)
     }
     override func viewWillAppear(_ animated: Bool) { super.viewWillAppear(animated); foundationMetalworkMuz() }
     override func viewDidAppear(_ animated: Bool) { super.viewDidAppear(animated); veiningPrismaticFreesiaPrism() }

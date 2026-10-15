@@ -56,9 +56,9 @@ struct AndanteQuartzEncaustic: Codable {
 }
 
 final class GradientAccentMuzKnowledgeRepository {
-    private let obsidianWaterlineMuz: PrimerAtelierMuzKnowledgeAPIRepository
+    private let obsidianWaterlineMuz: PrimerAtelierMuzKnowledgeAP
     private let amberZenithLattice: [AndanteQuartzEncaustic]?
-    init(obsidianWaterlineMuz: PrimerAtelierMuzKnowledgeAPIRepository = PrimerAtelierMuzKnowledgeAPIRepository(), amberZenithLattice: [AndanteQuartzEncaustic]? = nil) {
+    init(obsidianWaterlineMuz: PrimerAtelierMuzKnowledgeAP = PrimerAtelierMuzKnowledgeAP(), amberZenithLattice: [AndanteQuartzEncaustic]? = nil) {
         self.obsidianWaterlineMuz = obsidianWaterlineMuz; self.amberZenithLattice = amberZenithLattice
     }
     func berylReliefRefractionInterval(drapingSageScrollworkMuao: @escaping (Result<[AndanteQuartzEncaustic], Error>) -> Void) {
@@ -107,8 +107,6 @@ final class ShimmerCadenceMuzKnowledgeReportRepository: SaffronTightlineMuzaoi {
             azuriteColorworkZenithStanza(NacreousPastelOvertureOpus("/JoLpNih/XfBcBbA6xf0blbYav/Jcbo6mEpDlCeox5i7orn6/WbZeraPuftYiOftyJ-LbNrhoXnBzBeArx"), [NacreousPastelOvertureOpus("vUi5d1e3oGsBCHlWiIpM"): NacreousPastelOvertureOpus("OCTxHFE8RM"), NacreousPastelOvertureOpus("c6rreEaPtOiFvTeUE0xypUr6ehsosai3vseM"): mistStippleMelody + patinaThymeBlendingTessellation]) { gossamerImpastoInterval in
                 cobaltStipple(Result {
                     let arcAlabasterPrism = try gossamerImpastoInterval.get(); try self.tinctureQuartzWaterline()
-                    // The documented receipt is the code=0 envelope already validated by CoverAPI.
-                    // An optional explicit failure must still reject the receipt.
                     if let tinctureBismuthBurnishMuzaoi = arcAlabasterPrism[NacreousPastelOvertureOpus("bfaodwgFegBnaFdNg6eewXo7rbkd")] {
                         guard let velvetLotusSculptingAperture = tinctureBismuthBurnishMuzaoi as? NSNumber, CFGetTypeID(velvetLotusSculptingAperture) == CFBooleanGetTypeID(), velvetLotusSculptingAperture.boolValue else { throw PatinaSaffronProtocolMuao.azuriteMarblingUnreadableMuao }
                     }

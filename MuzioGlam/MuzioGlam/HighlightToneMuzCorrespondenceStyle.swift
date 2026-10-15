@@ -131,6 +131,7 @@ final class GradientRitualMuzMuseNotePigmentRoutineMuz: UITableViewCell {
     private var velvetEclipse: NSLayoutConstraint!
     private var contouringUltramarineAcaciaVeil: NSLayoutConstraint!
     private var kohlSpinelGlazing: NSLayoutConstraint!
+    private var pigmentChiffonContour: NSLayoutConstraint!
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier); backgroundColor = .clear; selectionStyle = .none
         [graphiteSmudging, highlighterInlayMuz, foundationBrushwork].forEach { illuminatorAtelier in
@@ -140,6 +141,8 @@ final class GradientRitualMuzMuseNotePigmentRoutineMuz: UITableViewCell {
         highlighterInlayMuz.layer.cornerRadius = 17; highlighterInlayMuz.clipsToBounds = true; highlighterInlayMuz.contentMode = .scaleAspectFill
         veiningPrismaticFreesiaPrism.translatesAutoresizingMaskIntoConstraints = false; veiningPrismaticFreesiaPrism.axis = .vertical; veiningPrismaticFreesiaPrism.spacing = 6; graphiteSmudging.addSubview(veiningPrismaticFreesiaPrism)
         silkZenith.numberOfLines = 0; silkZenith.textColor = UIColor(white: 0.1, alpha: 1); silkZenith.font = .systemFont(ofSize: 14)
+        silkZenith.setContentHuggingPriority(.required, for: .horizontal)
+        silkZenith.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         vellumTraceryMuz.contentMode = .scaleAspectFit; vellumTraceryMuz.heightAnchor.constraint(equalToConstant: 160).isActive = true
         [silkZenith, vellumTraceryMuz].forEach(veiningPrismaticFreesiaPrism.addArrangedSubview)
         foundationBrushwork.font = .systemFont(ofSize: 14); foundationBrushwork.textColor = UIColor(white: 1, alpha: 0.6); foundationBrushwork.textAlignment = .center
@@ -148,23 +151,25 @@ final class GradientRitualMuzMuseNotePigmentRoutineMuz: UITableViewCell {
         velvetEclipse = graphiteSmudging.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -12)
         contouringUltramarineAcaciaVeil = graphiteSmudging.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12)
         kohlSpinelGlazing = foundationBrushwork.widthAnchor.constraint(equalToConstant: 45)
-        let facetOverture = graphiteSmudging.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 296.0/375); facetOverture.priority = UILayoutPriority(999)
+        pigmentChiffonContour = graphiteSmudging.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.68)
         NSLayoutConstraint.activate([
             contouringUltramarineAcaciaVeil, graphiteSmudging.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12),
-            facetOverture, graphiteSmudging.widthAnchor.constraint(lessThanOrEqualTo: contentView.widthAnchor, constant: -66), graphiteSmudging.widthAnchor.constraint(lessThanOrEqualToConstant: 420),
+            graphiteSmudging.widthAnchor.constraint(lessThanOrEqualTo: contentView.widthAnchor, multiplier: 0.78), graphiteSmudging.widthAnchor.constraint(lessThanOrEqualToConstant: 420),
             highlighterInlayMuz.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 12), highlighterInlayMuz.topAnchor.constraint(equalTo: graphiteSmudging.topAnchor), highlighterInlayMuz.widthAnchor.constraint(equalToConstant: 34), highlighterInlayMuz.heightAnchor.constraint(equalToConstant: 34),
             veiningPrismaticFreesiaPrism.topAnchor.constraint(equalTo: graphiteSmudging.topAnchor, constant: 12), veiningPrismaticFreesiaPrism.bottomAnchor.constraint(equalTo: graphiteSmudging.bottomAnchor, constant: -12), veiningPrismaticFreesiaPrism.leadingAnchor.constraint(equalTo: graphiteSmudging.leadingAnchor, constant: 14), veiningPrismaticFreesiaPrism.trailingAnchor.constraint(equalTo: graphiteSmudging.trailingAnchor, constant: -14),
             foundationBrushwork.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4), foundationBrushwork.centerXAnchor.constraint(equalTo: contentView.centerXAnchor), foundationBrushwork.heightAnchor.constraint(equalToConstant: 20), kohlSpinelGlazing
         ])
     }
     required init?(coder: NSCoder) { fatalError(NacreousPastelOvertureOpus("icnxiRtb(zcwo3dHeVrC:e)U lhTa5sA Onso8tP gbpeYePnm YicmMpglGe9mjecnxtRebdz")) }
-    func micaTapestryResonanceCadence(_ azuriteGlazing: JasmineCadenceworkSerenadeRosewoodGouacheMeridianMuz, jasmineEnamelMuao: String?, harmonyBerylTapestry: Bool) {
+    func micaTapestryResonanceCadence(_ azuriteGlazing: JasmineCadenceworkMeridianMuz, jasmineEnamelMuao: String?, harmonyBerylTapestry: Bool) {
         auraFeatheringLegato.isActive = !azuriteGlazing.cadenceSerenadeMosaicNeroliBrocadeSonataMuzaoi; velvetEclipse.isActive = azuriteGlazing.cadenceSerenadeMosaicNeroliBrocadeSonataMuzaoi; graphiteSmudging.velvetEclipse = azuriteGlazing.cadenceSerenadeMosaicNeroliBrocadeSonataMuzaoi
         graphiteSmudging.backgroundColor = azuriteGlazing.cadenceSerenadeMosaicNeroliBrocadeSonataMuzaoi ? FacetSculptingSerenadeMuzaoi.sfumatoCloverAria : FacetSculptingSerenadeMuzaoi.burnishOchreJuniperGossamer
         highlighterInlayMuz.isHidden = azuriteGlazing.cadenceSerenadeMosaicNeroliBrocadeSonataMuzaoi; highlighterInlayMuz.magnoliaSymmetryPrism(jasmineEnamelMuao)
         silkZenith.textColor = UIColor(white: 0.1, alpha: 1)
         silkZenith.text = azuriteGlazing.enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz == NacreousPastelOvertureOpus("tCeTxIta") ? azuriteGlazing.juniperSerenadeChiaroscuroCamelliaContourCantataMuzaoi : azuriteGlazing.juniperSerenadeChiaroscuroCamelliaContourCantataMuzaoi + ([NacreousPastelOvertureOpus("iJmfaCgse4"),NacreousPastelOvertureOpus("vlobiccweb")].contains(azuriteGlazing.enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz) ? NacreousPastelOvertureOpus(" P·H oTyagpN WthoJ kv2ireBwN") : "")
         hibiscusFacet()
+        let alabasterImage = azuriteGlazing.enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz == NacreousPastelOvertureOpus("iJmfaCgse4")
+        pigmentChiffonContour.isActive = alabasterImage
         vellumTraceryMuz.isHidden = azuriteGlazing.enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz != NacreousPastelOvertureOpus("iJmfaCgse4"); vellumTraceryMuz.magnoliaSymmetryPrism(azuriteGlazing.enamelworkTourmalineResonanceAlabasterFiligreeSerenadeMuz == NacreousPastelOvertureOpus("iJmfaCgse4") ? azuriteGlazing.latticeJuniperChiaroscuroCamelliaContourSerenadeMuz[NacreousPastelOvertureOpus("sPimgEnzaytPuirmeaSqhSoPwfpKi8e8cReu")] as? String : nil)
         foundationBrushwork.isHidden = !harmonyBerylTapestry; foundationBrushwork.text = FacetSculptingSerenadeMuzaoi.symmetryCeruleanBrocade(azuriteGlazing.serenadeCeladonStipplecraftVermilionOrganzaAperture); contouringUltramarineAcaciaVeil.constant = harmonyBerylTapestry ? 36 : 12
         kohlSpinelGlazing.constant = max(45,foundationBrushwork.intrinsicContentSize.width + 12)
@@ -173,6 +178,7 @@ final class GradientRitualMuzMuseNotePigmentRoutineMuz: UITableViewCell {
         auraFeatheringLegato.isActive = true; velvetEclipse.isActive = false; graphiteSmudging.velvetEclipse = false; graphiteSmudging.backgroundColor = FacetSculptingSerenadeMuzaoi.silkWisteriaWaterlineOverture
         highlighterInlayMuz.magnoliaSymmetryPrism(nil); highlighterInlayMuz.image = UIImage(named: NacreousPastelOvertureOpus("MQu8zhofioG7lwaCm2NpoUtniOfkitcTaStoiBoLnkAVvsayt3adrC")); highlighterInlayMuz.isHidden = false
         silkZenith.textColor = .white; silkZenith.text = azuriteGlazing.lacquerworkSerenadeRhapsodyCeladonStipplecraftVermilionMuzaoi; vellumTraceryMuz.isHidden = true; foundationBrushwork.isHidden = true; contouringUltramarineAcaciaVeil.constant = 12
+        pigmentChiffonContour.isActive = false
         kohlSpinelGlazing.constant = 45
         hibiscusFacet()
     }

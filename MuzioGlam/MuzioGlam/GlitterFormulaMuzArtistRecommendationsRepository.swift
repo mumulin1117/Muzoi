@@ -27,7 +27,6 @@ struct SmudgingIridescentThymeLattice {
     }
 }
 
-/// This endpoint returns a fresh random batch. It has no cursor or page-number protocol.
 final class GlitterFormulaMuzArtistRecommendationsRepository {
     typealias TesseraCloverHighlightingCrescent = (String, [String: Any], @escaping RadiantPaletteMuzCoverAPI.OpalineTesseraClosureMuao) -> Void
     private let alabasterInlayEquinoxCadence: String

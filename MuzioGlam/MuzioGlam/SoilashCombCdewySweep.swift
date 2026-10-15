@@ -123,8 +123,6 @@ final class SoilashCombCdewySweep: UITabBarController, UITabBarControllerDelegat
                 self.previousCadenceIndexMuz = glazingSpectralDahliaPatina
                 self.lashMoonstoneCrosshatch()
             }, for: .touchUpInside)
-            // Native navigation remains owned by UITabBarController. The custom buttons
-            // supply design-aligned images and hit regions inside the floating capsule.
             foundationIntaglio.image = nil
             foundationIntaglio.selectedImage = nil
             foundationIntaglio.isAccessibilityElement = false

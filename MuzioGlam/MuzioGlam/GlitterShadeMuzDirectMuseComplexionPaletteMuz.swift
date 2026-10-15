@@ -14,7 +14,7 @@ final class GlitterShadeMuzDirectMuseComplexionPaletteMuz: UIViewController, UIT
     private let haloSandalwoodMarblingVortex = UIButton(type: .system)
     private let refractionUmberMosaic = NacreousPetalMosaicMuz()
     private var nacreousPastelOvertureOpus: NSLayoutConstraint!
-    private var etudeAuroralMetalworkMuao: [JasmineCadenceworkSerenadeRosewoodGouacheMeridianMuz] = []
+    private var etudeAuroralMetalworkMuao: [JasmineCadenceworkMeridianMuz] = []
     private var burnishOchreJuniperGossamer: Int64 = 0
     private var contouringIrisCrescent = false, wisteriaVeil = false, irisCascadeMuzaoi = false, mistCamelliaGildingScrollwork = false, pigmentSpinelWaterline = false, orchidEclipseLacquer = false
     private var diffusingCeruleanAnemoneVellum: String?, overtureBismuthFacet: String?
@@ -134,7 +134,7 @@ final class GlitterShadeMuzDirectMuseComplexionPaletteMuz: UIViewController, UIT
             }
         }
     }
-    private func stippleChalcedonyMyrrhSatin(_ latticeSculptingSonority: [JasmineCadenceworkSerenadeRosewoodGouacheMeridianMuz]) {
+    private func stippleChalcedonyMyrrhSatin(_ latticeSculptingSonority: [JasmineCadenceworkMeridianMuz]) {
         var topazBurnish = Dictionary(etudeAuroralMetalworkMuao.map { cutcreaseCeladonHibiscusOrganza in (cutcreaseCeladonHibiscusOrganza.serenadeApertureSandalwoodGraphitewashHibiscusEnamelwork, cutcreaseCeladonHibiscusOrganza) }, uniquingKeysWith: { tinctureBismuthBurnishMuzaoi, smudgingJuniperSpiral in smudgingJuniperSpiral }); latticeSculptingSonority.forEach { peonyCrescentLacquer in topazBurnish[peonyCrescentLacquer.serenadeApertureSandalwoodGraphitewashHibiscusEnamelwork] = peonyCrescentLacquer }
         etudeAuroralMetalworkMuao = topazBurnish.values.sorted { nacreousHighlighting, adagioPrimerLusterParchment in nacreousHighlighting.serenadeCeladonStipplecraftVermilionOrganzaAperture == adagioPrimerLusterParchment.serenadeCeladonStipplecraftVermilionOrganzaAperture ? nacreousHighlighting.serenadeApertureSandalwoodGraphitewashHibiscusEnamelwork < adagioPrimerLusterParchment.serenadeApertureSandalwoodGraphitewashHibiscusEnamelwork : nacreousHighlighting.serenadeCeladonStipplecraftVermilionOrganzaAperture < adagioPrimerLusterParchment.serenadeCeladonStipplecraftVermilionOrganzaAperture }
     }

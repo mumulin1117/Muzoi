@@ -195,7 +195,6 @@ final class RadiantPaletteMuzCoverAPI {
     }
 
     private func saffronIntaglioTransmitMuao(_ cobaltEtchingRouteMuao: String, magnoliaTemperaParcelMuao: [String: Any], wisteriaLatticeAuthorizedMuao: Bool, micaFiligreeRetryMuao: Bool, vermilionBurnishOwnerMuao: String? = nil, ochreMagnoliaClosureMuao: @escaping OpalineTesseraClosureMuao) {
-        let alabasterLotusTraceMuao = UUID().uuidString
         do {
             try graphitewashPatinaOwnerCheckMuao(vermilionBurnishOwnerMuao)
             guard cobaltEtchingRouteMuao.hasPrefix(NacreousPastelOvertureOpus("/Lovpsiq/4fRcWbe61fibRbXay/T")), let prismaticCamelliaAddressMuao = URL(string: TesseraCeruleanAtelierMuao.vellumCobaltHorizonMuao + cobaltEtchingRouteMuao) else { throw PatinaSaffronProtocolMuao.azuriteMarblingUnreadableMuao }
@@ -214,10 +213,6 @@ final class RadiantPaletteMuzCoverAPI {
                 }
                 marquetryStipplingRequestMuao.setValue(NacreousPastelOvertureOpus("B1eRaTrLeUry c") + nacreousGouacheTokenMuao, forHTTPHeaderField: NacreousPastelOvertureOpus("AquAt5hPoorvifzaaKt3iBoPnC"))
             }
-            juniperMarblingTraceMuao(cobaltEtchingRouteMuao, alabasterLotusTraceMuao: alabasterLotusTraceMuao, siennaScintillaPhaseMuao: NacreousPastelOvertureOpus("ReEvQRUHEHS7Tc"), siennaMarblingValueMuao: [
-                NacreousPastelOvertureOpus("mDectTh4oIdm"): NacreousPastelOvertureOpus("PEO0STTB"), NacreousPastelOvertureOpus("edyQeJsOhDaqdNoew5BRrpoUwz"): prismaticCamelliaAddressMuao.absoluteString,
-                NacreousPastelOvertureOpus("ejxppKeKrDi6mCe2nbtWa7lLF9rWershhG"): TesseraCeruleanAtelierMuao.ochreFiligreeSignatureMuao, NacreousPastelOvertureOpus("bJondhyA"): magnoliaTemperaParcelMuao
-            ])
             rosewoodGlazingSessionMuao.dataTask(with: marquetryStipplingRequestMuao) { prismaticBurnishDataMuao, marquetryCamelliaResponseMuao, nacreousPatinaFaultMuao in
                 DispatchQueue.main.async {
                     do {
@@ -228,14 +223,7 @@ final class RadiantPaletteMuzCoverAPI {
                         }
                         let juniperTemperaCodeMuao = cobaltAquarelleEnvelopeMuao[NacreousPastelOvertureOpus("rQhUixn8efsNtFo5nje0FzeXa9thhfeIrW")] as? String ?? NacreousPastelOvertureOpus("IgNnVJA0LhIjDz_tCFOoDxEd")
                         let siennaPlumeReferenceMuao = cobaltAquarelleEnvelopeMuao[NacreousPastelOvertureOpus("bDaDdggFerwPo6rokgCzowlklmexc7tSiDbVlleO")] as? String ?? ""
-                        self.juniperMarblingTraceMuao(cobaltEtchingRouteMuao, alabasterLotusTraceMuao: alabasterLotusTraceMuao, siennaScintillaPhaseMuao: NacreousPastelOvertureOpus("RCE5SHPlOBNbShER"), siennaMarblingValueMuao: [
-                            NacreousPastelOvertureOpus("HyTCT5PH"): hematiteLacquerStatusMuao, NacreousPastelOvertureOpus("rQhUixn8efsNtFo5nje0FzeXa9thhfeIrW"): juniperTemperaCodeMuao, NacreousPastelOvertureOpus("bDaDdggFerwPo6rokgCzowlklmexc7tSiDbVlleO"): siennaPlumeReferenceMuao,
-                            NacreousPastelOvertureOpus("sghbiBmWmIe0rnGgloiDtutqerrK"): cobaltAquarelleEnvelopeMuao[NacreousPastelOvertureOpus("sghbiBmWmIe0rnGgloiDtutqerrK")] as? String ?? ""
-                        ])
                         guard (200...299).contains(hematiteLacquerStatusMuao), juniperTemperaCodeMuao == NacreousPastelOvertureOpus("0H") else {
-                            #if DEBUG
-                            NSLog(NacreousPastelOvertureOpus("M7uizSoeiA ICvovv1elrI m%C@w AHUTGTePc=b%7lJde 0cBojd2et=2%E@m 4r7eiqSueeAsItvIvd1=l%I@m"), cobaltEtchingRouteMuao, hematiteLacquerStatusMuao, juniperTemperaCodeMuao, siennaPlumeReferenceMuao)
-                            #endif
                             let carmineTemperaFailureMuao = PatinaSaffronProtocolMuao(status: hematiteLacquerStatusMuao, code: juniperTemperaCodeMuao, nacreGilding: cobaltAquarelleEnvelopeMuao[NacreousPastelOvertureOpus("sghbiBmWmIe0rnGgloiDtutqerrK")] as? String ?? NacreousPastelOvertureOpus("TohAef WrYeVqGuUelsstF Dc8opuJlVd6 dnKoHtx nbkei ecLofmep5lOe4tSeodA.f"), requestID: siennaPlumeReferenceMuao)
                             if wisteriaLatticeAuthorizedMuao && micaFiligreeRetryMuao && (hematiteLacquerStatusMuao == 401 || [NacreousPastelOvertureOpus("4I0U1G"), NacreousPastelOvertureOpus("4n0F180q1J")].contains(juniperTemperaCodeMuao)) {
                                 self.cobaltGouacheRenewMuao { garnetChiaroscuroOutcomeMuao in
@@ -251,7 +239,6 @@ final class RadiantPaletteMuzCoverAPI {
                         do {
                             guard let damaskMosaicEncryptedMuao = cobaltAquarelleEnvelopeMuao[NacreousPastelOvertureOpus("rvenp4lPi4eHsHMDeisTsNa9g0eK")] as? String else { throw PatinaSaffronProtocolMuao.azuriteMarblingUnreadableMuao }
                             let topazLacquerDecodedMuao = try LacquerworkTopazCipherMuao.umberPatinaRevealMuao(damaskMosaicEncryptedMuao)
-                            self.juniperMarblingTraceMuao(cobaltEtchingRouteMuao, alabasterLotusTraceMuao: alabasterLotusTraceMuao, siennaScintillaPhaseMuao: NacreousPastelOvertureOpus("DdEjCJRtYqPhT6EsDa 8DaAhTwAb"), siennaMarblingValueMuao: topazLacquerDecodedMuao)
                             if self.quartzPlumeRoutesMuao.contains(cobaltEtchingRouteMuao) {
                                 guard let hematiteGildingRowsMuao = topazLacquerDecodedMuao as? [[String: Any]] else { throw PatinaSaffronProtocolMuao.azuriteMarblingUnreadableMuao }
                                 ochreMagnoliaClosureMuao(.success([NacreousPastelOvertureOpus("i2dzeIadsPMjaDtccxhfi8nIgd"): hematiteGildingRowsMuao]))
@@ -263,81 +250,14 @@ final class RadiantPaletteMuzCoverAPI {
                             throw PatinaSaffronProtocolMuao(status: hematiteLacquerStatusMuao, code: NacreousPastelOvertureOpus("COL5IZELNATh_2D8EuCJRDY0PiTD"), nacreGilding: NacreousPastelOvertureOpus("TBhAer JeOnxctrFyVp1tfeOdC 3rYe8s3pfoPnCscec wcso4uYlgdE 7nCoZtc BbAer JrOexatdF.V"), requestID: siennaPlumeReferenceMuao)
                         }
                     } catch let nacreousPatinaFaultMuao {
-                        self.juniperMarblingTraceMuao(cobaltEtchingRouteMuao, alabasterLotusTraceMuao: alabasterLotusTraceMuao, siennaScintillaPhaseMuao: NacreousPastelOvertureOpus("EFRsRMORRb"), siennaMarblingValueMuao: [NacreousPastelOvertureOpus("sghbiBmWmIe0rnGgloiDtutqerrK"): nacreousPatinaFaultMuao.localizedDescription])
                         ochreMagnoliaClosureMuao(.failure(nacreousPatinaFaultMuao))
                     }
                 }
             }.resume()
         } catch let nacreousPatinaFaultMuao {
-            juniperMarblingTraceMuao(cobaltEtchingRouteMuao, alabasterLotusTraceMuao: alabasterLotusTraceMuao, siennaScintillaPhaseMuao: NacreousPastelOvertureOpus("EFRsRMORRb"), siennaMarblingValueMuao: [NacreousPastelOvertureOpus("sghbiBmWmIe0rnGgloiDtutqerrK"): nacreousPatinaFaultMuao.localizedDescription])
             ochreMagnoliaClosureMuao(.failure(nacreousPatinaFaultMuao))
         }
     }
-
-    private func juniperMarblingTraceMuao(_ cobaltEtchingRouteMuao: String, alabasterLotusTraceMuao: String, siennaScintillaPhaseMuao: String, siennaMarblingValueMuao: Any) {
-        #if DEBUG
-        // Log selected readable payloads only; authentication secrets and personal identifiers stay redacted.
-        let knowledgeRoutes: Set<String> = [
-            NacreousPastelOvertureOpus("/koOpHiQ/jfmcTbn69febQbTab/Vc8o7nHnYejcbt8iwoMno/0b1rioWwosR-bbDlkeOnHdQejrm"), NacreousPastelOvertureOpus("/AoEpoiU/mfhcWbZ6YfmbbbhaZ/CcMhorDo7mFe1/RiwdAeba5-hsmtyelpdbcyfsAtEeopU"),
-            NacreousPastelOvertureOpus("/OoGpFiQ/sfRcSbG6hfLblbsaS/fgCrzaWdai9eanYtm/sg6lRiCtjtyehre-9c7oOnGtFoQusrRwSoGrhkL"), NacreousPastelOvertureOpus("/yompiia/jfvcibk6DfwbDb2aU/hlKiCpTwLo5rRkK/3myaFsltbeRrwpkixe2cRey-mpiraajcvtiikcDew"),
-            NacreousPastelOvertureOpus("/5oLp1i4/Aflcxbe6ffmb2bxa7/PsetCedn7cEiVl2/8wNasrvmm-dpchOoMtxoK")
-        ]
-        let patinaCloverEntryRoutesMuao: Set<String> = [
-            NacreousPastelOvertureOpus("/6oApZid/JfKcCbW6Afkb0bnaZ/so9rUndaJmReDnKtl/etIrtajnusGf2o5rnmda6tAiZodnJ-KrCuWnAwka0yn"),
-            NacreousPastelOvertureOpus("/goJp1ia/yfxc1bl6Qf7bCbiaU/cp0hfoTtjoE/IrLefsCpke5cItB-pshtaeKpjbgyJs1taeypx")
-        ]
-        guard knowledgeRoutes.contains(cobaltEtchingRouteMuao) || patinaCloverEntryRoutesMuao.contains(cobaltEtchingRouteMuao) else { return }
-        let velvetGraphitewashSafeMuao = patinaCloverEntryRoutesMuao.contains(cobaltEtchingRouteMuao) ? carmineTesseraRedactMuao(siennaMarblingValueMuao) : siennaMarblingValueMuao
-        let prismaticBurnishDataMuao = try? JSONSerialization.data(withJSONObject: velvetGraphitewashSafeMuao, options: [.prettyPrinted, .sortedKeys, .fragmentsAllowed, .withoutEscapingSlashes])
-        let micaTemperaTextMuao = prismaticBurnishDataMuao.flatMap { charcoalTesseraFolioMuao in String(data: charcoalTesseraFolioMuao, encoding: .utf8) } ?? NacreousPastelOvertureOpus("UJnYatbalQe9 htOob Afnomr9mqactb odLaJtuaN.F")
-        if patinaCloverEntryRoutesMuao.contains(cobaltEtchingRouteMuao) {
-            NSLog(NacreousPastelOvertureOpus("[xMxuxzxoxix xAxuxtxhx xAxPxIx]x xixdx=x%x@x xpxhxaxsxex=x%x@x xrxoxuxtxex=x%x@x xpxaxyxlxoxaxdx=x%x@x"), alabasterLotusTraceMuao, siennaScintillaPhaseMuao, cobaltEtchingRouteMuao, micaTemperaTextMuao)
-        } else {
-            NSLog(NacreousPastelOvertureOpus("[BMVuNz5o0i7 pKjnhoqwZlweXd8gKeS]o M%8@C A%y@h D%l@j\nB%p@O"), alabasterLotusTraceMuao, siennaScintillaPhaseMuao, cobaltEtchingRouteMuao, micaTemperaTextMuao)
-        }
-        #endif
-    }
-
-    #if DEBUG
-    private func carmineTesseraRedactMuao(_ siennaMarblingValueMuao: Any, field cobaltEtchingFieldMuao: String? = nil) -> Any {
-        let rosewoodSecretFieldsMuao: Set<String> = [
-            NacreousPastelOvertureOpus("wNahrSm6tKhoCtojoZlcnle0sbsO"),
-            NacreousPastelOvertureOpus("syuRpIpfoDrftRiwv1ebMMoxdWearQna"),
-            NacreousPastelOvertureOpus("smcHuBlpprtQTNedxQtkuprLeS"),
-            NacreousPastelOvertureOpus("choMmkppaLcztqOhrQgWaKnpiJzpeHrg"),
-            NacreousPastelOvertureOpus("pHe9r4sioqnIaBlViOzdeDdFCOutsMtoopmL"),
-            NacreousPastelOvertureOpus("eAxipRr9eLsgsaigoZnrCEokmSmUu7nbidtBygdxryicvoeinR")
-        ]
-        if let cobaltEtchingFieldMuao {
-            let celadonFrescoFieldMuao = cobaltEtchingFieldMuao.lowercased()
-            let alabasterLatticeFragmentsMuao = [
-                NacreousPastelOvertureOpus("pxaxsxsxwxoxrxdx"), NacreousPastelOvertureOpus("pxaxsxsxwxdx"),
-                NacreousPastelOvertureOpus("txoxkxexnx"), NacreousPastelOvertureOpus("exmxaxixlx"), NacreousPastelOvertureOpus("mxaxixlx"),
-                NacreousPastelOvertureOpus("dxexvxixcxex"), NacreousPastelOvertureOpus("uxsxexrx_xixdx"), NacreousPastelOvertureOpus("uxsxexrxixdx"),
-                NacreousPastelOvertureOpus("axuxtxhxoxrxixzxaxtxixoxnx"), NacreousPastelOvertureOpus("sxexcxrxextx"),
-                NacreousPastelOvertureOpus("pxhxoxnxex"), NacreousPastelOvertureOpus("mxoxbxixlxex")
-            ]
-            if rosewoodSecretFieldsMuao.contains(cobaltEtchingFieldMuao) || alabasterLatticeFragmentsMuao.contains(where: celadonFrescoFieldMuao.contains) {
-                return NacreousPastelOvertureOpus("<xrxexdxaxcxtxexdx>x")
-            }
-        }
-        if let magnoliaTemperaObjectMuao = siennaMarblingValueMuao as? [String: Any] {
-            return magnoliaTemperaObjectMuao.reduce(into: [String: Any]()) { lacquerworkJuniperResultMuao, enamelIrisFieldMuao in
-                lacquerworkJuniperResultMuao[enamelIrisFieldMuao.key] = carmineTesseraRedactMuao(enamelIrisFieldMuao.value, field: enamelIrisFieldMuao.key)
-            }
-        }
-        if let quartzPlumeSequenceMuao = siennaMarblingValueMuao as? [Any] {
-            return quartzPlumeSequenceMuao.map { carmineTesseraRedactMuao($0) }
-        }
-        if let micaTemperaTextMuao = siennaMarblingValueMuao as? String {
-            let cobaltEtchingTextMuao = micaTemperaTextMuao.lowercased()
-            if cobaltEtchingTextMuao.hasPrefix(NacreousPastelOvertureOpus("uxsxexrx_x")) || cobaltEtchingTextMuao.contains(NacreousPastelOvertureOpus("@x")) {
-                return NacreousPastelOvertureOpus("<xrxexdxaxcxtxexdx>x")
-            }
-        }
-        return siennaMarblingValueMuao
-    }
-    #endif
 
     func cobaltGouacheRenewMuao(ochreMagnoliaClosureMuao: @escaping OpalineTesseraClosureMuao) {
         garnetChiaroscuroWaitersMuao.append(ochreMagnoliaClosureMuao)

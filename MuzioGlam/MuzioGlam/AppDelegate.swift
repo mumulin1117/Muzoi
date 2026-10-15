@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  MuzoiGlam
-//
-//  Created by MuzoiGlam on 2026/8/6.
-//
 
 import UIKit
 
@@ -32,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         muzoiWindow.makeKeyAndVisible()
 
         if TesseraCeruleanAtelierMuao.prismJasmineCadenceMuao {
-            LvetiGdewyPalettere.shared.start()
+            LvetiGdewyPalettere.chromaticPaletteMuzoi.beginGlamObservationMuzoi()
         }
         return true
     }

@@ -1,7 +1,6 @@
 import Foundation
 
-/// One account's credits and completed answers are committed in a single local value.
-final class MakeupFinishMuzAILocalCredits {
+final class MakeupFinishMuzAILocaits {
     struct SerenadeCadenceMosaicNeroliBrocadeSonata: Codable {
         let dahliaCrescentCascade: String
         let marblingOchreOsmanthusBloom: String

@@ -99,7 +99,6 @@ final class LashMosaicMuzRelationsRadiantCanvasMuz: UIViewController, UITableVie
             wisteriaEquinoxGlaze.titleLabel?.font = .systemFont(ofSize: 16)
             wisteriaEquinoxGlaze.accessibilityIdentifier = NacreousPastelOvertureOpus("MxuNzQoOiIRreylUaXtiiqoYnYsB") + nocturneMicaBloom
             wisteriaEquinoxGlaze.addAction(UIAction { [weak self] sandalwoodResonanceVelvetMuzaoi in self?.sweepingMoonstoneDahliaMist(peonyArabesqueShimmer == 0 ? .coralBrushworkRefractionTimbreMuz : .veilVerbenaImpastoResonanceMuz) }, for: .touchUpInside)
-            // The 34pt artwork is centered inside a 44pt accessible hit area.
             violetHelixShimmer.addArrangedSubview(wisteriaEquinoxGlaze); spinelImpastoMuao.append(wisteriaEquinoxGlaze)
             wisteriaEquinoxGlaze.heightAnchor.constraint(equalToConstant: 44).isActive = true
             let scintillaJuniperGildingCrescent = wisteriaEquinoxGlaze.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 100.0/375.0)
@@ -171,7 +170,6 @@ final class LashMosaicMuzRelationsRadiantCanvasMuz: UIViewController, UITableVie
         irisAriaPrism.isHidden = adagioGraphiteMarquetryMuzaoi || (!gardeniaDiffractionSheen.isEmpty && intervalLabradoriteParchment == nil)
         irisAriaPrism.setTitle(intervalLabradoriteParchment == nil ? (velvetVeiningMelody == .coralBrushworkRefractionTimbreMuz ? NacreousPastelOvertureOpus("Ndoo 3faoBlsleo2wKibnhgs nyyeTty.Y") : NacreousPastelOvertureOpus("Npo2 6fOaJnqsh FySehte.a")) : NacreousPastelOvertureOpus("CMoBuvlfd7nK’Ct8 UlsoXaCdq utOhGibsw Gliiws1tx.T gTIaqp7 XtFo0 6rMeBtvrfy7.K"), for: .normal)
         if !gardeniaDiffractionSheen.isEmpty, let intervalLabradoriteParchment {
-            // Keep existing rows accessible when a refresh fails.
             irisAriaPrism.isHidden = true
             suedeOsmanthusMarblingTracery(intervalLabradoriteParchment, spinelDiffusing: { [weak self] in self?.tesseraCloverHighlightingCrescent() })
         }

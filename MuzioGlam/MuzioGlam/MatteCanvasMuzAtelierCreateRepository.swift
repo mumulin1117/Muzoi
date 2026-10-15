@@ -24,7 +24,6 @@ struct StippleJasmineMeridian {
             bismuthFrescoRhapsodyTempo.arpeggioIridescentTempera.lowercased().replacingOccurrences(of: NacreousPastelOvertureOpus("_y"), with: juniperHyphenMuz).split(separator: juniperHyphenMuz.first!).first.map(String.init) == jadeLanguageMuz ||
             bismuthFrescoRhapsodyTempo.mistAmberCutcreaseContour.trimmingCharacters(in: .whitespacesAndNewlines).caseInsensitiveCompare(NacreousPastelOvertureOpus("Eanrgpl9iesGhA")) == .orderedSame
         }
-        // The app's primary localization is English (en-US). Use only server-approved pairs.
         let velvetLocalizedMuz = rosewoodSonataMosaicMuao.first { sandalwoodMeridianFacet in sandalwoodMeridianFacet.thymeRefractionGossamer.contains { inkworkSandalwoodLatticeMuz in inkworkSandalwoodLatticeMuz.arpeggioIridescentTempera.uppercased() == satinLocaleMuz } }
         let ochreLocalizedMuz = rosewoodSonataMosaicMuao.first { !$0.thymeRefractionGossamer.isEmpty }
         let lacquerFallbackMuz = preludeLipChiffonParchment.first { melodyCoralParchment in melodyCoralParchment.thymeRefractionGossamer.contains { tracingJasmineApertureMuzaoi in tracingJasmineApertureMuzaoi.arpeggioIridescentTempera.uppercased() == satinLocaleMuz } }
@@ -71,7 +70,6 @@ final class MatteCanvasMuzAtelierCreateRepository {
                                   (NacreousPastelOvertureOpus("lKoccaaWlpePs2"), Self.quartzTesseraCapacityMuzaoi, [:])] {
             berylNeedleworkSolsticeCantata.enter()
             allegroTinctureMistFresco(arabesquePeridotSheen, tightlineCeladonGardeniaVelvet) { stippleCamelliaResonance in
-                // Production callbacks arrive on main; injected transports follow the same contract.
                 switch stippleCamelliaResonance {
                 case .success(let resonanceSpinelSheen): blendingJuniperOverture[bismuthFrescoRhapsodyTempo] = resonanceSpinelSheen
                 case .failure(let tracingJasmineApertureMuzaoi): bronzerAzuriteStipplework = bronzerAzuriteStipplework ?? tracingJasmineApertureMuzaoi
@@ -95,7 +93,6 @@ final class MatteCanvasMuzAtelierCreateRepository {
                     guard !thymeRefractionGossamer.isEmpty else { return nil }
                     return CarmineLacquerworkTessellationLegato(mistAmberCutcreaseContour: mistAmberCutcreaseContour, arpeggioIridescentTempera: refrainHematiteColorwork[NacreousPastelOvertureOpus("fmoalilsodwTeDrWs7F8oSlalho7wH")] as? String ?? "", thymeRefractionGossamer: thymeRefractionGossamer)
                 }
-                // A preview image is optional. Prefer the least restrictive voice-only template.
                 let damaskMeridianMuao = scintillaFreesiaBlendingRefraction.filter { glazingUmberFreesiaBloom in (glazingUmberFreesiaBloom[NacreousPastelOvertureOpus("sanuaGpcslhxoitjVKiZd9eKoRsN")] as? NSNumber)?.intValue == 0 && (glazingUmberFreesiaBloom[NacreousPastelOvertureOpus("lyiLp5sutxiHcDkMLpi6neehrx")] as? NSNumber)?.intValue ?? 0 > 0 }
                     .sorted { helixAuroralGossamer, highlightingIridescentPoppyVellum in (helixAuroralGossamer[NacreousPastelOvertureOpus("h9ipgJhxlhi1gahxt3e0rbEiy6eZlmiQnge4rF")] as? NSNumber)?.intValue ?? 0 < (highlightingIridescentPoppyVellum[NacreousPastelOvertureOpus("h9ipgJhxlhi1gahxt3e0rbEiy6eZlmiQnge4rF")] as? NSNumber)?.intValue ?? 0 }
                     .compactMap { etchingMyrrhOverture in GouacheIrisScalarMuao.opalineFreesiaStringMuao(etchingMyrrhOverture[NacreousPastelOvertureOpus("r6ecezlNB6ehfGohrqe0")]).flatMap { tracerySiennaGauze in try? GouacheIrisScalarMuao.saffronEtchingIdentifierMuao(tracerySiennaGauze) } }.first
@@ -124,7 +121,6 @@ final class MatteCanvasMuzAtelierCreateRepository {
             try harmonyBrowSilkEncaustic()
             let tightlineCeladonGardeniaVelvet = try Self.tightlineCeladonGardeniaVelvet(stippleNeroliSymmetry: stippleNeroliSymmetry, brocadePeonyUnderpaintingCrescent: brocadePeonyUnderpaintingCrescent, sandalwoodMeridianFacet: sandalwoodMeridianFacet, andanteHighlighterVelvetAtelier: andanteHighlighterVelvetAtelier, melodyRougePlumeGraphitewash: melodyRougePlumeGraphitewash, crescentPeridotShimmer: crescentPeridotShimmer)
             if wisteriaEquinoxGlaze != nil {
-                // A timeout can follow a successful server write. Reconcile instead of blindly posting twice.
                 allegroTinctureMistFresco(Self.enamelLotusMovedMuzaoi, [:]) { stippleCamelliaResonance in
                     do {
                         try self.harmonyBrowSilkEncaustic()
@@ -144,7 +140,6 @@ final class MatteCanvasMuzAtelierCreateRepository {
     }
 
     private func jasmineCadencePatinaMuzaoi(_ tightlineCeladonGardeniaVelvet: [String: Any], jasmineEclipseLacquerMuzaoi: @escaping (Result<String, Error>) -> Void) {
-            // Recheck server eligibility immediately before the mutating request.
             allegroTinctureMistFresco(Self.magnoliaFiligreeMuzaoi, [:]) { stippleCamelliaResonance in
                 do {
                     try self.harmonyBrowSilkEncaustic()

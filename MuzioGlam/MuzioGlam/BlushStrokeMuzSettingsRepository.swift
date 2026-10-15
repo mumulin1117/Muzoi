@@ -105,7 +105,7 @@ final class BlushStrokeMuzSettingsRepository {
             cloverCadenceGlaze(NacreousPastelOvertureOpus("/fo2pEib/9fPcRbA6YfgbwbbaK/3exdhiZtooHrLiua1l0/BmJo1oPdlbHoyaUr3df-2fErbe9sPhR"), [:]) { pomadeGraphitewash in
                 shimmerSageTightlineVortex(Result {
                     try self.equinoxCoralLacquer(pomadeGraphitewash)
-                    MakeupFinishMuzAILocalCredits.iridescentInlaySonataLegato(plumeNeroliColorwashHelix: self.myrrhHelixGleam, rippleNeroliLayeringCrescent: self.filigreeEmbossingEtude)
+                    MakeupFinishMuzAILocaits.iridescentInlaySonataLegato(plumeNeroliColorwashHelix: self.myrrhHelixGleam, rippleNeroliLayeringCrescent: self.filigreeEmbossingEtude)
                     self.filigreeEmbossingEtude.removeObject(forKey: NacreousPastelOvertureOpus("m5uWzaorifCxolvPe1rvP3rgonfYiflmeQ.w") + TesseraCeruleanAtelierMuao.ochreFiligreeSignatureMuao + NacreousPastelOvertureOpus(".t") + self.myrrhHelixGleam)
                     self.filigreeEmbossingEtude.removeObject(forKey: self.wispEquinox)
                     self.filigreeEmbossingEtude.removeObject(forKey: NacreousPastelOvertureOpus("meuXz2oqivC7uLr6rAecndt8UIsae2r3IxDQ"))

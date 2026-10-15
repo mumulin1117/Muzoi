@@ -23,7 +23,7 @@ protocol CrosshatchLabradoriteCedarBloom: AnyObject {
 @MainActor
 final class InPaletteGlamWalleter: CrosshatchLabradoriteCedarBloom {
     private let micaMarbling: LuminousGvelvetMosaicory
-    private let crescentChromaticScintilla: LvetiGdewyPalettere
+    private let prismGlamCoordinatorMuzoi: LvetiGdewyPalettere
     private var pigmentAquarelle: [String: Product] = [:]
     private var spectralHighlightingMuzaoi = Set<String>()
     private var malachiteAquarelleOrbitMotif = UUID()
@@ -32,7 +32,7 @@ final class InPaletteGlamWalleter: CrosshatchLabradoriteCedarBloom {
     private(set) var melodyBronzerGleamPastel = false
     private(set) var brocadeArabesque: String?
     var gardeniaDiffractionSheen: (() -> Void)?
-    var porcelainSculpting: Bool { crescentChromaticScintilla.isBusy }
+    var porcelainSculpting: Bool { prismGlamCoordinatorMuzoi.isPrismaticArtistryActiveMuzoi }
     var saffronReliefContourCadenza: [BrocadeTracingRefrainMuao] {
         var scintillaSilhouette = BloomEtchingCadenzaMuz.cadenceIlluminatorGauzeCameoMuz
         if pigmentAquarelle.count == scintillaSilhouette.count {
@@ -47,27 +47,27 @@ final class InPaletteGlamWalleter: CrosshatchLabradoriteCedarBloom {
     }
     init() {
         micaMarbling = LuminousGvelvetMosaicory(adagioCarmineCharcoalMuz: UserDefaults.standard.string(forKey: NacreousPastelOvertureOpus("meuXz2oqivC7uLr6rAecndt8UIsae2r3IxDQ")) ?? "")
-        crescentChromaticScintilla = .shared; camelliaEquinoxEnamel = micaMarbling.layeringPeonyTessellationMuz
-        traceryVermilionGauzeMuzaoi = NotificationCenter.default.addObserver(forName: .muzoiWalletStateChanged, object: nil, queue: .main) { [weak self] cadenceCobaltMarquetryMuzaoi in
+        prismGlamCoordinatorMuzoi = .chromaticPaletteMuzoi; camelliaEquinoxEnamel = micaMarbling.layeringPeonyTessellationMuz
+        traceryVermilionGauzeMuzaoi = NotificationCenter.default.addObserver(forName: .chromaticPaletteStateMuzoi, object: nil, queue: .main) { [weak self] cadenceCobaltMarquetryMuzaoi in
             _ = cadenceCobaltMarquetryMuzaoi
             Task { @MainActor [weak self] in
                 guard let self, (try? self.micaMarbling.siennaMarblingMuz()) != nil else { return }
-                if self.crescentChromaticScintilla.stateOwner == self.micaMarbling.adagioCarmineCharcoalMuz {
-                    if let magnoliaArabesqueSuedeMuzaoi = self.crescentChromaticScintilla.cadence { self.camelliaEquinoxEnamel = magnoliaArabesqueSuedeMuzaoi }
-                    self.brocadeArabesque = self.crescentChromaticScintilla.notice
+                if self.prismGlamCoordinatorMuzoi.blushCanvasKeyMuzoi == self.micaMarbling.adagioCarmineCharcoalMuz {
+                    if let magnoliaArabesqueSuedeMuzaoi = self.prismGlamCoordinatorMuzoi.opalInspirationCountMuzoi { self.camelliaEquinoxEnamel = magnoliaArabesqueSuedeMuzaoi }
+                    self.brocadeArabesque = self.prismGlamCoordinatorMuzoi.velvetLookNoteMuzoi
                 }
                 self.gardeniaDiffractionSheen?()
             }
         }
-        crescentChromaticScintilla.start()
-        // Startup may have happened before login; opening the wallet rescans owned unfinished purchases.
-        crescentChromaticScintilla.retryUnfinished()
+        prismGlamCoordinatorMuzoi.beginGlamObservationMuzoi()
+
+        prismGlamCoordinatorMuzoi.restorePendingArtistryMuzoi()
     }
     deinit { if let traceryVermilionGauzeMuzaoi { NotificationCenter.default.removeObserver(traceryVermilionGauzeMuzaoi) } }
     func arabesqueOpalineMoire() {
         guard !melodyBronzerGleamPastel, !porcelainSculpting else { return }
         melodyBronzerGleamPastel = true; spectralHighlightingMuzaoi = []; malachiteAquarelleOrbitMotif = UUID(); let haloHighlightingCadenza = malachiteAquarelleOrbitMotif
-        let crescentAuroralHalo = crescentChromaticScintilla.cadenceRevision
+        let crescentAuroralHalo = prismGlamCoordinatorMuzoi.chromaticMuseRevisionMuzoi
         brocadeArabesque = NacreousPastelOvertureOpus("LOoZaYdgi2nfg7 btSocpT-ZuJpO EocpKtQimohn8sm…p"); gardeniaDiffractionSheen?()
         Task {
             async let auraBurnishSonority = pomadeSaffronGildingMuz()
@@ -92,8 +92,8 @@ final class InPaletteGlamWalleter: CrosshatchLabradoriteCedarBloom {
             }
             switch myrrhFlourishSilkMuao {
             case .success(let iridescentParchmentArcAllegro):
-                if crescentAuroralHalo == crescentChromaticScintilla.cadenceRevision { camelliaEquinoxEnamel = iridescentParchmentArcAllegro; try? micaMarbling.opusBronzerTulleBrushworkMuz(iridescentParchmentArcAllegro) }
-                else if crescentChromaticScintilla.stateOwner == micaMarbling.adagioCarmineCharcoalMuz { camelliaEquinoxEnamel = crescentChromaticScintilla.cadence }
+                if crescentAuroralHalo == prismGlamCoordinatorMuzoi.chromaticMuseRevisionMuzoi { camelliaEquinoxEnamel = iridescentParchmentArcAllegro; try? micaMarbling.opusBronzerTulleBrushworkMuz(iridescentParchmentArcAllegro) }
+                else if prismGlamCoordinatorMuzoi.blushCanvasKeyMuzoi == micaMarbling.adagioCarmineCharcoalMuz { camelliaEquinoxEnamel = prismGlamCoordinatorMuzoi.opalInspirationCountMuzoi }
             case .failure(let sculptingBismuthThymeLuster): stippleGardeniaEquinox = stippleGardeniaEquinox ?? sculptingBismuthThymeLuster
             }
             brocadeArabesque = stippleGardeniaEquinox == nil ? nil : NacreousPastelOvertureOpus("ScoWmGeX WtPotpK-judpD So7pTtsiIoYn4sN 4aGrBehng’btC 1arvWaJizlHacbWlGeX.W PTtaKpj dtDoS 7rTestIrYy4.N")
@@ -116,7 +116,7 @@ final class InPaletteGlamWalleter: CrosshatchLabradoriteCedarBloom {
     }
     func cascadeSymmetry(vibratoCobaltPorcelain: String) {
         guard !melodyBronzerGleamPastel, !porcelainSculpting, (try? micaMarbling.siennaMarblingMuz()) != nil, let hibiscusSymmetryMoire = pigmentAquarelle[vibratoCobaltPorcelain], spectralHighlightingMuzaoi.contains(vibratoCobaltPorcelain) else { return }
-        crescentChromaticScintilla.activate(hibiscusSymmetryMoire, allowed: spectralHighlightingMuzaoi)
+        prismGlamCoordinatorMuzoi.applyCreativePaletteMuzoi(hibiscusSymmetryMoire, curatedPaletteKeysMuzoi: spectralHighlightingMuzaoi)
     }
-    func tessellationNacreousSatin() { arabesqueOpalineMoire(); crescentChromaticScintilla.retryUnfinished() }
+    func tessellationNacreousSatin() { arabesqueOpalineMoire(); prismGlamCoordinatorMuzoi.restorePendingArtistryMuzoi() }
 }

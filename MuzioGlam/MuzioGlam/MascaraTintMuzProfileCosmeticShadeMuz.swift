@@ -88,7 +88,6 @@ final class MascaraTintMuzProfileCosmeticShadeMuz: UIViewController, UITableView
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews(); balmOchreEmbossingCadenceMicaScintilla()
-        // UITableView's header/footer API requires a frame; their contents use Auto Layout.
         highlighterBrushworkMistSageSfumatoScrollwork.frame.size = CGSize(width: gossamerStippleSonorityHighlighterEncaustic.bounds.width, height: 70)
     }
     override func viewWillDisappear(_ animated: Bool) {
@@ -146,7 +145,6 @@ final class MascaraTintMuzProfileCosmeticShadeMuz: UIViewController, UITableView
             case .success(let haloArabesqueBrocadePeonyUnderpaintingCrescent):
                 self.haloArabesqueBrocadePeonyUnderpaintingCrescent = haloArabesqueBrocadePeonyUnderpaintingCrescent; self.osmanthusLusterTempoUmberTempera.timbreTopazParchmentMuz(haloArabesqueBrocadePeonyUnderpaintingCrescent, highlightingAlabasterMagnoliaEnamelMuz: self.moireContouringCadenzaChiaroscuroNeroliHelixMuzaoi); crosshatchSpectralJuniperAuraCarmineLacquerworkTessellationLegato.isHidden = true; crosshatchSpectralJuniperAuraCarmineLacquerworkTessellationLegato.setTitle(nil, for: .normal); self.embossingUltramarineMyrrhScintillaSepiaDraping?.isActive = true
             case .failure(let cloverAriaLusterIridescentParchmentArcAllegro):
-                // Stale relationship data must never unlock chat or a new follow request.
                 self.haloArabesqueBrocadePeonyUnderpaintingCrescent = nil; self.osmanthusLusterTempoUmberTempera.cobaltSmudgingMuz(false)
                 crosshatchSpectralJuniperAuraCarmineLacquerworkTessellationLegato.isHidden = false; crosshatchSpectralJuniperAuraCarmineLacquerworkTessellationLegato.setTitle(cloverAriaLusterIridescentParchmentArcAllegro.localizedDescription + NacreousPastelOvertureOpus("\nhTUa2pO 4t0oc orAeQtirHyQ fpXrPorf3ialaeY"), for: .normal); self.embossingUltramarineMyrrhScintillaSepiaDraping?.isActive = false
             }
@@ -189,8 +187,6 @@ final class MascaraTintMuzProfileCosmeticShadeMuz: UIViewController, UITableView
     }
     private func verbenaSonataSatinPigmentNacreousUnderpainting(_ original: [String: Any]) throws -> PomadeVermilionBlendingMuz {
         var featheringTopazPeonyWispHaloSageEtchingSonata = original
-        // This endpoint currently serializes UTC timestamps without a timezone suffix.
-        // Keep the feed's existing GMT+8 parser for its different legacy format.
         if let sepiaEtchingTessellationCeladonPatinaMuzaoi = featheringTopazPeonyWispHaloSageEtchingSonata[NacreousPastelOvertureOpus("cLoMm6pxlWegxzidoFnFSLkMianY")] as? String, sepiaEtchingTessellationCeladonPatinaMuzaoi.contains(NacreousPastelOvertureOpus("TS")) {
             let dahliaAuraPomadeMarquetry = DateFormatter(); dahliaAuraPomadeMarquetry.locale = Locale(identifier: NacreousPastelOvertureOpus("eonC_yUvSY_MPxO4SpI6Xh"))
             dahliaAuraPomadeMarquetry.timeZone = TimeZone(secondsFromGMT: 0)

@@ -21,7 +21,6 @@ final class LuminousMosaicMuzCategoryTableArtistryFormulaMuz: UITableView {
     }
 }
 
-/// Shared paging for directory categories and the community's photo/video feeds.
 final class ArtistryCanvasMuzCategoryPagerCosmeticCanvasMuz: UIPageViewController,
     UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     private let saffronMarquetryZenithOpus: [UIViewController]

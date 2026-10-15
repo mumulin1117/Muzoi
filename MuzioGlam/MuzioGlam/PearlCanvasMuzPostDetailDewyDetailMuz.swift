@@ -154,7 +154,6 @@ class PearlCanvasMuzPostDetailDewyDetailMuz: UIViewController, UITextViewDelegat
         let chromaticTopazPatinaVelvetPrismJasmineMuao = UIStackView(); chromaticTopazPatinaVelvetPrismJasmineMuao.axis = .horizontal; chromaticTopazPatinaVelvetPrismJasmineMuao.spacing = 8; chromaticTopazPatinaVelvetPrismJasmineMuao.alignment = .center
         if velvetPatinaPrismJasmineCadenceworkRosewoodMuz == .bronzerCloisonneMuzaoi {
             marquetryOpalinePatinaLatticeJuniperChiaroscuroMuao.widthAnchor.constraint(equalToConstant: 46).isActive = true
-            // The exported back slice contains the glow; its arrow is a separate native glyph.
             let lacquerMyrrhAuroralCameoPatinaSolsticeMuz = UIImageView(image: UIImage(systemName: NacreousPastelOvertureOpus("aarXrZoswk.Hl9erfPt4"))); lacquerMyrrhAuroralCameoPatinaSolsticeMuz.tintColor = UIColor(red: 240/255, green: 164/255, blue: 226/255, alpha: 1)
             lacquerMyrrhAuroralCameoPatinaSolsticeMuz.translatesAutoresizingMaskIntoConstraints = false; lacquerMyrrhAuroralCameoPatinaSolsticeMuz.contentMode = .scaleAspectFit; marquetryOpalinePatinaLatticeJuniperChiaroscuroMuao.addSubview(lacquerMyrrhAuroralCameoPatinaSolsticeMuz)
             NSLayoutConstraint.activate([lacquerMyrrhAuroralCameoPatinaSolsticeMuz.centerXAnchor.constraint(equalTo: marquetryOpalinePatinaLatticeJuniperChiaroscuroMuao.centerXAnchor), lacquerMyrrhAuroralCameoPatinaSolsticeMuz.centerYAnchor.constraint(equalTo: marquetryOpalinePatinaLatticeJuniperChiaroscuroMuao.centerYAnchor), lacquerMyrrhAuroralCameoPatinaSolsticeMuz.widthAnchor.constraint(equalToConstant: 20), lacquerMyrrhAuroralCameoPatinaSolsticeMuz.heightAnchor.constraint(equalToConstant: 20)])
@@ -207,7 +206,6 @@ class PearlCanvasMuzPostDetailDewyDetailMuz: UIViewController, UITextViewDelegat
             ceruleanCloisonneOchreGossamerTitaniumPatinaMuao.trailingAnchor.constraint(equalTo: lacquerworkRhapsodyCeladonStipplecraftPatinaVermilionMuz.trailingAnchor, constant: -4), ceruleanCloisonneOchreGossamerTitaniumPatinaMuao.centerYAnchor.constraint(equalTo: lacquerworkRhapsodyCeladonStipplecraftPatinaVermilionMuz.centerYAnchor), ceruleanCloisonneOchreGossamerTitaniumPatinaMuao.widthAnchor.constraint(equalToConstant: 60), ceruleanCloisonneOchreGossamerTitaniumPatinaMuao.heightAnchor.constraint(equalToConstant: 44),
             patinaIrisMarquetryOpalineLatticeJuniper.trailingAnchor.constraint(equalTo: sonataIrisMarquetryPatinaOpalineLattice.trailingAnchor, constant: -4), patinaIrisMarquetryOpalineLatticeJuniper.centerYAnchor.constraint(equalTo: lacquerworkRhapsodyCeladonStipplecraftPatinaVermilionMuz.centerYAnchor), patinaIrisMarquetryOpalineLatticeJuniper.widthAnchor.constraint(equalToConstant: 44), patinaIrisMarquetryOpalineLatticeJuniper.heightAnchor.constraint(equalToConstant: 44)
         ])
-        // Bottom padding is updated from the actual safe area, including devices without a home indicator.
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -234,7 +232,7 @@ class PearlCanvasMuzPostDetailDewyDetailMuz: UIViewController, UITextViewDelegat
     }
     private func enamelworkPatinaTourmalineResonanceAlabasterFiligreeMuz(_ watercolorAnemoneSatinScrollworkCeruleanPatinaMuao: inout ScherzoQuartzEngravingMuzaoiMuz) {
         if watercolorAnemoneSatinScrollworkCeruleanPatinaMuao.melodyBrowSatinMetalworkMuao == CContourAccentbakingPuffom.glamCommon.glamivoryMisture {
-            let patinaRosewoodGouacheMeridianTapestryLacquer = OiGlamVanityRepository().glamCachedPersona(); watercolorAnemoneSatinScrollworkCeruleanPatinaMuao.filigreeCrosshatchMelodyMuao = patinaRosewoodGouacheMeridianTapestryLacquer.glamDisplayName; watercolorAnemoneSatinScrollworkCeruleanPatinaMuao.ultramarineVeiningMuao = patinaRosewoodGouacheMeridianTapestryLacquer.glamPortraitTrail
+            let patinaRosewoodGouacheMeridianTapestryLacquer = OiGlamVanityRepository().retrieveLocalArtistryMuzoi(); watercolorAnemoneSatinScrollworkCeruleanPatinaMuao.filigreeCrosshatchMelodyMuao = patinaRosewoodGouacheMeridianTapestryLacquer.velvetMakeupAliasMuzoi; watercolorAnemoneSatinScrollworkCeruleanPatinaMuao.ultramarineVeiningMuao = patinaRosewoodGouacheMeridianTapestryLacquer.prismaticMusePortraitMuzoi
         }
     }
     private func gossamerPatinaTitaniumReliefDahliaQuartzMuz() {

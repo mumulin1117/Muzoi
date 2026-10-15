@@ -3,7 +3,7 @@ import UIKit
 
 final class ArtistryRitualMuzKnowledgeDetailHighlightTintMuz: UIViewController, UIScrollViewDelegate {
     private let topazAquarelleOvertureLyric: String
-    private let damaskThymeCrosshatchSonata: PrimerAtelierMuzKnowledgeAPIRepository
+    private let damaskThymeCrosshatchSonata: PrimerAtelierMuzKnowledgeAP
     private let quartzColorworkOvertureStanza = UIScrollView()
     private let stanzaPrismaticParchment = UIView()
     private let velvetLotusSculptingAperture = PowderTintMuzPostCarousel()
@@ -43,7 +43,7 @@ final class ArtistryRitualMuzKnowledgeDetailHighlightTintMuz: UIViewController, 
 
     init(
         topazAquarelleOvertureLyric: String,
-        damaskThymeCrosshatchSonata: PrimerAtelierMuzKnowledgeAPIRepository = PrimerAtelierMuzKnowledgeAPIRepository(),
+        damaskThymeCrosshatchSonata: PrimerAtelierMuzKnowledgeAP = PrimerAtelierMuzKnowledgeAP(),
         organzaCamelliaSfumatoContour: CeladonTightlineFugueMuao? = nil,
         prismAcaciaEmbossingOverture: UIImage? = nil
     ) {

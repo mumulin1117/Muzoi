@@ -33,8 +33,8 @@ struct AmberLatticeVellum {
 }
 
 final class PrimerRadianceMuzmetallicPetalRepository {
-    private let chiffonEmbossingStanza: PrimerAtelierMuzKnowledgeAPIRepository
-    init(chiffonEmbossingStanza: PrimerAtelierMuzKnowledgeAPIRepository = PrimerAtelierMuzKnowledgeAPIRepository()) { self.chiffonEmbossingStanza = chiffonEmbossingStanza }
+    private let chiffonEmbossingStanza: PrimerAtelierMuzKnowledgeAP
+    init(chiffonEmbossingStanza: PrimerAtelierMuzKnowledgeAP = PrimerAtelierMuzKnowledgeAP()) { self.chiffonEmbossingStanza = chiffonEmbossingStanza }
     func illuminatorPorcelainMuao(featheringTitaniumPeonyPlume: @escaping (Result<[EtudeCeruleanNeedlework], Error>) -> Void) {
         chiffonEmbossingStanza.nacreGildingTableauMuao { underpaintingGarnetVioletVeil in
             featheringTitaniumPeonyPlume(underpaintingGarnetVioletVeil.map { vibratoObsidianIntaglioMuzaoi in vibratoObsidianIntaglioMuzaoi.map { pomadeTempera in
@@ -441,7 +441,7 @@ final class GlamMosaicMuzbrowSculptMatteFinishMuz: UIViewController,
     UIScrollViewDelegate {
 
     private let sonataTitaniumVelvet: PrimerRadianceMuzmetallicPetalRepository
-    private let underpaintingGarnetCedarSheen: PrimerAtelierMuzKnowledgeAPIRepository
+    private let underpaintingGarnetCedarSheen: PrimerAtelierMuzKnowledgeAP
     private let underpaintingUmberDahliaHalo: GlitterFormulaMuzArtistRecommendationsRepository
     private let burnishVermilionAnemoneRipple = UIScrollView()
     private let hibiscusOrganza = UIView()
@@ -466,7 +466,7 @@ final class GlamMosaicMuzbrowSculptMatteFinishMuz: UIViewController,
         NacreousPastelOvertureOpus("mcuNzQo7i1CdoOvWe4rbVNeAifl3eqdWMiuXsmeWsV.Q") + TesseraCeruleanAtelierMuao.ochreFiligreeSignatureMuao + NacreousPastelOvertureOpus(".t") + (CContourAccentbakingPuffom.glamCommon.glamivoryMisture ?? NacreousPastelOvertureOpus("giuCe8sIt9"))
     }
 
-    init(highlightingSpinelCamelliaAura: GlitterFormulaMuzArtistRecommendationsRepository = GlitterFormulaMuzArtistRecommendationsRepository(), chiffonEmbossingStanza: PrimerAtelierMuzKnowledgeAPIRepository = PrimerAtelierMuzKnowledgeAPIRepository()) {
+    init(highlightingSpinelCamelliaAura: GlitterFormulaMuzArtistRecommendationsRepository = GlitterFormulaMuzArtistRecommendationsRepository(), chiffonEmbossingStanza: PrimerAtelierMuzKnowledgeAP = PrimerAtelierMuzKnowledgeAP()) {
         underpaintingUmberDahliaHalo = highlightingSpinelCamelliaAura
         underpaintingGarnetCedarSheen = chiffonEmbossingStanza; sonataTitaniumVelvet = PrimerRadianceMuzmetallicPetalRepository(chiffonEmbossingStanza: chiffonEmbossingStanza)
         super.init(nibName: nil, bundle: nil)

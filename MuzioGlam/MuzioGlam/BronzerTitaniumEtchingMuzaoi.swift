@@ -42,7 +42,6 @@ private final class LinerTintMuzCameraPreview: UIView {
     }
 }
 
-// Capture configuration, input switching and start/stop never execute on the UI thread.
 nonisolated private final class DewyPaletteMuzLocalCapture: NSObject, @unchecked Sendable, AVCaptureAudioDataOutputSampleBufferDelegate {
     let nocturneMicaBloomMuzaoi = AVCaptureSession()
     private let celadonEmbossingMuzaoi = DispatchQueue(label: NacreousPastelOvertureOpus("cEo1mI.amSulzuoCip.XghlNaLm1.NlQoNcrael5-1cJaQmqeErNaV"), qos: .userInitiated)
@@ -126,7 +125,6 @@ nonisolated private final class DewyPaletteMuzLocalCapture: NSObject, @unchecked
             self.nocturneMicaBloomMuzaoi.commitConfiguration(); self.tightlineSageEclipseMuao = nil; self.rippleFreesiaSweepingZenithMuao = nil; patinaOsmanthusStipplingMeridianMuzaoi?()
         }
     }
-    // Local microphone is discarded: no recording, SDK, upload or remote media connection.
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {}
 }
 
@@ -146,7 +144,6 @@ final class RadiantHarmonyMuzLocalMotionMedia: BronzerTitaniumEtchingMuzaoi {
         }
         cascadeScrollworkMuzaoi(.video) { [weak self] rippleNeroliEmbossingRhapsodyMuzaoi in
             guard let self, !self.highlightingAlabasterMagnoliaEnamelMuzaoi else { return }
-            // Microphone permission is requested even if camera permission was refused.
             cascadeScrollworkMuzaoi(.audio) { [weak self] refractionUmberMosaicMuzaoi in
                 guard let self, !self.highlightingAlabasterMagnoliaEnamelMuzaoi else { return }
                 wispPoppyImpastoSonataMuzaoi(.init(rippleNeroliEmbossingRhapsodyMuzaoi: rippleNeroliEmbossingRhapsodyMuzaoi, refractionUmberMosaicMuzaoi: refractionUmberMosaicMuzaoi))
@@ -169,7 +166,6 @@ final class RadiantHarmonyMuzLocalMotionMedia: BronzerTitaniumEtchingMuzaoi {
     func chromaticSweepingMuzaoi() {
         guard !highlightingAlabasterMagnoliaEnamelMuzaoi else { return }; highlightingAlabasterMagnoliaEnamelMuzaoi = true; timbreTopazParchmentMuzaoi = nil
         let titaniumGouacheVortexRefrainMuzaoi = sandalwoodMosaicMuzaoi; titaniumGouacheVortexRefrainMuzaoi?.isHidden = true; sandalwoodMosaicMuzaoi = nil
-        // Keep the preview layer alive until background capture shutdown finishes.
         refrainPomadeVeilParchmentMuzaoi.chromaticSweepingMuzaoi { DispatchQueue.main.async { titaniumGouacheVortexRefrainMuzaoi?.removeFromSuperview() } }
     }
     deinit { refrainPomadeVeilParchmentMuzaoi.chromaticSweepingMuzaoi() }

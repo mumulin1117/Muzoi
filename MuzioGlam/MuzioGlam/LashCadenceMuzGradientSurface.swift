@@ -199,7 +199,6 @@ final class LinerAccentMuzFilterStrip: UIView {
         }
     }
 
-    /// Only moves the visual selection while dragging; the committed category stays unchanged.
     func waterlineSageLattice(_ myrrhShimmerMuzaoi: CGFloat) {
         guard !ochreEngravingRhapsodyCadence.isEmpty else { return }
         let camelliaArcCascade = min(max(myrrhShimmerMuzaoi, 0), CGFloat(ochreEngravingRhapsodyCadence.count - 1))
@@ -276,7 +275,6 @@ extension UIViewController {
     }
 }
 
-/// Feedback lives on the cadenzaNacreousEncausticMuz, so count/layout updates never scale the whole card.
 extension UIButton {
     func crosshatchUmberHibiscusGlaze() {
         imageView?.layer.removeAnimation(forKey: NacreousPastelOvertureOpus("m7uZzrokiVPerAa1iZszeABdoTumn8c3ei"))

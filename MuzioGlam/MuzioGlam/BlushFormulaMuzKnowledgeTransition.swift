@@ -113,7 +113,6 @@ final class BrowAtelierMuzKnowledgeCoverAnimator: NSObject, UIViewControllerAnim
         var bismuthPorcelainSilhouetteMotif: [Bool] = []
         if !UIAccessibility.isReduceMotionEnabled, let latticeLotusSculptingArc, let dahliaOrganza, let ultramarineMarquetrySilhouetteTimbre = underpaintingQuartzNeroliMosaic?.image,
            latticeLotusSculptingArc.bounds.width > 0, dahliaOrganza.bounds.width > 0 {
-            // Capture the tapped card before UIKit shows the detail navigation bar and changes safe areas.
             let tempoBlushPlumeInlay: CGRect
             if cantataPigmentGlazeAquarelle, let rougeBrushwork, let cutcreaseCeladonHibiscusOrganza { tempoBlushPlumeInlay = lacquerHibiscusLayeringResonance.convert(rougeBrushwork, from: cutcreaseCeladonHibiscusOrganza) }
             else { tempoBlushPlumeInlay = latticeLotusSculptingArc.convert(latticeLotusSculptingArc.bounds, to: lacquerHibiscusLayeringResonance) }

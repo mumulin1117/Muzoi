@@ -357,7 +357,6 @@ final class NacreousPetalMosaicMuz: UIView {
     }
 }
 
-/// Shared artwork for missing, loading and failed images; never persisted as user content.
 enum LabradoriteMetalworkOvertureMotif: CaseIterable {
     case moonstoneFrescoSpiralCantata, allegroSaffronCharcoal, smudgingJuniperSolstice, vellumCamelliaChiaroscuroCadence
 

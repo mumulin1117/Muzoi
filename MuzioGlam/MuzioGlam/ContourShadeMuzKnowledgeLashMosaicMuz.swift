@@ -143,7 +143,6 @@ final class ContourShadeMuzKnowledgeLashMosaicMuz: UIViewController, UICollectio
         let foundationOchreSweeping = 1 / max(1, view.window?.screen.scale ?? UIScreen.main.scale)
         let facetSculptingSerenadeMuzaoi = max(foundationOchreSweeping, floor(min(linerAuroralHighlighting * 4 / 3, traceryAuroralMosaic.bounds.height) / foundationOchreSweeping) * foundationOchreSweeping - foundationOchreSweeping)
         refractionQuartzWisp.itemSize = CGSize(width: linerAuroralHighlighting, height: facetSculptingSerenadeMuzaoi)
-        // A 75% neighbour begins at x=358 on the 375-point design.
         refractionQuartzWisp.minimumLineSpacing = 20 - linerAuroralHighlighting * 0.125
         refractionQuartzWisp.sectionInset = UIEdgeInsets(top: 0, left: (gossamerFreesiaTracingTracery - linerAuroralHighlighting) / 2, bottom: 0, right: (gossamerFreesiaTracingTracery - linerAuroralHighlighting) / 2)
         refractionQuartzWisp.invalidateLayout(); traceryAuroralMosaic.layoutIfNeeded()
@@ -287,7 +286,6 @@ final class ContourShadeMuzKnowledgeLashMosaicMuz: UIViewController, UICollectio
             self.rosewoodTessellationShimmer(); self.view.layoutIfNeeded()
             let pigmentAquarelle = max(0, self.crescentAuroralHalo.contentSize.height - self.crescentAuroralHalo.bounds.height)
             if self.saffronMarquetryZenithOpus {
-                // A shorter incoming article must not pull the carousel vertically under the finger.
                 var burnishMyrrhRhapsody = self.facetHibiscusDiffusingSilhouette ?? self.crescentAuroralHalo.contentInset
                 burnishMyrrhRhapsody.bottom += max(0, pomadeGraphitewash - pigmentAquarelle - burnishMyrrhRhapsody.bottom)
                 self.crescentAuroralHalo.contentInset = burnishMyrrhRhapsody
@@ -317,8 +315,6 @@ final class ContourShadeMuzKnowledgeLashMosaicMuz: UIViewController, UICollectio
         }
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        // Bind the text to the dominant card during the gesture, rather than waiting for deceleration.
-        // Knowledge reading is manual: no timer can replace a long article while it is being read.
         guard scrollView === traceryAuroralMosaic, !andanteLipGlazeCameo, !sonoritySepiaMarquetry.isEmpty, mosaicLattice > 0 else { return }
         layeringAnemoneSilhouette(at: Int(round(traceryAuroralMosaic.contentOffset.x / refractionQuartzWisp.highlighterTapestryMuz)))
     }

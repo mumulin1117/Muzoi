@@ -76,7 +76,6 @@ final class GlshimmerAtelierWhile: UIViewController {
         let velvetVeiningMelody = UIView()
         let stippleworkAnemoneSilhouette = UIView()
         let patinaOsmanthusStipplingMeridian = UIImageView(image: UIImage(named: NacreousPastelOvertureOpus("Mku0zco2irGDlUaMmJPjaKlRertEtQe4VFaluxl8tqDWetc7oOrw"))); patinaOsmanthusStipplingMeridian.contentMode = .scaleToFill
-        // Use the visible card region only; the product panel draws its own rounded top once.
         patinaOsmanthusStipplingMeridian.layer.contentsRect = CGRect(x: 15.0/375, y: 129.0/920, width: 345.0/375, height: 100.0/920)
         patinaOsmanthusStipplingMeridian.translatesAutoresizingMaskIntoConstraints = false; stippleworkAnemoneSilhouette.addSubview(patinaOsmanthusStipplingMeridian)
         let refrainPomadeVeilParchment = UILabel(); refrainPomadeVeilParchment.text = NacreousPastelOvertureOpus("MUyw qbdaglEacn1cqeT"); refrainPomadeVeilParchment.textColor = .white; refrainPomadeVeilParchment.font = .systemFont(ofSize: 15.5)
@@ -97,7 +96,6 @@ final class GlshimmerAtelierWhile: UIViewController {
         tinctureTourmalineGilding.accessibilityIdentifier = NacreousPastelOvertureOpus("McuXz6oqiOWsaslvlhectwSPt3a6tAuWsL")
         tinctureTourmalineGilding.addAction(UIAction { [weak self] _ in self?.crosshatchVioletEclipse.tessellationNacreousSatin() }, for: .touchUpInside)
         celadonEmbossing.color = .black; celadonEmbossing.isUserInteractionEnabled = false
-        // An opaque, fixed foreground keeps scrolling packs out of the purchase area.
         chromaticGraphitewashEclipseSerenade.backgroundColor = view.backgroundColor
         [foundationMetalworkMuz, foundationIridescentCrosshatch, contouringVermilionAnemoneBrocade, chiffonGildingHarmony, etudeCeruleanNeedlework, chromaticGraphitewashEclipseSerenade].forEach { nocturneMicaBloom in nocturneMicaBloom.translatesAutoresizingMaskIntoConstraints = false; view.addSubview(nocturneMicaBloom) }
         [tinctureTourmalineGilding, nocturneSiennaPatina].forEach { tightlineSageEclipse in tightlineSageEclipse.translatesAutoresizingMaskIntoConstraints = false; chromaticGraphitewashEclipseSerenade.addSubview(tightlineSageEclipse) }

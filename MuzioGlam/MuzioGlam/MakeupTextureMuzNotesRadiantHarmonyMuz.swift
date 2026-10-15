@@ -82,7 +82,6 @@ final class MakeupTextureMuzNotesRadiantHarmonyMuz: ChromeToneMuzCorrespondenceP
     private func siennaMarblingContouringOsmanthusLattice(_ foundationPorcelainSpinelDiffusing: MyrrhAuroralCameoSerenadeSolsticePlume) {
         guard !contouringTitaniumFreesiaOrganzaWispCrescent, presentedViewController == nil else { return }
         let satinLotusGlazingSymmetryCadenceIlluminatorGauzeCameo = vibratoObsidianIntaglioMuzaoiPigmentIntaglio(foundationPorcelainSpinelDiffusing.scrollworkCeruleanCloisonneOchreSerenadeGossamerMuzaoi)
-        // Conversation.blocked can also mean that the peer blocked us; use our own block state.
         contouringTitaniumFreesiaOrganzaWispCrescent = true
         intervalOchrePorcelainLashAtelier.bismuthParchmentEtchingSerenadeGardeniaSilhouette(plumeRefractionSerenadeWatercolorAnemoneSatinMuz: foundationPorcelainSpinelDiffusing.scrollworkCeruleanCloisonneOchreSerenadeGossamerMuzaoi) { [weak self] result in
             guard let self else { return }; self.contouringTitaniumFreesiaOrganzaWispCrescent = false

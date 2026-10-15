@@ -116,7 +116,7 @@ final class ComplexionSweepMuzPublishGradientRitualMuz: UIViewController, PHPick
         let auraFeatheringLegato = UITapGestureRecognizer(target: self, action: #selector(pomadeAzuriteLayering)); auraFeatheringLegato.cancelsTouchesInView = false; auraFeatheringLegato.delegate = self; view.addGestureRecognizer(auraFeatheringLegato)
         for haloHighlightingCadenza in [UIResponder.keyboardWillShowNotification, UIResponder.keyboardWillHideNotification, UIResponder.keyboardWillChangeFrameNotification] { NotificationCenter.default.addObserver(self, selector: #selector(marblingAzuriteThymeCascade), name: haloHighlightingCadenza, object: nil) }
         let gleamTracery = CContourAccentbakingPuffom.glamCommon.glamivoryMisture ?? ""
-        let highlighterEncaustic = LuminousStrokeMuzEditProfileRepository(azuriteGlazingMuzaoi: gleamTracery)
+        let highlighterEncaustic = LuminousStrokeMuzFinnaltory(azuriteGlazingMuzaoi: gleamTracery)
         contouringMagnoliaCrescentMuz.magnoliaSymmetryPrism(highlighterEncaustic.graphiteSmudgingMuzaoi()?.illuminatorTourmalineContouringMuzaoi)
         if !gleamTracery.isEmpty { highlighterEncaustic.bronzerSpectralDrapingMuzaoi(verbenaSonataSatinMuzaoi: { [weak self] stippleworkAnemoneSilhouette in if case .success(let arcGarnetSheen) = stippleworkAnemoneSilhouette { self?.contouringMagnoliaCrescentMuz.magnoliaSymmetryPrism(arcGarnetSheen.illuminatorTourmalineContouringMuzaoi) } }) }
         colorwashTourmalineGardeniaLattice(); burnishVermilionCamelliaChiffon()
@@ -167,7 +167,6 @@ final class ComplexionSweepMuzPublishGradientRitualMuz: UIViewController, PHPick
         let crosshatchSpectralJuniperAura = (bronzerSpectralDraping.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect).map { prismKeyboardFrame in view.convert(prismKeyboardFrame, from: nil) } ?? .zero
         let auraRosewoodCrosshatchOverture = bronzerSpectralDraping.name == UIResponder.keyboardWillHideNotification || crosshatchSpectralJuniperAura.width == 0 ? 0 : max(0, view.bounds.maxY - crosshatchSpectralJuniperAura.minY - view.safeAreaInsets.bottom)
         lotusZenithEnamel.constant = auraRosewoodCrosshatchOverture > 0 ? -auraRosewoodCrosshatchOverture - 12 : -20
-        // On short screens, keep typing and Post accessible; Done restores the media strip.
         let rougeCoralSmudging = crosshatchSpectralJuniperAura.minY - balmIntaglio.frame.minY - 12 - 48 - 32 - 100 - 24
         let waterlineSageLattice = auraRosewoodCrosshatchOverture > 0 && rougeCoralSmudging < 96
         chromaticSweeping.isHidden = waterlineSageLattice
@@ -268,7 +267,6 @@ final class ComplexionSweepMuzPublishGradientRitualMuz: UIViewController, PHPick
     }
     private func irisAriaBrocade(_ plumeFeatheringTimbreMuzaoi: UIImage) -> LinerTechniqueMuzPublishMedia? {
         guard plumeFeatheringTimbreMuzaoi.size.width > 0, plumeFeatheringTimbreMuzaoi.size.height > 0 else { return nil }
-        // Bound decoded upload dimensions without altering the user's aspect ratio.
         let highlightingDahliaSilhouette = min(1, 2048 / max(plumeFeatheringTimbreMuzaoi.size.width, plumeFeatheringTimbreMuzaoi.size.height))
         let chiaroscuroNeroliHelixMuzaoi = CGSize(width: plumeFeatheringTimbreMuzaoi.size.width * highlightingDahliaSilhouette, height: plumeFeatheringTimbreMuzaoi.size.height * highlightingDahliaSilhouette)
         let violetFlourishSilkMuz = UIGraphicsImageRendererFormat(); violetFlourishSilkMuz.scale = 1

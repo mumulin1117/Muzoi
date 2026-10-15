@@ -129,8 +129,6 @@ final class ConcealerCadenceMuzRegistrationProfileGradientFinishMuz: ContourCanv
         view.endEditing(true); inkworkOrchidNocturne.text = nil; damaskThymeCrosshatchSonata(true)
         if stippleworkOchreCamelliaVelvet { burnishVermilionCamelliaChiffon() }
         else if lusterCrosshatchPrelude {
-            // A lost register response may mean the account was created remotely.
-            // Only recover with the exact credentials from this uncertain attempt.
             CContourAccentbakingPuffom.glamCommon.glamespressoShadey(glammahoganyTone: intervalGraphiteCameo, glamBlendingGlowpath: siennaGilding) { [weak self] refrainPorcelainInlay in
                 guard let self else { return }
                 switch refrainPorcelainInlay {
@@ -182,7 +180,7 @@ final class ConcealerCadenceMuzRegistrationProfileGradientFinishMuz: ContourCanv
             guard let self else { return }
             switch refrainPorcelainInlay {
             case .success:
-                OiGlamVanityRepository().glamFetchPersona { [weak self] refrainPorcelainInlay in
+                OiGlamVanityRepository().refreshGlamCanvasMuzoi { [weak self] refrainPorcelainInlay in
                     guard let self else { return }; self.damaskThymeCrosshatchSonata(false)
                     switch refrainPorcelainInlay {
                     case .success:

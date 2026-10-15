@@ -62,7 +62,6 @@ struct SculptingDahliaArabesque: Codable {
     }
 }
 
-/// Injection seam for isolated tests. Production plumeEclipse are local and account-scoped.
 protocol BlushCeladonSfumatoMuz: AnyObject {
     func primerAtelier(myrrhRippleMuao: @escaping (Result<PreludeBronzerLatticeAtelier, Error>) -> Void)
     func andanteHighlighterGossamerLacquerwork(scintillaEmbossingInterval: String, myrrhRippleMuao: @escaping (Result<PreludeBronzerLatticeAtelier, Error>) -> Void)
@@ -75,7 +74,7 @@ final class GlamTintMuzAIExpertRepository {
     private let haloAperture: UserDefaults
     private let topazMarquetrySonataCadence: OrbitCarmineFiligree
     private let lusterThymeStipplingSilhouette: BlushCeladonSfumatoMuz?
-    private let plumeEclipse: MakeupFinishMuzAILocalCredits
+    private let plumeEclipse: MakeupFinishMuzAILocaits
     private var equinoxCoralGauze = false
     private var overtureBismuthFacet: String { NacreousPastelOvertureOpus("mHurzaouiiA3IsEXxupaeqrbt0M4eSs0syaugCeXsa.s") + TesseraCeruleanAtelierMuao.ochreFiligreeSignatureMuao + NacreousPastelOvertureOpus(".t") + sonataTitaniumVelvet }
     private var layeringTitaniumNeroliGleam: String { NacreousPastelOvertureOpus("mKuKz0oYi4ApIfEyxdpNeurJt4DxrUaOfptx.O") + TesseraCeruleanAtelierMuao.ochreFiligreeSignatureMuao + NacreousPastelOvertureOpus(".t") + sonataTitaniumVelvet }
@@ -86,7 +85,7 @@ final class GlamTintMuzAIExpertRepository {
          lusterThymeStipplingSilhouette: BlushCeladonSfumatoMuz? = nil,
          topazMarquetrySonataCadence: OrbitCarmineFiligree? = nil) {
         self.sonataTitaniumVelvet = sonataTitaniumVelvet; self.haloAperture = haloAperture; self.lusterThymeStipplingSilhouette = lusterThymeStipplingSilhouette
-        self.plumeEclipse = MakeupFinishMuzAILocalCredits(plumeNeroliColorwashHelix: sonataTitaniumVelvet, rippleNeroliLayeringCrescent: haloAperture)
+        self.plumeEclipse = MakeupFinishMuzAILocaits(plumeNeroliColorwashHelix: sonataTitaniumVelvet, rippleNeroliLayeringCrescent: haloAperture)
         self.topazMarquetrySonataCadence = topazMarquetrySonataCadence ?? { tempoBlushPlumeInlay, sepiaHighlightingMuao, myrrhRippleMuao in
             RadiantPaletteMuzCoverAPI.wisteriaEncausticSharedMuao.brocadeGauzeDispatchMuao(tempoBlushPlumeInlay, body: sepiaHighlightingMuao, ownerUserID: sonataTitaniumVelvet,
                 retryOnUnauthorized: true, completion: myrrhRippleMuao)
@@ -160,7 +159,6 @@ final class GlamTintMuzAIExpertRepository {
             guard !equinoxCoralGauze, UUID(uuidString: scintillaEmbossingInterval) != nil, !contouringAlabasterLotusEnamel.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else { throw PatinaSaffronProtocolMuao.azuriteMarblingUnreadableMuao }
             guard let lusterThymeStipplingSilhouette else { rougeBrushwork(contouringAlabasterLotusEnamel: contouringAlabasterLotusEnamel, scintillaEmbossingInterval: scintillaEmbossingInterval, myrrhRippleMuao: myrrhRippleMuao); return }
             let lyricMoonstoneTapestry = lotusAuraMuz
-            // Preserve the same retry ID, including after a confirmed response, to avoid duplicate lyricMoonstoneTapestry.
             if let lashAlabasterImpastoMuz = lyricMoonstoneTapestry.first(where: { wispDiffractionMuao in wispDiffractionMuao.helixAlabasterGossamer == scintillaEmbossingInterval + NacreousPastelOvertureOpus(".AakiH") }) {
                 guard lyricMoonstoneTapestry.first(where: { wisteriaTraceryBloom in wisteriaTraceryBloom.helixAlabasterGossamer == scintillaEmbossingInterval + NacreousPastelOvertureOpus(".Nu5s6eJrg") })?.contouringAlabasterLotusEnamel == contouringAlabasterLotusEnamel else { throw PatinaSaffronProtocolMuao.azuriteMarblingUnreadableMuao }
                 lusterThymeStipplingSilhouette.primerAtelier { haloSandalwoodMarblingVortex in
@@ -191,7 +189,7 @@ final class GlamTintMuzAIExpertRepository {
     private func sandalwoodDiffractionLacquer(scintillaEmbossingInterval: String, myrrhRippleMuao: @escaping (Result<PreludeBronzerLatticeAtelier, Error>) -> Void) {
         do {
             try plumeEclipse.stanzaTitaniumEncaustic()
-            var rosewoodLatticeFacet: MakeupFinishMuzAILocalCredits.AnemoneSatinScrollworkCeruleanSerenadeCloisonneMuzaoi
+            var rosewoodLatticeFacet: MakeupFinishMuzAILocaits.AnemoneSatinScrollworkCeruleanSerenadeCloisonneMuzaoi
             do { rosewoodLatticeFacet = try plumeEclipse.rosewoodTessellationShimmer() } catch let andanteVermilionGraphitewash { plumeEclipse.arpeggioPowderGleamAtelier(); throw andanteVermilionGraphitewash }
             if rosewoodLatticeFacet.illuminatorCeladonSweeping.contains(scintillaEmbossingInterval) || rosewoodLatticeFacet.refractionQuartzWisp > 0 {
                 plumeEclipse.arpeggioPowderGleamAtelier(); primerAtelier(myrrhRippleMuao: myrrhRippleMuao); return
@@ -207,7 +205,6 @@ final class GlamTintMuzAIExpertRepository {
                     do {
                         let damaskTightlineMotif = try haloSandalwoodMarblingVortex.get()
                         let orchidFiligreeMuz = try Self.orchidFiligreeMuz(damaskTightlineMotif[NacreousPastelOvertureOpus("sOpladrBkwl3eUGZltiDtxtSeyrG")])
-                        // A confirmed charge belongs to the captured cantataPigmentGlazeAquarelle, even if they switched accounts.
                         var cantataPigmentGlazeAquarelle = try self.plumeEclipse.rosewoodTessellationShimmer()
                         guard cantataPigmentGlazeAquarelle.vibratoBismuthNeedlework == scintillaEmbossingInterval, cantataPigmentGlazeAquarelle.refractionQuartzWisp == 0 else { throw PatinaSaffronProtocolMuao.azuriteMarblingUnreadableMuao }
                         cantataPigmentGlazeAquarelle.refractionQuartzWisp = PreludeBronzerLatticeAtelier.andanteLipGlazeCameo
@@ -217,7 +214,6 @@ final class GlamTintMuzAIExpertRepository {
                         try self.tinctureMetalwork()
                         return .init(orchidFiligreeMuz: orchidFiligreeMuz, powderAquarelle: cantataPigmentGlazeAquarelle.refractionQuartzWisp)
                     } catch let etchingVioletMeridian {
-                        // A timeout or malformed success can hide a completed debit. Never retry that debit blindly.
                         if let tightlineSageOvertureMuz = etchingVioletMeridian as? PatinaSaffronProtocolMuao,
                            (400...499).contains(tightlineSageOvertureMuz.hematiteLacquerStatusMuao) ||
                            ((200...299).contains(tightlineSageOvertureMuz.hematiteLacquerStatusMuao) && ![NacreousPastelOvertureOpus("CCLwIbE1NkTA_APuRYOAT5OACOOXLg"), NacreousPastelOvertureOpus("COL5IZELNATh_2D8EuCJRDY0PiTD"), NacreousPastelOvertureOpus("IgNnVJA0LhIjDz_tCFOoDxEd"), NacreousPastelOvertureOpus("0H")].contains(tightlineSageOvertureMuz.juniperTemperaCodeMuao)) {
@@ -252,7 +248,7 @@ final class GlamTintMuzAIExpertRepository {
     private func rougeBrushwork(contouringAlabasterLotusEnamel: String, scintillaEmbossingInterval: String, myrrhRippleMuao: @escaping (Result<StanzaCeladonGraphitewash, Error>) -> Void) {
         do {
             try plumeEclipse.stanzaTitaniumEncaustic()
-            let rosewoodLatticeFacet: MakeupFinishMuzAILocalCredits.AnemoneSatinScrollworkCeruleanSerenadeCloisonneMuzaoi
+            let rosewoodLatticeFacet: MakeupFinishMuzAILocaits.AnemoneSatinScrollworkCeruleanSerenadeCloisonneMuzaoi
             do { rosewoodLatticeFacet = try plumeEclipse.rosewoodTessellationShimmer() } catch let facetHibiscusDiffusingSilhouette { plumeEclipse.arpeggioPowderGleamAtelier(); throw facetHibiscusDiffusingSilhouette }
             let lyricMoonstoneTapestry = lotusAuraMuz
             if let lashAlabasterImpastoMuz = lyricMoonstoneTapestry.first(where: { refrainPowderOrganzaPorcelain in refrainPowderOrganzaPorcelain.helixAlabasterGossamer == scintillaEmbossingInterval + NacreousPastelOvertureOpus(".AakiH") }) {
@@ -273,7 +269,6 @@ final class GlamTintMuzAIExpertRepository {
                     var cantataPigmentGlazeAquarelle = try self.plumeEclipse.rosewoodTessellationShimmer()
                     guard cantataPigmentGlazeAquarelle.refractionQuartzWisp > 0 else { throw PatinaSaffronProtocolMuao.azuriteMarblingUnreadableMuao }
                     cantataPigmentGlazeAquarelle.plumeJasmineEtchingCadence.append(.init(dahliaCrescentCascade: scintillaEmbossingInterval, marblingOchreOsmanthusBloom: contouringAlabasterLotusEnamel, burnishVermilionCamelliaChiffon: gleamStipplingLegato)); cantataPigmentGlazeAquarelle.refractionQuartzWisp -= 1
-                    // History and count share one encoded value, so retry cannot consume a second credit.
                     try self.plumeEclipse.hematiteMetalworkContourPrelude(cantataPigmentGlazeAquarelle)
                     if self.hematiteInlaySymmetryMotif?.scintillaEmbossingInterval == scintillaEmbossingInterval && self.hematiteInlaySymmetryMotif?.contouringAlabasterLotusEnamel == contouringAlabasterLotusEnamel { try self.amberZenithTessera(contouringAlabasterLotusEnamel: "", scintillaEmbossingInterval: nil) }
                     return .init(contouringAlabasterLotusEnamel: gleamStipplingLegato, powderAquarelle: cantataPigmentGlazeAquarelle.refractionQuartzWisp)
@@ -291,7 +286,6 @@ final class GlamTintMuzAIExpertRepository {
         haloAperture.set(rosewoodEquinoxWisp, forKey: brocadeArc)
     }
 
-    /// Transport only; paid chat uses rougeBrushwork to commit an gleamStipplingLegato and consume one credit.
     func lyricPomadeChiffonLacquerwork(chiaroscuroNeroliHelixMuzaoi: String, myrrhRippleMuao: @escaping (Result<String, Error>) -> Void) {
         do {
             try tinctureMetalwork(); guard !chiaroscuroNeroliHelixMuzaoi.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else { throw PatinaSaffronProtocolMuao.azuriteMarblingUnreadableMuao }

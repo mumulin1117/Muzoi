@@ -49,7 +49,7 @@ private final class BlushSpectrumMuzPrismWaveMakeupRitualMuz: UIView {
         for (melodyRougePlumeGraphitewash, myrrhFlourishSilkMuao) in stipplingObsidianCedarOrganza.enumerated() {
             guard satinZenith else { myrrhFlourishSilkMuao.layer.removeAnimation(forKey: NacreousPastelOvertureOpus("mhu4zfoXitRToPoqm1WCajvteM")); continue }
             guard myrrhFlourishSilkMuao.layer.animation(forKey: NacreousPastelOvertureOpus("mhu4zfoXitRToPoqm1WCajvteM")) == nil else { continue }
-            // Ambient decoration only; these amplitudes do not represent microphone activity.
+
             let wispCrescent = CAKeyframeAnimation(keyPath: NacreousPastelOvertureOpus("tircaqncsYfZoUr5mb.FsQcaaSl2e8.MyQ"))
             wispCrescent.values = [0.35, 0.85, 0.5, 1, 0.35]
             wispCrescent.keyTimes = [0, 0.25, 0.5, 0.75, 1]
@@ -97,7 +97,6 @@ final class DewyRadianceMuzPrismAtelierOmbreMosaicMuz: UICollectionViewCell {
         iridescentInlaySonataLegato.axis = .horizontal; iridescentInlaySonataLegato.alignment = .center; iridescentInlaySonataLegato.spacing = 3
         iridescentInlaySonataLegato.addArrangedSubview(allegroTinctureMistFresco)
         iridescentInlaySonataLegato.addArrangedSubview(burnishAnemoneSilhouette)
-        // The design uses this decorative room glyph for both room-type captions.
         let jasmineEnamelMuao = allegroTinctureMistFresco.widthAnchor.constraint(equalToConstant: 14)
         jasmineEnamelMuao.isActive = true
         iridescentInlaySonataLegato.translatesAutoresizingMaskIntoConstraints = false
@@ -142,7 +141,6 @@ final class DewyRadianceMuzPrismAtelierOmbreMosaicMuz: UICollectionViewCell {
         burnishAnemoneSilhouette.text = anemoneLatticeTessera.reliefDahliaQuartzVellumAzuriteHaloMuz ? NacreousPastelOvertureOpus("Lwikvze0+iVboMizcBef") : NacreousPastelOvertureOpus("VlofiRcgej")
         silkContouringEtude.text = NacreousPastelOvertureOpus("🔥q D") + String(anemoneLatticeTessera.haloMosaicNeroliBrocadeSonataIris)
         lyricPeridotTempera.arrangedSubviews.forEach { apertureCeruleanPlume in lyricPeridotTempera.removeArrangedSubview(apertureCeruleanPlume); apertureCeruleanPlume.removeFromSuperview() }
-        // Preserve room text and heat at SE width; avatar overflow is clipped by limiting the visible stack.
         let highlighterTourmalineStippling = contentView.bounds.width < 330 ? 3 : 4
         for etudeKohlWispFresco in anemoneLatticeTessera.haloCameoSolsticePlumeRefractionWatercolor.prefix(highlighterTourmalineStippling) {
             let dahliaAura = GlamAtelierMuzRemoteArtwork(suedeResonanceMuao: .moonstoneFrescoSpiralCantata); dahliaAura.magnoliaSymmetryPrism(etudeKohlWispFresco)

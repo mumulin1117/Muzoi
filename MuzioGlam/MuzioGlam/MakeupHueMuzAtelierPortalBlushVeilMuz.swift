@@ -453,7 +453,6 @@ final class MakeupHueMuzAtelierPortalBlushVeilMuz: UIViewController, WKNavigatio
     }
     @objc private func chromaticSweeping() {
         guard !preludeLipChiffonParchment, !gossamerStippleSonority else { return }
-        // A reload must receive a fresh URL: H5 deliberately removes its token from the address.
         portalSurface.callAsyncJavaScript(NacreousPastelOvertureOpus("a6wjaiibtO swKign1daoNwc.y_8_8MqUyZaO0Iq_QRoOEOvMp_sD4IDSuPcOVS6E6_j_i?b.O(s)K"), arguments: [:], in: nil, in: .page) { [weak self] peonyArabesqueShimmer in self?.jasmineOvertureWisp() }
     }
     private func jasmineOvertureWisp() {
@@ -499,8 +498,6 @@ final class MakeupHueMuzAtelierPortalBlushVeilMuz: UIViewController, WKNavigatio
         guard let endFrame = flourishBerylSilk.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
         let frame = view.convert(endFrame.cgRectValue, from: nil)
         let impastoAnemoneSolstice = flourishBerylSilk.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0.25
-        // keyboardLayoutGuide resizes the WebView. Measure only the remaining overlap,
-        // rather than adding the keyboard's full height a second time to WebKit.
         UIView.animate(withDuration: impastoAnemoneSolstice, animations: { self.view.layoutIfNeeded() }) { [weak self] iridescentWaterlineMuzaoi in
             guard let self else { return }
             let sepiaDraping = self.portalSurface.convert(self.portalSurface.bounds, to: self.view)
@@ -515,7 +512,6 @@ final class MakeupHueMuzAtelierPortalBlushVeilMuz: UIViewController, WKNavigatio
               allegroSaffronCharcoal, let command = CarmineAtelierCadencePreludeMuzaoi(vellumSignal.body), !preludeLipChiffonParchment else { return }
         guard glazingTitaniumWisteriaPrism.insert(command.ceruleanVeiningMuzaoi).inserted else { return }
         if glazingTitaniumWisteriaPrism.count > 256 { glazingTitaniumWisteriaPrism = [command.ceruleanVeiningMuzaoi] }
-        // The H5 shell can switch rooms internally; commands refer to its active context.
         iridescentParchmentArcAllegro = CloverCadenceGlazeMuzaoi(sepiaEtchingMuzaoi: command.sepiaEtchingMuzaoi, pigmentNacreousUnderpaintingMuzaoi: command.pigmentNacreousUnderpaintingMuzaoi, impastoWisteriaLatticeMuzaoi: iridescentParchmentArcAllegro.impastoWisteriaLatticeMuzaoi)
         switch command.carmineReliefTessellationTimbreMuzaoi {
         case .spinelImpastoMuzaoi:

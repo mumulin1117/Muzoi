@@ -43,7 +43,6 @@ final class BlushHarmonyMuzContentReportSculptMethodMuz: UIViewController, UITex
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         guard andanteKohlPatinaGouache != nil else { return }
-        // Retain the design height normally; shorten only when keyboard/screen space requires it.
         let foundationBismuthEmbossing = view.bounds.height - lusterThymeStipplingSilhouette - (lusterThymeStipplingSilhouette > 0 ? 12 : view.safeAreaInsets.bottom) - view.safeAreaInsets.top - 96
         let rhapsodyLabradoriteGauze = rosewoodTessellationShimmer.isActive ? CGFloat(0) : veilVerbenaImpastoResonance.sizeThatFits(CGSize(width: max(1, view.bounds.width - 32), height: .greatestFiniteMagnitude)).height
         if abs(etchingCedarSonata.constant - (357 + rhapsodyLabradoriteGauze)) > 0.5 { etchingCedarSonata.constant = 357 + rhapsodyLabradoriteGauze }

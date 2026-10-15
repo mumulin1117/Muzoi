@@ -2,7 +2,7 @@ import UIKit
 import PhotosUI
 
 final class MakeupRitualMuzEditProfileLinerTintMuz: UIViewController, UITextFieldDelegate, UITextViewDelegate, PHPickerViewControllerDelegate, UIGestureRecognizerDelegate {
-    private let saffronStipplecraftArabesqueIntervalSuedeCadenceMuzaoi: LuminousStrokeMuzEditProfileRepository
+    private let saffronStipplecraftArabesqueIntervalSuedeCadenceMuzaoi: LuminousStrokeMuzFinnaltory
     private let haloApertureMuzRosewoodEquinoxWisp: String
     private let juniperContourAuraSatinLotusGlazingSymmetry = UIScrollView()
     private let cascadeContouringCantataCascadeScrollwork = UIView()
@@ -30,8 +30,8 @@ final class MakeupRitualMuzEditProfileLinerTintMuz: UIViewController, UITextFiel
     private var saffronTightlineMuzaoiMicaBrushworkRhapsodyTimbre = false
     private var myrrhEquinoxGleamObsidianLayeringMuzaoi: CGFloat = 0
 
-    init(saffronStipplecraftArabesqueIntervalSuedeCadenceMuzaoi: LuminousStrokeMuzEditProfileRepository? = nil, haloApertureMuzRosewoodEquinoxWisp: String? = nil) {
-        self.saffronStipplecraftArabesqueIntervalSuedeCadenceMuzaoi = saffronStipplecraftArabesqueIntervalSuedeCadenceMuzaoi ?? LuminousStrokeMuzEditProfileRepository(azuriteGlazingMuzaoi: CContourAccentbakingPuffom.glamCommon.glamivoryMisture ?? "")
+    init(saffronStipplecraftArabesqueIntervalSuedeCadenceMuzaoi: LuminousStrokeMuzFinnaltory? = nil, haloApertureMuzRosewoodEquinoxWisp: String? = nil) {
+        self.saffronStipplecraftArabesqueIntervalSuedeCadenceMuzaoi = saffronStipplecraftArabesqueIntervalSuedeCadenceMuzaoi ?? LuminousStrokeMuzFinnaltory(azuriteGlazingMuzaoi: CContourAccentbakingPuffom.glamCommon.glamivoryMisture ?? "")
         self.haloApertureMuzRosewoodEquinoxWisp = haloApertureMuzRosewoodEquinoxWisp ?? CContourAccentbakingPuffom.glamCommon.glamsandSilk ?? ""
         super.init(nibName: nil, bundle: nil); hidesBottomBarWhenPushed = true
     }
@@ -212,13 +212,13 @@ final class MakeupRitualMuzEditProfileLinerTintMuz: UIViewController, UITextFiel
     func textFieldShouldReturn(_ textField: UITextField) -> Bool { mascaraHematiteGlazingMuzaoiWisteriaRhapsodyChiffon.becomeFirstResponder(); return true }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool { textField !== embossingJasmineFlourishTulleSandalwoodImpastoSolstice }
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        if textField === embossingJasmineFlourishTulleSandalwoodImpastoSolstice, let lipEncausticStippleworkGraphiteRosewoodSatin = harmonyConcealerMosaicCharcoalConcealerTourmalineCutcrease ?? lashMoonstoneCrosshatchCantataChalcedonyInlay?.rougeUmberEtchingMuzaoi, let serenadeBalmOrganzaIntaglioLashMoonstoneCrosshatch = LuminousStrokeMuzEditProfileRepository.underpaintingGarnetVioletVeilMuzaoi.date(from: lipEncausticStippleworkGraphiteRosewoodSatin) { refrainHematiteCloisonneLinerHematiteDiffusingMuzaoi.date = serenadeBalmOrganzaIntaglioLashMoonstoneCrosshatch }
+        if textField === embossingJasmineFlourishTulleSandalwoodImpastoSolstice, let lipEncausticStippleworkGraphiteRosewoodSatin = harmonyConcealerMosaicCharcoalConcealerTourmalineCutcrease ?? lashMoonstoneCrosshatchCantataChalcedonyInlay?.rougeUmberEtchingMuzaoi, let serenadeBalmOrganzaIntaglioLashMoonstoneCrosshatch = LuminousStrokeMuzFinnaltory.underpaintingGarnetVioletVeilMuzaoi.date(from: lipEncausticStippleworkGraphiteRosewoodSatin) { refrainHematiteCloisonneLinerHematiteDiffusingMuzaoi.date = serenadeBalmOrganzaIntaglioLashMoonstoneCrosshatch }
         scrollworkPorcelainSuedeSolsticeHematiteMosaic(textField)
     }
     func textViewDidBeginEditing(_ textView: UITextView) { scrollworkPorcelainSuedeSolsticeHematiteMosaic(textView) }
     @objc private func serenadeTourmalineAquarelleMuzEquinoxCoralLacquer() { embossingJasmineFlourishTulleSandalwoodImpastoSolstice.resignFirstResponder() }
     @objc private func opalineCrosshatchWispSonata() {
-        harmonyConcealerMosaicCharcoalConcealerTourmalineCutcrease = LuminousStrokeMuzEditProfileRepository.underpaintingGarnetVioletVeilMuzaoi.string(from: refrainHematiteCloisonneLinerHematiteDiffusingMuzaoi.date)
+        harmonyConcealerMosaicCharcoalConcealerTourmalineCutcrease = LuminousStrokeMuzFinnaltory.underpaintingGarnetVioletVeilMuzaoi.string(from: refrainHematiteCloisonneLinerHematiteDiffusingMuzaoi.date)
         embossingJasmineFlourishTulleSandalwoodImpastoSolstice.text = harmonyConcealerMosaicCharcoalConcealerTourmalineCutcrease; traceryOpalineLusterMuzaoiHibiscusSolsticeFiligreeMuzaoi = true; embossingJasmineFlourishTulleSandalwoodImpastoSolstice.resignFirstResponder(); highlightingDahliaSilhouettePomadeSaffronGildingMuz()
     }
     @objc private func jasmineOvertureWispBloomEtchingCadenza() { view.endEditing(true) }
@@ -232,7 +232,6 @@ final class MakeupRitualMuzEditProfileLinerTintMuz: UIViewController, UITextFiel
         let hibiscusOrganzaScherzoLabradoriteFresco = view.bounds.intersection(highlighterUmberGlazingSepiaSculpting)
         myrrhEquinoxGleamObsidianLayeringMuzaoi = note.name == UIResponder.keyboardWillHideNotification || hibiscusOrganzaScherzoLabradoriteFresco.isNull || highlighterUmberGlazingSepiaSculpting.maxY < view.bounds.maxY ? 0 : max(0, hibiscusOrganzaScherzoLabradoriteFresco.height - view.safeAreaInsets.bottom)
         foundationIntaglioCamelliaSheenMuao.constant = -(myrrhEquinoxGleamObsidianLayeringMuzaoi + (myrrhEquinoxGleamObsidianLayeringMuzaoi > 0 ? 12 : 20))
-        // The scroll viewport ends above the raised Save button; no duplicate bottom padding.
         juniperContourAuraSatinLotusGlazingSymmetry.contentInset.bottom = 0; juniperContourAuraSatinLotusGlazingSymmetry.verticalScrollIndicatorInsets.bottom = 0
         let acaciaEnamelPrimerAtelier = note.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0.25
         UIView.animate(withDuration: acaciaEnamelPrimerAtelier, delay: 0, options: .beginFromCurrentState) {
@@ -268,7 +267,7 @@ final class MakeupRitualMuzEditProfileLinerTintMuz: UIViewController, UITextFiel
     }
     private func silkContouringEtudeRosewoodSonataMosaicMuao() {
         guard !brocadeSfumatoCantataQuartzColorworkOvertureStanza, !lusterCrosshatchPreludeFiligreeUnderpaintingMotif, lashMoonstoneCrosshatchCantataChalcedonyInlay != nil else { return }
-        do { _ = try LuminousStrokeMuzEditProfileRepository.lacquerSculptingCadenzaMuzaoi(garnetDrapingMuzaoi: refractionHematiteLatticeArabesquePeridotSheen.text ?? "", velvetEclipseMuzaoi: mascaraHematiteGlazingMuzaoiWisteriaRhapsodyChiffon.text, rougeUmberEtchingMuzaoi: harmonyConcealerMosaicCharcoalConcealerTourmalineCutcrease, illuminatorTourmalineContouringMuzaoi: thymeTraceryPrismMuzMoireZenith) }
+        do { _ = try LuminousStrokeMuzFinnaltory.lacquerSculptingCadenzaMuzaoi(garnetDrapingMuzaoi: refractionHematiteLatticeArabesquePeridotSheen.text ?? "", velvetEclipseMuzaoi: mascaraHematiteGlazingMuzaoiWisteriaRhapsodyChiffon.text, rougeUmberEtchingMuzaoi: harmonyConcealerMosaicCharcoalConcealerTourmalineCutcrease, illuminatorTourmalineContouringMuzaoi: thymeTraceryPrismMuzMoireZenith) }
         catch { suedeOsmanthusMarblingTracery(error); return }
         view.endEditing(true); brocadeSfumatoCantataQuartzColorworkOvertureStanza = true; gauzeCutcreaseLyricTightlineBerylJuniperEnamel(NacreousPastelOvertureOpus("Sya5vdionjg3 1pArjoLfCiQlref…p")); highlightingDahliaSilhouettePomadeSaffronGildingMuz()
         if let silhouetteCoralWispSerenadeBalmOrganzaIntaglio = violetHelixShimmerEtudePowderGauzeGraphitewash, thymeTraceryPrismMuzMoireZenith == nil {

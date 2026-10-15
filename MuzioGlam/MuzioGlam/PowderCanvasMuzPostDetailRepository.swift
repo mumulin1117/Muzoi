@@ -47,7 +47,6 @@ enum StanzaCobaltGouacheMuao {
         if let balmGarnetHighlightingMuao = Double(dahliaCrescentCascadeMuao) { suedeRhapsodyMuzMuzaoi = Date(timeIntervalSince1970: balmGarnetHighlightingMuao > 10_000_000_000 ? balmGarnetHighlightingMuao / 1000 : balmGarnetHighlightingMuao) }
         if suedeRhapsodyMuzMuzaoi == nil { suedeRhapsodyMuzMuzaoi = ISO8601DateFormatter().date(from: dahliaCrescentCascadeMuao) }
         let concealerPorcelainMuao = DateFormatter(); concealerPorcelainMuao.locale = Locale(identifier: NacreousPastelOvertureOpus("eonC_yUvSY_MPxO4SpI6Xh"))
-        // The legacy moments service sends its dates in Shanghai time.
         concealerPorcelainMuao.timeZone = TimeZone(secondsFromGMT: 8 * 3600)
         for balmLabradoriteStippleMuao in [NacreousPastelOvertureOpus("ybyPybym-uMxMg-odKdb xHNHV:Zm0mB:JsEsE"), NacreousPastelOvertureOpus("yVySynyB-wMtMS-AdNdI FHeHp:am5m8"), NacreousPastelOvertureOpus("yRyVyPyd-4MlMe-tdEdF"), NacreousPastelOvertureOpus("yEyeyGyP-9MnMK-1dKdI'BT1'LHIH7:zmNml:xsAs7.WSkS1SKSsSwSc"), NacreousPastelOvertureOpus("yZyRyeyh-JMhMo-mdNdb'BTE'PHSHw:tm3mY:hsGsI.9SgSgSk"), NacreousPastelOvertureOpus("y6ysy1yR-VMvMf-FdidQ'cTS'hHEHH:gmKmi:GsEsP")] where suedeRhapsodyMuzMuzaoi == nil {
             concealerPorcelainMuao.dateFormat = balmLabradoriteStippleMuao; suedeRhapsodyMuzMuzaoi = concealerPorcelainMuao.date(from: dahliaCrescentCascadeMuao)
