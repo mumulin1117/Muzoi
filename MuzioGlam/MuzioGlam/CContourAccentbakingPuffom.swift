@@ -26,11 +26,13 @@ final class CContourAccentbakingPuffom {
     func glamespressoShadey(
         glammahoganyTone: String,
         glamBlendingGlowpath: String,
+        shouldAccept: @escaping () -> Bool = { true },
         glamebonyDepth: @escaping (Result<DewyHaloMuzEntryPalette, Error>) -> Void
     ) {
         let dewyHalo = glammahoganyTone.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         let dewyRadiance: [String: Any] = [NacreousPastelOvertureOpus("wNahrSm6tKhoCtojoZlcnle0sbsO"): dewyHalo, NacreousPastelOvertureOpus("syuRpIpfoDrftRiwv1ebMMoxdWearQna"): glamBlendingGlowpath, NacreousPastelOvertureOpus("smcHuBlpprtQTNedxQtkuprLeS"): TesseraCeruleanAtelierMuao.graphitewashLotusImprintMuao]
         RadiantPaletteMuzCoverAPI.wisteriaEncausticSharedMuao.brocadeGauzeDispatchMuao(NacreousPastelOvertureOpus("/6oApZid/JfKcCbW6Afkb0bnaZ/so9rUndaJmReDnKtl/etIrtajnusGf2o5rnmda6tAiZodnJ-KrCuWnAwka0yn"), body: dewyRadiance, authenticated: false) { dewyMosaic in
+            guard shouldAccept() else { return }
             switch dewyMosaic {
             case .success(let data): self.completeLogin(data, email: dewyHalo, completion: glamebonyDepth)
             case .failure(let error):
@@ -39,9 +41,10 @@ final class CContourAccentbakingPuffom {
         }
     }
 
-    func glamRegister(email: String, password: String, completion: @escaping (Result<DewyHaloMuzEntryPalette, Error>) -> Void) {
+    func glamRegister(email: String, password: String, shouldAccept: @escaping () -> Bool = { true }, completion: @escaping (Result<DewyHaloMuzEntryPalette, Error>) -> Void) {
         let normalized = email.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         RadiantPaletteMuzCoverAPI.wisteriaEncausticSharedMuao.brocadeGauzeDispatchMuao(NacreousPastelOvertureOpus("/goJp1ia/yfxc1bl6Qf7bCbiaU/cp0hfoTtjoE/IrLefsCpke5cItB-pshtaeKpjbgyJs1taeypx"), body: [NacreousPastelOvertureOpus("wNahrSm6tKhoCtojoZlcnle0sbsO"): normalized, NacreousPastelOvertureOpus("syuRpIpfoDrftRiwv1ebMMoxdWearQna"): password, NacreousPastelOvertureOpus("smcHuBlpprtQTNedxQtkuprLeS"): TesseraCeruleanAtelierMuao.graphitewashLotusImprintMuao], authenticated: false) { result in
+            guard shouldAccept() else { return }
             switch result {
             case .success(let data): self.completeLogin(data, email: normalized, completion: completion)
             case .failure(let error): completion(.failure(error))

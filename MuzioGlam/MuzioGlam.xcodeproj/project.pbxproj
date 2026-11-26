@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BDE96C102D00000200000001 /* MuzioGlam/MuzoiZZZZ/New_login_dist in Resources */ = {isa = PBXBuildFile; fileRef = BDE96C102D00000200000002 /* MuzioGlam/MuzoiZZZZ/New_login_dist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		BDE96C102D00000200000002 /* MuzioGlam/MuzoiZZZZ/New_login_dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MuzioGlam/MuzoiZZZZ/New_login_dist; sourceTree = "<group>"; };
 		F5824F8330245F8C00B6BCFD /* MuzioGlam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuzioGlam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -25,6 +30,9 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				F5824F9530245F8D00B6BCFD /* Exceptions for "MuzioGlam" folder in "MuzioGlam" target */,
+			);
+			explicitFolders = (
+				MuzoiZZZZ/New_login_dist,
 			);
 			path = MuzioGlam;
 			sourceTree = "<group>";
@@ -53,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				F5824F8530245F8C00B6BCFD /* MuzioGlam */,
+				BDE96C102D00000200000002 /* MuzioGlam/MuzoiZZZZ/New_login_dist */,
 				F5824F8430245F8C00B6BCFD /* Products */,
 				60F595150DF5E9601B4C604C /* Frameworks */,
 			);
@@ -132,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE96C102D00000200000001 /* MuzioGlam/MuzoiZZZZ/New_login_dist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,14 +165,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MuzioGlam/MuzioGlam.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 989CM2LH2W;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MuzioGlam/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Muzoi;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Capture your glam looks and creative makeup moments.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Verify your age with a live camera check, capture makeup looks, and join video chats.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Add voice to your makeup stories and beauty chats.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Choose photos to share your makeup artistry.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -174,10 +186,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.instantMakeupfeed.muzoi;
+				MARKETING_VERSION = 2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zww.app.cn.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = zww_dev;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -199,14 +212,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MuzioGlam/MuzioGlam.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 989CM2LH2W;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MuzioGlam/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Muzoi;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Capture your glam looks and creative makeup moments.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Verify your age with a live camera check, capture makeup looks, and join video chats.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Add voice to your makeup stories and beauty chats.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Choose photos to share your makeup artistry.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -218,10 +233,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.instantMakeupfeed.muzoi;
+				MARKETING_VERSION = 2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zww.app.cn.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = zww_dev;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

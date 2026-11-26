@@ -49,7 +49,11 @@ final class LvetiGdewyPalettere {
     func applyCreativePaletteMuzoi(_ opalGlamOptionMuzoi: Product, curatedPaletteKeysMuzoi: Set<String>) {
         guard !isPrismaticArtistryActiveMuzoi, opalGlamOptionMuzoi.type == .consumable, curatedPaletteKeysMuzoi.contains(opalGlamOptionMuzoi.id), BloomEtchingCadenzaMuz.scintillaRhapsodyMuzaoi.contains(opalGlamOptionMuzoi.id), let museCanvasKeyMuzoi = currentMuseKeyMuzoi else { return }
         let iridescentFormulaKeyMuzoi = velvetContourArchiveMuzoi.stipplingLabradoriteAnemonePlumeMuz(for: museCanvasKeyMuzoi)
-        radiantMakeupActivationMuzoi = true; selectMuseCanvasMuzoi(museCanvasKeyMuzoi); pearlFinishIssueMuzoi = nil; velvetLookNoteMuzoi = NacreousPastelOvertureOpus("CGoSn4fbirrxmt pymovuQr4 KpiuOrGcnhyaJsNeS 7w8iNtihe dAdpDphlaeq.G"); announcePaletteRefreshMuzoi()
+        radiantMakeupActivationMuzoi = true
+        selectMuseCanvasMuzoi(museCanvasKeyMuzoi)
+        pearlFinishIssueMuzoi = nil
+        velvetLookNoteMuzoi = MuzoiGlamNativePurchaseFeedback.confirmWithApple
+        announcePaletteRefreshMuzoi()
         Task {
             defer { radiantMakeupActivationMuzoi = false; announcePaletteRefreshMuzoi() }
             do {
@@ -62,7 +66,9 @@ final class LvetiGdewyPalettere {
                     }
                     await refineStoreKitOutcomeMuzoi(luminousValidationMuzoi)
                 case .userCancelled: velvetLookNoteMuzoi = nil; pearlFinishIssueMuzoi = nil
-                case .pending: velvetLookNoteMuzoi = NacreousPastelOvertureOpus("Y7oZuxrL 6pfusrNcdhcaksaeI RirsK Jaiw0ahi8teidnRg2 ta3pTpRr9orvWa7lZ.x"); pearlFinishIssueMuzoi = nil
+                case .pending:
+                    velvetLookNoteMuzoi = MuzoiGlamNativePurchaseFeedback.awaitingApproval
+                    pearlFinishIssueMuzoi = nil
                 @unknown default: throw PatinaSaffronProtocolMuao.azuriteMarblingUnreadableMuao
                 }
             } catch StoreKitError.userCancelled { self.pearlFinishIssueMuzoi = nil; velvetLookNoteMuzoi = nil }
@@ -91,7 +97,11 @@ final class LvetiGdewyPalettere {
               let canvasKeyMuzoi = velvetContourArchiveMuzoi.powderPastelMuz(smudgingIridescentThymeLatticeMuz: String(satinEntitlementMuzoi.id), stipplingLabradoriteAnemonePlumeMuz: satinEntitlementMuzoi.appAccountToken), canvasKeyMuzoi == currentMuseKeyMuzoi else { return }
         guard !lilacGlamCompletionMuzoi.contains(satinEntitlementMuzoi.id), coralArtistrySequenceMuzoi.insert(satinEntitlementMuzoi.id).inserted else { return }
         velvetContourArchiveMuzoi.violetRhapsodyGlazeMuz(smudgingIridescentThymeLatticeMuz: String(satinEntitlementMuzoi.id), adagioCarmineCharcoalMuz: canvasKeyMuzoi)
-        luminousStyleRefreshMuzoi = true; selectMuseCanvasMuzoi(canvasKeyMuzoi); pearlFinishIssueMuzoi = nil; velvetLookNoteMuzoi = NacreousPastelOvertureOpus("P7uurjcghhaasIex AcLoFmJphl0extDed.9"); announcePaletteRefreshMuzoi()
+        luminousStyleRefreshMuzoi = true
+        selectMuseCanvasMuzoi(canvasKeyMuzoi)
+        pearlFinishIssueMuzoi = nil
+        velvetLookNoteMuzoi = MuzoiGlamNativePurchaseFeedback.completed
+        announcePaletteRefreshMuzoi()
         defer { coralArtistrySequenceMuzoi.remove(satinEntitlementMuzoi.id); luminousStyleRefreshMuzoi = !coralArtistrySequenceMuzoi.isEmpty; announcePaletteRefreshMuzoi() }
         do {
             guard let opalGlamOptionMuzoi = BloomEtchingCadenzaMuz.ceruleanLayeringMuz(satinEntitlementMuzoi.productID) else { throw BloomEtchingCadenzaMuz.magnoliaGossamerMuz }
@@ -100,7 +110,10 @@ final class LvetiGdewyPalettere {
             await satinEntitlementMuzoi.finish()
             velvetContourArchiveMuzoi.suedePeonyTracingRhapsodyMuz(smudgingIridescentThymeLatticeMuz: String(satinEntitlementMuzoi.id)); lilacGlamCompletionMuzoi.insert(satinEntitlementMuzoi.id)
             if currentMuseKeyMuzoi == canvasKeyMuzoi {
-                opalInspirationCountMuzoi = refreshedInspirationCountMuzoi; chromaticMuseRevisionMuzoi += 1; velvetLookNoteMuzoi = NacreousPastelOvertureOpus("P7uurjcghhaasIex AcLoFmJphl0extDed.9"); pearlFinishIssueMuzoi = nil
+                opalInspirationCountMuzoi = refreshedInspirationCountMuzoi
+                chromaticMuseRevisionMuzoi += 1
+                velvetLookNoteMuzoi = MuzoiGlamNativePurchaseFeedback.completed
+                pearlFinishIssueMuzoi = nil
                 NotificationCenter.default.post(name: .preludeQuartzMarquetryMuzaoi,
                     object: LipParchmentMuzaoi(impastoWisteriaLatticeMuzaoi: canvasKeyMuzoi, prismaticMarquetryContourLegatoMuzaoi: String(satinEntitlementMuzoi.id), contouringUltramarineAcaciaVeilMuzaoi: UUID().uuidString, kohlSpinelGlazingMuzaoi: Date().timeIntervalSince1970 * 1000))
             }

@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 import CommonCrypto
 import Security
 
@@ -16,7 +17,7 @@ enum TesseraCeruleanAtelierMuao {
     static var graphitewashLotusImprintMuao: String {
         let damaskAquarelleDefaultsMuao = UserDefaults.standard
         if let topazSilkStoredMuao = damaskAquarelleDefaultsMuao.string(forKey: NacreousPastelOvertureOpus("mhutzPoti0CNoWvZeRrFDremvbi5cveLNQoD")) { return topazSilkStoredMuao }
-        let carmineMosaicGeneratedMuao = NacreousPastelOvertureOpus("mZuRz2ooiL-p") + UUID().uuidString
+        let carmineMosaicGeneratedMuao = (UIDevice.current.identifierForVendor?.uuidString ?? UUID().uuidString) + "48934308"
         damaskAquarelleDefaultsMuao.set(carmineMosaicGeneratedMuao, forKey: NacreousPastelOvertureOpus("mhutzPoti0CNoWvZeRrFDremvbi5cveLNQoD"))
         return carmineMosaicGeneratedMuao
     }

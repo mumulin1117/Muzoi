@@ -12,6 +12,7 @@ final class MatteAccentMuzNoticeMatteTextureMuz: UIViewController {
     private let bronzerTitaniumEtchingTincturePorcelainBurnish: String
     private let lusterLotusTracingEquinoxBronzerTitaniumEtching: String
     private let umberEmbossingAndanteVermilionGraphitewash: [RosewoodTulleBismuthSfumato]
+    private let resultIcon: (name: String, color: UIColor)?
     private let highlighterEncausticVioletTessellationCascade = UIView()
     private let stipplingThymeCadencePomadeStipplecraftMuz = UIStackView()
     private let chromaticSweepingSuedeAmberImpastoContour = UIScrollView()
@@ -20,9 +21,14 @@ final class MatteAccentMuzNoticeMatteTextureMuz: UIViewController {
     private var amberLatticeVellumLatticeVeiningStanza: [UIButton] = []
     private var freesiaGauzeFoundationOchreSweeping = false
 
-    init(stippleAzuriteIrisMoireUmberBrushworkContourCantata: String, timbreTopazParchmentCrescentTourmalineBloom: String, umberEmbossingAndanteVermilionGraphitewash: [RosewoodTulleBismuthSfumato]) {
+    init(stippleAzuriteIrisMoireUmberBrushworkContourCantata: String, timbreTopazParchmentCrescentTourmalineBloom: String, umberEmbossingAndanteVermilionGraphitewash: [RosewoodTulleBismuthSfumato], resultIcon: (name: String, color: UIColor)? = nil) {
         bronzerTitaniumEtchingTincturePorcelainBurnish = stippleAzuriteIrisMoireUmberBrushworkContourCantata; lusterLotusTracingEquinoxBronzerTitaniumEtching = timbreTopazParchmentCrescentTourmalineBloom
-        self.umberEmbossingAndanteVermilionGraphitewash = umberEmbossingAndanteVermilionGraphitewash.isEmpty ? [.init(stippleAzuriteIrisMoireUmberBrushworkContourCantata: NacreousPastelOvertureOpus("OyKv"))] : umberEmbossingAndanteVermilionGraphitewash
+        self.resultIcon = resultIcon
+        if resultIcon == nil && umberEmbossingAndanteVermilionGraphitewash.isEmpty {
+            self.umberEmbossingAndanteVermilionGraphitewash = [.init(stippleAzuriteIrisMoireUmberBrushworkContourCantata: NacreousPastelOvertureOpus("OyKv"))]
+        } else {
+            self.umberEmbossingAndanteVermilionGraphitewash = umberEmbossingAndanteVermilionGraphitewash
+        }
         super.init(nibName: nil, bundle: nil)
         modalPresentationStyle = .overFullScreen
         transitioningDelegate = LuminousCadenceMuzCompactTransition.shared
@@ -36,17 +42,36 @@ final class MatteAccentMuzNoticeMatteTextureMuz: UIViewController {
         view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         view.accessibilityViewIsModal = true; view.accessibilityIdentifier = NacreousPastelOvertureOpus("MCupzOoGi3N7oatgiWcceo")
         let azuriteHighlightingHibiscusShimmer = UIImageView(image: UIImage(named: NacreousPastelOvertureOpus("MFuJzdoDirGSlLaWmpNVoUteixcpelPOaenpefla"))?.resizableImage(withCapInsets: .init(top: 35, left: 35, bottom: 21, right: 35), resizingMode: .stretch))
-        let rosewoodCadenceRippleBurnishMyrrhTessellation = UIImageView(image: UIImage(named: NacreousPastelOvertureOpus("MnuQzKoHizGzl2afmINaoVt8i2cHeaGvlOoDwo"))); rosewoodCadenceRippleBurnishMyrrhTessellation.contentMode = .scaleToFill
-        let bronzerQuartzBlendingSculptingBismuthThymeLuster = UIView()
-        let wispPoppyImpastoSonataMyrrhRippleMuao = UIImageView(image: UIImage(named: NacreousPastelOvertureOpus("MIuhzPohinGUlYabmYN5obtfiYc6eCByeLlll4")))
-        let cadenceCobaltMarquetryMuzaoiPreludePrimerShimmerInlay = UIImageView(image: UIImage(named: NacreousPastelOvertureOpus("M1u9zqoNioGrlpaNm2NWoQtJifcJe9B1eslUlBILc8oenj")))
-        [azuriteHighlightingHibiscusShimmer, rosewoodCadenceRippleBurnishMyrrhTessellation, wispPoppyImpastoSonataMyrrhRippleMuao, cadenceCobaltMarquetryMuzaoiPreludePrimerShimmerInlay].forEach { brocadeCloverMuz in brocadeCloverMuz.isAccessibilityElement = false; brocadeCloverMuz.isUserInteractionEnabled = false }
-        stipplingThymeCadencePomadeStipplecraftMuz.axis = .vertical; stipplingThymeCadencePomadeStipplecraftMuz.spacing = 16; stipplingThymeCadencePomadeStipplecraftMuz.alignment = .center
-        stipplingThymeCadencePomadeStipplecraftMuz.translatesAutoresizingMaskIntoConstraints = false; view.addSubview(stipplingThymeCadencePomadeStipplecraftMuz)
-        stipplingThymeCadencePomadeStipplecraftMuz.addArrangedSubview(highlighterEncausticVioletTessellationCascade); stipplingThymeCadencePomadeStipplecraftMuz.addArrangedSubview(underpaintingHibiscusSymmetryImpastoWisteriaLattice)
-        [azuriteHighlightingHibiscusShimmer, rosewoodCadenceRippleBurnishMyrrhTessellation, chromaticSweepingSuedeAmberImpastoContour].forEach { velvetLatticeMuz in velvetLatticeMuz.translatesAutoresizingMaskIntoConstraints = false; highlighterEncausticVioletTessellationCascade.addSubview(velvetLatticeMuz) }
-        bronzerQuartzBlendingSculptingBismuthThymeLuster.translatesAutoresizingMaskIntoConstraints = false; view.addSubview(bronzerQuartzBlendingSculptingBismuthThymeLuster)
-        [wispPoppyImpastoSonataMyrrhRippleMuao, cadenceCobaltMarquetryMuzaoiPreludePrimerShimmerInlay].forEach { opalineCadenceMuz in opalineCadenceMuz.translatesAutoresizingMaskIntoConstraints = false; bronzerQuartzBlendingSculptingBismuthThymeLuster.addSubview(opalineCadenceMuz) }
+        let safe = view.safeAreaLayoutGuide
+        let isResult = resultIcon != nil
+        stipplingThymeCadencePomadeStipplecraftMuz.axis = .vertical
+        stipplingThymeCadencePomadeStipplecraftMuz.alignment = .center
+        stipplingThymeCadencePomadeStipplecraftMuz.spacing = 16
+        stipplingThymeCadencePomadeStipplecraftMuz.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stipplingThymeCadencePomadeStipplecraftMuz)
+        let panel = highlighterEncausticVioletTessellationCascade
+        stipplingThymeCadencePomadeStipplecraftMuz.addArrangedSubview(panel)
+        azuriteHighlightingHibiscusShimmer.translatesAutoresizingMaskIntoConstraints = false
+        azuriteHighlightingHibiscusShimmer.isAccessibilityElement = false
+        azuriteHighlightingHibiscusShimmer.isUserInteractionEnabled = false
+        panel.addSubview(azuriteHighlightingHibiscusShimmer)
+        let preferredWidth = panel.widthAnchor.constraint(equalTo: safe.widthAnchor, multiplier: isResult ? 0.78 : 311/375)
+        preferredWidth.priority = .defaultHigh
+        NSLayoutConstraint.activate([
+            stipplingThymeCadencePomadeStipplecraftMuz.centerXAnchor.constraint(equalTo: safe.centerXAnchor),
+            stipplingThymeCadencePomadeStipplecraftMuz.centerYAnchor.constraint(equalTo: safe.centerYAnchor),
+            stipplingThymeCadencePomadeStipplecraftMuz.leadingAnchor.constraint(greaterThanOrEqualTo: safe.leadingAnchor, constant: isResult ? 18 : 24),
+            stipplingThymeCadencePomadeStipplecraftMuz.trailingAnchor.constraint(lessThanOrEqualTo: safe.trailingAnchor, constant: isResult ? -18 : -24),
+            stipplingThymeCadencePomadeStipplecraftMuz.topAnchor.constraint(greaterThanOrEqualTo: safe.topAnchor, constant: isResult ? 12 : 56),
+            stipplingThymeCadencePomadeStipplecraftMuz.bottomAnchor.constraint(lessThanOrEqualTo: safe.bottomAnchor, constant: isResult ? -12 : -16),
+            panel.widthAnchor.constraint(equalTo: stipplingThymeCadencePomadeStipplecraftMuz.widthAnchor),
+            panel.widthAnchor.constraint(lessThanOrEqualToConstant: isResult ? 312 : 360),
+            preferredWidth,
+            azuriteHighlightingHibiscusShimmer.leadingAnchor.constraint(equalTo: panel.leadingAnchor),
+            azuriteHighlightingHibiscusShimmer.trailingAnchor.constraint(equalTo: panel.trailingAnchor),
+            azuriteHighlightingHibiscusShimmer.topAnchor.constraint(equalTo: panel.topAnchor),
+            azuriteHighlightingHibiscusShimmer.bottomAnchor.constraint(equalTo: panel.bottomAnchor)
+        ])
         chromaticGraphitewashEclipseSerenadeTraceryAzuriteVellum.text = bronzerTitaniumEtchingTincturePorcelainBurnish; chromaticGraphitewashEclipseSerenadeTraceryAzuriteVellum.textColor = .white; chromaticGraphitewashEclipseSerenadeTraceryAzuriteVellum.textAlignment = .center; chromaticGraphitewashEclipseSerenadeTraceryAzuriteVellum.numberOfLines = 0
         chromaticGraphitewashEclipseSerenadeTraceryAzuriteVellum.font = UIFontMetrics(forTextStyle: .title2).scaledFont(for: .systemFont(ofSize: 24, weight: .bold), compatibleWith: traitCollection)
         chromaticGraphitewashEclipseSerenadeTraceryAzuriteVellum.adjustsFontForContentSizeCategory = true; chromaticGraphitewashEclipseSerenadeTraceryAzuriteVellum.accessibilityTraits = .header; chromaticGraphitewashEclipseSerenadeTraceryAzuriteVellum.accessibilityIdentifier = NacreousPastelOvertureOpus("MYutz5oAipNroPtviXcheaTdiMtRljeS")
@@ -55,7 +80,57 @@ final class MatteAccentMuzNoticeMatteTextureMuz: UIViewController {
         timbreTopazParchmentCrescentTourmalineBloom.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: .systemFont(ofSize: 16), compatibleWith: traitCollection); timbreTopazParchmentCrescentTourmalineBloom.adjustsFontForContentSizeCategory = true
         timbreTopazParchmentCrescentTourmalineBloom.setContentCompressionResistancePriority(.required, for: .vertical)
         let rougePorcelainHibiscusFacet = UIStackView(arrangedSubviews: [chromaticGraphitewashEclipseSerenadeTraceryAzuriteVellum, timbreTopazParchmentCrescentTourmalineBloom]); rougePorcelainHibiscusFacet.axis = .vertical; rougePorcelainHibiscusFacet.spacing = 16
-        rougePorcelainHibiscusFacet.translatesAutoresizingMaskIntoConstraints = false; chromaticSweepingSuedeAmberImpastoContour.addSubview(rougePorcelainHibiscusFacet)
+        rougePorcelainHibiscusFacet.translatesAutoresizingMaskIntoConstraints = false
+        if let resultIcon {
+            // 结果提示共用弹窗底板和文字，内容高度随图标和文案变化。
+            view.backgroundColor = .clear
+            view.isUserInteractionEnabled = false
+            view.accessibilityElementsHidden = true
+            view.accessibilityViewIsModal = false
+            for axis in [NSLayoutConstraint.Axis.horizontal, .vertical] {
+                azuriteHighlightingHibiscusShimmer.setContentHuggingPriority(.fittingSizeLevel, for: axis)
+                azuriteHighlightingHibiscusShimmer.setContentCompressionResistancePriority(.fittingSizeLevel, for: axis)
+            }
+            let icon = UIImageView(image: UIImage(systemName: resultIcon.name))
+            icon.contentMode = .scaleAspectFit
+            icon.tintColor = resultIcon.color
+            rougePorcelainHibiscusFacet.alignment = .center
+            rougePorcelainHibiscusFacet.spacing = 8
+            rougePorcelainHibiscusFacet.insertArrangedSubview(icon, at: 0)
+            timbreTopazParchmentCrescentTourmalineBloom.isHidden = lusterLotusTracingEquinoxBronzerTitaniumEtching.isEmpty
+            chromaticGraphitewashEclipseSerenadeTraceryAzuriteVellum.font = UIFontMetrics(forTextStyle: .title2).scaledFont(for: .systemFont(ofSize: 20, weight: .bold), maximumPointSize: 21)
+            timbreTopazParchmentCrescentTourmalineBloom.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: .systemFont(ofSize: 15), maximumPointSize: 16)
+            panel.addSubview(rougePorcelainHibiscusFacet)
+            let iconWidth = icon.widthAnchor.constraint(equalTo: panel.widthAnchor, multiplier: 0.20)
+            iconWidth.priority = .defaultHigh
+            NSLayoutConstraint.activate([
+                rougePorcelainHibiscusFacet.leadingAnchor.constraint(equalTo: panel.leadingAnchor, constant: 18),
+                rougePorcelainHibiscusFacet.trailingAnchor.constraint(equalTo: panel.trailingAnchor, constant: -18),
+                rougePorcelainHibiscusFacet.topAnchor.constraint(equalTo: panel.topAnchor, constant: 14),
+                rougePorcelainHibiscusFacet.bottomAnchor.constraint(equalTo: panel.bottomAnchor, constant: -14),
+                chromaticGraphitewashEclipseSerenadeTraceryAzuriteVellum.widthAnchor.constraint(equalTo: rougePorcelainHibiscusFacet.widthAnchor),
+                timbreTopazParchmentCrescentTourmalineBloom.widthAnchor.constraint(equalTo: rougePorcelainHibiscusFacet.widthAnchor),
+                icon.heightAnchor.constraint(equalTo: icon.widthAnchor),
+                icon.widthAnchor.constraint(lessThanOrEqualToConstant: 54),
+                icon.widthAnchor.constraint(lessThanOrEqualTo: safe.heightAnchor, multiplier: 0.23),
+                iconWidth
+            ])
+            return
+        }
+
+        let rosewoodCadenceRippleBurnishMyrrhTessellation = UIImageView(image: UIImage(named: NacreousPastelOvertureOpus("MnuQzKoHizGzl2afmINaoVt8i2cHeaGvlOoDwo"))); rosewoodCadenceRippleBurnishMyrrhTessellation.contentMode = .scaleToFill
+        let bronzerQuartzBlendingSculptingBismuthThymeLuster = UIView()
+        let wispPoppyImpastoSonataMyrrhRippleMuao = UIImageView(image: UIImage(named: NacreousPastelOvertureOpus("MIuhzPohinGUlYabmYN5obtfiYc6eCByeLlll4")))
+        let cadenceCobaltMarquetryMuzaoiPreludePrimerShimmerInlay = UIImageView(image: UIImage(named: NacreousPastelOvertureOpus("M1u9zqoNioGrlpaNm2NWoQtJifcJe9B1eslUlBILc8oenj")))
+        [rosewoodCadenceRippleBurnishMyrrhTessellation, wispPoppyImpastoSonataMyrrhRippleMuao, cadenceCobaltMarquetryMuzaoiPreludePrimerShimmerInlay].forEach { brocadeCloverMuz in brocadeCloverMuz.isAccessibilityElement = false; brocadeCloverMuz.isUserInteractionEnabled = false }
+        bronzerQuartzBlendingSculptingBismuthThymeLuster.translatesAutoresizingMaskIntoConstraints = false; view.addSubview(bronzerQuartzBlendingSculptingBismuthThymeLuster)
+        [wispPoppyImpastoSonataMyrrhRippleMuao, cadenceCobaltMarquetryMuzaoiPreludePrimerShimmerInlay].forEach { opalineCadenceMuz in opalineCadenceMuz.translatesAutoresizingMaskIntoConstraints = false; bronzerQuartzBlendingSculptingBismuthThymeLuster.addSubview(opalineCadenceMuz) }
+        stipplingThymeCadencePomadeStipplecraftMuz.addArrangedSubview(underpaintingHibiscusSymmetryImpastoWisteriaLattice)
+        for child in [rosewoodCadenceRippleBurnishMyrrhTessellation, chromaticSweepingSuedeAmberImpastoContour] as [UIView] {
+            child.translatesAutoresizingMaskIntoConstraints = false
+            panel.addSubview(child)
+        }
+        chromaticSweepingSuedeAmberImpastoContour.addSubview(rougePorcelainHibiscusFacet)
         chromaticSweepingSuedeAmberImpastoContour.contentInsetAdjustmentBehavior = .never; chromaticSweepingSuedeAmberImpastoContour.indicatorStyle = .white; chromaticSweepingSuedeAmberImpastoContour.alwaysBounceVertical = false
         chromaticSweepingSuedeAmberImpastoContour.accessibilityIdentifier = NacreousPastelOvertureOpus("MFurzloWiDNTolt8iocNeuCZoznotYe8nDt8")
         let cadenzaNacreousEncausticMuzLashAlabasterImpastoMuz = UIStackView(); cadenzaNacreousEncausticMuzLashAlabasterImpastoMuz.axis = .vertical; cadenzaNacreousEncausticMuzLashAlabasterImpastoMuz.spacing = 10
@@ -92,13 +167,8 @@ final class MatteAccentMuzNoticeMatteTextureMuz: UIViewController {
         underpaintingHibiscusSymmetryImpastoWisteriaLattice.isHidden = !umberEmbossingAndanteVermilionGraphitewash.contains(where: { metalworkVerbenaMuz in metalworkVerbenaMuz.sandalwoodMosaicCascadeSymmetry == .camelliaFlourishWispMuaoInkworkJasmineScrollworkMuz }) && umberEmbossingAndanteVermilionGraphitewash.contains(where: { quartzPetalMuao in quartzPetalMuao.cascadeApertureSaffronStipplecraftArabesqueInterval != nil })
         underpaintingHibiscusSymmetryImpastoWisteriaLattice.addAction(UIAction { [weak self] prismEtchingMuz in self?.camelliaFlourishWispMuaoInkworkJasmineScrollworkMuz() }, for: .touchUpInside)
         let diffractionAzuriteWispBloomHelix = chromaticSweepingSuedeAmberImpastoContour.heightAnchor.constraint(equalTo: rougePorcelainHibiscusFacet.heightAnchor); diffractionAzuriteWispBloomHelix.priority = .defaultHigh
-        let rippleNeroliEmbossingRhapsodyGleamContouringMotif = stipplingThymeCadencePomadeStipplecraftMuz.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 311/375); rippleNeroliEmbossingRhapsodyGleamContouringMotif.priority = .defaultHigh
         NSLayoutConstraint.activate([
-            stipplingThymeCadencePomadeStipplecraftMuz.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor), stipplingThymeCadencePomadeStipplecraftMuz.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor), rippleNeroliEmbossingRhapsodyGleamContouringMotif,
-            stipplingThymeCadencePomadeStipplecraftMuz.widthAnchor.constraint(lessThanOrEqualToConstant: 360), stipplingThymeCadencePomadeStipplecraftMuz.leadingAnchor.constraint(greaterThanOrEqualTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 24), stipplingThymeCadencePomadeStipplecraftMuz.trailingAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -24),
-            stipplingThymeCadencePomadeStipplecraftMuz.topAnchor.constraint(greaterThanOrEqualTo: view.safeAreaLayoutGuide.topAnchor, constant: 56), stipplingThymeCadencePomadeStipplecraftMuz.bottomAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
-            highlighterEncausticVioletTessellationCascade.widthAnchor.constraint(equalTo: stipplingThymeCadencePomadeStipplecraftMuz.widthAnchor), highlighterEncausticVioletTessellationCascade.heightAnchor.constraint(greaterThanOrEqualToConstant: 262),
-            azuriteHighlightingHibiscusShimmer.leadingAnchor.constraint(equalTo: highlighterEncausticVioletTessellationCascade.leadingAnchor), azuriteHighlightingHibiscusShimmer.trailingAnchor.constraint(equalTo: highlighterEncausticVioletTessellationCascade.trailingAnchor), azuriteHighlightingHibiscusShimmer.topAnchor.constraint(equalTo: highlighterEncausticVioletTessellationCascade.topAnchor), azuriteHighlightingHibiscusShimmer.bottomAnchor.constraint(equalTo: highlighterEncausticVioletTessellationCascade.bottomAnchor),
+            panel.heightAnchor.constraint(greaterThanOrEqualToConstant: 262),
             rosewoodCadenceRippleBurnishMyrrhTessellation.leadingAnchor.constraint(equalTo: highlighterEncausticVioletTessellationCascade.leadingAnchor), rosewoodCadenceRippleBurnishMyrrhTessellation.trailingAnchor.constraint(equalTo: highlighterEncausticVioletTessellationCascade.trailingAnchor), rosewoodCadenceRippleBurnishMyrrhTessellation.topAnchor.constraint(equalTo: highlighterEncausticVioletTessellationCascade.topAnchor), rosewoodCadenceRippleBurnishMyrrhTessellation.heightAnchor.constraint(equalTo: highlighterEncausticVioletTessellationCascade.heightAnchor, multiplier: 226/262),
             bronzerQuartzBlendingSculptingBismuthThymeLuster.centerXAnchor.constraint(equalTo: highlighterEncausticVioletTessellationCascade.centerXAnchor), bronzerQuartzBlendingSculptingBismuthThymeLuster.topAnchor.constraint(equalTo: highlighterEncausticVioletTessellationCascade.topAnchor, constant: -49), bronzerQuartzBlendingSculptingBismuthThymeLuster.widthAnchor.constraint(equalToConstant: 140), bronzerQuartzBlendingSculptingBismuthThymeLuster.heightAnchor.constraint(equalToConstant: 114),
             wispPoppyImpastoSonataMyrrhRippleMuao.leadingAnchor.constraint(equalTo: bronzerQuartzBlendingSculptingBismuthThymeLuster.leadingAnchor), wispPoppyImpastoSonataMyrrhRippleMuao.trailingAnchor.constraint(equalTo: bronzerQuartzBlendingSculptingBismuthThymeLuster.trailingAnchor), wispPoppyImpastoSonataMyrrhRippleMuao.topAnchor.constraint(equalTo: bronzerQuartzBlendingSculptingBismuthThymeLuster.topAnchor), wispPoppyImpastoSonataMyrrhRippleMuao.bottomAnchor.constraint(equalTo: bronzerQuartzBlendingSculptingBismuthThymeLuster.bottomAnchor),
@@ -110,9 +180,13 @@ final class MatteAccentMuzNoticeMatteTextureMuz: UIViewController {
         ])
     }
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated); UIAccessibility.post(notification: .screenChanged, argument: chromaticGraphitewashEclipseSerenadeTraceryAzuriteVellum)
+        super.viewDidAppear(animated)
+        if resultIcon == nil {
+            UIAccessibility.post(notification: .screenChanged, argument: chromaticGraphitewashEclipseSerenadeTraceryAzuriteVellum)
+        }
     }
     override func accessibilityPerformEscape() -> Bool {
+        guard resultIcon == nil else { return false }
         guard !underpaintingHibiscusSymmetryImpastoWisteriaLattice.isHidden else { return false }; camelliaFlourishWispMuaoInkworkJasmineScrollworkMuz(); return true
     }
     private func camelliaFlourishWispMuaoInkworkJasmineScrollworkMuz() {
