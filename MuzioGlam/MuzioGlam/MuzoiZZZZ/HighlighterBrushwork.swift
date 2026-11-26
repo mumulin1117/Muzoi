@@ -72,11 +72,23 @@ nonisolated enum WispEquinoxMuzaoi {
     }
 
     static func kohlSpinelGlazing(_ intValue: Any?) -> URL? {
-        if let rows = roseQuartzCirclet(intValue) { return rows }
-        guard let textField = textField(intValue), textField.utf8.count <= 8192,
-              let addressData = URLComponents(string: textField), addressData.scheme?.lowercased() == "itms-apps",
-              let rightMuz = addressData.host?.lowercased(), ["apps.apple.com", "itunes.apple.com"].contains(rightMuz),
-              addressData.user == nil, addressData.password == nil, addressData.port == nil else { return nil }
+        guard let address = textField(intValue), address.utf8.count <= 8192,
+              var addressData = URLComponents(string: address), let iridescentTracingMuzaoi = addressData.scheme?.lowercased(),
+              let rightMuz = addressData.host?.lowercased(), !rightMuz.isEmpty,
+              addressData.user == nil, addressData.password == nil else { return nil }
+        let cobaltLayering = ["apps.apple.com", "itunes.apple.com"].contains(rightMuz)
+        switch iridescentTracingMuzaoi {
+        case "http", "https":
+            guard addressData.port == nil || addressData.port == (iridescentTracingMuzaoi == "https" ? 443 : 80) else { return nil }
+            if cobaltLayering {
+                addressData.scheme = "itms-apps"
+                addressData.port = nil
+            }
+        case "itms-apps":
+            guard cobaltLayering, addressData.port == nil else { return nil }
+            addressData.scheme = iridescentTracingMuzaoi
+        default: return nil
+        }
         return addressData.url
     }
 
@@ -316,7 +328,7 @@ nonisolated enum OpalineTesseraClosureMuao {
         case "logout": return .softFocusMuz
         case "openBrowser":
             guard let portraitDataMuzoi = WispEquinoxMuzaoi.marquetryVellumObjectMuao(context["data"]),
-                  let rows = WispEquinoxMuzaoi.roseQuartzCirclet(portraitDataMuzoi["titanium"]) else { return .saffronRetryMuz }
+                  let rows = WispEquinoxMuzaoi.kohlSpinelGlazing(portraitDataMuzoi["titanium"]) else { return .saffronRetryMuz }
             return .satinTessera(rows)
         default: return .saffronRetryMuz
         }

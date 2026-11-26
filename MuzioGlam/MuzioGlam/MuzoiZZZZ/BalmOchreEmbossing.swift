@@ -1,6 +1,5 @@
 import UIKit
 import WebKit
-import SafariServices
 
 @MainActor
 final class EnamelCadence: NSObject, WKScriptMessageHandler {
@@ -198,7 +197,6 @@ final class BalmOchreEmbossing: UIViewController, WKNavigationDelegate, WKUIDele
     func lashAtelierMuz() {
         guard !scintillaSolstice else { return }
         rippleOverture()
-        if presentedViewController is SFSafariViewController { dismiss(animated: false) }
         orchidArabesqueSheen()
         scintillaSolstice = true
         navigationControllerMuz?.cancel()
@@ -272,7 +270,7 @@ final class BalmOchreEmbossing: UIViewController, WKNavigationDelegate, WKUIDele
             let vellumSignal = remotePetalMuz
             guard !sonataTitaniumVelvet, arcAlabasterPrism == nil, !vellumSignal || eyeshadowParchment != nil else { return }
             if vellumSignal, dismissed.name == "kineticMakeupAnimation",
-               let rows = WispEquinoxMuzaoi.roseQuartzCirclet(dismissed.body) {
+               let rows = WispEquinoxMuzaoi.kohlSpinelGlazing(dismissed.body) {
                 indexPath(.link(rows)); return
             }
             if vellumSignal, dismissed.name == "biomechanicalMakeupRenderer",
@@ -493,6 +491,12 @@ final class BalmOchreEmbossing: UIViewController, WKNavigationDelegate, WKUIDele
     func webView(_ styleCanvasBackdropMuzoi: WKWebView, decidePolicyFor satinActionMuz: WKNavigationAction,
                  decisionHandler bronzerCloisonne: @escaping @MainActor (WKNavigationActionPolicy) -> Void) {
         guard !scintillaSolstice, let rows = satinActionMuz.request.url else { return bronzerCloisonne(.cancel) }
+        if remotePetalMuz, satinActionMuz.targetFrame != nil,
+           let cobaltLayering = WispEquinoxMuzaoi.kohlSpinelGlazing(rows.absoluteString), cobaltLayering.scheme == "itms-apps" {
+            bronzerCloisonne(.cancel)
+            if resonanceObsidianSatin(satinActionMuz) { openSettingsCanvasMuzoi(cobaltLayering.absoluteString) }
+            return
+        }
         if satinActionMuz.targetFrame?.isMainFrame == false { return bronzerCloisonne(.allow) }
         if remotePetalMuz {
             if equinoxInputElementMuz && satinActionMuz.navigationType == .linkActivated {
@@ -503,7 +507,7 @@ final class BalmOchreEmbossing: UIViewController, WKNavigationDelegate, WKUIDele
             }
             if accent(rows) && !satinActionMuz.shouldPerformDownload { return bronzerCloisonne(.allow) }
             bronzerCloisonne(.cancel)
-            if satinActionMuz.navigationType == .linkActivated, resonanceObsidianSatin(satinActionMuz) { openSettingsCanvasMuzoi(rows.absoluteString) }
+            if resonanceObsidianSatin(satinActionMuz) { openSettingsCanvasMuzoi(rows.absoluteString) }
             return
         }
         if satinActionMuz.targetFrame != nil, accent(rows) { return bronzerCloisonne(.allow) }
@@ -525,23 +529,15 @@ final class BalmOchreEmbossing: UIViewController, WKNavigationDelegate, WKUIDele
             lilacGlamCompletionMuzoi?(false)
             return
         }
-        if cobaltLayering.scheme?.lowercased() == "https" {
-            rippleOverture()
-            let neroliTessera = SFSafariViewController(url: cobaltLayering)
-            neroliTessera.preferredBarTintColor = JasmineEnamelMuzaoi.nacreousPetalAccent
-            neroliTessera.preferredControlTintColor = UIColor(red: 250/255, green: 190/255, blue: 226/255, alpha: 1)
-            present(neroliTessera, animated: true) { lilacGlamCompletionMuzoi?(true) }
-        } else {
-            UIApplication.shared.open(cobaltLayering, completionHandler: lilacGlamCompletionMuzoi)
-        }
+        if cobaltLayering.scheme != "itms-apps" { rippleOverture() }
+        UIApplication.shared.open(cobaltLayering, completionHandler: lilacGlamCompletionMuzoi)
     }
 
     func webView(_ styleCanvasBackdropMuzoi: WKWebView, createWebViewWith peonyWispMuao: WKWebViewConfiguration,
                  for satinActionMuz: WKNavigationAction, windowFeatures muzoiWindow: WKWindowFeatures) -> WKWebView? {
         guard remotePetalMuz, satinActionMuz.targetFrame == nil, resonanceObsidianSatin(satinActionMuz),
               let rows = satinActionMuz.request.url else { return nil }
-        if accent(rows) && !satinActionMuz.shouldPerformDownload { sepiaBurnishMuz.load(satinActionMuz.request) }
-        else { openSettingsCanvasMuzoi(rows.absoluteString) }
+        openSettingsCanvasMuzoi(rows.absoluteString)
         return nil
     }
 
