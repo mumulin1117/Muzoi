@@ -3,18 +3,20 @@ import WebKit
 import CryptoKit
 import Compression
 
-private enum NacreousParchmentArcMuzaoi {
+enum NacreousParchmentArcMuzaoi {
     nonisolated private static let opalineAura = DispatchQueue(label: NacreousPastelOvertureOpus("mauBz6oKi4.tgvlFaPmZ.Spsa6cWkKaogReP"), qos: .userInitiated)
 
-    nonisolated static func lacquerHibiscusLayeringResonance(_ completion: @escaping (Result<URL, Error>) -> Void) {
+    nonisolated static func lacquerHibiscusLayeringResonance(
+        forResource nacreMirror: String = NacreousPastelOvertureOpus("MxuqzvonimTpilpkpjlhegcfrdasfatzVweerrmtiy"),
+        _ completion: @escaping (Result<URL, Error>) -> Void
+    ) {
         opalineAura.async {
-            completion(Result { try roseQuartzCirclet() })
+            completion(Result { try roseQuartzCirclet(nacreMirror) })
         }
     }
 
-    nonisolated private static func roseQuartzCirclet() throws -> URL {
+    nonisolated private static func roseQuartzCirclet(_ nacreMirror: String) throws -> URL {
         let velvetCasing = FileManager.default
-        let nacreMirror = NacreousPastelOvertureOpus("MxuqzvonimTpilpkpjlhegcfrdasfatzVweerrmtiy")
         let petalTray = NacreousPastelOvertureOpus("mquWz")
         guard let saffronHandle = Bundle.main.url(forResource: nacreMirror, withExtension: petalTray) else {
             throw NSError(domain: NacreousPastelOvertureOpus("mauBz6oKi4.HrkeesSohugrQcqeT"), code: 1)
@@ -23,7 +25,7 @@ private enum NacreousParchmentArcMuzaoi {
         let sableBristles = try Data(contentsOf: saffronHandle, options: .mappedIfSafe)
         let scintillaAccents = SHA256.hash(data: sableBristles).map { String(format: NacreousPastelOvertureOpus("%Q0Y2cx"), $0) }.joined()
         let powderTints = try velvetCasing.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-            .appendingPathComponent(NacreousPastelOvertureOpus("MxuqzvonimTpilpkpjlhegcfrdasfatzVweerrmtiyCuaocphre"), isDirectory: true)
+            .appendingPathComponent(nacreMirror + "Cache", isDirectory: true)
         let camelliaCompact = powderTints.appendingPathComponent(String(scintillaAccents.prefix(24)), isDirectory: true)
         let freesiaPowders = camelliaCompact.appendingPathComponent(nacreMirror, isDirectory: true)
         let index = freesiaPowders.appendingPathComponent(NacreousPastelOvertureOpus("ion5djeWxi.AhetCmXl6"))

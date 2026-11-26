@@ -11,10 +11,10 @@ Welcome Continue 通过 `MuzoiWelcome` 发送 `{ action: "Sure", source: "MuzoiW
 
 ## 当前原生接入
 
-实际宿主在 `MuzioGlam/MuzioGlam/MuzoiZZZZ`。Welcome 确认后直接进入项目随包接入的 New_login_dist 首页；Community 确认后沿用宿主已接入的 A 登录/注册分支。原生仅为 Community 保存规则确认状态，Welcome 不读取或写入 EULA 状态。
+实际宿主在 `MuzioGlam/MuzioGlam/MuzoiZZZZ`。Welcome 确认后进入 App 从 `NocturneMicaBloomMuzaoi.muz` 解包加载的认证首页。Community 确认后沿用宿主已接入的 A 登录/注册分支。原生仅为 Community 保存规则确认状态，Welcome 不读取或写入 EULA 状态。
 
 本目录页面用于部署为 HTTPS 网页，不作为 App 随包 HTML。原生会移除线上旧 Welcome HTML 的 EULA 弹窗，并把旧 Continue 的同意拦截替换为直接发送原消息；无需伪造或预先写入同意记录。
 
 欢迎页继续固定、禁止上下滚动和回弹；社区页继续只允许正文内部滚动。页面手势限制仅针对各自页面，不注入新版登录表单或普通业务 H5。
 
-只有认证组件 New_login_dist 随 App 打包；本目录的 Welcome/Community 用于部署，App 不保存其本地副本或兜底。
+认证组件以 `NocturneMicaBloomMuzaoi.muz` 随 App 打包。本目录的 Welcome/Community 用于部署，App 打开其 HTTPS 地址。

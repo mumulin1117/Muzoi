@@ -82,7 +82,6 @@ final class MatteAccentMuzNoticeMatteTextureMuz: UIViewController {
         let rougePorcelainHibiscusFacet = UIStackView(arrangedSubviews: [chromaticGraphitewashEclipseSerenadeTraceryAzuriteVellum, timbreTopazParchmentCrescentTourmalineBloom]); rougePorcelainHibiscusFacet.axis = .vertical; rougePorcelainHibiscusFacet.spacing = 16
         rougePorcelainHibiscusFacet.translatesAutoresizingMaskIntoConstraints = false
         if let resultIcon {
-            // 结果提示共用弹窗底板和文字，内容高度随图标和文案变化。
             view.backgroundColor = .clear
             view.isUserInteractionEnabled = false
             view.accessibilityElementsHidden = true

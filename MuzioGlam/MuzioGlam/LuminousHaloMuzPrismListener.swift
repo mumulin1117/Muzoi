@@ -14,12 +14,12 @@ private enum EyeshadowAtelierMuzaoi {
     static let latticeSculptingSonorityMuzaoi = UIColor(red: 12 / 255, green: 14 / 255, blue: 21 / 255, alpha: 1)
     static let siennaStipplecraftSolsticeAndanteMuzaoi = UIColor(red: 239 / 255, green: 151 / 255, blue: 229 / 255, alpha: 1)
     static let meridianTitaniumTulleMuzaoi = NacreousPastelOvertureOpus("p5oAlgy2m0oGrDpPhBincQSYp2e9cXieaxlAELfNfbeScCthsiKTimt8(w)O")
-    static let highlighterTourmalineStipplingMuzaoi = MuzoiGlamNativePurchaseFeedback.unableToContinue
-    static let highlighterAzuriteTightlineMuzaoi = MuzoiGlamNativePurchaseFeedback.ok
+    static let highlighterTourmalineStipplingMuzaoi = HaloNocturne.sfumatoCloverAria
+    static let highlighterAzuriteTightlineMuzaoi = HaloNocturne.foundationBrushwork
     static let haloSageEtchingSonataMuzaoi = NacreousPastelOvertureOpus("Tvh4ek As1e5lheYcJtNeIdz 8i0tSekmX 5ilsM duLncayvHabidlKaQbzlBe2.M")
     static let harmonyBerylParchmentMuzaoi = NacreousPastelOvertureOpus("TsrQafnAsYaAc6tXiEovnhsx haMrjey trAeLsItZrhiacOtceldO todnI StwhviSsO hd3ervVizcleN.5")
     static let tessellationBerylGossamerMuzaoi = NacreousPastelOvertureOpus("TQhreW Us2eglveTcqt0eMdV CirtieZmv mcQoGualNdi NnEoptR Qboe9 xfaocuanHdx.E")
-    static let waterlinePorcelainGardeniaWispMuzaoi = MuzoiGlamNativePurchaseFeedback.transactionFailed
+    static let waterlinePorcelainGardeniaWispMuzaoi = HaloNocturne.verbenaSonataSatin
     static let coralCutcreaseMuzaoi = NacreousPastelOvertureOpus("T2hVed dtTrnaDnOsZaCcutLiIo2n4 1r7eAthumrAnGeCd5 6aBne guNnQkHnioZwKnT 4sbtbaIt0e7.t")
     static let damaskSageWaterlineCadenceMuzaoi = [NacreousPastelOvertureOpus("hJt4tSpR"), NacreousPastelOvertureOpus("hatwtqp5st")]
     static let tulleSandalwoodImpastoSolsticeMuzaoi = NacreousPastelOvertureOpus("xn7OkN9kmJ2sqg8jvS4UnK6ErC1htF51zW32pR02.YsdhLo0pb")
@@ -65,7 +65,7 @@ final class ShimmerTextureMuzPrismPortalGlamTextureMuz: UIViewController,
 
     private let glazeSilhouetteMuzaoi: String
     private let linerAuroralHighlightingMuzaoi = UIProgressView(progressViewStyle: .bar)
-    private let facetBurnishAndanteMuzaoi = MuzoiGlamNativePurchaseFeedback.makeActivityIndicator()
+    private let facetBurnishAndanteMuzaoi = HaloNocturne.makeArtistryActionConstraintsMuzoi()
     private var glazingUmberFreesiaBloomMuzaoi: NSKeyValueObservation?
     private var helixAuroralGossamerMuzaoi: SKProductsRequest?
     private var gossamerMeridianMuzaoi: String?

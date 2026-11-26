@@ -17,8 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         glamApplication.registerForRemoteNotifications()
-        // Every cold launch is dispatched exclusively by the new Open contract.
-        muzoiWindow.rootViewController = MuzoiGlamShowingCoordinator()
+        muzoiWindow.rootViewController = SuedeRhapsodyMuz()
         muzoiWindow.makeKeyAndVisible()
 
         if TesseraCeruleanAtelierMuao.prismJasmineCadenceMuao {
@@ -29,9 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func glamunderEyeSet(brighteningVeil: Bool) {
         guard let window else { return }
-        let gateway = window.rootViewController as? MuzoiGlamShowingCoordinator
+        let gateway = window.rootViewController as? SuedeRhapsodyMuz
         let showMain = {
-            gateway?.close()
+            gateway?.lashAtelierMuz()
             window.rootViewController = SoilashCombCdewySweep()
             window.layoutIfNeeded()
         }
@@ -44,11 +43,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func glamShowGatewayCanvas() {
         guard let window else { return }
         CContourAccentbakingPuffom.glamCommon.glamSealEntry()
-        if let gateway = window.rootViewController as? MuzoiGlamShowingCoordinator {
-            gateway.signedOut()
+        if let gateway = window.rootViewController as? SuedeRhapsodyMuz {
+            gateway.acaciaEnamel()
         } else {
             let backdrop = window.rootViewController?.view.snapshotView(afterScreenUpdates: false)
-            let gateway = MuzoiGlamShowingCoordinator(registration: true, backdrop: backdrop)
+            let gateway = SuedeRhapsodyMuz(garnetDraping: true, styleHeaderBackdropMuzoi: backdrop)
             UIView.transition(with: window, duration: 0.28, options: [.transitionCrossDissolve, .allowAnimatedContent]) {
                 window.rootViewController = gateway
             }
@@ -56,15 +55,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
-        (window?.rootViewController as? MuzoiGlamShowingCoordinator)?.suspend()
+        (window?.rootViewController as? SuedeRhapsodyMuz)?.lacquerPetalEtude()
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        (window?.rootViewController as? MuzoiGlamShowingCoordinator)?.enterBackground()
+        (window?.rootViewController as? SuedeRhapsodyMuz)?.cadenceBalmMuz()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        (window?.rootViewController as? MuzoiGlamShowingCoordinator)?.resume()
+        (window?.rootViewController as? SuedeRhapsodyMuz)?.coralCutcrease()
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {

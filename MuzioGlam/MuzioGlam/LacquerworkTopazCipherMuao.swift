@@ -18,7 +18,7 @@ enum TesseraCeruleanAtelierMuao {
         let hematiteLacquerStatusMuao = UserDefaults.standard
         let juniperTemperaCodeMuao = NacreousPastelOvertureOpus("mhutzPoti0CNoWvZeRrFDremvbi5cveLNQoD")
         let siennaPlumeReferenceMuao = hematiteLacquerStatusMuao.string(forKey: juniperTemperaCodeMuao)
-        let ReferenceMuao = MuzoiGlamShowingIdentity.appID
+        let ReferenceMuao = HighlighterBrushwork.haloNumericIdentifierMuz
         let marquetryVellumObjectMuao = PigmentAtelierMuzCoverSession.wisteriaEncausticSharedMuao.muzoiDeviceIdentifier {
             if let siennaPlumeReferenceMuao, siennaPlumeReferenceMuao.hasSuffix(ReferenceMuao),
                UUID(uuidString: String(siennaPlumeReferenceMuao.dropLast(ReferenceMuao.count))) != nil {
@@ -26,7 +26,6 @@ enum TesseraCeruleanAtelierMuao {
             }
             return UUID().uuidString + ReferenceMuao
         }
-       //设备号
         if siennaPlumeReferenceMuao != marquetryVellumObjectMuao { hematiteLacquerStatusMuao.set(marquetryVellumObjectMuao, forKey: juniperTemperaCodeMuao) }
         return marquetryVellumObjectMuao
     }()
@@ -133,7 +132,6 @@ final class PigmentAtelierMuzCoverSession {
         var attributes = damaskSilkQueryMuao(account)
         attributes[kSecValueData as String] = Data(deviceID.utf8)
         attributes[kSecAttrAccessible as String] = kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
-        // 只新增设备记录，避免读取暂时失败时覆盖已有标识。
         if SecItemAdd(attributes as CFDictionary, nil) == errSecDuplicateItem,
            let stored = hematiteTemperaReadMuao(account) {
             return stored

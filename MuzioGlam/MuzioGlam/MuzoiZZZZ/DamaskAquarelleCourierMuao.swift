@@ -1,28 +1,25 @@
 import Foundation
 
-/// Submitted credentials live only in memory until the existing A login completes.
-/// Native IDs, profile caches and Keychain tokens remain owned by the existing A session.
-nonisolated struct MuzoiGlamShowingAccount: Sendable {
-    enum Operation: String, Sendable { case login, register }
-    let operation: Operation
-    let email: String
-    let password: String
+nonisolated struct DamaskAquarelleCourierMuao: Sendable {
+    enum CeruleanLayering: String, Sendable { case umberFrescoLoginStateMuao = "login", irisArtworkMuz = "register" }
+    let tulleChiaroscuroOperationMuao: CeruleanLayering
+    let glamMailAura: String
+    let parchmentFreesiaKeyMuao: String
 
-    init?(email: String?, password: String?, operation: Operation = .login) {
-        guard let email = MuzoiGlamShowingURL.text(email), email.utf8.count <= 254,
-              email.rangeOfCharacter(from: .controlCharacters) == nil,
-              let password, !password.isEmpty, password.utf8.count <= 1024 else { return nil }
-        self.operation = operation
-        self.email = email.lowercased()
-        self.password = password
+    init?(glamMailAura: String?, parchmentFreesiaKeyMuao: String?, tulleChiaroscuroOperationMuao: CeruleanLayering = .umberFrescoLoginStateMuao) {
+        guard let glamMailAura = WispEquinoxMuzaoi.textField(glamMailAura), glamMailAura.utf8.count <= 254,
+              glamMailAura.rangeOfCharacter(from: .controlCharacters) == nil,
+              let parchmentFreesiaKeyMuao, !parchmentFreesiaKeyMuao.isEmpty, parchmentFreesiaKeyMuao.utf8.count <= 1024 else { return nil }
+        self.tulleChiaroscuroOperationMuao = tulleChiaroscuroOperationMuao
+        self.glamMailAura = glamMailAura.lowercased()
+        self.parchmentFreesiaKeyMuao = parchmentFreesiaKeyMuao
     }
 
-    static func registration(username: String?) -> Self? {
-        // Explicit integration rule supplied for the new nickname-based registration.
-        Self(email: username, password: "11111111", operation: .register)
+    static func garnetDraping(juniperEnamel: String?) -> Self? {
+        Self(glamMailAura: juniperEnamel, parchmentFreesiaKeyMuao: "11111111", tulleChiaroscuroOperationMuao: .irisArtworkMuz)
     }
 
-    static let observingSubmittedIdentity = """
+    static let ceruleanPatinaIdentityMuao = """
     (() => {
       let submitted = null;
       const remember = form => {
@@ -49,9 +46,7 @@ nonisolated struct MuzoiGlamShowingAccount: Sendable {
     })();
     """
 
-    // Observe the unchanged H5 transport. Never rewrite paths, fields, responses or redirects.
-    // Keep the successful grant with its exact destination before openUrl can fire.
-    static let observingHandoff = """
+    static let orbitVermilionEnamel = """
     (() => {
       let handoffs = [];
       const nativeFetch = window.fetch;

@@ -22,7 +22,16 @@
 
 ## 第一步：嵌入并加载入口
 
-将本认证组件放入 iOS 项目 `MuzoiZZZZ/New_login_dist`，保留 `index.html`、`assets/`、`config/` 相对位置。通过文件夹资源引用打包，Welcome 的 Continue 和 App 退出登录进入此组件。仅此认证组件使用 WKWebView.loadFileURL；Welcome/Community 始终使用 Open 返回的部署 HTTPS 网页，不打包本地副本或兜底。
+Xcode 随 App 打包 `MuzoiZZZZ/NocturneMicaBloomMuzaoi.muz`。首次打开认证组件时，App 使用与 `MuzoiTipplecraftVermi` 相同的解包方式生成缓存，然后用 `WKWebView.loadFileURL` 打开缓存中的 `index.html`。Welcome 的 Continue 和 App 退出登录沿用这个入口。Welcome/Community 使用 Open 或认证组件返回的 HTTPS 地址。
+
+更新 H5 产物后，在仓库根目录用现有打包器重新生成资源包：
+
+```zsh
+muzoi_staging=$(mktemp -d)
+cp -R NocturneMicaBloomMuzaoi/{index.html,assets,config} "$muzoi_staging/"
+xcrun swift MuzioGlam/MuzoiTipplecraftVermiPacker.swift "$muzoi_staging" \
+  MuzioGlam/MuzioGlam/MuzoiZZZZ/NocturneMicaBloomMuzaoi.muz
+```
 
 ```text
 index.html?appId=项目ID&appVersion=应用版本&deviceId=稳定设备号#/
@@ -35,7 +44,7 @@ index.html?appId=项目ID&appVersion=应用版本&deviceId=稳定设备号#/
 
 ## 第二步：对接 openUrl 桥接
 
-加载前注册 `openUrl`，只对随包 New_login_dist 入口的可信主文档开放。参数为一个 URL 字符串，原生收到后负责打开该链接。
+加载前注册 `openUrl`，只对 `NocturneMicaBloomMuzaoi` 入口的可信主文档开放。参数为一个 URL 字符串，原生收到后负责打开该链接。
 
 | 容器                 | H5 调用方式                                               | 原生接收方式                                                         |
 | -------------------- | --------------------------------------------------------- | -------------------------------------------------------------------- |
@@ -75,6 +84,6 @@ H5 优先使用 Flutter 通道。登录老用户及人脸认证成功时交接�
 
 ## Muzoi 当前接入
 
-App 启动页和社区页使用 Open 返回的 HTTPS h5Url。Welcome Continue 后直接打开项目接入的 New_login_dist 组件；退出登录复用同一组件，不需要另一个部署 URL。宿主注入实际 appId=48934308、appVersion、deviceId 和可选 pushToken，原始 H5 接口路径及字段不改写。`config/face-config.js` 的 baseUrl 为 `https://server.muzoiplay.online`。
+App 启动页和社区页使用服务返回的 HTTPS h5Url。Welcome Continue 和退出登录均使用 `NocturneMicaBloomMuzaoi` 认证组件。宿主注入实际 appId=48934308、appVersion、deviceId 和可选 pushToken，原始 H5 接口路径及字段不改写。`config/face-config.js` 的 baseUrl 为 `https://server.muzoiplay.online`。
 
 原生只向随包入口的可信主 frame 提供 openUrl 和相机授权提示。SDK 的注册步骤、认证交互、年龄/活体流程及品牌 UI 保持原样。新增原生代码和认证组件均放在 MuzoiZZZZ；MuzoiGlamWeb 目录不再使用。

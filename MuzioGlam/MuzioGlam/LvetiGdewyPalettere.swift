@@ -52,7 +52,7 @@ final class LvetiGdewyPalettere {
         radiantMakeupActivationMuzoi = true
         selectMuseCanvasMuzoi(museCanvasKeyMuzoi)
         pearlFinishIssueMuzoi = nil
-        velvetLookNoteMuzoi = MuzoiGlamNativePurchaseFeedback.confirmWithApple
+        velvetLookNoteMuzoi = HaloNocturne.dahliaRippleMuzaoi
         announcePaletteRefreshMuzoi()
         Task {
             defer { radiantMakeupActivationMuzoi = false; announcePaletteRefreshMuzoi() }
@@ -67,7 +67,7 @@ final class LvetiGdewyPalettere {
                     await refineStoreKitOutcomeMuzoi(luminousValidationMuzoi)
                 case .userCancelled: velvetLookNoteMuzoi = nil; pearlFinishIssueMuzoi = nil
                 case .pending:
-                    velvetLookNoteMuzoi = MuzoiGlamNativePurchaseFeedback.awaitingApproval
+                    velvetLookNoteMuzoi = HaloNocturne.auraFeatheringLegato
                     pearlFinishIssueMuzoi = nil
                 @unknown default: throw PatinaSaffronProtocolMuao.azuriteMarblingUnreadableMuao
                 }
@@ -100,7 +100,7 @@ final class LvetiGdewyPalettere {
         luminousStyleRefreshMuzoi = true
         selectMuseCanvasMuzoi(canvasKeyMuzoi)
         pearlFinishIssueMuzoi = nil
-        velvetLookNoteMuzoi = MuzoiGlamNativePurchaseFeedback.completed
+        velvetLookNoteMuzoi = HaloNocturne.orderedMuz
         announcePaletteRefreshMuzoi()
         defer { coralArtistrySequenceMuzoi.remove(satinEntitlementMuzoi.id); luminousStyleRefreshMuzoi = !coralArtistrySequenceMuzoi.isEmpty; announcePaletteRefreshMuzoi() }
         do {
@@ -112,7 +112,7 @@ final class LvetiGdewyPalettere {
             if currentMuseKeyMuzoi == canvasKeyMuzoi {
                 opalInspirationCountMuzoi = refreshedInspirationCountMuzoi
                 chromaticMuseRevisionMuzoi += 1
-                velvetLookNoteMuzoi = MuzoiGlamNativePurchaseFeedback.completed
+                velvetLookNoteMuzoi = HaloNocturne.orderedMuz
                 pearlFinishIssueMuzoi = nil
                 NotificationCenter.default.post(name: .preludeQuartzMarquetryMuzaoi,
                     object: LipParchmentMuzaoi(impastoWisteriaLatticeMuzaoi: canvasKeyMuzoi, prismaticMarquetryContourLegatoMuzaoi: String(satinEntitlementMuzoi.id), contouringUltramarineAcaciaVeilMuzaoi: UUID().uuidString, kohlSpinelGlazingMuzaoi: Date().timeIntervalSince1970 * 1000))

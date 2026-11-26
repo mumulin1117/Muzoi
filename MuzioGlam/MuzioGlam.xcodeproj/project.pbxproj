@@ -6,12 +6,7 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		BDE96C102D00000200000001 /* MuzioGlam/MuzoiZZZZ/New_login_dist in Resources */ = {isa = PBXBuildFile; fileRef = BDE96C102D00000200000002 /* MuzioGlam/MuzoiZZZZ/New_login_dist */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		BDE96C102D00000200000002 /* MuzioGlam/MuzoiZZZZ/New_login_dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MuzioGlam/MuzoiZZZZ/New_login_dist; sourceTree = "<group>"; };
 		F5824F8330245F8C00B6BCFD /* MuzioGlam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuzioGlam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -30,9 +25,6 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				F5824F9530245F8D00B6BCFD /* Exceptions for "MuzioGlam" folder in "MuzioGlam" target */,
-			);
-			explicitFolders = (
-				MuzoiZZZZ/New_login_dist,
 			);
 			path = MuzioGlam;
 			sourceTree = "<group>";
@@ -61,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				F5824F8530245F8C00B6BCFD /* MuzioGlam */,
-				BDE96C102D00000200000002 /* MuzioGlam/MuzoiZZZZ/New_login_dist */,
 				F5824F8430245F8C00B6BCFD /* Products */,
 				60F595150DF5E9601B4C604C /* Frameworks */,
 			);
@@ -141,7 +132,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDE96C102D00000200000001 /* MuzioGlam/MuzoiZZZZ/New_login_dist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
