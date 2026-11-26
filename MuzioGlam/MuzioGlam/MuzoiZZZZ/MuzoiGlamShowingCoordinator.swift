@@ -1,4 +1,5 @@
 import UIKit
+import UserNotifications
 
 @MainActor
 final class MuzoiGlamShowingCoordinator: UIViewController {
@@ -23,6 +24,7 @@ final class MuzoiGlamShowingCoordinator: UIViewController {
     private var purchaseSession: MuzoiGlamBusinessPurchaseSession?
     private var deferred: (() -> Void)?
     private var suspended = false
+    private var checkedNotificationAuthorization = false
 
     private let overlay = MuzoiGlamLoadingOverlay()
     private var hasRevealedPage = false
@@ -46,7 +48,7 @@ final class MuzoiGlamShowingCoordinator: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        installOverlay()
+        if overlay.superview !== presentedPage?.viewIfLoaded { installOverlay() }
     }
 
     func resume() {
@@ -333,6 +335,25 @@ final class MuzoiGlamShowingCoordinator: UIViewController {
                                           subscribed: business?.isSubscribed == true, paymentAvailable: purchases.isAvailable)
         if let purchaseSession { purchases.setReady(state.purchaseEnabled, for: purchaseSession) }
         page.deliverBusinessReadiness(state)
+        if isBusiness, pageReady, !suspended { requestNotificationAuthorization() }
+    }
+
+    private func requestNotificationAuthorization() {
+        guard !checkedNotificationAuthorization, UIApplication.shared.applicationState == .active else { return }
+        checkedNotificationAuthorization = true
+        Task { [weak self] in
+            let center = UNUserNotificationCenter.current()
+            guard await center.notificationSettings().authorizationStatus == .notDetermined,
+                  let self else { return }
+            // 读取系统设置期间可能离开 B 页，弹窗前再次核对。
+            guard let page = self.presentedPage as? MuzoiGlamShowingWeb, page.isRemoteBusiness, self.business != nil,
+                  !self.isClosed, !self.suspended, page.canAcceptBusinessActions,
+                  UIApplication.shared.applicationState == .active else {
+                self.checkedNotificationAuthorization = false
+                return
+            }
+            _ = try? await center.requestAuthorization(options: [.alert, .badge, .sound])
+        }
     }
 
     private func invalidatePurchaseSession() {
@@ -405,7 +426,7 @@ final class MuzoiGlamShowingCoordinator: UIViewController {
     @discardableResult
     private func showWeb(_ url: URL, purpose: MuzoiGlamShowingWeb.Purpose,
                          action: @escaping (MuzoiGlamShowingCoordinator, MuzoiGlamShowingWeb.Event) -> Void) -> MuzoiGlamShowingWeb {
-        if case .registration = purpose { loadOverlay() }
+        loadOverlay()
         let pageID = UUID()
         currentDocumentID = pageID
         let web = MuzoiGlamShowingWeb(document: url, purpose: purpose) { [weak self] event in
@@ -417,9 +438,12 @@ final class MuzoiGlamShowingCoordinator: UIViewController {
                 if case .registration = purpose {
                     if case .loading = event { self.loadOverlay(captureCurrentPage: false) }
                     else { self.hideOverlay() }
+                } else if case .loadStopped = event, self.overlay.superview === self.presentedPage?.viewIfLoaded {
+                    self.overlay.clear()
                 }
             case .ready:
                 if case .registration = purpose { self.hideOverlay() }
+                else if self.overlay.superview === self.presentedPage?.viewIfLoaded { self.overlay.clear() }
                 if let page = self.presentedPage as? MuzoiGlamShowingWeb {
                     if page.isOnboardingDocument {
                         self.cancelTransition()
@@ -436,7 +460,7 @@ final class MuzoiGlamShowingCoordinator: UIViewController {
         stage(web)
         if case .remote = purpose {
             hasRevealedPage = true
-            overlay.clear()
+            overlay.attach(to: web.view, belowContent: true)
         }
         return web
     }

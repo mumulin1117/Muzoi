@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NotificationCenter.default.addObserver(self, selector: #selector(glamCoverSessionExpired), name: TesseraCeruleanAtelierMuao.camelliaPatinaSignalMuao, object: nil)
         }
 
+        glamApplication.registerForRemoteNotifications()
         // Every cold launch is dispatched exclusively by the new Open contract.
         muzoiWindow.rootViewController = MuzoiGlamShowingCoordinator()
         muzoiWindow.makeKeyAndVisible()

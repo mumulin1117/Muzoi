@@ -135,7 +135,7 @@ nonisolated enum MuzoiGlamNativePurchaseFeedback {
     }
 }
 
-/// 固定在当前页面上方，不通过额外的控制器展示加载。
+/// 在原生页面上方或网页下方展示同一个加载动画。
 @MainActor
 final class MuzoiGlamLoadingOverlay: UIView {
     static let background = UIColor(red: 12/255, green: 14/255, blue: 21/255, alpha: 1)
@@ -163,18 +163,25 @@ final class MuzoiGlamLoadingOverlay: UIView {
         snapshotHost.accessibilityElementsHidden = true
         pin(launchImage, to: self); pin(snapshotHost, to: self); pin(blur, to: self)
         panel.install(in: self)
-        accessibilityViewIsModal = true
-        layer.zPosition = 100
     }
     required init?(coder: NSCoder) { nil }
 
-    func attach(to host: UIView) {
-        if superview === host { host.bringSubviewToFront(self); return }
-        NSLayoutConstraint.deactivate(hostConstraints); removeFromSuperview()
-        translatesAutoresizingMaskIntoConstraints = false; host.addSubview(self)
-        hostConstraints = [topAnchor.constraint(equalTo: host.topAnchor), bottomAnchor.constraint(equalTo: host.bottomAnchor),
-                           leadingAnchor.constraint(equalTo: host.leadingAnchor), trailingAnchor.constraint(equalTo: host.trailingAnchor)]
-        NSLayoutConstraint.activate(hostConstraints)
+    func attach(to host: UIView, belowContent: Bool = false) {
+        isUserInteractionEnabled = !belowContent
+        accessibilityViewIsModal = !belowContent
+        accessibilityElementsHidden = belowContent
+        layer.zPosition = belowContent ? 0 : 100
+        if superview !== host {
+            NSLayoutConstraint.deactivate(hostConstraints)
+            removeFromSuperview()
+            translatesAutoresizingMaskIntoConstraints = false
+            host.addSubview(self)
+            hostConstraints = [topAnchor.constraint(equalTo: host.topAnchor), bottomAnchor.constraint(equalTo: host.bottomAnchor),
+                               leadingAnchor.constraint(equalTo: host.leadingAnchor), trailingAnchor.constraint(equalTo: host.trailingAnchor)]
+            NSLayoutConstraint.activate(hostConstraints)
+        }
+        if belowContent { host.sendSubviewToBack(self) }
+        else { host.bringSubviewToFront(self) }
     }
 
     func seedSnapshot(_ snapshot: UIView) { lastSnapshot = snapshot }

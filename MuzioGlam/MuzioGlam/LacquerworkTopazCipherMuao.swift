@@ -14,13 +14,22 @@ enum TesseraCeruleanAtelierMuao {
     static let siennaMosaicLusterMuao = NacreousPastelOvertureOpus("xp76sGp1oscdm0vDaEnTtN5jjC916FuD")
     static let azuriteEtchingVectorMuao = NacreousPastelOvertureOpus("k4nN05jSqeol9tzPx5pdlti308sOeftc")
     static let camelliaPatinaSignalMuao = Notification.Name(NacreousPastelOvertureOpus("MmuxzxorirGLlAatmaC2o4v8elr2S6epsZspi1ocnACrhJamnZgZeqd2"))
-    static var graphitewashLotusImprintMuao: String {
-        let damaskAquarelleDefaultsMuao = UserDefaults.standard
-        if let topazSilkStoredMuao = damaskAquarelleDefaultsMuao.string(forKey: NacreousPastelOvertureOpus("mhutzPoti0CNoWvZeRrFDremvbi5cveLNQoD")) { return topazSilkStoredMuao }
-        let carmineMosaicGeneratedMuao = (UIDevice.current.identifierForVendor?.uuidString ?? UUID().uuidString) + "48934308"
-        damaskAquarelleDefaultsMuao.set(carmineMosaicGeneratedMuao, forKey: NacreousPastelOvertureOpus("mhutzPoti0CNoWvZeRrFDremvbi5cveLNQoD"))
-        return carmineMosaicGeneratedMuao
-    }
+    static let graphitewashLotusImprintMuao: String = {
+        let hematiteLacquerStatusMuao = UserDefaults.standard
+        let juniperTemperaCodeMuao = NacreousPastelOvertureOpus("mhutzPoti0CNoWvZeRrFDremvbi5cveLNQoD")
+        let siennaPlumeReferenceMuao = hematiteLacquerStatusMuao.string(forKey: juniperTemperaCodeMuao)
+        let ReferenceMuao = MuzoiGlamShowingIdentity.appID
+        let marquetryVellumObjectMuao = PigmentAtelierMuzCoverSession.wisteriaEncausticSharedMuao.muzoiDeviceIdentifier {
+            if let siennaPlumeReferenceMuao, siennaPlumeReferenceMuao.hasSuffix(ReferenceMuao),
+               UUID(uuidString: String(siennaPlumeReferenceMuao.dropLast(ReferenceMuao.count))) != nil {
+                return siennaPlumeReferenceMuao
+            }
+            return UUID().uuidString + ReferenceMuao
+        }
+       //设备号
+        if siennaPlumeReferenceMuao != marquetryVellumObjectMuao { hematiteLacquerStatusMuao.set(marquetryVellumObjectMuao, forKey: juniperTemperaCodeMuao) }
+        return marquetryVellumObjectMuao
+    }()
 }
 
 struct PatinaSaffronProtocolMuao: LocalizedError {
@@ -113,6 +122,24 @@ final class PigmentAtelierMuzCoverSession {
     }
     private func damaskSilkQueryMuao(_ topazMosaicAccountMuao: String) -> [String: Any] {
         [kSecClass as String: kSecClassGenericPassword, kSecAttrService as String: vermilionLatticeServiceMuao, kSecAttrAccount as String: topazMosaicAccountMuao]
+    }
+    func muzoiDeviceIdentifier(fallback: () -> String) -> String {
+        let account = "muzoiDeviceIdentifier"
+        if let stored = hematiteTemperaReadMuao(account) { return stored }
+        let deviceID = fallback()
+        #if MUZOI_COVER_PROBE
+        graphitewashMagnoliaMemoryMuao[account] = deviceID
+        #else
+        var attributes = damaskSilkQueryMuao(account)
+        attributes[kSecValueData as String] = Data(deviceID.utf8)
+        attributes[kSecAttrAccessible as String] = kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
+        // 只新增设备记录，避免读取暂时失败时覆盖已有标识。
+        if SecItemAdd(attributes as CFDictionary, nil) == errSecDuplicateItem,
+           let stored = hematiteTemperaReadMuao(account) {
+            return stored
+        }
+        #endif
+        return deviceID
     }
     func carmineLacquerClearMuao() {
         #if MUZOI_COVER_PROBE

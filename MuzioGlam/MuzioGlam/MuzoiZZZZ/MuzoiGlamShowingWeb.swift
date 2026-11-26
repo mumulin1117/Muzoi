@@ -1,7 +1,6 @@
 import UIKit
 import WebKit
 import SafariServices
-import AVFoundation
 
 @MainActor
 final class MuzoiGlamShowingMessageProxy: NSObject, WKScriptMessageHandler {
@@ -34,8 +33,6 @@ final class MuzoiGlamShowingWeb: UIViewController, WKNavigationDelegate, WKUIDel
     private let onEvent: (Event) -> Void
     private let document: URL
     private var handlers: Set<String> = []
-    private var registrationBottom: NSLayoutConstraint?
-    private var keyboardObservers: [NSObjectProtocol] = []
     private var navigation: WKNavigation?
     private var ready = false
     private var closed = false
@@ -53,21 +50,6 @@ final class MuzoiGlamShowingWeb: UIViewController, WKNavigationDelegate, WKUIDel
     private var purchaseResultDismissal: Task<Void, Never>?
     private var purchaseInputBlocked = false
     private lazy var web = makeWebView()
-
-    private static let businessMediaGestureScript = """
-        (() => {
-          let lastActivation = -Infinity;
-          const activate = event => {
-            if (event.isTrusted) lastActivation = performance.now();
-          };
-          addEventListener('pointerup', activate, { capture: true, passive: true });
-          addEventListener('click', activate, { capture: true, passive: true });
-          addEventListener('keydown', event => {
-            if ((event.key === 'Enter' || event.key === ' ') && !event.repeat) activate(event);
-          }, true);
-          globalThis.muzoiGlamCanPromptForMedia = () => performance.now() - lastActivation <= 10000;
-        })();
-        """
 
     var canAcceptBusinessActions: Bool {
         guard ready, !closed, !isOnboardingDocument, viewIfLoaded?.window != nil,
@@ -106,16 +88,9 @@ final class MuzoiGlamShowingWeb: UIViewController, WKNavigationDelegate, WKUIDel
         view.backgroundColor = MuzoiGlamLoadingOverlay.background
         view.addSubview(web)
         NSLayoutConstraint.activate([
-            web.topAnchor.constraint(equalTo: view.topAnchor), registrationBottomConstraint(),
+            web.topAnchor.constraint(equalTo: view.topAnchor), web.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             web.leadingAnchor.constraint(equalTo: view.leadingAnchor), web.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
-//        if case .registration = purpose {
-//            for name in [UIResponder.keyboardWillShowNotification, UIResponder.keyboardWillHideNotification, UIResponder.keyboardWillChangeFrameNotification] {
-//                keyboardObservers.append(NotificationCenter.default.addObserver(forName: name, object: nil, queue: .main) { [weak self] note in
-//                    MainActor.assumeIsolated { self?.adjustRegistrationKeyboard(note) }
-//                })
-//            }
-//        }
         load()
     }
 
@@ -123,30 +98,6 @@ final class MuzoiGlamShowingWeb: UIViewController, WKNavigationDelegate, WKUIDel
         super.viewDidAppear(animated)
         resumePurchaseFeedback()
     }
-
-    private func registrationBottomConstraint() -> NSLayoutConstraint {
-        if case .registration = purpose {
-            let bottom = web.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-            registrationBottom = bottom
-            return bottom
-        }
-        return web.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-    }
-
-//    private func adjustRegistrationKeyboard(_ notification: Notification) {
-//        guard let bottom = registrationBottom, let window = view.window else { return }
-//        let info = notification.userInfo ?? [:]
-//        let hidden = notification.name == UIResponder.keyboardWillHideNotification
-//        let screenFrame = (info[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue ?? .zero
-//        let frame = view.convert(window.convert(screenFrame, from: window.screen.coordinateSpace), from: window)
-//        let overlap = hidden || !frame.intersects(view.bounds) ? 0 : max(0, view.bounds.maxY - frame.minY)
-//        bottom.constant = -overlap
-//        let duration = (info[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double) ?? 0.25
-//        let curve = (info[UIResponder.keyboardAnimationCurveUserInfoKey] as? UInt) ?? 7
-//        UIView.animate(withDuration: duration, delay: 0, options: [UIView.AnimationOptions(rawValue: curve << 16), .beginFromCurrentState]) {
-//            self.view.layoutIfNeeded()
-//        }
-//    }
 
     private func makeWebView() -> WKWebView {
         let configuration = WKWebViewConfiguration()
@@ -161,41 +112,6 @@ final class MuzoiGlamShowingWeb: UIViewController, WKNavigationDelegate, WKUIDel
         switch purpose {
         case .registration:
             handlers = ["openUrl"]
-            let compactForm = """
-                (() => {
-                  const style = document.createElement('style');
-                  style.textContent = `
-                    @media (max-height: 420px) {
-                      html[data-muzoi-entry-form] .app-page__header { padding-top: max(env(safe-area-inset-top), 4px); padding-bottom: 4px; }
-                      html[data-muzoi-entry-form] .back-button { width: 44px; height: 44px; }
-                      html[data-muzoi-entry-form] .footer-actions { padding: 1px 16px; gap: 2px; }
-                      html[data-muzoi-entry-form] .app-button { min-height: 44px; padding: 10px 16px; font-size: 16px; }
-                      html[data-muzoi-entry-form] .legal-links { margin: 0; font-size: 12px; line-height: 1.2; }
-                      html[data-muzoi-entry-form] .page-body { padding-top: 12px; padding-bottom: 12px; }
-                      html[data-muzoi-entry-form] .page-body h1 { font-size: 28px; line-height: 1.2; }
-                      html[data-muzoi-entry-form] .auth-form { margin-top: 16px; gap: 12px; }
-                      html[data-muzoi-entry-form] .auth-field__surface { padding-top: 10px; padding-bottom: 10px; font-size: 16px; line-height: 22px; }
-                      html[data-muzoi-entry-form] .switch-auth { margin-top: 12px; font-size: 13px; line-height: 1.5; }
-                    }`;
-                  document.head.appendChild(style);
-                  const mark = () => {
-                    const route = location.hash.slice(1).split('?')[0];
-                    if (route === '/login' || route === '/register/nickname') document.documentElement.dataset.muzoiEntryForm = '';
-                    else delete document.documentElement.dataset.muzoiEntryForm;
-                  };
-                  mark(); addEventListener('hashchange', mark);
-                })();
-                """
-            controller.addUserScript(WKUserScript(source: compactForm, injectionTime: .atDocumentEnd, forMainFrameOnly: true))
-            let dismissKeyboard = """
-                document.addEventListener('click', event => {
-                    if (!event.target.closest('input, textarea, select, [contenteditable], button, a, label')) {
-                        const active = document.activeElement;
-                        if (active?.matches('input, textarea, [contenteditable]')) active.blur();
-                    }
-                });
-                """
-            controller.addUserScript(WKUserScript(source: dismissKeyboard, injectionTime: .atDocumentStart, forMainFrameOnly: true))
             controller.addUserScript(WKUserScript(source: MuzoiGlamShowingAccount.observingHandoff,
                                                    injectionTime: .atDocumentStart, forMainFrameOnly: true))
             controller.addUserScript(WKUserScript(source: MuzoiGlamShowingAccount.observingSubmittedIdentity,
@@ -204,24 +120,6 @@ final class MuzoiGlamShowingWeb: UIViewController, WKNavigationDelegate, WKUIDel
         case .remote(let mayUseBusiness):
             handlers = ["muzoiGlamSignOut", "refractiveBeautyJournal", "holographicStyleArchive"]
             handlers.formUnion(MuzoiGlamShowingPage.allCases.map(\.handler))
-            // 兼容已部署的旧欢迎页，跳转仍由按钮消息触发。
-            let directWelcome = """
-                (() => {
-                  if (document.body?.dataset.muzoiPage !== 'welcome') return;
-                  const dialog = document.getElementById('muzoi-eula');
-                  const button = document.getElementById('muzoi-start');
-                  if (!dialog || !button) return;
-                  if (dialog.open) dialog.close();
-                  dialog.remove();
-                  button.addEventListener('click', event => {
-                    const bridge = window.MuzoiGlamBridge;
-                    if (!bridge || bridge.isLocked()) return;
-                    event.stopImmediatePropagation();
-                    bridge.activate(button);
-                  }, true);
-                })();
-                """
-            controller.addUserScript(WKUserScript(source: directWelcome, injectionTime: .atDocumentEnd, forMainFrameOnly: true))
             if mayUseBusiness {
                 handlers.formUnion(["biomechanicalMakeupRenderer", "kineticMakeupAnimation"])
                 let mapping = MuzoiGlamBusinessConfiguration.profile.incoming
@@ -230,8 +128,6 @@ final class MuzoiGlamShowingWeb: UIViewController, WKNavigationDelegate, WKUIDel
                     handlers.insert(name)
                 }
                 configuration.preferences.javaScriptCanOpenWindowsAutomatically = false
-                controller.addUserScript(WKUserScript(source: Self.businessMediaGestureScript, injectionTime: .atDocumentStart,
-                                                      forMainFrameOnly: true, in: .defaultClient))
             }
             let state = """
             (() => {
@@ -308,8 +204,6 @@ final class MuzoiGlamShowingWeb: UIViewController, WKNavigationDelegate, WKUIDel
         if presentedViewController is SFSafariViewController { dismiss(animated: false) }
         clearPurchaseFeedback()
         closed = true
-        keyboardObservers.forEach(NotificationCenter.default.removeObserver)
-        keyboardObservers.removeAll()
         navigationReadyTask?.cancel()
         queued.removeAll()
         if isViewLoaded {
