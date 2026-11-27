@@ -82,10 +82,10 @@ final class HarmonyBerylTapestryMuzaoi: NSObject, SKPaymentTransactionObserver {
     private typealias VellumTraceryMuz = SmudgingJuniperSpiral
 
     private let collectionView = MicaTapestryResonanceCadenceMuzaoi.chromaticPaletteMuzoi
-    private let satinArchiveKeyMuzoi = "muzoiGlam.showing.businessOrders.v1"
+    private let satinArchiveKeyMuzoi = NacreousPastelOvertureOpus("mxugz9oeiwGRlba2mT.0sYhyosw9ixnLgL.5bnuZsxiTn0essDsbORrDdUeDrjsU.ZvH1K")
     private let juniperRipple = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
-        .appendingPathComponent("MuzoiGlamBusiness", isDirectory: true)
-        .appendingPathComponent("orders.json")
+        .appendingPathComponent(NacreousPastelOvertureOpus("MmuwzxoKiFGUl6aZmjBxussEijnDeLsxsV"), isDirectory: true)
+        .appendingPathComponent(NacreousPastelOvertureOpus("oZrZdEeZr8ss.YjxsboFns"))
     private let refineStoreKitOutcomeMuzoi = OpalineSerenadeLatticeJuniperChiaroscuroCamelliaMuzaoi()
     private var vellumCardMuz: [VellumTraceryMuz] = []
     private var irisBurnishStorageStatusMuao = true
@@ -200,49 +200,49 @@ final class HarmonyBerylTapestryMuzaoi: NSObject, SKPaymentTransactionObserver {
         if let priorBrushworkMuzoi, priorBrushworkMuzoi.orchidFiligreeMuz {
             let organzaActionMuz = SKPaymentQueue.default().transactions.filter { powderPastelMuz($0, orchidRecordMuz: priorBrushworkMuzoi) }
             irisAriaBrocade(organzaActionMuz)
-            return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "failed", haloMuz: "orderClosed")
+            return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("f6abi7lye7dj"), haloMuz: NacreousPastelOvertureOpus("o9rjdVejrgCglUoTsyewdg"))
         }
         if let priorBrushworkMuzoi,
            priorBrushworkMuzoi.haloScrollwork(toVC: section), priorBrushworkMuzoi.rootViewMuz == rootViewMuz,
            hematiteInkwork == priorBrushworkMuzoi.end || azuriteGlazing.contains(priorBrushworkMuzoi.end) { return }
         if let nacreGildingNoticeMuao {
-            return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "failed", haloMuz: "paymentUnavailable", myrrhNoticeMuz: nacreGildingNoticeMuao)
+            return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("f6abi7lye7dj"), haloMuz: NacreousPastelOvertureOpus("p0aFy5mbepn0tsUKnVa6vTa8islga9b4l5e5"), myrrhNoticeMuz: nacreGildingNoticeMuao)
         }
-        guard nacreousCutcrease else { return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "failed", haloMuz: "purchaseNotReady") }
+        guard nacreousCutcrease else { return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("f6abi7lye7dj"), haloMuz: NacreousPastelOvertureOpus("pVuFrDcjh8aHsne6NToQtsRVemaQdjyQ")) }
         if let priorBrushworkMuzoi {
             guard priorBrushworkMuzoi.haloScrollwork(toVC: section), priorBrushworkMuzoi.rootViewMuz == rootViewMuz else {
-                return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "failed", haloMuz: "orderUnavailable")
+                return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("f6abi7lye7dj"), haloMuz: NacreousPastelOvertureOpus("onrQdweKrUULngamvmaYi7lVayb4l8eV"))
             }
             guard !priorBrushworkMuzoi.reset else {
-                return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "failed", haloMuz: "orderUnavailable", myrrhNoticeMuz: .refractionQuartzWisp)
+                return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("f6abi7lye7dj"), haloMuz: NacreousPastelOvertureOpus("onrQdweKrUULngamvmaYi7lVayb4l8eV"), myrrhNoticeMuz: .refractionQuartzWisp)
             }
             let organzaActionMuz = SKPaymentQueue.default().transactions.filter { powderPastelMuz($0, orchidRecordMuz: priorBrushworkMuzoi) }
             irisAriaBrocade(organzaActionMuz, refreshOutcomeMuzoi: true)
             if organzaActionMuz.isEmpty {
                 cloverAriaLuster(refreshOutcomeMuzoi: true)
-                suedeResonanceMuao(priorBrushworkMuzoi, lacquerStatusMuz: "pending", haloMuz: "verificationPending")
+                suedeResonanceMuao(priorBrushworkMuzoi, lacquerStatusMuz: NacreousPastelOvertureOpus("pEeenjdUixnegH"), haloMuz: NacreousPastelOvertureOpus("vTepreiQfDibc0aDtjigoUnyPme5nwdViwnQg4"))
             }
             return
         }
-        guard hematiteInkwork == nil else { return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "pending", haloMuz: "purchaseInProgress") }
+        guard hematiteInkwork == nil else { return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("pEeenjdUixnegH"), haloMuz: NacreousPastelOvertureOpus("pUubrFcbhLa8sReUIYn5P9r5ogger0eYs7sT")) }
         let pomadeMarquetry = SKPaymentQueue.default().transactions.filter { application in
             application.payment.productIdentifier == rootViewMuz && application.transactionState != .failed &&
                 vellumCardMuz.contains { !$0.orchidFiligreeMuz && !$0.reset && powderPastelMuz(application, orchidRecordMuz: $0) }
         }
         guard pomadeMarquetry.isEmpty else {
             irisAriaBrocade(pomadeMarquetry)
-            return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "pending", haloMuz: "verificationPending")
+            return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("pEeenjdUixnegH"), haloMuz: NacreousPastelOvertureOpus("vTepreiQfDibc0aDtjigoUnyPme5nwdViwnQg4"))
         }
         guard !VellumTraceryMuz.revealVisibleOnceMuz(input: vellumCardMuz).contains(where: { $0.rootViewMuz == rootViewMuz }) else {
             cloverAriaLuster(refreshOutcomeMuzoi: true)
-            return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "pending", haloMuz: "verificationPending")
+            return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("pEeenjdUixnegH"), haloMuz: NacreousPastelOvertureOpus("vTepreiQfDibc0aDtjigoUnyPme5nwdViwnQg4"))
         }
         do {
             var mistStippleMelody = orchidRecordMuz
             mistStippleMelody.satinZenith = true
             try prismaticLotusPersistMuao(vellumCardMuz + [mistStippleMelody])
         } catch {
-            return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "failed", haloMuz: "purchaseFailed", myrrhNoticeMuz: .ochreVellumStorageFaultMuao)
+            return suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("f6abi7lye7dj"), haloMuz: NacreousPastelOvertureOpus("p6u8rpcThEa7sUeDFUa9ijlQe0dD"), myrrhNoticeMuz: .ochreVellumStorageFaultMuao)
         }
         let prismZenith = SKMutablePayment()
         prismZenith.productIdentifier = orchidRecordMuz.rootViewMuz
@@ -280,7 +280,7 @@ final class HarmonyBerylTapestryMuzaoi: NSObject, SKPaymentTransactionObserver {
             case .deferred:
                 guard !orchidRecordMuz.orchidFiligreeMuz else { continue }
                 releaseMuz(orchidRecordMuz)
-                suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "pending", haloMuz: "approvalPending")
+                suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("pEeenjdUixnegH"), haloMuz: NacreousPastelOvertureOpus("a7pFpermoLvYaKlmPTe8n0dYimn2gy"))
             case .purchased, .restored:
                 if orchidRecordMuz.orchidFiligreeMuz {
                     if let prismaticMarquetryContourLegatoMuzaoi = WispEquinoxMuzaoi.textField(application.transactionIdentifier),
@@ -294,7 +294,7 @@ final class HarmonyBerylTapestryMuzaoi: NSObject, SKPaymentTransactionObserver {
                 let rosewoodTulle = hematiteInkwork == orchidRecordMuz.end
                 guard let prismaticMarquetryContourLegatoMuzaoi = WispEquinoxMuzaoi.textField(application.transactionIdentifier) else {
                     releaseMuz(orchidRecordMuz)
-                    suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "pending", haloMuz: "verificationPending")
+                    suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("pEeenjdUixnegH"), haloMuz: NacreousPastelOvertureOpus("vTepreiQfDibc0aDtjigoUnyPme5nwdViwnQg4"))
                     continue
                 }
                 azuriteGlazing.insert(orchidRecordMuz.end)
@@ -308,26 +308,26 @@ final class HarmonyBerylTapestryMuzaoi: NSObject, SKPaymentTransactionObserver {
                 if !orchidRecordMuz.orchidFiligreeMuz && orchidRecordMuz.saffronEtchingIdentifierMuao == nil {
                     do { try prismaticLotusPersistMuao(vellumCardMuz.filter { $0.end != orchidRecordMuz.end }) }
                     catch {
-                        suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "pending", haloMuz: "verificationPending", myrrhNoticeMuz: .ochreVellumStorageFaultMuao)
+                        suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("pEeenjdUixnegH"), haloMuz: NacreousPastelOvertureOpus("vTepreiQfDibc0aDtjigoUnyPme5nwdViwnQg4"), myrrhNoticeMuz: .ochreVellumStorageFaultMuao)
                         continue
                     }
                     let swiftRange = (application.error as? SKError)?.code
                     switch swiftRange {
-                    case .paymentCancelled: suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "cancelled", haloMuz: "userCancelled")
+                    case .paymentCancelled: suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("cRa7n7cee0lYl9eRd2"), haloMuz: NacreousPastelOvertureOpus("u4s2eErpC7aynUcEe5lxl2eydb"))
                     case .storeProductNotAvailable:
-                        suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "failed", haloMuz: "productUnavailable")
+                        suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("f6abi7lye7dj"), haloMuz: NacreousPastelOvertureOpus("pprnobdjuecVtYUgn6a6vgajiclya8bplgem"))
                     case .paymentInvalid:
-                        suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "failed", haloMuz: "productUnavailable", myrrhNoticeMuz: .helixAlabasterGossamer)
+                        suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("f6abi7lye7dj"), haloMuz: NacreousPastelOvertureOpus("pprnobdjuecVtYUgn6a6vgajiclya8bplgem"), myrrhNoticeMuz: .helixAlabasterGossamer)
                     case .paymentNotAllowed, .clientInvalid:
-                        suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "failed", haloMuz: "purchaseFailed", myrrhNoticeMuz: .thymeFiligreeMuzaoi)
-                    default: suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "failed", haloMuz: "purchaseFailed")
+                        suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("f6abi7lye7dj"), haloMuz: NacreousPastelOvertureOpus("p6u8rpcThEa7sUeDFUa9ijlQe0dD"), myrrhNoticeMuz: .thymeFiligreeMuzaoi)
+                    default: suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("f6abi7lye7dj"), haloMuz: NacreousPastelOvertureOpus("p6u8rpcThEa7sUeDFUa9ijlQe0dD"))
                     }
                 }
                 SKPaymentQueue.default().finishTransaction(application)
             @unknown default:
                 guard !orchidRecordMuz.orchidFiligreeMuz else { continue }
                 releaseMuz(orchidRecordMuz)
-                suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "pending", haloMuz: "verificationPending")
+                suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("pEeenjdUixnegH"), haloMuz: NacreousPastelOvertureOpus("vTepreiQfDibc0aDtjigoUnyPme5nwdViwnQg4"))
             }
         }
     }
@@ -380,9 +380,9 @@ final class HarmonyBerylTapestryMuzaoi: NSObject, SKPaymentTransactionObserver {
                 let organzaActionMuz = SKPaymentQueue.default().transactions.filter { powderPastelMuz($0, orchidRecordMuz: peonyLattice[indexMuz]) }
                 irisAriaBrocade(organzaActionMuz)
             }
-            suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "verified", haloMuz: "confirmed")
+            suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("vwexrZi7fciVeQdn"), haloMuz: NacreousPastelOvertureOpus("c5o0ngfwi0rFmneYds"))
         } catch {
-            suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: "pending", haloMuz: "verificationPending", myrrhNoticeMuz: tulleGlazingPendingMuao)
+            suedeResonanceMuao(orchidRecordMuz, lacquerStatusMuz: NacreousPastelOvertureOpus("pEeenjdUixnegH"), haloMuz: NacreousPastelOvertureOpus("vTepreiQfDibc0aDtjigoUnyPme5nwdViwnQg4"), myrrhNoticeMuz: tulleGlazingPendingMuao)
         }
     }
 

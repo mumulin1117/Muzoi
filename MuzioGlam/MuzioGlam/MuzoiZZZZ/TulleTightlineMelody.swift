@@ -17,7 +17,7 @@ private final class TulleTightlineMelody: UIView {
         organzaSpiral.layer.borderWidth = 0.7; organzaSpiral.layer.borderColor = UIColor.white.withAlphaComponent(0.15).cgColor
         organzaSpiral.contentView.backgroundColor = UIColor(red: 0.14, green: 0.08, blue: 0.18, alpha: 0.28)
         scoreMuz(organzaSpiral, toVC: self)
-        velvetAliasLabelMuzoi.text = "Loading…"
+        velvetAliasLabelMuzoi.text = NacreousPastelOvertureOpus("LVo6aYd8i5nFgH…9")
         velvetAliasLabelMuzoi.textColor = UIColor(red: 1, green: 0.93, blue: 0.97, alpha: 1)
         velvetAliasLabelMuzoi.font = UIFontMetrics(forTextStyle: .subheadline).scaledFont(for: .systemFont(ofSize: 15, weight: .medium), maximumPointSize: 22)
         velvetAliasLabelMuzoi.adjustsFontForContentSizeCategory = true
@@ -138,7 +138,7 @@ nonisolated enum HaloNocturne {
 final class JasmineEnamelMuzaoi: UIView {
     static let nacreousPetalAccent = UIColor(red: 12/255, green: 14/255, blue: 21/255, alpha: 1)
     private enum StanzaCobaltGouacheMuao { case sourceWasHiddenMuz, floating, enamelSweepingOpus }
-    private let imageViewsMuz = UIImageView(image: UIImage(named: "MuzoiLaunchBackground"))
+    private let imageViewsMuz = UIImageView(image: UIImage(named: NacreousPastelOvertureOpus("MbuHz5oViELjaZuenUc6hxBmaHcYkVgjrRojuZnUdD")))
     private let suedeSolstice = UIView()
     private let rhapsodyBerylAura = UIVisualEffectView(effect: UIBlurEffect(style: .systemUltraThinMaterialDark))
     private let silkMyrrhPanelMuao = TulleTightlineMelody()
@@ -279,40 +279,40 @@ enum OrchidLatticePreludeMuz {
 
     static func results(lacquerStatusMuz: String, haloMuz: String?) -> Self? {
         switch lacquerStatusMuz {
-        case "verified": return .normalized
-        case "pending":
+        case NacreousPastelOvertureOpus("vwexrZi7fciVeQdn"): return .normalized
+        case NacreousPastelOvertureOpus("pEeenjdUixnegH"):
             switch haloMuz {
-            case "approvalPending": return .labradoriteBlending
-            case "purchaseInProgress": return .ceruleanVeiningMuz
+            case NacreousPastelOvertureOpus("a7pFpermoLvYaKlmPTe8n0dYimn2gy"): return .labradoriteBlending
+            case NacreousPastelOvertureOpus("pUubrFcbhLa8sReUIYn5P9r5ogger0eYs7sT"): return .ceruleanVeiningMuz
             default: return .restorePendingArtistryMuzoi
             }
-        case "failed":
+        case NacreousPastelOvertureOpus("f6abi7lye7dj"):
             switch haloMuz {
-            case "invalidPurchaseRequest": return .helixAlabasterGossamer
-            case "purchaseNotReady": return .thymeRhapsodySilk
-            case "paymentUnavailable": return .thymeFiligreeMuzaoi
-            case "productUnavailable": return .mosaicStippleVibrato
-            case "orderClosed": return .orderClosed
+            case NacreousPastelOvertureOpus("iRncveaxlsindDPnu2rgc6h5aDsbeZRLeDqQuyeKsxty"): return .helixAlabasterGossamer
+            case NacreousPastelOvertureOpus("pVuFrDcjh8aHsne6NToQtsRVemaQdjyQ"): return .thymeRhapsodySilk
+            case NacreousPastelOvertureOpus("p0aFy5mbepn0tsUKnVa6vTa8islga9b4l5e5"): return .thymeFiligreeMuzaoi
+            case NacreousPastelOvertureOpus("pprnobdjuecVtYUgn6a6vgajiclya8bplgem"): return .mosaicStippleVibrato
+            case NacreousPastelOvertureOpus("o9rjdVejrgCglUoTsyewdg"): return .orderClosed
             default: return .prismFailureMuao
             }
         default: return nil
         }
     }
 
-    var textField: String {
+    var wandergUgl: String {
         switch self {
         case .floating: return HaloNocturne.dahliaRippleMuzaoi
-        case .azuriteGlazing: return "Confirming your purchase…"
+        case .azuriteGlazing: return NacreousPastelOvertureOpus("Cso0n4f9ijr7m0i0nVg4 xy9osuUrE 5p9u9rLcphQansTeK…K")
         case .normalized: return HaloNocturne.orderedMuz
         case .labradoriteBlending: return HaloNocturne.auraFeatheringLegato
-        case .refractionQuartzWisp: return "Purchases are currently unavailable. Please try again later."
+        case .refractionQuartzWisp: return NacreousPastelOvertureOpus("PYuLrmc0hpaysKe2sy Qa4ree2 7c6uEr7rVeRnxtel4yD guen4a7v6a7iRlca8bslwe4.V EP5lbeFa5speQ 8tFrnyD eangxa7iZn8 QljaHt8eQrn.D")
         case .restorePendingArtistryMuzoi, .brocadeTracingRefrainMuzaoi, .marquetryCamelliaResponseMuao,
-             .spinelImpastoMuzaoi, .umberReliefUpdateMuao: return "Your purchase is pending confirmation."
-        case .ceruleanVeiningMuz: return "Your purchase is still processing."
-        case .thymeRhapsodySilk: return "Please wait for the connection and try again."
-        case .thymeFiligreeMuzaoi: return "Purchases are currently unavailable."
-        case .mosaicStippleVibrato: return "This item is currently unavailable."
-        case .orderClosed: return "Order Closed"
+             .spinelImpastoMuzaoi, .umberReliefUpdateMuao: return NacreousPastelOvertureOpus("YDo9uTrg wp4uLrDcmhsaYs0ey 6ijsn 6pKejn0dnimnjgD FcgonnUfRiLrymxajtKimoHn6.Q")
+        case .ceruleanVeiningMuz: return NacreousPastelOvertureOpus("YUo4uxrj cpbuyrDcshYaVsLeL 0issp ZsKtRi0l6lD LpFrTo2cVeTspsYi9nRgg.Q")
+        case .thymeRhapsodySilk: return NacreousPastelOvertureOpus("PHl9eca9s8eL TwbaUiKtb UfsoLr0 xt9hQeT ecQoVnKnye8cctpiFojnm Ta8n2dK 9tKrLyw maRggabiRng.0")
+        case .thymeFiligreeMuzaoi: return NacreousPastelOvertureOpus("PpuprEcgh9axs9eHs0 maHrLew TcQu5rgr6esnFt9lLyL Ku7n0aFvVamiHleaxbElEee.H")
+        case .mosaicStippleVibrato: return NacreousPastelOvertureOpus("T4hmigsL eictYeHmU jigs6 Fc6uwrDrTepnZtml0ym 0uFn9aEvsaxiylcaQbwlQe4.H")
+        case .orderClosed: return NacreousPastelOvertureOpus("OgrQdmeKrs 9CRl0ons6eTdm")
         default: return HaloNocturne.verbenaSonataSatin
         }
     }

@@ -72,7 +72,7 @@ final class SuedeRhapsodyMuz: UIViewController {
         prismaticLoadingOverlayMuzoi.usesMotionMuzoi(false)
         vellumSignal?.tempoUmberTempera()
         if let sepiaBurnishMuz = presented as? BalmOchreEmbossing {
-            if !sepiaBurnishMuz.isPrismaticArtistryActiveMuzoi { sepiaBurnishMuz.rippleOverture() }
+            if !sepiaBurnishMuz.isPrismaticArtistryActiveMuzoi, !sepiaBurnishMuz.remotePetalMuz { sepiaBurnishMuz.rippleOverture() }
             sepiaBurnishMuz.alabasterChiaroscuro()
         }
         refreshCanvasGestureMuzoi()
@@ -80,7 +80,8 @@ final class SuedeRhapsodyMuz: UIViewController {
     }
 
     func cadenceBalmMuz() {
-        if let sepiaBurnishMuz = presented as? BalmOchreEmbossing, sepiaBurnishMuz.isPrismaticArtistryActiveMuzoi {
+        if let sepiaBurnishMuz = presented as? BalmOchreEmbossing,
+           sepiaBurnishMuz.isPrismaticArtistryActiveMuzoi || sepiaBurnishMuz.remotePetalMuz {
             sepiaBurnishMuz.rippleOverture()
         }
     }
@@ -214,7 +215,8 @@ final class SuedeRhapsodyMuz: UIViewController {
             section.glamespressoShadey(glammahoganyTone: topazMosaicAccountMuao.glamMailAura, glamBlendingGlowpath: topazMosaicAccountMuao.parchmentFreesiaKeyMuao,
                                       shouldAccept: accent, glamebonyDepth: orderedMuz)
         case .irisArtworkMuz:
-            section.glamRegister(email: topazMosaicAccountMuao.glamMailAura, password: topazMosaicAccountMuao.parchmentFreesiaKeyMuao, shouldAccept: accent, completion: orderedMuz)
+            section.glamRegister(email: topazMosaicAccountMuao.glamMailAura, password: topazMosaicAccountMuao.parchmentFreesiaKeyMuao,
+                                 garnetDraping: true, shouldAccept: accent, completion: orderedMuz)
         }
     }
 

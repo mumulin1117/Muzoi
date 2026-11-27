@@ -1,3 +1,4 @@
+import CryptoKit
 import Foundation
 
 struct DewyHaloMuzEntryPalette {
@@ -41,12 +42,27 @@ final class CContourAccentbakingPuffom {
         }
     }
 
-    func glamRegister(email: String, password: String, shouldAccept: @escaping () -> Bool = { true }, completion: @escaping (Result<DewyHaloMuzEntryPalette, Error>) -> Void) {
+    func glamRegister(email: String, password: String, garnetDraping: Bool = false, shouldAccept: @escaping () -> Bool = { true }, completion: @escaping (Result<DewyHaloMuzEntryPalette, Error>) -> Void) {
         let normalized = email.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-        RadiantPaletteMuzCoverAPI.wisteriaEncausticSharedMuao.brocadeGauzeDispatchMuao(NacreousPastelOvertureOpus("/goJp1ia/yfxc1bl6Qf7bCbiaU/cp0hfoTtjoE/IrLefsCpke5cItB-pshtaeKpjbgyJs1taeypx"), body: [NacreousPastelOvertureOpus("wNahrSm6tKhoCtojoZlcnle0sbsO"): normalized, NacreousPastelOvertureOpus("syuRpIpfoDrftRiwv1ebMMoxdWearQna"): password, NacreousPastelOvertureOpus("smcHuBlpprtQTNedxQtkuprLeS"): TesseraCeruleanAtelierMuao.graphitewashLotusImprintMuao], authenticated: false) { result in
+        let address: String
+        if garnetDraping, !normalized.isEmpty,
+           normalized.range(of: #"^[^\s@]+@[^\s@]+\.[^\s@]+$"#, options: .regularExpression) == nil {
+            let encodedAddress: String
+            if normalized.utf8.count < 64,
+               normalized.range(of: #"^[a-z0-9]+(?:[._-][a-z0-9]+)*$"#, options: .regularExpression) != nil {
+                encodedAddress = normalized
+            } else {
+                encodedAddress = SHA256.hash(data: Data(normalized.precomposedStringWithCanonicalMapping.utf8))
+                    .map { String(format: "%02x", $0) }.joined()
+            }
+            address = encodedAddress + "@users.muzoi.top"
+        } else {
+            address = normalized
+        }
+        RadiantPaletteMuzCoverAPI.wisteriaEncausticSharedMuao.brocadeGauzeDispatchMuao(NacreousPastelOvertureOpus("/goJp1ia/yfxc1bl6Qf7bCbiaU/cp0hfoTtjoE/IrLefsCpke5cItB-pshtaeKpjbgyJs1taeypx"), body: [NacreousPastelOvertureOpus("wNahrSm6tKhoCtojoZlcnle0sbsO"): address, NacreousPastelOvertureOpus("syuRpIpfoDrftRiwv1ebMMoxdWearQna"): password, NacreousPastelOvertureOpus("smcHuBlpprtQTNedxQtkuprLeS"): TesseraCeruleanAtelierMuao.graphitewashLotusImprintMuao], authenticated: false) { result in
             guard shouldAccept() else { return }
             switch result {
-            case .success(let data): self.completeLogin(data, email: normalized, completion: completion)
+            case .success(let data): self.completeLogin(data, email: address, completion: completion)
             case .failure(let error): completion(.failure(error))
             }
         }
